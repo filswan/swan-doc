@@ -18,7 +18,19 @@ Petabytes of available storage capacity is paired together with industry-leading
 
 Since 2018, FilSwan has been dedicated to decentralized storage and computing solutions. Those services are enhanced by edge computing, IPFS/Filecoin and decentralized ledger technologies. Our products are used by universities,VR/AR and many other high performance computing companies. With FilSwan, you
 
- could perform computing tasks in the nearest location at the lowest cost. We are building the largest fog computing network in the Metaverse.
+could perform computing tasks in the nearest location at the lowest cost. We are building the largest fog computing network in the Metaverse.
 
 ## Core Product
+
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}
+
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}
+
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}
 
