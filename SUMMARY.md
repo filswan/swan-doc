@@ -34,9 +34,9 @@
   * [Hardware Requirements](run-swan-provider/prerequisites/hardware-requirements.md)
   * [Install Swan Provider](run-swan-provider/prerequisites/install-swan-provider.md)
 * [Setup Your Swan Provider](run-swan-provider/setup-your-swan-provider/README.md)
-  * [Video Tutorial](run-swan-provider/setup-your-swan-provider/video-tutorial.md)
   * [Run in autobid mode](run-swan-provider/setup-your-swan-provider/run-in-autobid-mode.md)
   * [Run in manual bid mode](run-swan-provider/setup-your-swan-provider/run-in-manual-bid-mode.md)
+  * [Video Tutorial](run-swan-provider/setup-your-swan-provider/video-tutorial.md)
 
 ## Swan Client
 
