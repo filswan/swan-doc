@@ -17,6 +17,9 @@
     * [Update Tasks](filswan-platform/core-modules/task-management/update-tasks.md)
     * [Assign a Task](filswan-platform/core-modules/task-management/assign-a-task.md)
     * [Export Task Result from Platform](filswan-platform/core-modules/task-management/export-task-result-from-platform.md)
+  * [My Profile](filswan-platform/core-modules/my-profile/README.md)
+    * [Swan Storage Provider](filswan-platform/core-modules/my-profile/swan-storage-provider/README.md)
+      * [Registering your storage provider](filswan-platform/core-modules/my-profile/swan-storage-provider/registering-your-storage-provider.md)
   * [Hosted Payment](filswan-platform/core-modules/hosted-payment.md)
   * [Edge Caching Technology](filswan-platform/core-modules/edge-caching-technology.md)
 
