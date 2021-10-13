@@ -16,3 +16,21 @@
     * [Export Task Result from Platform](filswan-platform/core-modules/task-management/export-task-result-from-platform.md)
   * [Hosted Payment](filswan-platform/core-modules/hosted-payment.md)
   * [Edge Caching Technology](filswan-platform/core-modules/edge-caching-technology.md)
+
+## Getting Started
+
+* [Authentication](getting-started/authentication/README.md)
+  * [API keys](getting-started/authentication/api-keys.md)
+* [Find Storage Providers](getting-started/find-storage-providers/README.md)
+  * [Storage Provider Details](getting-started/find-storage-providers/storage-provider-details.md)
+
+## Run Swan Provider
+
+* [Overview](run-swan-provider/overview.md)
+* [Prerequisites](run-swan-provider/prerequisites/README.md)
+  * [Hardware Requirements](run-swan-provider/prerequisites/hardware-requirements.md)
+  * [Install Swan Provider](run-swan-provider/prerequisites/install-swan-provider.md)
+* [Setup Your Swan Provider](run-swan-provider/setup-your-swan-provider/README.md)
+  * [Video Tutorial](run-swan-provider/setup-your-swan-provider/video-tutorial.md)
+  * [Run in autobid mode](run-swan-provider/setup-your-swan-provider/run-in-autobid-mode.md)
+  * [Run in manual bid mode](run-swan-provider/setup-your-swan-provider/run-in-manual-bid-mode.md)
