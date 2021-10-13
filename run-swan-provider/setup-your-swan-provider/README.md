@@ -1,6 +1,6 @@
 # Setup Your Swan Provider
 
-Setup Your Swan Provider Make sure you followed [prerequisites](../prerequisites/ "mention") before configuration
+Setup Your Swan Provider Make sure you followed [Prerequisites](../prerequisites/) before configuration
 
 ### Step 1: Obtain your API keys
 
