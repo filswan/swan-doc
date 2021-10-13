@@ -34,3 +34,32 @@
   * [Video Tutorial](run-swan-provider/setup-your-swan-provider/video-tutorial.md)
   * [Run in autobid mode](run-swan-provider/setup-your-swan-provider/run-in-autobid-mode.md)
   * [Run in manual bid mode](run-swan-provider/setup-your-swan-provider/run-in-manual-bid-mode.md)
+
+## Swan Client
+
+* [Overview](swan-client/overview.md)
+* [Client CLI](swan-client/client-cli.md)
+* [Create A Swan Task](swan-client/create-a-swan-task/README.md)
+  * [Install Client CLI](swan-client/create-a-swan-task/install-client-cli.md)
+  * [Config the CLI tool](swan-client/create-a-swan-task/config-the-cli-tool.md)
+  * [Create Deal to Filecoin Network](swan-client/create-a-swan-task/create-deal-to-filecoin-network/README.md)
+    * [Prepare the data for sending deals](swan-client/create-a-swan-task/create-deal-to-filecoin-network/prepare-the-data-for-sending-deals.md)
+    * [Upload Car files to ipfs/web server](swan-client/create-a-swan-task/create-deal-to-filecoin-network/upload-car-files-to-ipfs-web-server.md)
+    * [Create a task](swan-client/create-a-swan-task/create-deal-to-filecoin-network/create-a-task/README.md)
+      * [Private Task](swan-client/create-a-swan-task/create-deal-to-filecoin-network/create-a-task/private-task.md)
+      * [Public Task](swan-client/create-a-swan-task/create-deal-to-filecoin-network/create-a-task/public-task.md)
+
+## Multi-Chain Payment Gateway
+
+* [Overview](multi-chain-payment-gateway/overview.md)
+
+## FS3
+
+* [Overview](fs3/overview.md)
+* [Getting Started](fs3/getting-started.md)
+
+## Development Resource
+
+* [FilSwan API](development-resource/filswan-api.md)
+* [FS3 API](development-resource/fs3-api.md)
+* [FilSwan FAQ](development-resource/filswan-faq.md)
