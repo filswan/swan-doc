@@ -1,5 +1,9 @@
 # Run in manual bid mode
 
-Swan platform
+edit `~/.swan/provider/config.toml `as follows
 
-bid mode  (0)
+```
+...
+bid_mode = 0
+...
+```

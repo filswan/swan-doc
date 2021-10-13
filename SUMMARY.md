@@ -36,7 +36,7 @@
 * [Setup Your Swan Provider](run-swan-provider/setup-your-swan-provider/README.md)
   * [Run in autobid mode](run-swan-provider/setup-your-swan-provider/run-in-autobid-mode.md)
   * [Run in manual bid mode](run-swan-provider/setup-your-swan-provider/run-in-manual-bid-mode.md)
-  * [Video Tutorial](run-swan-provider/setup-your-swan-provider/video-tutorial.md)
+  * [Swan Provider Installation Tutorial](run-swan-provider/setup-your-swan-provider/video-tutorial.md)
 
 ## Swan Client
 
