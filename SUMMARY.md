@@ -56,7 +56,6 @@
 ## FS3
 
 * [Overview](fs3/overview.md)
-* [Getting Started](fs3/getting-started.md)
 
 ## Development Resource
 

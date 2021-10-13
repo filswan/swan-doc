@@ -34,3 +34,10 @@ could perform computing tasks in the nearest location at the lowest cost. We are
 [Broken link](broken-reference)
 {% endcontent-ref %}
 
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}
+
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}
