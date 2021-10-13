@@ -1,6 +1,9 @@
 # Table of contents
 
 * [FilSwan Overview](README.md)
+* [Contact Us](contact-us/README.md)
+  * [Social Accounts & Communities](contact-us/social-accounts-and-communities.md)
+  * [Business Partnerships](contact-us/business-partnerships.md)
 
 ## Filswan Platform
 
