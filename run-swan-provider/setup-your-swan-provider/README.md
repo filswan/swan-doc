@@ -1,6 +1,20 @@
 # Setup Your Swan Provider
 
+{% hint style="warning" %}
 Setup Your Swan Provider Make sure you followed [Prerequisites](../prerequisites/) before configuration
+{% endhint %}
+
+## Lotus Miner config
+
+Please setup your deal price on lotus miner,e.g.
+
+```
+lotus-miner storage-deals set-ask --price=0.00000001 --verified-price=0 --min-piece-size=4096Mib --max-piece-size=32Gib
+```
+
+For more information, please check [lotus mine deals](https://docs.filecoin.io/mine/lotus/manage-storage-deals/#offline-deal-workflow)
+
+## Swan  Provider Config
 
 ### Step 1: Obtain your API keys
 

@@ -1,3 +1,7 @@
+---
+description: An autobid market build by filswan
+---
+
 # Run in autobid mode
 
 Autobid is a simplified process for swan provider who can fast join the auction process. By default, swan provider is running in autobid mode.
