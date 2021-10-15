@@ -11,6 +11,8 @@
 sudo apt install aria2
 ```
 
+## Install Swan Provider Binary
+
 ### Register your storage provider
 
 You need to [Registering your storage provider](../../filswan-platform/core-modules/my-profile/swan-storage-provider/registering-your-storage-provider.md) before you can start bidding.

@@ -29,3 +29,37 @@ To learn more about file configuration and how to generate a Car file please con
 ## Do you have a customer referral program?
 
 No, we do not, but feel free to invite friends to explore the platform using our telegram and Twitter accounts!
+
+## What are the requirements that a storage provider needs to meet for AutoBid?
+
+There are several requirements need to be fulfilled for participating in AutoBid. Firstly, your SP status should be '**Active**'; then, your SP should be registered as a FilSwan SP and select **accept offline deals** at registration; also, run our SP service and set '**bid_mode**' to 1 and provide other values such as '**expected_sealing_tim**e' and '**start_epoch**'. 
+
+For more information about how to register storage provider, please consult \*\*\*\*(link).
+
+#### To participate in the AutoBid mode.
+
+1. Make sure your storage provider is **Active** and capable to be scanned on chain.
+2.  Edit your storage provider's **price, verified-price, min-piece-size, **and **max-piece-size** as follow: 
+
+    * ```
+      lotus-miner storage-deals set-ask --price= --verified-price= --min-piece-size= --max-piece-size=
+      ```
+
+    _<mark style="color:blue;background-color:yellow;">Tips: set reasonable prices and a wide range of piece-size will help you get more deals.</mark>_
+3. Register your storage provide as a FilSwan SP. The **accept offline deals** must to be **ON** at the time of registration.
+4. Run FilSwan SP. Our heartbeat feature will regularly send signals to the server, to indicate whether your SP is **online**. Only online SP can get deals.
+5.  Edit **bid_mode**, **expected_sealing_time**, and **start_epoch** in the config.toml file.
+
+    edit `~/.swan/provider/config.toml `as follows:
+
+    ```
+    ...
+
+    bid_mode: 1 
+    expected_sealing_time: //1920 epoch or 16 hours.
+    start_epoch: //2880 epoch or 24 hours.
+
+    ...
+    ```
+
+You are now qualified to participate in AutoBid.
