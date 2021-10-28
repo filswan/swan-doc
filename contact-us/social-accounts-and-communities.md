@@ -1,5 +1,11 @@
 # Social Accounts & Communities
 
-**For General Chat **
+Telegram: [https://t.me/filswan](https://t.me/filswan)
 
-Join the [S**lack**](https://filswan.slack.com) or** **[**Discord**](https://discord.gg/DhbZtY7g)****
+Medium: [https://filswan.medium.com/](https://filswan.medium.com)
+
+Twitter: [https://twitter.com/filswan1](https://twitter.com/filswan1)​
+
+Slack: [http://filswan.slack.com](http://filswan.slack.com)​
+
+Discord: [http://discord.gg/Uw5jCGqc](https://t.co/qGV5LQAZKY?amp=1)
