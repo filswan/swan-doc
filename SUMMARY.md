@@ -40,6 +40,7 @@
   * [Run in autobid mode](run-swan-provider/setup-your-swan-provider/run-in-autobid-mode.md)
   * [Run in manual bid mode](run-swan-provider/setup-your-swan-provider/run-in-manual-bid-mode.md)
   * [Swan Provider Installation Tutorial](run-swan-provider/setup-your-swan-provider/video-tutorial.md)
+* [中文版安装教程Swan Provider](run-swan-provider/zhong-wen-ban-an-zhuang-jiao-cheng-swan-provider.md)
 
 ## Swan Client
 
