@@ -34,7 +34,7 @@
 
 * [Overview](run-swan-provider/overview.md)
 * [Prerequisites](run-swan-provider/prerequisites/README.md)
-  * [Hardware Requirements](run-swan-provider/prerequisites/hardware-requirements.md)
+  * [Requirements](run-swan-provider/prerequisites/hardware-requirements.md)
   * [Install Swan Provider](run-swan-provider/prerequisites/install-swan-provider.md)
 * [Setup Your Swan Provider](run-swan-provider/setup-your-swan-provider/README.md)
   * [Run in autobid mode](run-swan-provider/setup-your-swan-provider/run-in-autobid-mode.md)
@@ -63,6 +63,11 @@
 ## FS3
 
 * [Overview](fs3/overview.md)
+* [Prerequisites](fs3/prerequisites/README.md)
+  * [Requirements](fs3/prerequisites/requirements.md)
+* [Setup your FS3](fs3/setup-your-fs3/README.md)
+  * [Install FS3](fs3/setup-your-fs3/install-fs3.md)
+  * [FS3 Installation Tutorials](fs3/setup-your-fs3/fs3-installation-tutorials.md)
 
 ## Development Resource
 
