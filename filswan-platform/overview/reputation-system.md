@@ -54,7 +54,7 @@ After adjusting the power by the location, the weighted adjusted power is then t
 
 The normalized log weighted adjust power is calculated with the following mathematical formula:
 
-                                        _ Normalized Log Weighted Adjusted Power = norm \[log (Weighed Adjusted Power)]_
+&#x20;                                       _ Normalized Log Weighted Adjusted Power = norm \[log (Weighed Adjusted Power)]_
 
 The normalized result is a number in the interval \[0,1] where 1 is the maximum score. A miner that has a score of 1 is rewarded with 30 reputation points.
 
@@ -66,7 +66,7 @@ _Committed Sectors Proof Score = 10\* Normalized Log Weighted Adjusted Power_
 
 ### **3. General Deals and Verified-Miner Deals:** <a href="reputationsystemdesign-3.generaldealsandverified-minerdeals" id="reputationsystemdesign-3.generaldealsandverified-minerdeals"></a>
 
-The 3rd component of the score reflects the proportion in which the miner has successfully run the storage deals. Making storage deals is the core of a miner and thus this component has the biggest weight in the score. 
+The 3rd component of the score reflects the proportion in which the miner has successfully run the storage deals. Making storage deals is the core of a miner and thus this component has the biggest weight in the score.&#x20;
 
 A verified miner is a miner who signed with their miner’s signature and email address, they usually also update their contact information in Swan or other platforms.
 
@@ -74,9 +74,9 @@ The deals considered here involve both verified-miner deals and external deals (
 
 The verified-miner active rate is calculated with the following mathematical formula:
 
-   _                                     Verified-miner Active Deal Rate = number of active deals / numbers of total deals_
+&#x20;  _                                     Verified-miner Active Deal Rate = number of active deals / numbers of total deals_
 
-After miners are ranked by the calculated verified miner active rate in increasing order with method set to "max". In other words, the records that have the same values are ranked using the highest rank (e.g.: If ‘Tom’ and ‘Jerry' are tied in the 2nd and 3rd position with the same value, rank 3 is assigned to them both). 
+After miners are ranked by the calculated verified miner active rate in increasing order with method set to "max". In other words, the records that have the same values are ranked using the highest rank (e.g.: If ‘Tom’ and ‘Jerry' are tied in the 2nd and 3rd position with the same value, rank 3 is assigned to them both).&#x20;
 
 ![](https://www.filswan.com/static/img/Methodology3.905c15e.png)
 
@@ -84,7 +84,7 @@ This max ranking method guarantees a base score for each storage provider and le
 
 The normalized verified-storage provider active rate rank is calculated with the following mathematical formula:
 
-Normalized Verified-Storage Provider Active Deal Rate Rank = norm \[Rank_Max (Verified-Storage Provider Active Rate)]
+Normalized Verified-Storage Provider Active Deal Rate Rank = norm \[Rank\_Max (Verified-Storage Provider Active Rate)]
 
 The balanced verified-storage provider active rate is then weighted by another parameter, sector faculty rate. Deals fall into faults for some reason will lose weight and storage providers that have less faults are assigned more weight. In this scenario, sector faulty rate is calculated as the ratio of number of faults divided by the number of total live deals.
 

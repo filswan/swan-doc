@@ -58,7 +58,9 @@
 
 ## Multi-Chain Payment Gateway
 
-* [Overview](multi-chain-payment-gateway/overview.md)
+* [Overview](multi-chain-payment-gateway/overview/README.md)
+  * [Polygons Support](multi-chain-payment-gateway/overview/polygons-support/README.md)
+    * [mumbai Testnet](multi-chain-payment-gateway/overview/polygons-support/mumbai-testnet.md)
 
 ## FS3
 
