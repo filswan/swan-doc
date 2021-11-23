@@ -1,3 +1,3 @@
 # Update Tasks
 
-![](<../../../.gitbook/assets/image (29).png>)
+![](<../../../.gitbook/assets/image (29) (1).png>)

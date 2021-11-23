@@ -56,11 +56,13 @@
       * [Private Task](swan-client/create-a-swan-task/create-deal-to-filecoin-network/create-a-task/private-task.md)
       * [Public Task](swan-client/create-a-swan-task/create-deal-to-filecoin-network/create-a-task/public-task.md)
 
-## Multi-Chain Payment Gateway
+## Multi-Chain Payment
 
-* [Overview](multi-chain-payment-gateway/overview/README.md)
-  * [Polygons Support](multi-chain-payment-gateway/overview/polygons-support/README.md)
-    * [mumbai Testnet](multi-chain-payment-gateway/overview/polygons-support/mumbai-testnet.md)
+* [Overview](multi-chain-payment/overview.md)
+* [Developer Quickstart](multi-chain-payment/developer-quickstart/README.md)
+  * [Public Testnet](multi-chain-payment/developer-quickstart/public-testnet/README.md)
+    * [Setup MetaMask](multi-chain-payment/developer-quickstart/public-testnet/setup-metamask.md)
+* [Tutorial](multi-chain-payment/tutorial.md)
 
 ## FS3
 

@@ -1,3 +1,0 @@
-# Polygons Support
-
-Get
