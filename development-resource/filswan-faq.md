@@ -6,7 +6,7 @@ Customers who want to store data files to Decentralized network. Filswan provide
 
 Storage providers on Filecoin network want a fully automatic solution for data lifecycle management, server resource management, reporting and billing.
 
-## **How does **FilSwan** work?** 
+## **How does** FilSwan **work?**&#x20;
 
 Unlike traditional cloud providers, FilSwan does not operate any physical infrastructure. Instead, we maintain a cluster of application servers connected to various decentralized nodes. This results in a lower overhead and capital expense due to fewer servers.﻿
 
@@ -32,14 +32,14 @@ No, we do not, but feel free to invite friends to explore the platform using our
 
 ## What are the requirements that a storage provider needs to meet for AutoBid?
 
-There are several requirements need to be fulfilled for participating in AutoBid. Firstly, your SP status should be '**Active**'; then, your SP should be registered as a FilSwan SP and select **accept offline deals** at registration; also, run our SP service and set '**bid_mode**' to 1 and provide other values such as '**expected_sealing_tim**e' and '**start_epoch**'. 
+There are several requirements need to be fulfilled for participating in AutoBid. Firstly, your SP status should be '**Active**'; then, your SP should be registered as a FilSwan SP and select **accept offline deals** at registration; also, run our SP service and set '**bid\_mode**' to 1 and provide other values such as '**expected\_sealing\_tim**e' and '**start\_epoch**'.&#x20;
 
 For more information about how to register storage provider, please consult \*\*\*\*(link).
 
 #### To participate in the AutoBid mode.
 
 1. Make sure your storage provider is **Active** and capable to be scanned on chain.
-2.  Edit your storage provider's **price, verified-price, min-piece-size, **and **max-piece-size** as follow: 
+2.  Edit your storage provider's **price, verified-price, min-piece-size,** and **max-piece-size** as follow:&#x20;
 
     * ```
       lotus-miner storage-deals set-ask --price= --verified-price= --min-piece-size= --max-piece-size=
@@ -48,9 +48,9 @@ For more information about how to register storage provider, please consult \*\*
     _<mark style="color:blue;background-color:yellow;">Tips: set reasonable prices and a wide range of piece-size will help you get more deals.</mark>_
 3. Register your storage provide as a FilSwan SP. The **accept offline deals** must to be **ON** at the time of registration.
 4. Run FilSwan SP. Our heartbeat feature will regularly send signals to the server, to indicate whether your SP is **online**. Only online SP can get deals.
-5.  Edit **bid_mode**, **expected_sealing_time**, and **start_epoch** in the config.toml file.
+5.  Edit **bid\_mode**, **expected\_sealing\_time**, and **start\_epoch** in the config.toml file.
 
-    edit `~/.swan/provider/config.toml `as follows:
+    edit `~/.swan/provider/config.toml` as follows:
 
     ```
     ...

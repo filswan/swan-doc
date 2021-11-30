@@ -17,6 +17,6 @@ INFO:root:Car files output dir: [car_files_output_dir]
 INFO:root:Please upload car files to web server or ipfs server.
 ```
 
-If _--out-dir _is not provided, then the output directory for the car files will be: _output_dir_ (specified in the configuration file) + random_uuid
+If _--out-dir_ is not provided, then the output directory for the car files will be: _output\_dir_ (specified in the configuration file) + random\_uuid
 
 e.g. : /tmp/tasks/7f33a9d6-47d0-4635-b152-5e380733bf09

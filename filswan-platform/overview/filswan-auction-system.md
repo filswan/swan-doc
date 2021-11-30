@@ -28,7 +28,7 @@ The auto bidding system is a reputation-based system. When a user signs up as a 
 
 The market matcher program distributes the order follow a lambda distributionm which means that even the storage provider score is low, he is still be able to get some deal, just a lower chance.
 
-**Task **
+**Task**&#x20;
 
 In FilSwan system we have an important conception called tasks. A task consists of several deals. Currently, Filecoin only accepts specified size of deals. For example, maximum 32 gigabytes or 64 gigabytes depending on the storage provider you stored. If you want to store a data more than one terabyte or 10 terabytes, you need to manually split it to different deals, and then send them out. This could make the management of the deals difficult. In order to send more deals in a batch, we have created a conception called “tasks”. A task is a combination of deals, and you can give it a task name and label name. You can also define the curated dataset type for future usage.
 

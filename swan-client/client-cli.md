@@ -43,7 +43,7 @@ sh install.sh
 ```
 
 {% hint style="info" %}
- Make sure you have Prerequisite installed before you go to next step
+&#x20;Make sure you have Prerequisite installed before you go to next step
 {% endhint %}
 
 ## Config the deal server
@@ -80,10 +80,10 @@ start_epoch_hours = 96
 
 **main**
 
-Main section defines the token used for connecting with Swan platform. This part can be ignored if offline_mode is set to true in \[sender] section
+Main section defines the token used for connecting with Swan platform. This part can be ignored if offline\_mode is set to true in \[sender] section
 
-* **api_key & access_token:** Acquire from [Filswan](https://www.filswan.com) -> "My Profile"->"Developer Settings". You can also check the [Guide](https://nebulaai.medium.com/how-to-use-api-key-in-swan-a2ebdb005aa4)
-* **api_url:** Default: "[https://api.filswan.com](https://api.filswan.com)"
+* **api\_key & access\_token:** Acquire from [Filswan](https://www.filswan.com) -> "My Profile"->"Developer Settings". You can also check the [Guide](https://nebulaai.medium.com/how-to-use-api-key-in-swan-a2ebdb005aa4)
+* **api\_url:** Default: "[https://api.filswan.com](https://api.filswan.com)"
 
 **web-server**
 
@@ -95,22 +95,22 @@ ipfs-server is used to upload generated Car files. Miner will download Car files
 
 **sender**
 
-* **offline_mode:** \[true/false] Default false. If it is set to true, you will not be able to create Swan task on filswan.com, but you can still create CSVs and Car Files for sending deals
-* **output_dir:** Output directory for saving generated Car files and CSVs
-* **public_deal:** \[true/false] Whether deals in the tasks are public deals
-* **verified_deal:** \[true/false] Whether deals in this task are going to be sent as verified
-* **fast_retrieval:** \[true/false] Indicates that data should be available for fast retrieval
-* **generate_md5:** \[true/false] Whether to generate md5 for each car file, note: this is a resource consuming action
-* **skip_confirmation:** \[true/false] Whether to skip manual confirmation of each deal before sending
+* **offline\_mode:** \[true/false] Default false. If it is set to true, you will not be able to create Swan task on filswan.com, but you can still create CSVs and Car Files for sending deals
+* **output\_dir:** Output directory for saving generated Car files and CSVs
+* **public\_deal:** \[true/false] Whether deals in the tasks are public deals
+* **verified\_deal:** \[true/false] Whether deals in this task are going to be sent as verified
+* **fast\_retrieval:** \[true/false] Indicates that data should be available for fast retrieval
+* **generate\_md5:** \[true/false] Whether to generate md5 for each car file, note: this is a resource consuming action
+* **skip\_confirmation:** \[true/false] Whether to skip manual confirmation of each deal before sending
 * **wallet:** Wallet used for sending offline deals
-* **max_price:** Max price willing to pay per GiB/epoch for offline deal
-* **start_epoch_hours:** start_epoch for deals in hours from current time
+* **max\_price:** Max price willing to pay per GiB/epoch for offline deal
+* **start\_epoch\_hours:** start\_epoch for deals in hours from current time
 
 ## Create Deal for Filecoin Network
 
 ### Prepare the data for sending deals
 
-#### ** Generate Car files using Lotus (option 1)**
+#### &#x20;**Generate Car files using Lotus (option 1)**
 
 ```
 python3 swan_cli.py car --input-dir [input_files_dir] --out-dir [car_files_output_dir] 
@@ -127,7 +127,7 @@ INFO:root:Car files output dir: [car_files_output_dir]
 INFO:root:Please upload car files to web server or ipfs server.
 ```
 
-If _--out-dir _is not provided, then the output directory for the car files will be: _output_dir_ (specified in the configuration file) + random_uuid
+If _--out-dir_ is not provided, then the output directory for the car files will be: _output\_dir_ (specified in the configuration file) + random\_uuid
 
 e.g. : /tmp/tasks/7f33a9d6-47d0-4635-b152-5e380733bf09
 
@@ -150,13 +150,13 @@ INFO:root:Car file [car_file] uploaded: http://127.0.0.1:8080/ipfs/QmPrQPfGCAHwY
 
 #### Step 3. Create a task
 
-In Filswan, deals are sending via task. A task contains serveral deals, each deal has their own data_id, source file link, etc.
+In Filswan, deals are sending via task. A task contains serveral deals, each deal has their own data\_id, source file link, etc.
 
 **Options 1: Private Task**
 
 A private task is a task you have specific miner you want to send.
 
-in  config.toml: 
+in  config.toml:&#x20;
 
 `public_deal = false`
 
@@ -191,7 +191,7 @@ INFO:root:New Swan task Generated.
 
 A **public** task is a task you want the miners on Filecoin network bid for it.
 
-in **config.toml**: 
+in **config.toml**:&#x20;
 
 `public_deal = true`
 
@@ -203,7 +203,7 @@ python3 swan_cli.py task --input-dir [car_files_dir] --out-dir [output_files_dir
 
 **--input-dir (Required)** Each file under this directory will be converted to a Car file, the generated car file will be located under the output folder defined in config.toml
 
-**--out-dir (optional)** Metadata CSV and Swan task CSV will be generated to the given directory. Default: output_dir specified in config.toml
+**--out-dir (optional)** Metadata CSV and Swan task CSV will be generated to the given directory. Default: output\_dir specified in config.toml
 
 **--name (optional)** Given task name while creating task on Swan platform. Default: swan-task-uuid
 
@@ -231,9 +231,9 @@ Client needs to use the metadata CSV generated in the previous step for sending 
 python3 swan_cli.py deal --csv [metada_csv_dir/task-name-metadata.csv] --out-dir [output_files_dir] --miner [miner_id]
 ```
 
-**--csv (Required):** File path to the metadata CSV file. Mandatory metadata CSV fields: source_file_size, car_file_url, data_cid, piece_cid
+**--csv (Required):** File path to the metadata CSV file. Mandatory metadata CSV fields: source\_file\_size, car\_file\_url, data\_cid, piece\_cid
 
-**--out-dir (optional)** Swan deal final CSV will be generated to the given directory. Default: output_dir specified in config.toml
+**--out-dir (optional)** Swan deal final CSV will be generated to the given directory. Default: output\_dir specified in config.toml
 
 **--miner (Required):** Target miner id, e.g f01276
 

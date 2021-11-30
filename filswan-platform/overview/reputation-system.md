@@ -34,7 +34,7 @@ Time-based Reachability Score = 30 \* (0.7 \* Online Reachability Total Success 
 
 ![](https://www.filswan.com/static/img/Methodology.3b35506.png)
 
-### **2. Regional Weighted Adjust Power:** <a href="reputationsystemdesign-2.regionalweightedadjustpower" id="reputationsystemdesign-2.regionalweightedadjustpower"></a>
+### **2. Regional Weighted Adjust Power:** <a href="#reputationsystemdesign-2.regionalweightedadjustpower" id="reputationsystemdesign-2.regionalweightedadjustpower"></a>
 
 The regional committed sector proof score is designed to measure the total committed capacity of the miner. The bigger the miner is the more collateral is required, and the technical support effort also increased. The importance of a miner in the region is inversely proportional to the total numbers of miners in the region, e. g. a miner in a 1-miner region is 10x more important than a miner in a 10-miner region since it is the only service provider.
 
@@ -44,17 +44,17 @@ In order to emphases the importance of the miner of the region, we use the regio
 
 The weighted adjust power is calculated with the following mathematical formula:
 
-_                                          Location Weight = 0.5 + 0.5 \* exp( -1 \* number of miners in its continents)_
+&#x20;                                         _Location Weight = 0.5 + 0.5 \* exp( -1 \* number of miners in its continents)_
 
-_                                          Number Weight  = 0.5+ 0.5 \* exp( -1 \* total adjusted power in its continents / total adjusted power worldwide) _
+&#x20;                                         _Number Weight  = 0.5+ 0.5 \* exp( -1 \* total adjusted power in its continents / total adjusted power worldwide)_&#x20;
 
-_                                          Weighted adjust power = Location Weight \* Number Weight \* adjusted power_
+&#x20;                                         _Weighted adjust power = Location Weight \* Number Weight \* adjusted power_
 
 After adjusting the power by the location, the weighted adjusted power is then transformed by a log transformation so that the distribution of log weighed adjusted power is closer to a normal distribution. Then the log weighted adjusted power is normalized using min-max normalization approach.
 
 The normalized log weighted adjust power is calculated with the following mathematical formula:
 
-&#x20;                                       _ Normalized Log Weighted Adjusted Power = norm \[log (Weighed Adjusted Power)]_
+&#x20;                                       _Normalized Log Weighted Adjusted Power = norm \[log (Weighed Adjusted Power)]_
 
 The normalized result is a number in the interval \[0,1] where 1 is the maximum score. A miner that has a score of 1 is rewarded with 30 reputation points.
 
@@ -64,7 +64,7 @@ The Reachability score is calculated with the following mathematical formula:
 _Committed Sectors Proof Score = 10\* Normalized Log Weighted Adjusted Power_
 {% endhint %}
 
-### **3. General Deals and Verified-Miner Deals:** <a href="reputationsystemdesign-3.generaldealsandverified-minerdeals" id="reputationsystemdesign-3.generaldealsandverified-minerdeals"></a>
+### **3. General Deals and Verified-Miner Deals:** <a href="#reputationsystemdesign-3.generaldealsandverified-minerdeals" id="reputationsystemdesign-3.generaldealsandverified-minerdeals"></a>
 
 The 3rd component of the score reflects the proportion in which the miner has successfully run the storage deals. Making storage deals is the core of a miner and thus this component has the biggest weight in the score.&#x20;
 
@@ -74,7 +74,7 @@ The deals considered here involve both verified-miner deals and external deals (
 
 The verified-miner active rate is calculated with the following mathematical formula:
 
-&#x20;  _                                     Verified-miner Active Deal Rate = number of active deals / numbers of total deals_
+&#x20;  _Verified-miner Active Deal Rate = number of active deals / numbers of total deals_
 
 After miners are ranked by the calculated verified miner active rate in increasing order with method set to "max". In other words, the records that have the same values are ranked using the highest rank (e.g.: If ‘Tom’ and ‘Jerry' are tied in the 2nd and 3rd position with the same value, rank 3 is assigned to them both).&#x20;
 

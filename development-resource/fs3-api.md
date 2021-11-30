@@ -4,7 +4,7 @@
 
 Login FilSwan Platform to get the authorization token which is used to acquire an access key pair for login FS3.
 
-{% swagger baseUrl="https://api.filswan.com" path="/minio" method="get" summary="Acquire Access Key Pair" %}
+{% swagger baseUrl="https://<access_url>" path="/minio" method="get" summary="Acquire Access Key Pair" %}
 {% swagger-description %}
 This endpoint allows you to acquire an access key pair.
 {% endswagger-description %}

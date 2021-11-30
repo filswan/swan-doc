@@ -4,7 +4,7 @@ description: GuideTutorial
 
 # Tutorial
 
-_This tutorial assumes you have already downloaded MetaMask, and that you have MATIC and USDC token in that wallet on the Mumbai Testnet. If you don’t have a wallet, visit our portal _[_here_](developer-quickstart/public-testnet/setup-metamask.md)_ to download one._
+_This tutorial assumes you have already downloaded MetaMask, and that you have MATIC and USDC token in that wallet on the Mumbai Testnet. If you don’t have a wallet, visit our portal_ [_here_](developer-quickstart/public-testnet/setup-metamask.md) _to download one._
 
 **Disclaimer: MATIC is the gas for MCP. You need MATIC to make transactions on Mumbai.**
 
@@ -22,7 +22,7 @@ _This tutorial assumes you have already downloaded MetaMask, and that you have M
 
 &#x20;            ![](<../.gitbook/assets/image (40).png>)    ![](<../.gitbook/assets/image (31).png>)
 
-### 3. Upload file** to IPFS**
+### 3. Upload file **to IPFS**
 
 * Choose the file you would like to backup to Filecoin Network. The file name and file size will display under upload button.
 * Set a duration which refers to the terms in which you want the file to be stored on the Filecoin network.

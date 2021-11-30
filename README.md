@@ -1,7 +1,7 @@
 ---
 description: >-
-  Filswan provides a decentralized edge infrastructure marketplace and software
-  that moves data storage and analysis as close as necessary on Web 3.0.
+  FilSwan provides a lay2 cross chain solution for web3 projects, it integrates
+  data, computing and payment into one suite.
 ---
 
 # FilSwan Overview
