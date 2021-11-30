@@ -1,7 +1,5 @@
 ---
-description: >-
-  A smart contract based cross chain payment system integrated with oracle
-  technology for Filecoin Network.
+description: Enable web3 users pay IPFS/Filecoin storage by tokens on all blockchains.
 ---
 
 # Overview
