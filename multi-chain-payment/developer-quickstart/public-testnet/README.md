@@ -30,10 +30,6 @@ There you'll be able to see all the transactions being executed in MCP and also 
 
 
 
-### Porting your frontend <a href="#porting-your-frontend" id="porting-your-frontend"></a>
-
-
-
 ### Rinkeby Deployment <a href="#rinkeby-deployment" id="rinkeby-deployment"></a>
 
 All contracts are deployed from&#x20;

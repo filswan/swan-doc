@@ -62,7 +62,7 @@
 * [Developer Quickstart](multi-chain-payment/developer-quickstart/README.md)
   * [Public Testnet](multi-chain-payment/developer-quickstart/public-testnet/README.md)
     * [Setup MetaMask](multi-chain-payment/developer-quickstart/public-testnet/setup-metamask.md)
-* [Tutorial](multi-chain-payment/tutorial.md)
+* [User Guide](multi-chain-payment/user-guide.md)
 
 ## FS3
 
