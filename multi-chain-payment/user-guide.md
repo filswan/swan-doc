@@ -73,7 +73,7 @@ In this page, you can find all the files you have uploaded. It provides you some
 
 To view more details, simply click on the **file name**. You can find all the related information on this page, including the IPFS download link, the retrieval from Filecoin Network command, and DAO signature information and status. You won't need to bother to check the deal with a blockchain explorer.:smile:
 
-![](../.gitbook/assets/chrome-capture.gif)
+![](<../.gitbook/assets/chrome-capture (6).gif>)
 
 #### DAO Signature Process:
 

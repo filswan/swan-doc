@@ -71,7 +71,8 @@
   * [Requirements](fs3/prerequisites/requirements.md)
 * [Setup your FS3](fs3/setup-your-fs3/README.md)
   * [Install FS3](fs3/setup-your-fs3/install-fs3.md)
-  * [FS3 Tutorials](fs3/setup-your-fs3/fs3-tutorials.md)
+  * [FS3 Set up Video](fs3/setup-your-fs3/fs3-tutorials.md)
+* [FS3 User Guide](fs3/fs3-user-guide.md)
 
 ## Development Resource
 

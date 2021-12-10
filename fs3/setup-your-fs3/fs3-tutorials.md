@@ -1,8 +1,4 @@
-# FS3 Tutorials
-
-## FS3 Demo
-
-{% embed url="https://www.youtube.com/watch?t=1s&v=R2aqLLdwk8M" %}
+# FS3 Set up Video
 
 ## FS3 Installation Tutorial in Chinese
 
