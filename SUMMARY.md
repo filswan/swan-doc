@@ -5,6 +5,15 @@
   * [Social Accounts & Communities](contact-us/social-accounts-and-communities.md)
   * [Business Partnerships](contact-us/business-partnerships.md)
 
+## Getting Started
+
+* [Beginner Walkthrough](getting-started/beginner-walkthrough.md)
+* [Authentication](getting-started/authentication/README.md)
+  * [API keys](getting-started/authentication/api-keys.md)
+* [Find Storage Providers](getting-started/find-storage-providers/README.md)
+  * [Storage Provider Details](getting-started/find-storage-providers/storage-provider-details.md)
+* [Calibration Testnet](getting-started/calibration-testnet.md)
+
 ## Filswan Platform
 
 * [Overview](filswan-platform/overview/README.md)
@@ -22,13 +31,6 @@
       * [Registering your storage provider](filswan-platform/core-modules/my-profile/swan-storage-provider/registering-your-storage-provider.md)
   * [Hosted Payment](filswan-platform/core-modules/hosted-payment.md)
   * [Edge Caching Technology](filswan-platform/core-modules/edge-caching-technology.md)
-
-## Getting Started
-
-* [Authentication](getting-started/authentication/README.md)
-  * [API keys](getting-started/authentication/api-keys.md)
-* [Find Storage Providers](getting-started/find-storage-providers/README.md)
-  * [Storage Provider Details](getting-started/find-storage-providers/storage-provider-details.md)
 
 ## Run Swan Provider
 
@@ -76,6 +78,7 @@
 
 ## Development Resource
 
+* [Swan Token Contracts](development-resource/swan-token-contracts.md)
 * [FilSwan API](development-resource/filswan-api.md)
 * [FS3 API](development-resource/fs3-api.md)
 * [FilSwan FAQ](development-resource/filswan-faq.md)
