@@ -4,20 +4,14 @@ description: GuideTutorial
 
 # User Guide
 
-###
-
 ### Requirements <a href="#requirements" id="requirements"></a>
 
 Before you begin this guide, complete the following tasks to make sure you have all of the tools that you need:
 
-* Complete the [Beginner Walkthrough](https://docs.chain.link/docs/beginners-tutorial) to obtain Testnet USDC and set up MetaMask.
-* You can obtain test _MATIC_ from several [faucets](https://docs.chain.link/docs/link-token-contracts/).
+* Complete the [Beginner Walkthrough](../getting-started/beginner-walkthrough/) to obtain Testnet USDC and set up MetaMask.
+* You can obtain test _MATIC_ from several[ faucets.](../development-resource/swan-token-contracts.md)
 
-_This user guide assumes you have already downloaded MetaMask, and  you have MATIC and USDC token in that wallet on the Mumbai Testnet. If you don’t have a wallet, visit our portal_ [_Setup MetaMask_](developer-quickstart/public-testnet/setup-metamask.md) _to download one._
-
-{% hint style="warning" %}
-**Disclaimer:** MATIC is the gas for MCP. You need MATIC to make transactions on Mumbai.
-{% endhint %}
+MCP use both matic and usdc for uploading files to polygon network. We storongly suggest you testing with testnet first.
 
 ## **Instruction**
 

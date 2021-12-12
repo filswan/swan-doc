@@ -7,12 +7,13 @@
 
 ## Getting Started
 
-* [Beginner Walkthrough](getting-started/beginner-walkthrough.md)
+* [Beginner Walkthrough](getting-started/beginner-walkthrough/README.md)
+  * [Public Testnet](getting-started/beginner-walkthrough/public-testnet/README.md)
+    * [Setup MetaMask](getting-started/beginner-walkthrough/public-testnet/setup-metamask.md)
 * [Authentication](getting-started/authentication/README.md)
   * [API keys](getting-started/authentication/api-keys.md)
 * [Find Storage Providers](getting-started/find-storage-providers/README.md)
   * [Storage Provider Details](getting-started/find-storage-providers/storage-provider-details.md)
-* [Calibration Testnet](getting-started/calibration-testnet.md)
 
 ## Filswan Platform
 
@@ -31,6 +32,12 @@
       * [Registering your storage provider](filswan-platform/core-modules/my-profile/swan-storage-provider/registering-your-storage-provider.md)
   * [Hosted Payment](filswan-platform/core-modules/hosted-payment.md)
   * [Edge Caching Technology](filswan-platform/core-modules/edge-caching-technology.md)
+
+## Multi-Chain Payment
+
+* [Overview](multi-chain-payment/overview.md)
+* [Developer Quickstart](multi-chain-payment/developer-quickstart.md)
+* [User Guide](multi-chain-payment/user-guide.md)
 
 ## Run Swan Provider
 
@@ -57,14 +64,6 @@
     * [Create a task](swan-client/create-a-swan-task/create-deal-to-filecoin-network/create-a-task/README.md)
       * [Private Task](swan-client/create-a-swan-task/create-deal-to-filecoin-network/create-a-task/private-task.md)
       * [Public Task](swan-client/create-a-swan-task/create-deal-to-filecoin-network/create-a-task/public-task.md)
-
-## Multi-Chain Payment
-
-* [Overview](multi-chain-payment/overview.md)
-* [Developer Quickstart](multi-chain-payment/developer-quickstart/README.md)
-  * [Public Testnet](multi-chain-payment/developer-quickstart/public-testnet/README.md)
-    * [Setup MetaMask](multi-chain-payment/developer-quickstart/public-testnet/setup-metamask.md)
-* [User Guide](multi-chain-payment/user-guide.md)
 
 ## FS3
 

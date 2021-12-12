@@ -8,7 +8,7 @@ The following documentation describes how to use MCP, which is currently live on
 
 #### How does MCP work? <a href="#how-does-arbitrum-work" id="how-does-arbitrum-work"></a>
 
-If you're looking to discover how MCP works, the best place to begin is by the [User Guide](../user-guide.md) section, which gives a high level overview of MCP's internals. From there, you can jump into more detailed explainers on various components of the system.
+If you're looking to discover how MCP works, the best place to begin is by the [User Guide](user-guide.md) section, which gives a high level overview of MCP's internals. From there, you can jump into more detailed explainers on various components of the system.
 
 #### How Can I Start Building <a href="#how-can-i-start-building" id="how-can-i-start-building"></a>
 
