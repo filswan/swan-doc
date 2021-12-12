@@ -1,6 +1,86 @@
 # Install FS3
 
-## Install From Source
+## Install PostgreSQL Database
+
+#### PostgreSQL
+
+A PostgreSQL database is required to be pre-built for FS3 server usage. Check [PostgreSQL Tutorial](https://www.postgresqltutorial.com) on installation and connection instructions.&#x20;
+
+**Install PostgreSQL on Ubuntu**
+
+First, execute the following command to create the file repository configuration:
+
+```
+sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
+```
+
+Second, import the repository signing key**:**
+
+```
+wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+```
+
+Third, update the package list:
+
+```
+sudo apt-get update
+```
+
+Finally, install the latest version of PostgreSQL:
+
+```
+sudo apt-get install postgresql
+```
+
+**Connect to the PostgreSQL database server via psql**
+
+```
+sudo -i -u postgres
+```
+
+Next, It’ll prompt for the password of the current user. You need to provide the password and hit the `Enter` keyboard.&#x20;
+
+```
+psql
+```
+
+You’ll access the postgres prompt like this:
+
+```
+postgres=#
+```
+
+To quit the PostgreSQL prompt, you run the following command:
+
+```
+postgres=# \q
+```
+
+This above command will bring you back to the postgres Linux command prompt.
+
+```
+postgres@ubuntu-dev:~$
+```
+
+To return to your regular system user, you execute the `exit` command like this:
+
+```
+postgres@ubuntu-dev:~$ exit
+```
+
+**Create PostgreSQL Database**
+
+Create USER and PASSWORD as 'root'
+
+```
+sudo -u postgres psql
+postgres=# create database fs3;                                                //create 'fs3' PostgreSQL database                                    
+postgres=# create user root with encrypted password 'root';                    //create USER and PASSWORD as 'root'
+postgres=# grant all privileges on database fs3 to root;                       //grant privileges
+postgres=# \q                                                                  //logout postgres
+```
+
+## &#x20;Install From Source
 
 ### Checkout source code
 
@@ -34,6 +114,12 @@ git submodule update --init --recursive
 make ffi
 ```
 
+&#x20;**Build up Tables in Postgresql Database**
+
+```
+bash db_setup.sh       
+```
+
 **Set up FS3 configuration**
 
 Set up and customize FS3 configuration by making modifications on `.env` file, which stores your information as environment variables. An example config is given as `.env.example` for reference.
@@ -64,14 +150,32 @@ make
 
 ## Run a Standalone FS3 Server
 
-
+**Run the FS3 Server**
 
 ```
- ./minio server ~/minio-data
+./minio server ~/fs3-data
 ```
 
-The default FS3 volume address `Fs3VolumeAddress` is set as `~/minio-data`, which can be changed in `.env`. If the volume address is changed in the future, build up the FS3 server again to make the changes take effect.
+**Access Key and Secret Key**
 
-The FS3 deployment starts using default root credentials `minioadmin:minioadmin`. You can test the deployment using the FS3 Browser, an embedded web-based object browser built into FS3 Server. Point a web browser running on the host machine to [http://127.0.0.1:9000](http://127.0.0.1:9000) and log in with the root credentials. You can use the Browser to create buckets, upload objects, send deals, retrieve data and browse the contents of the FS3 server.
+The FS3 deployment starts using default root credentials `minioadmin:minioadmin` but you can change it with your own credentials.
 
-You can also connect using any S3-compatible tool, such as the FS3 `mc` commandline tool.
+**Change your Access Key and Secret Key**
+
+```
+export MINIO_ROOT_USER= MY_FS3_ACCESS_KEY
+export MINIO_ROOT_PASSWORD=MY_FS3_SECRET_KEY
+```
+
+If you change the credential, build up FS3 server again to make it take effect. Then re-run the fs3 server.
+
+```
+make
+./minio server ~/fs3-data
+```
+
+## **Open** FS3 Browser
+
+You can test the deployment using the FS3 Browser, an embedded web-based object browser built into FS3 Server. Point a web browser running on the host machine to [http://127.0.0.1:9000](http://127.0.0.1:9000) and log in with the root credentials. You can use the Browser to create buckets, upload objects, send deals, retrieve data and browse the contents of the FS3 server.
+
+You can also connect using any S3-compatible tool, such as the [FS3-mc](https://github.com/filswan/fs3-mc) commandline tool.
