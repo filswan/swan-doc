@@ -34,7 +34,7 @@ Connect your MetaMask wallet, and make sure to select the corresponding network 
 * An estimated storage cost will be calculated according to the file size, the duration you set, and the average provider price.
 * Based on the real-time DeFi exchange rate which got from Sushi Swap, three lock funds plans are provided to our users. The more funds are locked, the sooner your file will be stored on the Filecoin network. Any overpaid funds will be automatically refunded to users after the deal is on chain and contract collects enough DAO signatures.
 
-![](<../.gitbook/assets/image (46).png>)
+![](<../.gitbook/assets/image (46) (1).png>)
 
 After Submitting your request, an uploading window will show up. Uploading time varies depends on the size of your file. Please keep the window open until uploading completes.
 
@@ -50,7 +50,7 @@ Waiting time varies depends on the blockchain congestion.
 
 While the payment is completed, a pop-up window with the transaction link shows up. You can either click the link or check your MetaMask activity to see the transaction at the block explorer.
 
-![](<../.gitbook/assets/image (45).png>)
+![](<../.gitbook/assets/image (45) (1).png>)
 
 {% hint style="info" %}
 **TIPS:** If you changed your mind and wanted to select another plan?
@@ -72,7 +72,7 @@ In this page, you can find all the files you have uploaded. It provides you some
 **GOOD TO KNOW:** In order to improve the efficiency, MCP system is using FilSwan's AutoBid function. A qualified and optimal provider will be automatically assigned to your deal. The storage provider will complete following backup procedure, and synchronize the 'Deal status' to our platform.
 {% endhint %}
 
-![](<../.gitbook/assets/image (34).png>)
+![](<../.gitbook/assets/image (34) (1).png>)
 
 To view more details, simply click on the **file name**. You can find all the related information on this page, including the IPFS download link, the retrieval from Filecoin Network command, and DAO signature information and status. You won't need to bother to check the deal with a blockchain explorer.:smile:
 
