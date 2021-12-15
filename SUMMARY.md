@@ -37,7 +37,7 @@
 
 * [Overview](multi-chain-payment/overview.md)
 * [Developer Quickstart](multi-chain-payment/developer-quickstart.md)
-* [User Guide](multi-chain-payment/user-guide.md)
+* [MCP User Guide](multi-chain-payment/mcp-user-guide.md)
 
 ## Run Swan Provider
 
@@ -76,7 +76,8 @@
 
 ## Development Resource
 
-* [Swan Token Contracts](development-resource/swan-token-contracts.md)
+* [Swan Token Contract](development-resource/swan-token-contract/README.md)
+  * [Acquire Testnet USDC](development-resource/swan-token-contract/acquire-testnet-usdc.md)
 * [FilSwan API](development-resource/filswan-api.md)
 * [FS3 API](development-resource/fs3-api.md)
 * [FilSwan FAQ](development-resource/filswan-faq.md)

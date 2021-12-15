@@ -18,7 +18,7 @@ If you're using Metamask, add a custom RPC network to connect to the Mumbai test
 
 If you'd like to see your transactions in action, please check out [block explorer](https://mumbai.polygonscan.com)!
 
-There you'll be able to see all the transactions being executed in MCP and also see exactly how much Gas each transaction uses.
+At there you'll be able to see all the transactions being executed in MCP and also see exactly how much Gas each transaction uses.
 
 
 
@@ -30,15 +30,15 @@ There you'll be able to see all the transactions being executed in MCP and also 
 
 
 
-### Rinkeby Deployment <a href="#rinkeby-deployment" id="rinkeby-deployment"></a>
+### Mumbai Deployment <a href="#rinkeby-deployment" id="rinkeby-deployment"></a>
 
-All contracts are deployed from&#x20;
+
 
 #### Important Addresses <a href="#important-addresses" id="important-addresses"></a>
 
 * priceFeedOracleAddress = “”;&#x20;
 * swanOracleAddress = “”;&#x20;
-* swanPaymentAddress = “”;&#x20;
-* usdcAddress = “";&#x20;
+* swanPaymentAddress = “0x12EDC75CE16d778Dc450960d5f1a744477ee49a0”;&#x20;
+* usdcAddress = “0xe11A86849d99F524cAC3E7A0Ec1241828e332C62";&#x20;
 * wFilAddress = “”;&#x20;
 * pairAddress = “";

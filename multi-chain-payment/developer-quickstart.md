@@ -10,7 +10,7 @@ The following documentation describes how to use MCP, which is currently live on
 
 ### How does MCP work? <a href="#how-does-arbitrum-work" id="how-does-arbitrum-work"></a>
 
-If you're looking to discover how MCP works, the best place to begin is by the [User Guide](user-guide.md) section, which gives a high level overview of MCP's internals. From there, you can jump into more detailed explainers on various components of the system.
+If you're looking to discover how MCP works, the best place to begin is by the [User Guide](mcp-user-guide.md) section, which gives a high level overview of MCP's internals. From there, you can jump into more detailed explainers on various components of the system.
 
 ### How Can I Start Building <a href="#how-can-i-start-building" id="how-can-i-start-building"></a>
 
@@ -123,7 +123,7 @@ Currently, USDC is supported for payment. Take polygon network as an example to 
 
 
 
-**Want to learn more? Check out the** [**open source code**](https://github.com/filswan/payment-bridge)**. Join the team on** [**Discord**](https://discord.gg/CM3wmATKqt)**.**
+**Want to learn more? Check out the** [**open source code**](https://github.com/filswan/payment-bridge)**. Join the team on** [**Discord**](https://discord.gg/djsVYe4b)**.**
 
 ### &#x20;<a href="#setup-local-geth-and-rollup-blockchain" id="setup-local-geth-and-rollup-blockchain"></a>
 

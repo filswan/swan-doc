@@ -2,16 +2,16 @@
 description: GuideTutorial
 ---
 
-# User Guide
+# MCP User Guide
 
-### Requirements <a href="#requirements" id="requirements"></a>
+## Requirements <a href="#requirements" id="requirements"></a>
 
 Before you begin this guide, complete the following tasks to make sure you have all of the tools that you need:
 
 * Complete the [Beginner Walkthrough](../getting-started/beginner-walkthrough/) to obtain Testnet USDC and set up MetaMask.
-* You can obtain test _MATIC_ from several[ faucets.](../development-resource/swan-token-contracts.md)
+* You can obtain testnet **MATIC** from several[ faucets.](../development-resource/swan-token-contract/)
 
-MCP use both matic and usdc for uploading files to polygon network. We storongly suggest you testing with testnet first.
+MCP use both **MATIC** and **USDC** for uploading files to polygon network. We strongly suggest you testing with testnet first.
 
 ## **Instruction**
 
@@ -34,7 +34,7 @@ Connect your MetaMask wallet, and make sure to select the corresponding network 
 * An estimated storage cost will be calculated according to the file size, the duration you set, and the average provider price.
 * Based on the real-time DeFi exchange rate which got from Sushi Swap, three lock funds plans are provided to our users. The more funds are locked, the sooner your file will be stored on the Filecoin network. Any overpaid funds will be automatically refunded to users after the deal is on chain and contract collects enough DAO signatures.
 
-![](<../.gitbook/assets/image (46) (1).png>)
+![](<../.gitbook/assets/image (46).png>)
 
 After Submitting your request, an uploading window will show up. Uploading time varies depends on the size of your file. Please keep the window open until uploading completes.
 
@@ -50,7 +50,7 @@ Waiting time varies depends on the blockchain congestion.
 
 While the payment is completed, a pop-up window with the transaction link shows up. You can either click the link or check your MetaMask activity to see the transaction at the block explorer.
 
-![](<../.gitbook/assets/image (45) (1).png>)
+![](<../.gitbook/assets/image (45).png>)
 
 {% hint style="info" %}
 **TIPS:** If you changed your mind and wanted to select another plan?

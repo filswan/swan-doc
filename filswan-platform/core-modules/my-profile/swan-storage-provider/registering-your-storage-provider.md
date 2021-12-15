@@ -10,10 +10,10 @@
     _<mark style="color:orange;">Note: the default setting of Accept Offline Deal is OFF. Please switch it to ON if you do accept offline deals. This affects your eligibility to AutoBid.</mark>_
 5.  Then, A **Signature verification** section will show up. Please sign the following message and submit the signature. This ensures authenticity and security for each storage provider owners.&#x20;
 
-    _<mark style="color:blue;">Tips: To get the Signature, you can run</mark> <mark style="color:blue;">`lotus wallet sign {address} {message}`</mark> <mark style="color:blue;">on a lotus node.</mark>_
+    _<mark style="color:blue;">Tips: To get the Signature, you can run</mark> <mark style="color:blue;"></mark><mark style="color:blue;">`lotus wallet sign {address} {message}`</mark> <mark style="color:blue;"></mark><mark style="color:blue;">on a lotus node.</mark>_
 6. Once the Signature is provided, click the blue button says **Submit**. Your storage provider will be successfully registered as a FilSwan storage provider.
 
-![](<../../../../.gitbook/assets/image (28) (1).png>)
+![](<../../../../.gitbook/assets/image (28) (1) (1).png>)
 
 #### To modify your FilSwan storage provider.
 
