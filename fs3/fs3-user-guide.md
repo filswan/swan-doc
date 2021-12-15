@@ -6,6 +6,15 @@ description: >-
 
 # FS3 User Guide
 
+## Requirements
+
+Before you begin this guide, complete the following tasks to make sure you have all of the tools that you need:
+
+* Make sure you meet all the [prerequisites](https://app.gitbook.com/o/-Ma7\_tf6L8A170GHT9fr/s/-MauK7Ig3eWeXC35bZV7/c/9h2HfinXKBQdRYF7ovZb/fs3/setup-your-fs3/prerequisites) before installing
+* Follow the install instructions [here](setup-your-fs3/install-fs3.md) to set up your database and install from sources using Terminal/Command.
+
+## Instruction
+
 ### 1.  Creating a bucket
 
 To get started, you can click the red button with a plus sign on the bottom right corner. It will pop up 2 yellow icons (upload files and create buckets) by clicking the red button. Files can not be uploaded without a bucket. The first thing is to choose the "<mark style="color:blue;">**Create buckets**</mark>" button in yellow, name it and press Enter/Return key to confirm.&#x20;
