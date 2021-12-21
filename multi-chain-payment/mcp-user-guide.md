@@ -8,10 +8,10 @@ description: GuideTutorial
 
 Before you begin this guide, complete the following tasks to make sure you have all of the tools that you need:
 
-* Complete the [Beginner Walkthrough](../getting-started/beginner-walkthrough/) to obtain Testnet USDC and set up MetaMask.
-* You can obtain testnet **MATIC** from several[ faucets.](../development-resource/swan-token-contract/)
+* Complete the [Beginner Walkthrough](../getting-started/beginner-walkthrough/) to set up MetaMask wallet.
+* You can obtain Testnet USDC and MATIC from several[ faucets.](../development-resource/swan-token-contract/)
 
-MCP use both **MATIC** and **USDC** for uploading files to polygon network. We strongly suggest you testing with testnet first.
+MCP use both **MATIC** and **USDC** for uploading files to polygon network. We strongly suggest you testing with Testnet first.
 
 ## **Instruction**
 

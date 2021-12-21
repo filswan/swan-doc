@@ -79,5 +79,6 @@
 * [Swan Token Contract](development-resource/swan-token-contract/README.md)
   * [Acquire Testnet USDC](development-resource/swan-token-contract/acquire-testnet-usdc.md)
 * [FilSwan API](development-resource/filswan-api.md)
+* [MCP API](development-resource/mcp-api.md)
 * [FS3 API](development-resource/fs3-api.md)
 * [FilSwan FAQ](development-resource/filswan-faq.md)
