@@ -22,7 +22,7 @@ Add a custom RPC network to connect to the Mumbai Testnet, configure Mumbai Test
 * Symbol: MATIC
 * Block Explorer URL: [https://mumbai.polygonscan.com/](https://mumbai.polygonscan.com)
 
-&#x20;                                                ![](<../../../.gitbook/assets/image (29) (1) (1).png>)
+![](<../../../.gitbook/assets/image (29).png>)
 
 After the parameters are configured, click 'Save' button below and successfully add Mumbai Testnet.&#x20;
 

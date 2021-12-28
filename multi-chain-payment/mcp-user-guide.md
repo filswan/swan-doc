@@ -72,7 +72,7 @@ In this page, you can find all the files you have uploaded. It provides you some
 **GOOD TO KNOW:** In order to improve the efficiency, MCP system is using FilSwan's AutoBid function. A qualified and optimal provider will be automatically assigned to your deal. The storage provider will complete following backup procedure, and synchronize the 'Deal status' to our platform.
 {% endhint %}
 
-![](<../.gitbook/assets/image (34) (1).png>)
+![](<../.gitbook/assets/image (34) (2).png>)
 
 To view more details, simply click on the **file name**. You can find all the related information on this page, including the IPFS download link, the retrieval from Filecoin Network command, and DAO signature information and status. You won't need to bother to check the deal with a blockchain explorer.:smile:
 
@@ -93,4 +93,4 @@ To view more details, simply click on the **file name**. You can find all the re
 
 Users can view the billing history of all deals in 'Billing history' page. It covers all the information about the order such as the transaction hash, amount, unlock amount, token, data CID, wallet address, etc.
 
-![](<../.gitbook/assets/image (29) (1).png>)
+![](<../.gitbook/assets/image (29) (1) (1).png>)

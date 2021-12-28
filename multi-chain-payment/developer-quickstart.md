@@ -6,7 +6,7 @@ The following documentation describes how to use MCP, which is currently live on
 
 ### System Design
 
-![](<../.gitbook/assets/image (29).png>)
+![](<../.gitbook/assets/image (29) (1).png>)
 
 ### How does MCP work? <a href="#how-does-arbitrum-work" id="how-does-arbitrum-work"></a>
 

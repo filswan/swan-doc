@@ -9,7 +9,7 @@ description: >-
 
 **USDC** token is used to pay node operators for data storage and computing for smart contracts and also for deposits placed by node operators as required by contract creators.
 
-**MATIC** token is used to pay gas fee while locking and unlocking funds to smart contract.
+**MATIC** token is used to pay gas fee while locking and unlocking funds through smart contract.
 
 ## Polygon Mumbai (MATIC) <a href="#polygon-matic" id="polygon-matic"></a>
 
@@ -22,9 +22,7 @@ If you have not set up your MetaMask wallet, please refer to [Beginner Walkthrou
 {% hint style="success" %}
 **Mumbai Faucet**
 
-Testnet **MATIC** is available from the [official MATIC faucet](https://faucet.polygon.technology).
-
-Testnet **USDC** is available from the [Swan USDC faucet](https://calibration-faucet.filswan.com).
+Testnet **USDC** and **MATIC** tokens are available from the [Swan USDC faucet](https://calibration-faucet.filswan.com).
 {% endhint %}
 
 | Parameter              | Value                                      |
@@ -37,4 +35,4 @@ Testnet **USDC** is available from the [Swan USDC faucet](https://calibration-fa
 
 
 
-To find out more information about how to **acquire this Testnet USDC,** please go to [here](acquire-testnet-usdc.md).
+To find out more information about how to **acquire these Testnet tokens,** please go to [here](acquire-testnet-usdc-and-matic-tokens.md).
