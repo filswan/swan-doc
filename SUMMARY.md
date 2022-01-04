@@ -54,6 +54,7 @@
 ## Swan Client
 
 * [Overview](swan-client/overview.md)
+* [Basic Concept](swan-client/basic-concept.md)
 * [Client CLI](swan-client/client-cli.md)
 * [Create A Swan Task](swan-client/create-a-swan-task/README.md)
   * [Install Client CLI](swan-client/create-a-swan-task/install-client-cli.md)
@@ -64,6 +65,7 @@
     * [Create a task](swan-client/create-a-swan-task/create-deal-to-filecoin-network/create-a-task/README.md)
       * [Private Task](swan-client/create-a-swan-task/create-deal-to-filecoin-network/create-a-task/private-task.md)
       * [Public Task](swan-client/create-a-swan-task/create-deal-to-filecoin-network/create-a-task/public-task.md)
+    * [Set Auto-bid Mode](swan-client/create-a-swan-task/create-deal-to-filecoin-network/set-auto-bid-mode.md)
 
 ## FS3
 

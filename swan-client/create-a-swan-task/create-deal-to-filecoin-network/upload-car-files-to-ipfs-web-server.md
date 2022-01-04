@@ -14,5 +14,7 @@ The output will be like:
 
 ```
 INFO:root:Uploading car file [car_file]
-INFO:root:Car file [car_file] uploaded: http://127.0.0.1:8080/ipfs/QmPrQPfGCAHwYXDZDdmLXieoxZP5JtwQuZMUEGuspKFZKQ
+INFO:root:Car file [car_file] uploaded: https://OpenIpfsHost:Port/ipfs/QmPrQPfGCAHwYXDZDdmLXieoxZP5JtwQuZMUEGuspKFZKQ
 ```
+
+\

@@ -2,21 +2,31 @@
 
 
 
-In Filswan, deals are sending via task. A task contains serveral deals, each deal has their own data_id, source file link, etc.
+In Filswan, deals are sending via task. A task contains serveral deals, each deal has their own data\_id, source file link, etc.
 
 **Options 1: Private Task**
 
 A private task is a task you have specific miner you want to send.
 
-in  config.toml: 
+in  config.toml:&#x20;
 
 `public_deal = false`
 
 Send out the deal
 
 ```
-python3 swan_cli.py task --input-dir [car_files_dir] --out-dir [output_files_dir] --miner [miner_id] --dataset [curated_dataset] --description [description]
+python3 swan_cli.py task --input-dir [car_files_dir] --out-dir [output_files_dir] --miner [Storage_provider_id] --dataset [curated_dataset] --description [description]
 ```
+
+**--input-dir (Required)** Input directory where the generated car files and car.csv are located
+
+**--out-dir (optional)** Metadata CSV and Swan task CSV will be generated to the given directory. Default: `output_dir`specified in config.toml
+
+**--miner (Required)** Storage provider Id you want to send private deal to
+
+**--dataset (optional)** The curated dataset from which the Car files are generated
+
+**--description (optional)** Details to better describe the data and confine the task or anything the storage provider needs to be informed.
 
 The output will be like:
 
