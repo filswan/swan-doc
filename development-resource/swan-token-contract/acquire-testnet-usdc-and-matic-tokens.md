@@ -22,7 +22,7 @@ By using the [Swan faucet](https://calibration-faucet.filswan.com), you can get 
 
 * Once the transaction is confirmed on-chain, the window will show 'Request complete', along with the transaction hash of your request.
 
-![](<../../.gitbook/assets/image (42).png>)
+![](<../../.gitbook/assets/image (42) (1).png>)
 
 * Check the balance at your wallet. Or, he balance will be automatically displayed below the `Testnet account address` input field.
 
@@ -51,4 +51,4 @@ By using the [Swan faucet](https://calibration-faucet.filswan.com), you can get 
 
 * MetaMask should now display the new USDC balance.
 
-&#x20;                                           ![](<../../.gitbook/assets/image (35) (1).png>)
+&#x20;                                           ![](<../../.gitbook/assets/image (35) (1) (1).png>)

@@ -49,7 +49,7 @@
   * [Run in autobid mode](run-swan-provider/setup-your-swan-provider/run-in-autobid-mode.md)
   * [Run in manual bid mode](run-swan-provider/setup-your-swan-provider/run-in-manual-bid-mode.md)
   * [Swan Provider Installation Tutorial](run-swan-provider/setup-your-swan-provider/video-tutorial.md)
-* [中文版安装教程Swan Provider](run-swan-provider/zhong-wen-ban-an-zhuang-jiao-cheng-swan-provider.md)
+* [Swan Provider安装教程中文版](run-swan-provider/zhong-wen-ban-an-zhuang-jiao-cheng-swan-provider.md)
 
 ## Swan Client
 
@@ -89,6 +89,7 @@
   * [Install FS3](fs3/setup-your-fs3/install-fs3.md)
   * [FS3 Set up Video](fs3/setup-your-fs3/fs3-tutorials.md)
 * [FS3 User Guide](fs3/fs3-user-guide.md)
+* [FS3手册中文版](fs3/fs3-shou-ce-zhong-wen-ban.md)
 
 ## Development Resource
 
