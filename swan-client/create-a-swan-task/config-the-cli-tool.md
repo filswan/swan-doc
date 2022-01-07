@@ -1,5 +1,7 @@
 # Config the CLI tool
 
+
+
 In config.toml
 
 ```
@@ -63,7 +65,4 @@ ipfs-server is used to upload generated Car files. Miner will download Car files
 * **start\_epoch\_hours:** start\_epoch for deals in hours from current time
 * **expired\_days:** expected completion days for storage provider sealing data
 
-
-
-\
-\
+****

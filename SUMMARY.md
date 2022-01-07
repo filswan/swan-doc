@@ -55,7 +55,6 @@
 
 * [Overview](swan-client/overview.md)
 * [Basic Concept](swan-client/basic-concept.md)
-* [Client CLI](swan-client/client-cli.md)
 * [Create A Swan Task](swan-client/create-a-swan-task/README.md)
   * [Install Client CLI](swan-client/create-a-swan-task/install-client-cli.md)
   * [Config the CLI tool](swan-client/create-a-swan-task/config-the-cli-tool.md)
@@ -65,7 +64,22 @@
     * [Create a task](swan-client/create-a-swan-task/create-deal-to-filecoin-network/create-a-task/README.md)
       * [Private Task](swan-client/create-a-swan-task/create-deal-to-filecoin-network/create-a-task/private-task.md)
       * [Public Task](swan-client/create-a-swan-task/create-deal-to-filecoin-network/create-a-task/public-task.md)
-    * [Set Auto-bid Mode](swan-client/create-a-swan-task/create-deal-to-filecoin-network/set-auto-bid-mode.md)
+      * [Set Auto-bid Mode](swan-client/create-a-swan-task/create-deal-to-filecoin-network/create-a-task/set-auto-bid-mode.md)
+
+***
+
+* [客户端工具概括](ke-hu-duan-gong-ju-gai-kuo.md)
+* [概念须知](gai-nian-xu-zhi.md)
+* [创建任务](chuang-jian-ren-wu/README.md)
+  * [1.命令行安装](chuang-jian-ren-wu/1.-ming-ling-hang-an-zhuang.md)
+  * [2.配置文件](chuang-jian-ren-wu/2.-pei-zhi-wen-jian.md)
+  * [3.在Filecoin 网络创建交易](chuang-jian-ren-wu/3.-zai-filecoin-wang-luo-chuang-jian-jiao-yi/README.md)
+    * [3.1准备发送交易的数据](chuang-jian-ren-wu/3.-zai-filecoin-wang-luo-chuang-jian-jiao-yi/3.1-zhun-bei-fa-song-jiao-yi-de-shu-ju.md)
+    * [3.2上传Car文件到 IPFS/Web 服务器](chuang-jian-ren-wu/3.-zai-filecoin-wang-luo-chuang-jian-jiao-yi/3.2-shang-chuan-car-wen-jian-dao-ipfsweb-fu-wu-qi.md)
+    * [3.3创建任务](chuang-jian-ren-wu/3.-zai-filecoin-wang-luo-chuang-jian-jiao-yi/3.3-chuang-jian-ren-wu/README.md)
+      * [3.3.1私人任务](chuang-jian-ren-wu/3.-zai-filecoin-wang-luo-chuang-jian-jiao-yi/3.3-chuang-jian-ren-wu/3.3.1-si-ren-ren-wu.md)
+      * [3.3.2公开任务](chuang-jian-ren-wu/3.-zai-filecoin-wang-luo-chuang-jian-jiao-yi/3.3-chuang-jian-ren-wu/3.3.2-gong-kai-ren-wu.md)
+      * [3.3.3自动竞价模式](chuang-jian-ren-wu/3.-zai-filecoin-wang-luo-chuang-jian-jiao-yi/3.3-chuang-jian-ren-wu/3.3.3-zi-dong-jing-jia-mo-shi.md)
 
 ## FS3
 

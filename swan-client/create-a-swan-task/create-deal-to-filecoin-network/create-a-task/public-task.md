@@ -1,6 +1,6 @@
 # Public Task
 
-#### **1.** **Generate the public task**
+#### Step **1.** **Generate the public task**
 
 A **public** task is a task you want the miners on Filecoin network bid for it.
 
@@ -38,7 +38,7 @@ uuid,miner_id,deal_cid,payload_cid,file_source_url,md5,start_epoch,piece_cid,fil
 uuid,source_file_name,source_file_path,source_file_md5,source_file_url,source_file_size,car_file_name,car_file_path,car_file_md5,car_file_url,car_file_size,deal_cid,data_cid,piece_cid,miner_id,start_epoch
 ```
 
-#### **2. Propose offline deal to the bid winner**
+#### Step **2. Propose offline deal to the bid winner**
 
 Client needs to use the metadata CSV generated in the previous step for sending the offline deals to the miner.
 

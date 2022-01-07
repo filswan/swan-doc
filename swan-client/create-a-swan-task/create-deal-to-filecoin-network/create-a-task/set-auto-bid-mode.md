@@ -64,6 +64,6 @@ A successful autobid task will go through three major status - **`Created`,`Assi
 
     **car file size:** A correct car file size should be filled in \[car.csv] after car files generation
 
-    **Payload Cid:** Also known as data cid, which should be given in \[car.csv] after car files generation.
+    **payload Cid:** Also known as data cid, which should be given in \[car.csv] after car files generation.
 
-    **Piece Cid:** Piece cid is required for offline deals,which should be given in \[car.csv] after car files generation as well.
+    **piece Cid:** Piece cid is required for offline deals,which should be given in \[car.csv] after car files generation as well.

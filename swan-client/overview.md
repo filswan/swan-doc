@@ -1,6 +1,6 @@
 # Overview
 
-### If you are a client who wants to send deals
+## If you are a client who wants to send deals
 
 Client Tool provides the following functions:
 
@@ -10,4 +10,4 @@ Client Tool provides the following functions:
 * Propose deals based on the metadata CSV file.
 * Generate a final CSV file contains deal CIDs and storage provider id for storage provider to import deals.
 * Create tasks on Swan Platform.
-* Send deal automatically to auto-bid storage providers.
+* Send offline deals automatically to auto-bid storage providers.

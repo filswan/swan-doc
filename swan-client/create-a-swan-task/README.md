@@ -1,10 +1,8 @@
 # Create A Swan Task
 
-## Client Tool Function List
-
-* Encrypt and decrypt file with AES.
-* Generate Car files from downloaded source files with or without Lotus.
-* Generate metadata e.g. Car file URI, start epoch, etc. and save them to a metadata CSV file.
-* Propose deals based on the metadata CSV file.
-* Generate a final CSV file contains deal CIDs and miner id for miner to import deals.
-* Create tasks on Swan Platform.
+1. Install Swan Client Tool Using CLI
+2. Config the CLI Tool
+3. Create Deal to Filecoin Network
+   1. Prepare the Data For Sending Deals
+   2. Upload Car Files to IPFS/Web Server
+   3. Create a Task
