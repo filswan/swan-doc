@@ -76,13 +76,6 @@ You need to modify the config file and input your config params, the configurati
 * **swan\_payment\_address\_on\_polygon:** The contract address of the swan payment gateway, used for lock and unlock user fees on polygon
 * **file\_coin\_wallet:** The wallet address of the user's paying for storage file to the filecoin network
 
-**\[swan\_api]**
-
-swan\_api section defines the token used for connecting with Swan platform.
-
-* **api\_key & access\_token:** Acquire from [Filswan](https://www.filswan.com) -> "My Profile"->"Developer Settings". You can also check the [Guide](https://nebulaai.medium.com/how-to-use-api-key-in-swan-a2ebdb005aa4)
-* **api\_url:** Default: "[https://api.filswan.com](https://api.filswan.com)"
-
 **\[lotus]**
 
 * **api\_url:** Url of lotus client web api, such as: **http://\[ip]:\[port]/rpc/v0**, generally the \[port] is **1234**. See [Lotus API](https://docs.filecoin.io/reference/lotus-api/)
@@ -123,7 +116,7 @@ Currently, USDC is supported for payment. Take polygon network as an example to 
 
 
 
-**Want to learn more? Check out the** [**open source code**](https://github.com/filswan/payment-bridge)**. Join the team on** [**Discord**](https://discord.gg/djsVYe4b)**.**
+**Want to learn more? Check out the** [**open source code**](https://github.com/filswan/payment-bridge) **and** [**API**](../development-resource/mcp-api.md)**. Join the team on** [**Discord**](https://discord.gg/djsVYe4b)**.**
 
 ### &#x20;<a href="#setup-local-geth-and-rollup-blockchain" id="setup-local-geth-and-rollup-blockchain"></a>
 

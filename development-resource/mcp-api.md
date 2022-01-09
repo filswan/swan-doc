@@ -8,7 +8,7 @@ description: >-
 
 ## Config
 
-{% swagger method="get" path="/api/v1/common/system/params" baseUrl="http://<access_url>" summary="Get system config" %}
+{% swagger method="get" path="/api/v1/common/system/params" baseUrl="https://calibration-mcp-api.filswan.com" summary="Get system config" %}
 {% swagger-description %}
 This endpoint allows you to get system config
 {% endswagger-description %}
@@ -33,7 +33,7 @@ This endpoint allows you to get system config
 
 ## Upload file
 
-{% swagger method="get" path="/api/v1/billing/price/filecoin" baseUrl="http://<access_url>" summary="Get USDC/Filecoin exchange rate" %}
+{% swagger method="get" path="/api/v1/billing/price/filecoin" baseUrl="https://calibration-mcp-api.filswan.com" summary="Get USDC/Filecoin exchange rate" %}
 {% swagger-description %}
 This endpoint allows you to get the current exchange rate of USDC against Filecoin.
 {% endswagger-description %}
@@ -49,7 +49,7 @@ This endpoint allows you to get the current exchange rate of USDC against Fileco
 {% endswagger-response %}
 {% endswagger %}
 
-{% swagger method="get" path="/stats/storage" baseUrl="http://<access_url>" summary="Get average Filecoin statistics." %}
+{% swagger method="get" path="/stats/storage" baseUrl="https://calibration-api.filswan.com" summary="Get average Filecoin statistics." %}
 {% swagger-description %}
 This endpoint allows you to get average Filecoin storage price.
 {% endswagger-description %}
@@ -71,7 +71,7 @@ This endpoint allows you to get average Filecoin storage price.
 {% endswagger-response %}
 {% endswagger %}
 
-{% swagger method="post" path="/api/v1/storage/ipfs/upload" baseUrl="http://<access_url>" summary="Upload to IPFS" %}
+{% swagger method="post" path="/api/v1/storage/ipfs/upload" baseUrl="https://calibration-mcp-api.filswan.com" summary="Upload to IPFS" %}
 {% swagger-description %}
 This endpoint allows you to upload your file to IPFS server.
 {% endswagger-description %}
@@ -101,7 +101,7 @@ This endpoint allows you to upload your file to IPFS server.
 
 ## My files
 
-{% swagger method="get" path="/api/v1/storage/tasks/deals" baseUrl="http://<access_url>" summary="Get uploaded file list" %}
+{% swagger method="get" path="/api/v1/storage/tasks/deals" baseUrl="https://calibration-mcp-api.filswan.com" summary="Get uploaded file list" %}
 {% swagger-description %}
 This endpoint allows you to get a list of your uploaded files.
 {% endswagger-description %}
@@ -147,7 +147,7 @@ This endpoint allows you to get a list of your uploaded files.
 {% endswagger-response %}
 {% endswagger %}
 
-{% swagger method="get" path="/api/v1/storage/deal/detail/<deal_id>" baseUrl="http://<access_url>" summary="Get deal details" %}
+{% swagger method="get" path="/api/v1/storage/deal/detail/<deal_id>" baseUrl="https://calibration-mcp-api.filswan.com" summary="Get deal details" %}
 {% swagger-description %}
 This endpoint allows you to get deal details and DAO details.
 {% endswagger-description %}
@@ -157,9 +157,23 @@ This endpoint allows you to get deal details and DAO details.
 {% endswagger-parameter %}
 {% endswagger %}
 
+{% swagger method="get" path="/api/v1/billing/deal/lockpayment/info" baseUrl="https://calibration-mcp-api.filswan.com" summary="Get payment information" %}
+{% swagger-description %}
+This endpoint allows you to get the specific payment information by payload CID.
+{% endswagger-description %}
+
+{% swagger-parameter in="path" name="payload_cid" required="true" %}
+
+{% endswagger-parameter %}
+
+{% swagger-parameter in="path" name="wallet_address" required="true" %}
+
+{% endswagger-parameter %}
+{% endswagger %}
+
 ## Billing history
 
-{% swagger method="get" path="/api/v1/billing" baseUrl="http://<access_url>" summary="Get billing history" %}
+{% swagger method="get" path="/api/v1/billing" baseUrl="https://calibration-mcp-api.filswan.com" summary="Get billing history" %}
 {% swagger-description %}
 This endpoint allows you to get the billing history related to current wallet account.
 {% endswagger-description %}

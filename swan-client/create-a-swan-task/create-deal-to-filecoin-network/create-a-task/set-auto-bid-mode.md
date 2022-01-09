@@ -6,7 +6,7 @@ description: Auto send auto-bid mode tasks with deals to auto-bid mode storage p
 
 The autobid system between swan-client and swan-provider allows you to automatically send deals to a miner selected by Swan platform. All miners with auto-bid mode on have the chance to be selected but only one will be chosen based on Swan reputation system and Market Matcher. You can choose to start this service before or after creating tasks in Step 3. Noted here, only tasks with `bid_mode` set to `1` and `public_deal` set to `true` will be considered. A log file will be generated afterwards.
 
-Start the autobid module:
+Start the autobid module before or after creating autobid mode tasks
 
 ```
 python3 swan_cli_auto.py auto --out-dir [output_file_dir]

@@ -10,15 +10,23 @@ Our solution is building on a DeFi based multi-chain solutions to converting maj
 
 ## Introduction
 
-A smart contract based cross chain payment gateway integrated with oracle technology for Filecoin storage. It enabled you the capability to pay Filecoin storage with stable coin and other tokens.
+Multi-Chain Payment (MCP) is a smart contract based cross chain payment gateway, which is integrated with oracle technology for Filecoin storage. It enabled users the capability to pay Filecoin storage with stable coin and other Mainnet tokens, while maintaining security. Users will also obtain the payment transaction and IPFS information with Filecoin deal ID for future reference.
 
 #### Offering Flexible Payment Options
 
-Multi-Chain Payment Allows Users To Use Other Blockchain Tokens Besides Filecoin As Payment. With This Solution, Users Interested In Storing Data On The Filecoin Network Have Access To Flexible And Trusted Payment Methods.
+MCP allows users to use other blockchain tokens besides Filecoin as a payment solution. With this solution, users who are interested in storing data on the Filecoin network have access to flexible and trusted payment methods.
+
+#### Zero Cost, Free To Use
+
+MCP creates more secure data storage through Filecoin Calibration network with no service fee. The service is free while we continue designing and testing the reporting, proofs, and oracles needed to make the system trustless and open to everyone. During this Beta version, users can acquire Testnet USDC and MATIC tokens from [Swan Faucet](../development-resource/swan-token-contract/acquire-testnet-usdc-and-matic-tokens.md) to use our service for storing data on Filecoin Calibration network.
+
+#### Access by Wallet (MetaMask)
+
+MCP is easy for users to use. There are no accounts or API keys needed to setup and use. Users just need an address on Polygon Mumbai (e.g. using Metamask). Any address can push data to Filecoin via the bridge as long as they have access to the private keys of the identity to sign their requests.&#x20;
 
 #### Seamless Integration, Easy To Implement
 
-Easy To Use With NFT, FS3 And All Kinds Of Ecosystem Projects! ETH, USDC, Matic Or Other Tokens Are Available With Swan Multi-Chain Payment（MCP） And MetaMask.
+Easy to use with NFT, FS3 and all kinds of ecosystem projects! ETH, USDC, MATIC or other tokens will all be available with Swan MCP and MetaMask.
 
 ## Value
 
