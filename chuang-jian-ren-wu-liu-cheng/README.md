@@ -1,4 +1,10 @@
-# 创建任务
+# 创建任务流程
+
+## 代码库地址
+
+[https://github.com/filswan/swan-client](https://github.com/filswan/swan-client)
+
+## Swan客户端工具使用流程：
 
 1. 使用命令行，完成Swan客户端工具前置的安装
 2. 配置文件

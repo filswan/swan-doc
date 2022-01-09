@@ -1,8 +1,8 @@
 # Public Task
 
-#### Step **1.** **Generate the public task**
-
 A **public** task is a task you want the miners on Filecoin network bid for it.
+
+#### Step **1.** **Generate the public task**
 
 in **config.toml**:&#x20;
 

@@ -6,6 +6,10 @@
 python3 swan_cli.py car --input-dir [input_files_dir] --out-dir [car_files_output_dir] 
 ```
 
+{% hint style="warning" %}
+Note: The input dir and out dir shall only be in format of Absolute Path.
+{% endhint %}
+
 The output will be like:
 
 ```
