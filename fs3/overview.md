@@ -2,7 +2,7 @@
 
 ## **What is FS3?** <a href="#9ffa" id="9ffa"></a>
 
-FS3 is dedicated to the storage service for Filecoin network. It is committed to create a simpler and faster storage service for Filecoin network.  Simply put, it is a bridge connecting S3 and FIL.&#x20;
+FS3 is API compatible with Amazon S3 cloud storage service for Filecoin network. It is committed to create a simpler and faster storage service for Filecoin network.  Simply put, it is a bridge connecting S3 and FIL.&#x20;
 
 Similar to S3 object storage tool which is widely used in the industry, FS3 can also handle structured and unstructured data, including log files, artifacts, backups, container images, photos and videos.&#x20;
 
