@@ -31,7 +31,7 @@ Within a bucket, you can upload your files by choosing the "<mark style="color:b
 
 Once your file is uploaded on FS3, you will see three dots on the right side of the file. The operations to the file including "<mark style="color:blue;">**Delete object**</mark>", "<mark style="color:blue;">**Share objec**</mark>t", "<mark style="color:blue;">**Backup to Filecoin**</mark>" and <mark style="color:blue;">**Download object**</mark>".&#x20;
 
-![](<../.gitbook/assets/chrome-capture (1) (1).gif>)
+![](<../.gitbook/assets/chrome-capture (1) (1) (1).gif>)
 
 #### Backup to Filecoin (Online Deals)
 
