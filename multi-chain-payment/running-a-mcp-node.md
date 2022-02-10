@@ -64,6 +64,30 @@ Connectivity to an Ethereum client is also required for communication with the b
 
 Connectivity to an Ethereum client is also required for communication with the Filecoin blockchain. If you decide to run your own Ethereum client, you will want to run that on a separate machine. Hardware requirements of Ethereum clients may change over time. You can also use a 3rd party (defined below).
 
+### Chainlink node
+
+Operating a Chainlink node allows you to be part of the Chainlink Network, helping developers build hybrid smart contracts, giving them access to real-world data and services.
+
+Learn more about Chainlink nodes with our step‑by‑step tutorials and documentation:
+
+**Set Up a Chainlink Node**
+
+Install and Run your own node on a local machine or remote server.
+
+[Learn More ![Right arrow](https://docs.chain.link/images/card-icons/navigation-arrow-right.svg)](https://docs.chain.link/docs/running-a-chainlink-node)![](https://uploads-ssl.webflow.com/5e444500cbc42eeb5198206f/5e7898724c71bd62c149df16\_Example.svg)
+
+**Fulfill Your First Job Request**
+
+Deploy an Oracle contract and make job requests to your node.
+
+[Learn More ![Right arrow](https://docs.chain.link/images/card-icons/navigation-arrow-right.svg)](https://docs.chain.link/docs/fulfilling-requests)![](https://uploads-ssl.webflow.com/5e444500cbc42eeb5198206f/5e7894ddbc6262c7a18da684\_RequestSmall.svg)
+
+**Add External Adapters to Your Node**
+
+Bring high-quality data and premium web APIs to contract developers.
+
+[Learn More ![Right arrow](https://docs.chain.link/images/card-icons/navigation-arrow-right.svg)](https://docs.chain.link/docs/node-operators)
+
 ## Running From Source
 
 To run a MCP node from source, use the [following instructions](https://github.com/smartcontractkit/chainlink#install).
@@ -243,10 +267,6 @@ echo "DATABASE_URL=postgresql://$USERNAME:$PASSWORD@$SERVER:$PORT/$DATABASE" >> 
 ```shell
 echo "DATABASE_URL=postgresql://$USERNAME:$PASSWORD@$SERVER:$PORT/$DATABASE" >> ~/.chainlink/.env
 ```
-
-**Chainlink node**
-
-Operating a Chainlink node allows you to be part of the Chainlink Network, helping developers build hybrid smart contracts, giving them access to real-world data and services.
 
 ####
 
