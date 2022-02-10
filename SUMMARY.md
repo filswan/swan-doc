@@ -38,6 +38,7 @@
 * [Overview](multi-chain-payment/overview.md)
 * [Developer Quickstart](multi-chain-payment/developer-quickstart.md)
 * [MCP User Guide](multi-chain-payment/mcp-user-guide.md)
+* [Running a MCP Node](multi-chain-payment/running-a-mcp-node.md)
 * [Tutorial Video](multi-chain-payment/tutorial-video.md)
 
 ## Run Swan Provider
