@@ -24,7 +24,7 @@ In this section, we'll explain the requirements and basics for running your own 
 
 It's important to note that nodes can fulfill requests for open APIs out-of-the-box using our [Tasks](../docs/tasks/) without needing any additional configuration.
 
-If you would like to provide data from an authenticated API, you can add an [external adapter](../external-adapters/) to enable connectivity through the Chainlink node.
+If you would like to provide data from an authenticated API, you can add an [external adapter](../external-adapters/) to enable connectivity through the MCP node.
 
 ![Chainlink Node Diagr](<../.gitbook/assets/image (43).png>)
 
@@ -36,15 +36,15 @@ Your MCP node should be run on a server that has a public IP address.
 
 #### Minimum
 
-To get started running a Chainlink node, you will need a machine with at least **4 cores** and **4 GB of RAM**.
+To get started running a MCP node, you will need a machine with at least **4 cores** and **4 GB of RAM**.
 
 #### Recommended
 
-The requirements for running a Chainlink node scale as the number of jobs your node services also scales. For nodes with over 100 jobs, you will need at least **4 cores** and **8GB of RAM**.
+The requirements for running a MCP node scale as the number of jobs your node services also scales. For nodes with over 100 jobs, you will need at least **4 cores** and **8GB of RAM**.
 
 ### MySQL Database
 
-In addition to running a Chainlink node, you will also need a PostgreSQL database. Please use a version >= 11, and be sure that your DB host provides access to logs.
+In addition to running a MCP node, you will also need a PostgreSQL database. Please use a version >= 11, and be sure that your DB host provides access to logs.
 
 #### Minimum
 
@@ -52,9 +52,9 @@ The minimum requirements for the database are **2 cores**, **4GB of RAM**, and *
 
 #### Recommended
 
-Similar to the Chainlink node, requirements increase as you service more jobs. For more than 100 jobs, your database server will need at least **4 cores**, **16 GB of RAM**, and **100 GB of storage**.
+Similar to the MCP node, requirements increase as you service more jobs. For more than 100 jobs, your database server will need at least **4 cores**, **16 GB of RAM**, and **100 GB of storage**.
 
-If you run your node on AWS, use an instance type with dedicated core time. [Burstable Performance Instances](https://aws.amazon.com/ec2/instance-types/#Burstable\_Performance\_Instances) have a limited number of [CPU credits](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/burstable-credits-baseline-concepts.html), so you should not use them to run Chainlink nodes that require consistent performance.
+If you run your node on AWS, use an instance type with dedicated core time. [Burstable Performance Instances](https://aws.amazon.com/ec2/instance-types/#Burstable\_Performance\_Instances) have a limited number of [CPU credits](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/burstable-credits-baseline-concepts.html), so you should not use them to run MCP nodes that require consistent performance.
 
 ### Ethereum Client
 
@@ -66,11 +66,11 @@ Connectivity to an Ethereum client is also required for communication with the F
 
 ## Running From Source
 
-To run a Chainlink node from source, use the [following instructions](https://github.com/smartcontractkit/chainlink#install).
+To run a MCP node from source, use the [following instructions](https://github.com/smartcontractkit/chainlink#install).
 
 ## Using Docker
 
-It's recommended to run the Chainlink node with [Docker](https://www.docker.com). This is because we continuously build and deploy the code from our [repository on Github](https://github.com/smartcontractkit/chainlink), which means you don't need a complete development environment to run a node.
+It's recommended to run the MCP node with [Docker](https://www.docker.com). This is because we continuously build and deploy the code from our [repository on Github](https://github.com/smartcontractkit/chainlink), which means you don't need a complete development environment to run a node.
 
 ### Requirements
 
@@ -121,53 +121,53 @@ exit
 
 #### Create a directory
 
-Once you have your Ethereum client running and fully synced, you're ready to run the Chainlink node.
+Once you have your Ethereum client running and fully synced, you're ready to run the MCP node.
 
-Create a local directory to hold the Chainlink data:
+Create a local directory to hold the MCP data:
 
 ```shell
-mkdir ~/.chainlink-rinkeby
+mkdir ~/.MCP-rinkeby
 ```
 
 ```shell
-mkdir ~/.chainlink-kovan
+mkdir ~/.MCP-kovan
 ```
 
 ```shell
-mkdir ~/.chainlink
+mkdir ~/.MCP
 ```
 
-> _**Other Supported Networks:**_ Chainlink is blockchain agnostic technology. The [LINK Token Contracts](../link-token-contracts/) page details networks which support the LINK token. You can setup your node to provide data to any of these blockchains.
+> _**Other Supported Networks:**_ MCP is blockchain agnostic technology. The [LINK Token Contracts](../link-token-contracts/) page details networks which support the LINK token. You can setup your node to provide data to any of these blockchains.
 
 #### Create an Environment File
 
 Run the following as a command to create an environment file and populate with variables specific to the network you're running on. For a full list of available configuration variables, click [here](../configuration-variables/).
 
 ```shell
-echo "ROOT=/chainlink
+echo "ROOT=/MCP
 LOG_LEVEL=debug
 ETH_CHAIN_ID=4
-CHAINLINK_TLS_PORT=0
+MCP_TLS_PORT=0
 SECURE_COOKIES=false
-ALLOW_ORIGINS=*" > ~/.chainlink-rinkeby/.env
+ALLOW_ORIGINS=*" > ~/.MCP-rinkeby/.env
 ```
 
 ```shell
-echo "ROOT=/chainlink
+echo "ROOT=/MCP
 LOG_LEVEL=debug
 ETH_CHAIN_ID=42
-CHAINLINK_TLS_PORT=0
+MCP_TLS_PORT=0
 SECURE_COOKIES=false
-ALLOW_ORIGINS=*" > ~/.chainlink-kovan/.env
+ALLOW_ORIGINS=*" > ~/.MCP-kovan/.env
 ```
 
 ```shell
-echo "ROOT=/chainlink
+echo "ROOT=/MCP
 LOG_LEVEL=debug
 ETH_CHAIN_ID=1
-CHAINLINK_TLS_PORT=0
+MCP_TLS_PORT=0
 SECURE_COOKIES=false
-ALLOW_ORIGINS=*" > ~/.chainlink/.env
+ALLOW_ORIGINS=*" > ~/.MCP/.env
 ```
 
 #### Set your Ethereum Client URL
@@ -178,7 +178,7 @@ ALLOW_ORIGINS=*" > ~/.chainlink/.env
 
 #### Ethereum Client on the Same Machine
 
-Next you need to get the URL for the Ethereum client. The command below will help you obtain the IP address of the container that your Ethereum client is running on. **This will only work if you have started an Ethereum client on the same machine as your Chainlink node.**
+Next you need to get the URL for the Ethereum client. The command below will help you obtain the IP address of the container that your Ethereum client is running on. **This will only work if you have started an Ethereum client on the same machine as your** MCP **node.**
 
 ```shell
 ETH_CONTAINER_IP=$(docker inspect --format '{{ "{{ .NetworkSettings.IPAddress " }}}}' $(docker ps -f name=eth -q))
@@ -187,7 +187,7 @@ ETH_CONTAINER_IP=$(docker inspect --format '{{ "{{ .NetworkSettings.IPAddress " 
 Then run the following command to add the Ethereum client's URL to your environment file. If you are using an external Ethereum client, use the External tab below, and update `$ETH_CONTAINER_IP` to the websocket address used for connectivity.
 
 ```shell
-echo "ETH_URL=ws://$ETH_CONTAINER_IP:8546" >> ~/.chainlink-rinkeby/.env
+echo "ETH_URL=ws://$ETH_CONTAINER_IP:8546" >> ~/.MCP-rinkeby/.env
 ```
 
 ```shell
