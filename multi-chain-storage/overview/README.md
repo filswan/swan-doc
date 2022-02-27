@@ -18,7 +18,7 @@ MCS allows users to use other blockchain tokens besides Filecoin as a payment so
 
 #### Zero Cost, Free To Use
 
-MCS creates more secure data storage through Filecoin Calibration network with no service fee. The service is free while we continue designing and testing the reporting, proofs, and oracles needed to make the system trustless and open to everyone. During this Beta version, users can acquire Testnet USDC and MATIC tokens from [Swan Faucet](../development-resource/swan-token-contract/acquire-testnet-usdc-and-matic-tokens.md) to use our service for storing data on Filecoin Calibration network.
+MCS creates more secure data storage through Filecoin Calibration network with no service fee. The service is free while we continue designing and testing the reporting, proofs, and oracles needed to make the system trustless and open to everyone. During this Beta version, users can acquire Testnet USDC and MATIC tokens from [Swan Faucet](../../development-resource/swan-token-contract/acquire-testnet-usdc-and-matic-tokens.md) to use our service for storing data on Filecoin Calibration network.
 
 #### Access by Wallet (MetaMask)
 

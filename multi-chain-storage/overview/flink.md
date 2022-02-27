@@ -20,5 +20,5 @@ Several blockchain scanner aggregate the data to a unified data provider, the ch
 
 [External adapter](https://docs.chain.link/docs/external-adapters) allow access to high-quality data and enable extreme flexibility to connect smart contracts to premium web APIs. With chainlink external adapter, user can check their deal information on oracle node operator.
 
-![](<../.gitbook/assets/image (40).png>)
+![](<../../.gitbook/assets/image (40).png>)
 
