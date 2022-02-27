@@ -38,6 +38,7 @@
 * [Overview](multi-chain-storage/overview.md)
 * [Developer Quickstart](multi-chain-storage/developer-quickstart.md)
 * [Flink](multi-chain-storage/flink.md)
+* [Filecoin Storage DAO](multi-chain-storage/filecoin-storage-dao.md)
 * [MCS User Guide](multi-chain-storage/mcp-user-guide.md)
 * [Running a MCS Node](multi-chain-storage/running-a-mcp-node.md)
 
