@@ -5,9 +5,7 @@ Make sure you meet our [prerequisites](https://app.gitbook.com/@filswan/s/filswa
 {% endhint %}
 
 {% hint style="info" %}
-For more information, please visit our go-swan-provider [github](https://github.com/filswan/go-swan-provider) page.
+For more information, please visit our g[o-swan-provider github](https://github.com/filswan/go-swan-provider/tree/release-0.2.0) page.
 {% endhint %}
 
-{% embed url="https://youtu.be/GhZySN3r1Ts" %}
-Swan Provider Tool Tutorial on Youtube
-{% endembed %}
+{% embed url="https://www.youtube.com/watch?v=MkwbKtMJ4qw" %}

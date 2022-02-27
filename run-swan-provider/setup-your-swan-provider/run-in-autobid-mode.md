@@ -8,7 +8,7 @@ Autobid is a simplified process for swan provider who can fast join the auction 
 
 ![Task Distribution to multiple Swan Provider](<../../.gitbook/assets/image (25).png>)
 
-edit `~/.swan/provider/config.toml `as follows
+edit `~/.swan/provider/config.toml` as follows
 
 ```
 ...
@@ -18,11 +18,12 @@ bid_mode = 1
 ...
 ```
 
-### Restart the Swan Provider <a href="starting-the-miner" id="starting-the-miner"></a>
+### Restart the Swan Provider <a href="#starting-the-miner" id="starting-the-miner"></a>
 
 You are now ready to stop & restart your swan provider
 
 ```
-./swan-provider
+./swan-provider-0.2.0-unix   #After installation from Option 1
+./build/swan-provider        #After installation from Option 2
 ```
 
