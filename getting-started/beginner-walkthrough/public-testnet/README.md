@@ -2,7 +2,7 @@
 
 ## Public Testnet Guide <a href="#__docusaurus" id="__docusaurus"></a>
 
-In order to make it easy for people to get started using MCP, we've launched our MCP on the Mumbai testnet.
+In order to make it easy for people to get started using Multi-Chain Storage, we've launched our MCS on the Mumbai testnet.
 
 ### Connecting to the chain <a href="#connecting-to-the-chain" id="connecting-to-the-chain"></a>
 
@@ -12,7 +12,7 @@ If you're using Metamask, add a custom RPC network to connect your wallet accoun
 
 If you'd like to see your transactions in action, please check out [block explorer](https://mumbai.polygonscan.com)!
 
-At there you'll be able to see all the transactions being executed in MCP and also see exactly how much Gas each transaction uses.
+At there you'll be able to see all the transactions being executed in MCS and also see exactly how much Gas each transaction uses.
 
 
 

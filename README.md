@@ -8,7 +8,7 @@ description: >-
 
 ## Welcome to Edge Storage and Computing on Web 3.0
 
-![](<.gitbook/assets/image (28) (1) (1) (1) (1).png>)
+![](<.gitbook/assets/image (28) (1) (1) (1) (1) (1).png>)
 
 Filswan has built a specific storage marketplace on Filecoin network. Blockchain-based decentralized storage networks utilize independent storage servers operating all around the world. Filswan let the user pay storage for the quality, which serve as cryptographic Service Level Agreement (SLA) .
 

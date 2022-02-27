@@ -1,16 +1,16 @@
 # Developer Quickstart
 
-Multi-Chain Payment (hereinafter called the 'MCP') is a suite of Ethereum scaling solutions that enables high-throughput, low cost smart contracts while remaining trustworthy secure.&#x20;
+Multi-Chain Storage (hereinafter called the 'MCS') is a suite of Ethereum scaling solutions that enables high-throughput, low cost smart contracts while remaining trustworthy secure.&#x20;
 
-The following documentation describes how to use MCP, which is currently live on Polygon Mumbai Testnet. Whether you're a developer that just wants to start building or you're curious into digging deeper into the internals of MCP and how it works, this site is the right place for you.
+The following documentation describes how to use MCS, which is currently live on Polygon Mumbai Testnet. Whether you're a developer that just wants to start building or you're curious into digging deeper into the internals of MCS and how it works, this site is the right place for you.
 
 ### System Design
 
 ![](<../.gitbook/assets/image (29) (1).png>)
 
-### How does MCP work? <a href="#how-does-arbitrum-work" id="how-does-arbitrum-work"></a>
+### How does MCS work? <a href="#how-does-arbitrum-work" id="how-does-arbitrum-work"></a>
 
-If you're looking to discover how MCP works, the best place to begin is by the [User Guide](mcp-user-guide.md) section, which gives a high level overview of MCP's internals. From there, you can jump into more detailed explainers on various components of the system.
+If you're looking to discover how MCS works, the best place to begin is by the [User Guide](mcp-user-guide.md) section, which gives a high level overview of MCS's internals. From there, you can jump into more detailed explainers on various components of the system.
 
 ### How Can I Start Building <a href="#how-can-i-start-building" id="how-can-i-start-building"></a>
 
@@ -28,7 +28,7 @@ If you're looking to discover how MCP works, the best place to begin is by the [
 1 Clone code to $GOPATH/src
 
 ```
-git clone https://github.com/filswan/multi-chain-payment
+git clone https://github.com/filswan/multi-chain-storage
 ```
 
 2 Pull-in the submodules:

@@ -33,13 +33,13 @@
   * [Hosted Payment](filswan-platform/core-modules/hosted-payment.md)
   * [Edge Caching Technology](filswan-platform/core-modules/edge-caching-technology.md)
 
-## Multi-Chain Payment
+## Multi-Chain Storage
 
-* [Overview](multi-chain-payment/overview.md)
-* [Developer Quickstart](multi-chain-payment/developer-quickstart.md)
-* [MCP User Guide](multi-chain-payment/mcp-user-guide.md)
-* [Running a MCP Node](multi-chain-payment/running-a-mcp-node.md)
-* [Tutorial Video](multi-chain-payment/tutorial-video.md)
+* [Overview](multi-chain-storage/overview.md)
+* [Developer Quickstart](multi-chain-storage/developer-quickstart.md)
+* [Flink](multi-chain-storage/flink.md)
+* [MCS User Guide](multi-chain-storage/mcp-user-guide.md)
+* [Running a MCS Node](multi-chain-storage/running-a-mcp-node.md)
 
 ## Run Swan Provider
 
@@ -100,6 +100,6 @@
 * [Swan Token Contract](development-resource/swan-token-contract/README.md)
   * [Acquire Testnet USDC and MATIC tokens](development-resource/swan-token-contract/acquire-testnet-usdc-and-matic-tokens.md)
 * [FilSwan API](development-resource/filswan-api.md)
-* [MCP API](development-resource/mcp-api.md)
+* [MCS API](development-resource/mcp-api.md)
 * [FS3 API](development-resource/fs3-api.md)
 * [FilSwan FAQ](development-resource/filswan-faq.md)

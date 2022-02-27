@@ -1,10 +1,10 @@
 ---
 description: >-
-  This is a Postman Collection for the Multi-Chain Payment API v1 endpoints. The
+  This is a Postman Collection for the Multi-Chain Storage API v1 endpoints. The
   page below describes different components of our API offering.
 ---
 
-# MCP API
+# MCS API
 
 ## Config
 

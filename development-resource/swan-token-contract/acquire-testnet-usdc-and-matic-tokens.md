@@ -4,7 +4,7 @@ description: This page will show you how to obtain and add testnet USDC to MetaM
 
 # Acquire Testnet USDC and MATIC tokens
 
-If you already have Testnet USDC and MATIC tokens, please skip to [MCP User Guide](../../multi-chain-payment/mcp-user-guide.md) start using our multi-chain payment service.
+If you already have Testnet USDC and MATIC tokens, please skip to [MCP User Guide](../../multi-chain-storage/mcp-user-guide.md) start using our multi-chain payment service.
 
 ## Testnet Swan Faucet <a href="#testnet-link-faucet" id="testnet-link-faucet"></a>
 
@@ -47,7 +47,7 @@ By using the [Swan faucet](https://calibration-faucet.filswan.com), you can get 
 
 * A new window will appear, showing the USDC token details. Click on the `Import Tokens` button.
 
-&#x20;                                           ![](<../../.gitbook/assets/image (28).png>)
+&#x20;                                           ![](<../../.gitbook/assets/image (28) (1).png>)
 
 * MetaMask should now display the new USDC balance.
 

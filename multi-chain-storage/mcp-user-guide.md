@@ -2,7 +2,7 @@
 description: GuideTutorial
 ---
 
-# MCP User Guide
+# MCS User Guide
 
 ## Requirements <a href="#requirements" id="requirements"></a>
 
@@ -11,7 +11,7 @@ Before you begin this guide, complete the following tasks to make sure you have 
 * Complete the [Beginner Walkthrough](../getting-started/beginner-walkthrough/) to set up MetaMask wallet.
 * You can obtain Testnet USDC and MATIC from several[ faucets.](../development-resource/swan-token-contract/)
 
-MCP use both **MATIC** and **USDC** for uploading files to polygon network. We strongly suggest you testing with Testnet first.
+MCS use both **MATIC** and **USDC** for uploading files to polygon network. We strongly suggest you testing with Testnet first.
 
 ## **Instruction**
 
@@ -28,7 +28,7 @@ Click on the **Connect Wallet** button to connect your MetaMask wallet, and make
 * An estimated storage cost will be calculated according to the file size, the duration you set, and the average provider price.
 * Based on the real-time DeFi exchange rate which got from Sushi Swap, three lock funds plans are provided to our users. The more funds are locked, the sooner your file will be stored on the Filecoin network. Any overpaid funds will be automatically refunded to users after the deal is on chain and contract collects enough DAO signatures.
 
-![](<../.gitbook/assets/image (40).png>)
+![](<../.gitbook/assets/image (40) (1).png>)
 
 After Submitting your request, an uploading window will show up. Uploading time varies depends on the size of your file. Please keep the window open until uploading completes.
 
@@ -63,7 +63,7 @@ On this page, you can find all the files you have uploaded. It provides you some
 {% endhint %}
 
 {% hint style="success" %}
-**GOOD TO KNOW:** In order to improve the efficiency, MCP system is using FilSwan's AutoBid function. A qualified and optimal provider will be automatically assigned to your deal. The storage provider will complete following backup procedure, and synchronize the 'Deal status' to our platform.
+**GOOD TO KNOW:** In order to improve the efficiency, MCS system is using FilSwan's AutoBid function. A qualified and optimal provider will be automatically assigned to your deal. The storage provider will complete following backup procedure, and synchronize the 'Deal status' to our platform.
 {% endhint %}
 
 ![](<../.gitbook/assets/image (34) (2).png>)
@@ -89,7 +89,7 @@ To view more details, simply click on the **file name**. You can find all the re
 
 ### 5. NFT
 
-Within MCP, you will be able to use the files you uploaded to mint NFTs if you like. The only requirement is that you have locked fund for the file to the smart contract.
+Within MCS, you will be able to use the files you uploaded to mint NFTs if you like. The only requirement is that you have locked fund for the file to the smart contract.
 
 To mint a NFT. You just need to click on the **MINT** button of the corresponding file. A windows will pop up with some pre-generated info, such as IPFS url, file size and lock fund transaction hash. The default NFT name will be the same as the file name, but you can always customize it, and fill in the description at will.
 

@@ -13,7 +13,7 @@
     _<mark style="color:blue;">Tips: To get the Signature, you can run</mark> <mark style="color:blue;"></mark><mark style="color:blue;">`lotus wallet sign {address} {message}`</mark> <mark style="color:blue;"></mark><mark style="color:blue;">on a lotus node.</mark>_
 6. Once the Signature is provided, click the blue button says **Submit**. Your storage provider will be successfully registered as a FilSwan storage provider.
 
-![](<../../../../.gitbook/assets/image (28) (1) (1).png>)
+![](<../../../../.gitbook/assets/image (28) (1) (1) (1).png>)
 
 #### To modify your FilSwan storage provider.
 
