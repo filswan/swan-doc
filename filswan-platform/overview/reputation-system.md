@@ -32,7 +32,7 @@ The Reachability score is calculated with the following mathematical formula:
 Time-based Reachability Score = 30 \* (0.7 \* Online Reachability Total Success Rate + 0.3 \* Online Reachability Top10 Success rate)
 {% endhint %}
 
-![](https://www.filswan.com/static/img/Methodology.3b35506.png)
+![](<../../.gitbook/assets/image (33).png>)
 
 ### **2. Regional Weighted Adjust Power:** <a href="#reputationsystemdesign-2.regionalweightedadjustpower" id="reputationsystemdesign-2.regionalweightedadjustpower"></a>
 
@@ -64,38 +64,34 @@ The Reachability score is calculated with the following mathematical formula:
 _Committed Sectors Proof Score = 10\* Normalized Log Weighted Adjusted Power_
 {% endhint %}
 
-### **3. General Deals and Verified-Miner Deals:** <a href="#reputationsystemdesign-3.generaldealsandverified-minerdeals" id="reputationsystemdesign-3.generaldealsandverified-minerdeals"></a>
+### 3.General Deals and Verified-Storage Provider Deals:
 
-The 3rd component of the score reflects the proportion in which the miner has successfully run the storage deals. Making storage deals is the core of a miner and thus this component has the biggest weight in the score.&#x20;
+The 3rd component of the score reflects the proportion in which the Web3 Storage Provider (W3SP) has successfully run the storage deals. Making storage deals is the core of a Web3 Storage Provider (W3SP) and thus this component has the biggest weight in the score. The deals considered here involve both internal deals (swan deals) and external deals (general deals). The Web3 Storage Provider (W3SP) active rate accounts for the key parameter, defined as the ratio of number of active deals divided by the number of total deals. The active rate for external deals is set to 1 for now and will be updated later on.
 
-A verified miner is a miner who signed with their miner’s signature and email address, they usually also update their contact information in Swan or other platforms.
+A verified Web3 Storage Provider (W3SP) is a Web3 Storage Provider (W3SP) who signed with their Web3 Storage Provider (W3SP)’s signature and email address, they usually also update their contact information in Swan or other platforms.
 
-The deals considered here involve both verified-miner deals and external deals (general deals). The miner active rate accounts for the key parameter, defined as the ratio of number of active deals divided by the number of total deals. The active rate for external deals is set to 1 for now and will be updated later on.
+The deals considered here involve both verified-Storage Provider deals and external deals (general deals). The Web3 Storage Provider (W3SP) active rate accounts for the key parameter, defined as the ratio of number of active deals divided by the number of total deals. The active rate for external deals is set to 1 for now and will be updated later on.
 
-The verified-miner active rate is calculated with the following mathematical formula:
+The verified-Storage Provider active rate is calculated with the following mathematical formula:
 
-&#x20;  _Verified-miner Active Deal Rate = number of active deals / numbers of total deals_
+Verified-Storage Provider Active Deal Rate = number of active deals / numbers of total deals After Web3 Storage Providers (W3SP) are ranked by the calculated verified Web3 Storage Provider (W3SP) active rate in increasing order with method set to "max". In other words, the records that have the same values are ranked using the highest rank (e.g.: If ‘Tom’ and ‘Jerry' are tied in the 2nd and 3rd position with the same value, rank 3 is assigned to them both).
 
-After miners are ranked by the calculated verified miner active rate in increasing order with method set to "max". In other words, the records that have the same values are ranked using the highest rank (e.g.: If ‘Tom’ and ‘Jerry' are tied in the 2nd and 3rd position with the same value, rank 3 is assigned to them both).&#x20;
+![](https://console.filswan.com/static/img/Methodology3.905c15e.png)
 
-![](https://www.filswan.com/static/img/Methodology3.905c15e.png)
+This max ranking method guarantees a base score for each Web3 Storage Provider (W3SP) and leverages more to the Web3 Storage Providers (W3SP) having larger number of verified-Storage Provider active deals. The verified-Storage Provider active rate rank is then normalized by the division of the number of Web3 Storage Providers (W3SP).
 
-This max ranking method guarantees a base score for each storage provider and leverages more to the storage providers having larger number of verified-storage provider active deals. The verified-storage provider active rate rank is then normalized by the division of the number of storage providers.
+The normalized verified-Storage Provider active rate rank is calculated with the following mathematical formula:
 
-The normalized verified-storage provider active rate rank is calculated with the following mathematical formula:
+Normalized verified-Storage Provider Active Deal Rate Rank = norm \[Rank\_Max (Verified-Storage Provider Active Rate)]
 
-Normalized Verified-Storage Provider Active Deal Rate Rank = norm \[Rank\_Max (Verified-Storage Provider Active Rate)]
-
-The balanced verified-storage provider active rate is then weighted by another parameter, sector faculty rate. Deals fall into faults for some reason will lose weight and storage providers that have less faults are assigned more weight. In this scenario, sector faulty rate is calculated as the ratio of number of faults divided by the number of total live deals.
+The normalized verified-Storage Provider active rate is then weighted by another parameter, sector faculty rate. Deals fall into faults for some reason will lose weight and Web3 Storage Providers (W3SP) that have less faults are assigned more weight. In this scenario, sector faulty rate is calculated as the ratio of number of faults divided by the number of total live deals.
 
 The sector faulty rate is calculated with the following mathematical formula:
 
 Sector Faulty Rate = number of fault deals / number of live deals
 
-Thus, the deals score is the weighted sum of verified-storage provider deals and external deals with faulty rate considered.
+Thus, the deals score is the weighted sum of verified-Storage Provider deals and external deals with faulty rate considered.
 
-The General deals and verified-storage provider deals score is calculated with the following mathematical formula:
+The General deals and verified-Storage Provider deals score is calculated with the following mathematical formula:
 
-{% hint style="info" %}
-General Deals and Verified-Storage Provider Deals Score = 60 \* \[0.3 \* 1 + 0.7 \* (1 - Sector Faulty Rate) \* (Normalized Verified-Storage Provider Active Rank)]
-{% endhint %}
+General Deals and verified-Storage Provider Deals Score = 60 \* \[0.3 \* 1 + 0.7 \* (1 - Sector Faulty Rate) \* (Normalized verified-Storage Provider Active Rank)]
