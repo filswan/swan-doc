@@ -38,8 +38,9 @@
 * [Overview](multi-chain-storage/overview/README.md)
   * [Flink](multi-chain-storage/overview/flink.md)
   * [Filecoin Storage DAO](multi-chain-storage/overview/filecoin-storage-dao.md)
-* [Developer Quickstart](multi-chain-storage/developer-quickstart.md)
+* [App Developer](multi-chain-storage/app-developer.md)
 * [MCS User Guide](multi-chain-storage/mcp-user-guide.md)
+* [Developer Quickstart](multi-chain-storage/developer-quickstart.md)
 * [Running a MCS Node](multi-chain-storage/running-a-mcp-node.md)
 
 ## Run Swan Provider
