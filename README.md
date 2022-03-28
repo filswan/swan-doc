@@ -1,7 +1,8 @@
 ---
 description: >-
   FilSwan provides a layer2 cross chain solution for web3 projects, it
-  integrates data, computing and payment into one suite.
+  integrates data, computing and payment into one suite. Web3 user can use one
+  token payment for all the web3 services.
 ---
 
 # FilSwan Overview
@@ -10,7 +11,7 @@ description: >-
 
 ![](<.gitbook/assets/image (28) (1) (1) (1) (1) (1).png>)
 
-Filswan has built a specific storage marketplace on Filecoin network. Blockchain-based decentralized storage networks utilize independent storage servers operating all around the world. Filswan let the user pay storage for the quality, which serve as cryptographic Service Level Agreement (SLA) .
+FilSwan provides a decentralized edge infrastructure marketplace and software that moves data processing and analysis as close as possible to Web 3.0. Filswan let the user pay storage for the quality, which serve as cryptographic Service Level Agreement (SLA) .
 
 With Filswan, our clients have the right to choose the service provide globally with different service characteristics, you only pay for what you want.
 
