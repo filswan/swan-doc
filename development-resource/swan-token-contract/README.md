@@ -1,10 +1,3 @@
----
-description: >-
-  USDC token is used to pay node operators for data storage and computing for
-  smart contracts and also for deposits placed by node operators as required by
-  contract creators.
----
-
 # Swan Token Contract
 
 **USDC** token is used to pay node operators for data storage and computing for smart contracts and also for deposits placed by node operators as required by contract creators.

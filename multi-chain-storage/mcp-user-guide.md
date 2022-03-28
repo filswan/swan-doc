@@ -1,7 +1,3 @@
----
-description: GuideTutorial
----
-
 # MCS User Guide
 
 ## Requirements <a href="#requirements" id="requirements"></a>
