@@ -41,6 +41,7 @@
 * [App Developer](multi-chain-storage/app-developer/README.md)
   * [File Upload](multi-chain-storage/app-developer/file-upload.md)
   * [Mint as an NFT](multi-chain-storage/app-developer/mint-as-an-nft.md)
+  * [js sdk](multi-chain-storage/app-developer/js-sdk.md)
 * [MCS User Guide](multi-chain-storage/mcp-user-guide.md)
 * [Developer Quickstart](multi-chain-storage/developer-quickstart.md)
 * [Running a MCS Node](multi-chain-storage/running-a-mcp-node.md)
