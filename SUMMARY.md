@@ -47,17 +47,17 @@
 * [Developer Quickstart](multi-chain-storage/developer-quickstart.md)
 * [Running a MCS Node](multi-chain-storage/running-a-mcp-node.md)
 
-## Run Swan Provider
+## Swan Provider
 
-* [Overview](run-swan-provider/overview.md)
-* [Prerequisites](run-swan-provider/prerequisites/README.md)
-  * [Requirements](run-swan-provider/prerequisites/hardware-requirements.md)
-  * [Install Swan Provider](run-swan-provider/prerequisites/install-swan-provider.md)
-* [Setup Your Swan Provider](run-swan-provider/setup-your-swan-provider/README.md)
-  * [Run in autobid mode](run-swan-provider/setup-your-swan-provider/run-in-autobid-mode.md)
-  * [Run in manual bid mode](run-swan-provider/setup-your-swan-provider/run-in-manual-bid-mode.md)
-  * [Swan Provider Installation Tutorial](run-swan-provider/setup-your-swan-provider/video-tutorial.md)
-* [Swan Provider安装教程中文版](run-swan-provider/zhong-wen-ban-an-zhuang-jiao-cheng-swan-provider.md)
+* [Overview](swan-provider/overview.md)
+* [Prerequisites](swan-provider/prerequisites/README.md)
+  * [Requirements](swan-provider/prerequisites/hardware-requirements.md)
+  * [Install Swan Provider](swan-provider/prerequisites/install-swan-provider.md)
+* [Setup Your Swan Provider](swan-provider/setup-your-swan-provider/README.md)
+  * [Run in autobid mode](swan-provider/setup-your-swan-provider/run-in-autobid-mode.md)
+  * [Run in manual bid mode](swan-provider/setup-your-swan-provider/run-in-manual-bid-mode.md)
+  * [Swan Provider Installation Tutorial](swan-provider/setup-your-swan-provider/video-tutorial.md)
+* [Swan Provider安装教程中文版](swan-provider/zhong-wen-ban-an-zhuang-jiao-cheng-swan-provider.md)
 
 ## Swan Client
 
