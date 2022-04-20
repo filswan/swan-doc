@@ -1,3 +1,3 @@
-# Swan Client Installation Tutorial
+# Swan Client Tutorial Video
 
-{% embed url="https://youtu.be/moqJ9rKnrlI" %}
+{% embed url="https://www.youtube.com/watch?v=G-7N_VNp_MI" %}

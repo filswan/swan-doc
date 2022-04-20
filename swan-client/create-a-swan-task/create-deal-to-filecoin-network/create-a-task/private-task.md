@@ -1,44 +1,46 @@
 # Private Task
 
-**A private task is a task you have specific miner you want to send.**
+### Option1️⃣ Private Task
 
-in  config.toml:&#x20;
-
-`public_deal = false`
-
-Send out the deal
+* **Conditions:** `[sender].public_deal=false`, see [Configuration](https://github.com/filswan/go-swan-client/tree/release-v0.1.0-rc1#Configuration)
 
 ```
-python3 swan_cli.py task --input-dir [car_files_dir] --out-dir [output_files_dir] --miner [Storage_provider_id] --dataset [curated_dataset] --description [description]
+./swan-client task -input-dir [car_files_dir] -out-dir [output_files_dir] -miner [Storage_provider_id] -dataset [curated_dataset] -description [description]
 ```
 
-**--input-dir (Required)** Input directory where the generated car files and car.csv are located
+**Command parameters used in this step:**
 
-**--out-dir (optional)** Metadata CSV and Swan task CSV will be generated to the given directory. Default: `output_dir`specified in config.toml
+* \-input-dir(Required): Input directory where the generated car files and metadata files reside in.
+* \-out-dir(optional): Metadata files and swan task files will be generated to this directory. When omitted, use the default `[send].output_dir`, see [Configuration](https://github.com/filswan/go-swan-client/tree/release-v0.1.0-rc1#Configuration)
+* \-miner(Required): Storage provider Id you want to send a deal to, e.g f01276
+* \-dataset(optional): The curated dataset from which the car files are generated
+* \-description(optional): Details to better describe the data and confine the task or anything the storage provider needs to be informed.
 
-**--miner (Required)** Storage provider Id you want to send private deal to
+**Configurations used in this step:**
 
-**--dataset (optional)** The curated dataset from which the Car files are generated
+* \[sender].public\_deal, see [Configuration](https://github.com/filswan/go-swan-client/tree/release-v0.1.0-rc1#Configuration)
+* \[sender].bid\_mode, see [Configuration](https://github.com/filswan/go-swan-client/tree/release-v0.1.0-rc1#Configuration)
+* \[sender].verified\_deal, see [Configuration](https://github.com/filswan/go-swan-client/tree/release-v0.1.0-rc1#Configuration)
+* \[sender].offline\_mode, see [Configuration](https://github.com/filswan/go-swan-client/tree/release-v0.1.0-rc1#Configuration)
+* \[sender].fast\_retrieval, see [Configuration](https://github.com/filswan/go-swan-client/tree/release-v0.1.0-rc1#Configuration)
+* \[sender].max\_price, see [Configuration](https://github.com/filswan/go-swan-client/tree/release-v0.1.0-rc1#Configuration)
+* \[sender].start\_epoch\_hours, see [Configuration](https://github.com/filswan/go-swan-client/tree/release-v0.1.0-rc1#Configuration)
+* \[sender].expire\_days, see [Configuration](https://github.com/filswan/go-swan-client/tree/release-v0.1.0-rc1#Configuration)
+* \[sender].generate\_md5, when it is true and there is no md5 in car.json, then generate md5 for source files and car files, see [Configuration](https://github.com/filswan/go-swan-client/tree/release-v0.1.0-rc1#Configuration)
+* \[sender].wallet, see [Configuration](https://github.com/filswan/go-swan-client/tree/release-v0.1.0-rc1#Configuration)
+* \[sender].skip\_confirmation, see [Configuration](https://github.com/filswan/go-swan-client/tree/release-v0.1.0-rc1#Configuration)
+* \[sender].duration, see [Configuration](https://github.com/filswan/go-swan-client/tree/release-v0.1.0-rc1#Configuration)
+* \[sender].output\_dir, only used when -out-dir is omitted in command, see [Configuration](https://github.com/filswan/go-swan-client/tree/release-v0.1.0-rc1#Configuration)
+* \[main].storage\_server\_type, see [Configuration](https://github.com/filswan/go-swan-client/tree/release-v0.1.0-rc1#Configuration)
+* \[main].api\_url, see [Configuration](https://github.com/filswan/go-swan-client/tree/release-v0.1.0-rc1#Configuration)
+* \[main].api\_key, see [Configuration](https://github.com/filswan/go-swan-client/tree/release-v0.1.0-rc1#Configuration)
+* \[main].access\_token, see [Configuration](https://github.com/filswan/go-swan-client/tree/release-v0.1.0-rc1#Configuration)
+* \[web\_server].download\_url\_prefix, used only when `[main].storage_server_type="web server"`, see [Configuration](https://github.com/filswan/go-swan-client/tree/release-v0.1.0-rc1#Configuration)
+* \[lotus].client\_api\_url, see [Configuration](https://github.com/filswan/go-swan-client/tree/release-v0.1.0-rc1#Configuration)
+* \[lotus].client\_access\_token, see [Configuration](https://github.com/filswan/go-swan-client/tree/release-v0.1.0-rc1#Configuration)
 
-**--description (optional)** Details to better describe the data and confine the task or anything the storage provider needs to be informed.
+**Files generated after this step:**
 
-The output will be like:
-
-```
-INFO:root:Swan Client Settings: Public Task: False  Verified Deals: True  Connected to Swan: True CSV/car File output dir: /tmp/tasks/[output_files_dir]
-INFO:root:['lotus', 'client', 'deal', '--from', 't3u4othyfcqjiiveolvdczcww3rypxgonz7mnqfvbtf2paklpru5f6csoajdfz5nznqy2kpr4eielsmksyurnq', '--start-epoch', '547212', '--manual-piece-cid', 'baga6ea4seaqcqjelghbfwy2r6fxsffzfv6gs2gyvc75crxxltiscpajfzk6csii', '--manual-piece-size', '66584576', 'bafykbzaceb6dtpjjisy5pzwksrxwfothlmfjtmcjj7itsvw2flpp5co5ikxam', 't01101', '0.000000000000000000', '1051200']
-INFO:root:wallet: t3u4othyfcqjiiveolvdczcww3rypxgonz7mnqfvbtf2paklpru5f6csoajdfz5nznqy2kpr4eielsmksyurnq
-INFO:root:miner: t01101
-INFO:root:price: 0
-INFO:root:total cost: 0.000000000000000000
-INFO:root:start epoch: 547212
-Press Enter to continue...
-INFO:root:Deal sent, deal cid: bafyreibnmon4sby7ibwiezcjgjge7mshl3h24vftzkab5fqm4ll2voarna, start epoch: 547212
-INFO:root:Swan deal final CSV Generated: /tmp/tasks/[output_files_dir]/swan-client-demo-deals.csv
-INFO:root:Refreshing token
-INFO:root:Working in Online Mode. A swan task will be created on the filwan.com after process done. 
-INFO:root:Metadata CSV Generated: /tmp/tasks/[output_files_dir]/swan-client-demo-metadata.csv
-INFO:root:Swan task CSV Generated: /tmp/tasks/[output_files_dir]/swan-client-demo.csv
-INFO:root:Creating new Swan task: swan-client-demo
-INFO:root:New Swan task Generated.
-```
+* \[task-name].csv: A CSV generated for posting a task and its offline deals on Swan platform or transferring to storage providers directly for offline import
+* \[task-name]-metadata.csv: Contains more contents used for review. Uuid will be updated based upon car.csv generated in last step.
+* \[task-name]-metadata.json: This contains more content for creating a proposal in the next step. Uuid will be updated based on car.json generated in the last step. See [Offline Deal](https://github.com/filswan/go-swan-client/tree/release-v0.1.0-rc1#Offline-Deal)

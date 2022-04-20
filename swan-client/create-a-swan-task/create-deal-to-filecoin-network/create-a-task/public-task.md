@@ -1,73 +1,41 @@
-# Public Task
+# Public and Auto-Bid Task
 
-A **public** task is a task you want the miners on Filecoin network bid for it.
+### Option2️⃣ Public and Auto-Bid Task
 
-#### Step **1.** **Generate the public task**
-
-in **config.toml**:&#x20;
-
-`public_deal = true`
-
-**Publish the public task**
+* **Conditions:** `[sender].public_deal=true` and `[sender].bid_mode=1`, see [Configuration](https://github.com/filswan/go-swan-client/tree/release-v0.1.0-rc1#Configuration)
 
 ```
-python3 swan_cli.py task --input-dir [car_files_dir] --out-dir [output_files_dir] --name [task_name] --dataset [curated_dataset] --description [description]
+./swan-client task -input-dir [car_files_dir] -out-dir [output_files_dir] -dataset [curated_dataset] -description [description]
 ```
 
-**--input-dir (Required)** Input directory where the generated car files and car.csv are located
+**Command parameters used in this step:**
 
-**--out-dir (optional)** Metadata CSV and Swan task CSV will be generated to the given directory. Default: `output_dir`specified in config.toml
+* \-input-dir(Required): Input directory where the generated car files and metadata files reside in.
+* \-out-dir(optional): Metadata files and swan task files will be generated to this directory. When omitted, use the default `[send].output_dir`, see [Configuration](https://github.com/filswan/go-swan-client/tree/release-v0.1.0-rc1#Configuration)
+* \-dataset(optional): The curated dataset from which the car files are generated
+* \-description(optional): Details to better describe the data and confine the task or anything the storage provider needs to be informed.
 
-**--name (optional)** Given task name while creating task on Swan platform. Default: swan-task-uuid
+**Configurations used in this step:**
 
-**--dataset (optional)** The curated dataset from which the Car files are generated
+* \[sender].public\_deal, see [Configuration](https://github.com/filswan/go-swan-client/tree/release-v0.1.0-rc1#Configuration)
+* \[sender].bid\_mode, see [Configuration](https://github.com/filswan/go-swan-client/tree/release-v0.1.0-rc1#Configuration)
+* \[sender].verified\_deal, see [Configuration](https://github.com/filswan/go-swan-client/tree/release-v0.1.0-rc1#Configuration)
+* \[sender].offline\_mode, see [Configuration](https://github.com/filswan/go-swan-client/tree/release-v0.1.0-rc1#Configuration)
+* \[sender].fast\_retrieval, see [Configuration](https://github.com/filswan/go-swan-client/tree/release-v0.1.0-rc1#Configuration)
+* \[sender].max\_price, see [Configuration](https://github.com/filswan/go-swan-client/tree/release-v0.1.0-rc1#Configuration)
+* \[sender].start\_epoch\_hours, see [Configuration](https://github.com/filswan/go-swan-client/tree/release-v0.1.0-rc1#Configuration)
+* \[sender].expire\_days, see [Configuration](https://github.com/filswan/go-swan-client/tree/release-v0.1.0-rc1#Configuration)
+* \[sender].generate\_md5, when it is true and there is no md5 in car.json, then generate md5 for source files and car files, see [Configuration](https://github.com/filswan/go-swan-client/tree/release-v0.1.0-rc1#Configuration)
+* \[sender].duration, see [Configuration](https://github.com/filswan/go-swan-client/tree/release-v0.1.0-rc1#Configuration)
+* \[sender].output\_dir, only used when -out-dir is omitted in command, see [Configuration](https://github.com/filswan/go-swan-client/tree/release-v0.1.0-rc1#Configuration)
+* \[main].storage\_server\_type, see [Configuration](https://github.com/filswan/go-swan-client/tree/release-v0.1.0-rc1#Configuration)
+* \[main].api\_url, see [Configuration](https://github.com/filswan/go-swan-client/tree/release-v0.1.0-rc1#Configuration)
+* \[main].api\_key, see [Configuration](https://github.com/filswan/go-swan-client/tree/release-v0.1.0-rc1#Configuration)
+* \[main].access\_token, see [Configuration](https://github.com/filswan/go-swan-client/tree/release-v0.1.0-rc1#Configuration)
+* \[web\_server].download\_url\_prefix, used only when `[main].storage_server_type="web server"`, see [Configuration](https://github.com/filswan/go-swan-client/tree/release-v0.1.0-rc1#Configuration)
 
-**--description (optional)** Details to better describe the data and confine the task or anything the storage provider needs to be informed
+**Files generated after this step:**
 
-Two CSV files are generated after successfully running the command: task-name.csv, task-name-metadata.csv.
-
-\[task-name.csv] is a CSV generated for posting a task on Swan platform or transferring to storage providers directly for offline import
-
-```
-uuid,miner_id,deal_cid,payload_cid,file_source_url,md5,start_epoch,piece_cid,file_size
-```
-
-\[task-name-metadata.csv] contains more content for creating proposal in the next step
-
-```
-uuid,source_file_name,source_file_path,source_file_md5,source_file_url,source_file_size,car_file_name,car_file_path,car_file_md5,car_file_url,car_file_size,deal_cid,data_cid,piece_cid,miner_id,start_epoch
-```
-
-#### Step **2. Propose offline deal to the bid winner**
-
-Client needs to use the metadata CSV generated in the previous step for sending the offline deals to the miner.
-
-```
-python3 swan_cli.py deal --csv [metadata_csv_dir/task-name-metadata.csv] --out-dir [output_files_dir] --miner [storage_provider_id]
-```
-
-**--csv (Required):** File path to the metadata CSV file. Mandatory metadata CSV fields: source\_file\_size, car\_file\_url, data\_cid, piece\_cid
-
-**--out-dir (optional):** Swan deal final CSV will be generated to the given directory. Default: output\_dir specified in config.toml
-
-**--miner (Required):** Target storage provider id, e.g f01276
-
-A csv with name \[task-name]-metadata-deals.csv is generated under the output directory, it contains the deal cid and storage provider id for the provider to process on Swan platform. You could re-upload this file to Swan platform while assign bid to storage provider or do a private deal.
-
-The output will be like:
-
-```
-INFO:root:['lotus', 'client', 'deal', '--from', 'f3ufzpudvsjqyiholpxiqoomsd2svy26jvy4z4pzodikgovkhkp6ioxf5p4jbpnf7tgyg67dny4j75e7og7zeq', '--start-epoch', '544243', '--manual-piece-cid', 'baga6ea4seaqcqjelghbfwy2r6fxsffzfv6gs2gyvc75crxxltiscpajfzk6csii', '--manual-piece-size', '66584576', 'bafykbzaceb6dtpjjisy5pzwksrxwfothlmfjtmcjj7itsvw2flpp5co5ikxam', 't01101', '0.000000000000000000', '1051200']
-INFO:root:wallet: f3ufzpudvsjqyiholpxiqoomsd2svy26jvy4z4pzodikgovkhkp6ioxf5p4jbpnf7tgyg67dny4j75e7og7zeq
-INFO:root:miner: t01101
-INFO:root:price: 0
-INFO:root:total cost: 0.000000000000000000
-INFO:root:start epoch: 544243
-Press Enter to continue...
-INFO:root:Deal sent, deal cid: bafyreicqgsxql7oqkzr7mtwyrhnoedgmzpd5br3er7pa6ooc54ja6jmnkq, start epoch: 544243
-INFO:root:Swan deal final CSV /tmp/tasks/[output_files_dir]/task-name-metadata-deals.csv
-INFO:root:Refreshing token
-eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MTQzNzA5ODcsImlhdCI6MTYxNDI4NDU4Nywic3ViIjoiV2pIVkJDYWIxM2FyUURlUldwbkw0QSJ9.Hn8f0z2Ew6DuL2E2ELgpi9_Gj8xrg28S3v31dTUW32s
-INFO:root:Updating Swan task.
-INFO:root:Swan task updated.
-```
+* \[task-name].csv: A CSV generated for posting a task and its offline deals on Swan platform or transferring to storage providers directly for offline import
+* \[task-name]-metadata.csv: Contains more contents used for review. Uuid will be updated based upon car.csv generated in last step.
+* \[task-name]-metadata.json: Contains more content for creating a proposal in the next step. Uuid will be updated based on car.json generated in the last step. See [Offline Deal](https://github.com/filswan/go-swan-client/tree/release-v0.1.0-rc1#Offline-Deal)

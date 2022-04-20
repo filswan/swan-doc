@@ -1,32 +1,46 @@
-# Install Client CLI
+# Install Swan Client Tool
 
 ## Code Repository
 
-[https://github.com/filswan/swan-client](https://github.com/filswan/swan-client)
+[https://github.com/filswan/go-swan-client/tree/release-v0.1.0-rc1](https://github.com/filswan/go-swan-client/tree/release-v0.1.0-rc1)
 
 ## Prerequisite
 
 * Lotus node
-* go 1.15+
-* python 3.7+
-* pip3
 
 ## Installation
 
-#### Ubuntu/Debian
+#### Option1️⃣ **Prebuilt package**: See [release assets](https://github.com/filswan/go-swan-client/releases)
 
 ```
-sudo apt-get update
-sudo apt-get upgrade -y
-
-# Install Git
-sudo apt install git -y
-
-# Checkout the source and install
-git clone https://github.com/filswan/swan-client.git
+mkdir swan-client
 cd swan-client
+wget https://github.com/filswan/go-swan-client/releases/download/v0.1.0-rc1/install.sh --no-check-certificate
+chmod +x ./install.sh
+./install.sh
+```
 
-sh install.sh
+**Option2️⃣ Source Code**
 
-. ./activate 
+🔔**go 1.16+** is required
+
+```
+git clone https://github.com/filswan/go-swan-client.git
+cd go-swan-client
+git checkout <release_branch>
+./build_from_source.sh
+```
+
+### After Installation
+
+* The binary file `swan-client` for Option2️⃣ is under `./build` directory, you need to switch to it.
+
+```
+cd build
+```
+
+* Before executing, you should check your configuration in `~/.swan/client/config.toml` to ensure it is right.
+
+```
+vi ~/.swan/client/config.toml
 ```

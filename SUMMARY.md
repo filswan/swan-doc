@@ -43,6 +43,8 @@
   * [Mint as an NFT](multi-chain-storage/app-developer/mint-as-an-nft.md)
   * [SDK](multi-chain-storage/app-developer/sdk/README.md)
     * [js-mcs-sdk](multi-chain-storage/app-developer/sdk/js-mcs-sdk.md)
+    * [SDK User Case](multi-chain-storage/app-developer/sdk/sdk-user-case.md)
+    * [SDK installation tutorial](multi-chain-storage/app-developer/sdk/sdk-installation-tutorial.md)
 * [MCS User Guide](multi-chain-storage/mcp-user-guide.md)
 * [Developer Quickstart](multi-chain-storage/developer-quickstart.md)
 * [Running a MCS Node](multi-chain-storage/running-a-mcp-node.md)
@@ -64,16 +66,19 @@
 * [Overview](swan-client/overview.md)
 * [Basic Concept](swan-client/basic-concept.md)
 * [Create A Swan Task](swan-client/create-a-swan-task/README.md)
-  * [Install Client CLI](swan-client/create-a-swan-task/install-client-cli.md)
-  * [Config the CLI tool](swan-client/create-a-swan-task/config-the-cli-tool.md)
+  * [Install Swan Client Tool](swan-client/create-a-swan-task/install-client-cli.md)
+  * [Config of Swan Client Tool](swan-client/create-a-swan-task/config-the-cli-tool.md)
   * [Create Deal to Filecoin Network](swan-client/create-a-swan-task/create-deal-to-filecoin-network/README.md)
-    * [Prepare the data for sending deals](swan-client/create-a-swan-task/create-deal-to-filecoin-network/prepare-the-data-for-sending-deals.md)
-    * [Upload Car files to ipfs/web server](swan-client/create-a-swan-task/create-deal-to-filecoin-network/upload-car-files-to-ipfs-web-server.md)
+    * [Prepare data for sending deals](swan-client/create-a-swan-task/create-deal-to-filecoin-network/prepare-the-data-for-sending-deals.md)
+    * [Upload Car files to IPFS/web server](swan-client/create-a-swan-task/create-deal-to-filecoin-network/upload-car-files-to-ipfs-web-server.md)
     * [Create a task](swan-client/create-a-swan-task/create-deal-to-filecoin-network/create-a-task/README.md)
       * [Private Task](swan-client/create-a-swan-task/create-deal-to-filecoin-network/create-a-task/private-task.md)
-      * [Public Task](swan-client/create-a-swan-task/create-deal-to-filecoin-network/create-a-task/public-task.md)
-      * [Set Auto-bid Mode](swan-client/create-a-swan-task/create-deal-to-filecoin-network/create-a-task/set-auto-bid-mode.md)
-* [Swan Client Installation Tutorial](swan-client/swan-client-installation-tutorial.md)
+      * [Public and Auto-Bid Task](swan-client/create-a-swan-task/create-deal-to-filecoin-network/create-a-task/public-task.md)
+      * [Public and Manual-Bid Task](swan-client/create-a-swan-task/create-deal-to-filecoin-network/create-a-task/set-auto-bid-mode.md)
+* [Send Deals](swan-client/send-deals/README.md)
+  * [Manual Deal](swan-client/send-deals/manual-deal.md)
+  * [Auto-bid Deal](swan-client/send-deals/auto-bid-deal.md)
+* [Swan Client Tutorial Video](swan-client/swan-client-installation-tutorial.md)
 
 ***
 
@@ -89,7 +94,7 @@
       * [3.3.1私人任务](chuang-jian-ren-wu-liu-cheng/3.-xiang-filecoin-wang-luo-fa-song-jiao-yi/3.3-chuang-jian-ren-wu/3.3.1-si-ren-ren-wu.md)
       * [3.3.2公开任务](chuang-jian-ren-wu-liu-cheng/3.-xiang-filecoin-wang-luo-fa-song-jiao-yi/3.3-chuang-jian-ren-wu/3.3.2-gong-kai-ren-wu.md)
       * [3.3.3自动竞价模式](chuang-jian-ren-wu-liu-cheng/3.-xiang-filecoin-wang-luo-fa-song-jiao-yi/3.3-chuang-jian-ren-wu/3.3.3-zi-dong-jing-jia-mo-shi.md)
-* [Swan客户端工具安装教程](swan-ke-hu-duan-gong-ju-an-zhuang-jiao-cheng.md)
+* [Swan客户端工具使用教程](swan-ke-hu-duan-gong-ju-an-zhuang-jiao-cheng.md)
 
 ## FS3
 

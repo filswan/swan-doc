@@ -1,68 +1,43 @@
-# Config the CLI tool
+# Config of Swan Client Tool
 
+### **Configuration**
 
+#### \[lotus]
 
-In config.toml
+* **client\_api\_url**: Url of lotus client web api, such as: **http://\[ip]:\[port]/rpc/v0**, generally the \[port] is **1234**. See [Lotus API](https://docs.filecoin.io/reference/lotus-api/#features)
+* **client\_access\_token**: Access token of lotus client web api. It should have admin access right. You can get it from your lotus node machine using command `lotus auth create-token --perm admin`. See [Obtaining Tokens](https://docs.filecoin.io/build/lotus/api-tokens/#obtaining-tokens)
 
-```
-[main]
-api_key = ""
-access_token = ""
-api_url = "https://api.filswan.com"
-storage_server_type = "ipfs server"
+#### \[main]
 
-[web-server]
-host = "https://nbai.io"
-port = 443
-path = "/download"
+* **api\_url**: Swan API address. For Swan production, it is "[https://api.filswan.com](https://api.filswan.com)". It can be ignored if `[sender].offline_mode=true`.
+* ‼️**api\_key**: Your Swan API key. Acquire from [Swan Platform](https://www.filswan.com) -> "My Profile"->"Developer Settings". It can be ignored if `[sender].offline_mode=true`.
+* ‼️**access\_token**: Your Swan API access token. Acquire from [Swan Platform](https://www.filswan.com) -> "My Profile"->"Developer Settings". It can be ignored if `[sender].offline_mode=true`.
+* ‼️**storage\_server\_type**: "ipfs server" or "web server"
 
-[ipfs-server]
-upstream_url = "http://127.0.0.1:5001"
-download_stream_url = "http://127.0.0.1:8080"
+#### \[web-server]
 
-[sender]
-bid_mode = 1
-offline_mode = false
-output_dir = "/tmp/tasks"
-public_deal = true
-verified_deal = true
-fast_retrieval = true
-skip_confirmation = false
-generate_md5 = false
-wallet = ""
-max_price = "0"
-start_epoch_hours = 96
-expire_days = 4
-```
+* **download\_url\_prefix**: Web server url prefix, such as: `https://[ip]:[port]/download`. Store car files for downloading by storage provider. Car file url will be `[download_url_prefix]/[filename]`
 
-**main**
+#### \[ipfs-server]
 
-Main section defines the token used for connecting with Swan platform. This part can be ignored if offline\_mode is set to true in \[sender] section
+* **download\_url\_prefix**: Ipfs server url prefix, such as: `http://[ip]:[port]`. Store car files for downloading by storage provider. Car file url will be `[download_url_prefix]/ipfs/[filename]`
+* **upload\_url**: Ipfs server url for uploading files, such as `http://[ip]:[port]`
 
-* **api\_key & access\_token:** Acquire from [Filswan](https://console.filswan.com/#/dashboard) -> "My Profile"->"Developer Settings". You can also check the [Guide](https://nebulaai.medium.com/how-to-use-api-key-in-swan-a2ebdb005aa4)
-* **api\_url:** Default as "[https://api.filswan.com](https://api.filswan.com)"
+#### \[sender]
 
-**web-server**
-
-web-server is used to upload generated Car files. Miner will download Car files from this web-server. The downloadable URL in the CSV file is built with the following format: host+port+path+filename, e.g. [http://nbai.io:8080/download/](http://nbai.io:8080/download/)
-
-**ipfs-server**
-
-ipfs-server is used to upload generated Car files. Miner will download Car files from this ipfs-server. The downloadable URL in the CSV file is built with the following format: host+port+ipfs+hash, e.g. [http://host:port/ipfs/QmPrQPfGCAHwYXDZDdmLXieoxZP5JtwQuZMUEGuspKFZKQ](http://host/:port/ipfs/QmPrQPfGCAHwYXDZDdmLXieoxZP5JtwQuZMUEGuspKFZKQ)
-
-**sender**
-
-* **bid\_mode:** \[0/1] Default 1. If it is set to 1, autobid mode is on which means public tasks posted will receive automatically bids from storage providers and tasks will be sent automatically after auto bids. In contrast, 0 represents the manual mode as public tasks need to be bid manually by storage providers and sent manually.
-* **offline\_mode:** \[true/false] Default false. If it is set to true, you will not be able to create Swan task on filswan.com, but you can still create CSVs and Car Files for sending deals
-* **output\_dir:** Output directory for saving generated Car files and CSVs
-* **public\_deal:** \[true/false] Whether deals in the tasks are public deals
-* **verified\_deal:** \[true/false] Whether deals in this task are going to be sent as verified
-* **fast\_retrieval:** \[true/false] Indicates that data should be available for fast retrieval
-* **generate\_md5:** \[true/false] Whether to generate md5 for each car file, note: this is a resource consuming action
-* **skip\_confirmation:** \[true/false] Whether to skip manual confirmation of each deal before sending
-* **wallet:** Wallet used for sending offline deals
-* **max\_price:** Max price willing to pay per GiB/epoch for offline deal
-* **start\_epoch\_hours:** start\_epoch for deals in hours from current time
-* **expired\_days:** expected completion days for storage provider sealing data
-
-****
+* **bid\_mode**: \[0/1] Default 1, which is auto-bid mod and it means swan will automatically allocate storage provider for it, while 0 is manual-bid mode and it needs to be bidded manually by storage providers.
+* **offline\_mode**: \[true/false] Default false. When set to true, you will not be able to create a Swan task on filswan.com, but you can still generate Car Files, CSV and JSON files for sending deals.
+* **output\_dir**: When you do not set -out-dir option in your command, it is used as the default output directory for saving generated car files, CSV and JSON files. You need have access right to this folder or to create it.
+* **public\_deal**: \[true/false] Whether deals in this task are public or not.
+* **verified\_deal**: \[true/false] Whether deals in this task are going to be sent as verified or not.
+* **fast\_retrieval**: \[true/false] Indicates that data should be available for fast retrieval or not.
+* **generate\_md5**: \[true/false] Whether to generate md5 for each car file and source file, note: this is a resource consuming action.
+* **skip\_confirmation**: \[true/false] Whether to skip manual confirmation of each deal before sending.
+* **wallet**: Wallet used for sending offline deals
+* **max\_price**: Max price willing to pay per GiB/epoch for offline deals
+* **start\_epoch\_hours**: Start\_epoch for deals in hours from current time.
+* **expired\_days**: Expected completion days for storage provider sealing data.
+* **gocar\_file\_size\_limit**: Go car file size limit in bytes
+* **gocar\_folder\_based**: Generate car file based on whole folder, or on each file separately
+* **duration**: Expressed in blocks (1 block is equivalent to 30s). Default value is 1512000, that is 525 days. Valid value range:\[518400, 1540000]. See [Make the Deal](https://docs.filecoin.io/store/lotus/store-data/#make-the-deal)
+* **relative\_epoch\_from\_main\_network**: # Your network current epoch - main network current epoch
