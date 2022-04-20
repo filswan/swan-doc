@@ -2,24 +2,35 @@
 
 Swan provider contains two major component
 
-* A download utility(aria2)  for downloading .car files from a remote server and a Lotus miner token is used for importing deals for swan provider
+* A download utility aria2 for downloading .car files from the remote server and Lotus Miner Token creation  for importing deals
 * A .car file manager for managing the importer process
 
 ## 1. Install **Prerequisites**&#x20;
 
 ### **1.1 Install aria2**
 
+### Lotus Miner Token creation
+
 ```
 sudo apt install aria2
 ```
-
-### 1.2 Lotus miner token creation
 
 ```
 lotus-miner auth create-token --perm write
 ```
 
-## 2. Install Swan Provider Binary
+### 1.2 Lotus miner token creation
+
+{% hint style="info" %}
+Note that the Lotus Miner needs to be running in the background!\
+The created token is located at $LOTUS\_STORAGE\_PATH/token
+{% endhint %}
+
+## Install Swan Provider Binary
+
+```
+lotus-miner auth create-token --perm write
+```
 
 ### 2.1 Register your storage provider
 

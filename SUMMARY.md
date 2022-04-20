@@ -42,6 +42,7 @@
   * [File Upload](multi-chain-storage/app-developer/file-upload.md)
   * [Mint as an NFT](multi-chain-storage/app-developer/mint-as-an-nft.md)
   * [SDK](multi-chain-storage/app-developer/sdk/README.md)
+    * [Alchemy polygon to MetaMask instructions](multi-chain-storage/app-developer/sdk/alchemy-polygon-to-metamask-instructions.md)
     * [js-mcs-sdk](multi-chain-storage/app-developer/sdk/js-mcs-sdk.md)
     * [SDK User Case](multi-chain-storage/app-developer/sdk/sdk-user-case.md)
     * [SDK installation tutorial](multi-chain-storage/app-developer/sdk/sdk-installation-tutorial.md)
@@ -51,15 +52,15 @@
 
 ## Swan Provider
 
-* [Overview](swan-provider/overview.md)
-* [Prerequisites](swan-provider/prerequisites/README.md)
-  * [Requirements](swan-provider/prerequisites/hardware-requirements.md)
-  * [Install Swan Provider](swan-provider/prerequisites/install-swan-provider.md)
-* [Setup Your Swan Provider](swan-provider/setup-your-swan-provider/README.md)
-  * [Run in autobid mode](swan-provider/setup-your-swan-provider/run-in-autobid-mode.md)
-  * [Run in manual bid mode](swan-provider/setup-your-swan-provider/run-in-manual-bid-mode.md)
-  * [Swan Provider Installation Tutorial](swan-provider/setup-your-swan-provider/video-tutorial.md)
-* [Swan Provider安装教程中文版](swan-provider/zhong-wen-ban-an-zhuang-jiao-cheng-swan-provider.md)
+* [Overview](run-swan-provider/overview.md)
+* [Prerequisites](run-swan-provider/prerequisites/README.md)
+  * [Requirements](run-swan-provider/prerequisites/hardware-requirements.md)
+  * [Install Swan Provider](run-swan-provider/prerequisites/install-swan-provider.md)
+* [Setup Your Swan Provider](run-swan-provider/setup-your-swan-provider/README.md)
+  * [Run in autobid mode](run-swan-provider/setup-your-swan-provider/run-in-autobid-mode.md)
+  * [Run in manual bid mode](run-swan-provider/setup-your-swan-provider/run-in-manual-bid-mode.md)
+  * [Swan Provider Installation Tutorial](run-swan-provider/setup-your-swan-provider/video-tutorial.md)
+* [Swan Provider安装教程中文版](run-swan-provider/zhong-wen-ban-an-zhuang-jiao-cheng-swan-provider.md)
 
 ## Swan Client
 

@@ -1,6 +1,6 @@
 # Run in manual bid mode
 
-edit `~/.swan/provider/config.toml `as follows
+edit `~/.swan/provider/config.toml` as follows
 
 ```
 ...
