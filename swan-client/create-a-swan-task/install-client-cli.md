@@ -8,6 +8,10 @@
 
 * Lotus node
 
+**Note:**
+
+* To ensure the source files can be imported into Lotus correctly and tasks can be sent successfully, go-swan-client and Lotus node need to be installed on the same machine.
+
 ## Installation
 
 #### Option1️⃣ **Prebuilt package**: See [release assets](https://github.com/filswan/go-swan-client/releases)
