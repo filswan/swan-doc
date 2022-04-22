@@ -39,10 +39,7 @@
 **Note:**
 
 * Logs are in directory ./logs
-* You can add `nohup` before `./swan-client` to ignore the HUP (hangup) signal and therefore avoid stopping when you log out.
-* You can add `>> swan-client.log` in the command to let all the logs output to `swan-client.log`.
-* You can add `&` at the end of the command to let the program run in the background.
-* Such as:
+* To avoid program exit when you log out, you can run the program like this:
 
 ```
 nohup ./swan-client auto -out-dir [output_files_dir] >> swan-client.log &
