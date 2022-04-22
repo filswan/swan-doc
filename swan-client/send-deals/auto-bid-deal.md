@@ -42,5 +42,5 @@
 * To avoid program exit when you log out, you can run the program like this:
 
 ```
-nohup ./swan-client auto -out-dir [output_files_dir] >> swan-client.log &
+nohup ./swan-client auto -out-dir [output_files_dir] >> swan-client.log 2>&1 &
 ```
