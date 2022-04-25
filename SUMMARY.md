@@ -93,8 +93,11 @@
     * [3.2上传Car文件到 IPFS/Web 服务器](chuang-jian-ren-wu-liu-cheng/3.-xiang-filecoin-wang-luo-fa-song-jiao-yi/3.2-shang-chuan-car-wen-jian-dao-ipfsweb-fu-wu-qi.md)
     * [3.3创建任务](chuang-jian-ren-wu-liu-cheng/3.-xiang-filecoin-wang-luo-fa-song-jiao-yi/3.3-chuang-jian-ren-wu/README.md)
       * [3.3.1私人任务](chuang-jian-ren-wu-liu-cheng/3.-xiang-filecoin-wang-luo-fa-song-jiao-yi/3.3-chuang-jian-ren-wu/3.3.1-si-ren-ren-wu.md)
-      * [3.3.2公开任务](chuang-jian-ren-wu-liu-cheng/3.-xiang-filecoin-wang-luo-fa-song-jiao-yi/3.3-chuang-jian-ren-wu/3.3.2-gong-kai-ren-wu.md)
-      * [3.3.3自动竞价模式](chuang-jian-ren-wu-liu-cheng/3.-xiang-filecoin-wang-luo-fa-song-jiao-yi/3.3-chuang-jian-ren-wu/3.3.3-zi-dong-jing-jia-mo-shi.md)
+      * [3.3.2公开和自动竞价任务](chuang-jian-ren-wu-liu-cheng/3.-xiang-filecoin-wang-luo-fa-song-jiao-yi/3.3-chuang-jian-ren-wu/3.3.2-gong-kai-ren-wu.md)
+      * [3.3.3公开任务和手动竞价任务](chuang-jian-ren-wu-liu-cheng/3.-xiang-filecoin-wang-luo-fa-song-jiao-yi/3.3-chuang-jian-ren-wu/3.3.3-zi-dong-jing-jia-mo-shi.md)
+* [发送交易](fa-song-jiao-yi/README.md)
+  * [手动交易](fa-song-jiao-yi/shou-dong-jiao-yi.md)
+  * [自动竞价交易](fa-song-jiao-yi/zi-dong-jing-jia-jiao-yi.md)
 * [Swan客户端工具使用教程](swan-ke-hu-duan-gong-ju-an-zhuang-jiao-cheng.md)
 
 ## FS3

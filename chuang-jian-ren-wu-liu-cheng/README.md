@@ -2,7 +2,7 @@
 
 ## 代码库地址
 
-[https://github.com/filswan/swan-client](https://github.com/filswan/swan-client)
+[https://github.com/filswan/go-swan-client/tree/release-v0.1.0-rc1](https://github.com/filswan/go-swan-client/tree/release-v0.1.0-rc1)
 
 ## Swan客户端工具使用流程：
 

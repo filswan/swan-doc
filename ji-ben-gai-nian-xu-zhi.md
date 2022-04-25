@@ -1,49 +1,59 @@
 # 基本概念须知
 
-## 任务
+### 任务 <a href="#task" id="task"></a>
 
-在Swan项目中，一个任务可以包含多条离线交易。
+在Filswan项目中，一个任务可以包含一个或者多个离线交易。
 
-Swan有两种基本类型的任务：公开任务和私人任务。
+📁任务类型：包括两种基本的任务类型：
 
-另外，在公开任务类型中，用户又可以通过设定自动模式，实现让客户端工具自动发送离线交易。
+* 公开任务：指公开竞价的交易集合，包括两种类型：
+  * 自动竞价：自动竞价的任务会被自动分配给选中的存储提供者，这些存储提供者是基于信誉系统(reputation system)和市场匹配器(Market Matcher)筛选得到的。
+  * 手动竞价：当出价人(Storage Provider)赢得竞价时，任务持有方（Client）需要发起手动竞价任务给获胜的一方(Storage Provider)。
+* 私有任务：指客户端会发起一个私有任务(交易的集合)给特定的存储提供者。
 
-### 任务类型**:**
+_**​**_📁_**任务状态:**_
 
-#### 公开任务：
+* **已创建**：表示该任务第一次在filswan平台上被成功创建，此状态与任务类型无关。
+* **已分配**：表示该任务已经被用户分配给一个存储提供者，包括用户手动分配和被自动竞价模块----市场匹配器(Market Matcher) 两种情况。
+*   **需操作**：表示该自动竞价任务(系统设置为bid\_mode=1, public\_deal=true)有部分信息缺失或者无效：
 
-公开任务是为公开竞标设置的交易组。所有存储提供者都将可以对此类任务进行竞标。
+    * MaxPrice: 缺失或者是一个无效的数字
+    * FastRetrieval: 缺失
+    * Type: 缺失或者值无效
+    * 该任务不包含离线交易
 
-* 如果竞标模式设置为手动，任务持有者需要自行选择中标者，并手动向中标者发送离线交易。
-* 如果竞标模式设置为自动，Swan独有的声誉系统和市场匹配器(Market Match)将自动向您的任务分配最优的存储提供者。自动竞标模式是swan-client 和 swan-provider 之间的自动投标系统，提供您自动将交易发送给 Swan存储提供者的服务。所有开启自动竞价模式的Swan存储提供者都有机会被选中。目前，自动竞标模式只能为您的任务分配一个存储提供者。
+    🔔注意：必须要解决以上问题并且将任务状态修改为Created才能参与到市场匹配器(Market Matcher)下一轮的匹配中去。
+* **交易已发送**：表示该任务中所有的离线交易已经被发送到分配给该任务的存储提供者；
+* **异常过程**：表示该任务中只有部分交易(不是所有交易)被发送到分配给该任务的存储提供者。
 
-{% hint style="info" %}
-自动竞价模式基于[声誉系统](filswan-platform/overview/reputation-system.md)。当用户注册为Swan存储提供商后，成功处理的交易越多，作为存储提供者获得的分数就越高。
-{% endhint %}
+### 离线交易 <a href="#offline-deal" id="offline-deal"></a>
 
-#### 私人任务：
+* 每个离线交易包含了由客户端工具生成的car文件的信息
+* 一个car文件的大小最多为64GiB
+* 该工具的每一步完成后会生成一个JSON文件，其中包含的文件信息如下：
 
-* 私人任务用于向指定的存储提供者发送交易。即在发送交易时，需要直接输入指定存储提供者的ID。
+```
+[
+ {
+  "Uuid": "261ac5ae-cfbb-4ae2-a924-3361075b0e60",
+  "SourceFileName": "test3.txt",
+  "SourceFilePath": "[source_file_dir]/test3.txt",
+  "SourceFileMd5": "17d6f25c72392fc0895b835fa3e3cf52",
+  "SourceFileSize": 43857488,
+  "CarFileName": "test3.txt.car",
+  "CarFilePath": "[car_file_dir]/test3.txt.car",
+  "CarFileMd5": "9eb7d54ac1ed8d3927b21a4dcd64a9eb",
+  "CarFileUrl": "http://[IP]:[PORT]/ipfs/Qmb7TMcABYnnM47dznCPxpJKPf9LmD1Yh2EdZGvXi2824C",
+  "CarFileSize": 12402995,
+  "DealCid": "bafyreiccgalsj2a3wtrxygcxpp2hfq3h2fwafh63wcld3uq5hakyimpura",
+  "DataCid": "bafykbzacecpuzwmiaxc2u4r5bb7p3ukkhotmkfw4mfv3un6huvk6ctugowikq",
+  "PieceCid": "baga6ea4seaqjcip2xh265h2pucvwxv7seeawm4gfksfua4zsbb24zujplzsukja",
+  "MinerFid": "[miner_fid]",
+  "StartEpoch": 1266686,
+  "SourceId": 2
+ }
+]
+```
 
-### 任务状态**:**
-
-* <mark style="color:blue;">已创建</mark>: 已创建状态存在于两种情况：
-  * 用户成功新建task时，任务状态为已创建；
-  * 在状态`ActionRequired(`需采取行动)被修改后，任务状态会恢复为已创建。
-* <mark style="color:orange;">已分配</mark>: 任务已由用户手动分配或由自动竞价模式分配给存储提供者。
-*   <mark style="color:red;">需采取行动</mark>: 该状态只出现在自动竞价模式开启时，即`public_deal`设置为`true且bid_mode`设置为`1`时。说明需要用户更改某些任务信息。这有可能是\[task-name.csv]中有一些信息缺失或无效导致的自动分配存储提供者失败。
-
-    此时用户需要填写或修改文件，然后使用新的 csv 文件更新 Swan 平台上的任务信息。
-* <mark style="color:green;">交易已发送</mark>: 该状态也只出现在自动竞价模式开启时，出现在状态已分配之后，说明任务已成功发送到存储提供者。
-
-### 离线交易
-
-一个离线交易的大小最大可以为32GB。
-
-当创建CSV文件时，建议如表格所示，填写需要的task uuid，provider\_id，payload\_cid等数据：
-
-| uuid                                 | provider\_id | deal\_cid | payload\_cid                                                | file\_source\_url                                                                      | md5 | start\_epoch | piece\_cid                                                       | file\_size |
-| ------------------------------------ | ------------ | --------- | ----------------------------------------------------------- | -------------------------------------------------------------------------------------- | --- | ------------ | ---------------------------------------------------------------- | ---------- |
-| 0b89e0cf-f3ec-41a3-8f1e-52b098f0c503 | f047419      | ---       | bafyreid7tw7mcwlj465dqudwanml3mueyzizezct6cm5a7g2djfxjfgxwm | [http://download.com/downloads/fil.tar.car](http://download.com/downloads/fil.tar.car) | --- | 544835       | baga6ea4seaqeqlfnuhfawhw6rm53t24znnuw76ycfuqvpw4c7olnxpju4la4qfq | 122877455  |
-
-该CSV文件有助于增强数据一致性和未来重建图形。生成uuid的目的是用于方便索引。
+* 在每一步中生成的JSON文件将会在下一步中使用，而且在以后可以用来重建文件图形
+* uuid 是为了后期索引目的而生成的。

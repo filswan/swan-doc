@@ -1,3 +1,3 @@
 # Swan Client Tutorial Video
 
-{% embed url="https://www.youtube.com/watch?v=G-7N_VNp_MI" %}
+{% embed url="https://youtu.be/b5RHjmiB07g" %}
