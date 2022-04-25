@@ -6,11 +6,11 @@ The following documentation describes how to use MCS, which is currently live on
 
 ## System Design
 
-![](<../.gitbook/assets/image (29) (1).png>)
+![](<../../.gitbook/assets/image (29) (1).png>)
 
 ## How does MCS work? <a href="#how-does-arbitrum-work" id="how-does-arbitrum-work"></a>
 
-If you're looking to discover how MCS works, the best place to begin is by the [User Guide](mcp-user-guide.md) section, which gives a high level overview of MCS's internals. From there, you can jump into more detailed explainers on various components of the system.
+If you're looking to discover how MCS works, the best place to begin is by the [User Guide](../mcp-user-guide.md) section, which gives a high level overview of MCS's internals. From there, you can jump into more detailed explainers on various components of the system.
 
 ## Modules <a href="#__docusaurus" id="__docusaurus"></a>
 
@@ -166,7 +166,7 @@ You need to modify the config file and input your config params, the configurati
 
 
 
-**Want to learn more? Check out the** [**open source code**](https://github.com/filswan/payment-bridge) **and** [**API**](../development-resource/mcp-api.md)**. Join the team on** [**Discord**](https://discord.gg/djsVYe4b)**.**
+**Want to learn more? Check out the** [**open source code**](https://github.com/filswan/payment-bridge) **and** [**API**](../../development-resource/mcp-api.md)**. Join the team on** [**Discord**](https://discord.gg/djsVYe4b)**.**
 
 ### &#x20;<a href="#setup-local-geth-and-rollup-blockchain" id="setup-local-geth-and-rollup-blockchain"></a>
 
