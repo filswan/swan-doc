@@ -92,7 +92,7 @@
     * [3.1准备发送交易的数据](chuang-jian-ren-wu-liu-cheng/3.-xiang-filecoin-wang-luo-fa-song-jiao-yi/3.1-zhun-bei-fa-song-jiao-yi-de-shu-ju.md)
     * [3.2上传Car文件到 IPFS/Web 服务器](chuang-jian-ren-wu-liu-cheng/3.-xiang-filecoin-wang-luo-fa-song-jiao-yi/3.2-shang-chuan-car-wen-jian-dao-ipfsweb-fu-wu-qi.md)
     * [3.3创建任务](chuang-jian-ren-wu-liu-cheng/3.-xiang-filecoin-wang-luo-fa-song-jiao-yi/3.3-chuang-jian-ren-wu/README.md)
-      * [3.3.1私人任务](chuang-jian-ren-wu-liu-cheng/3.-xiang-filecoin-wang-luo-fa-song-jiao-yi/3.3-chuang-jian-ren-wu/3.3.1-si-ren-ren-wu.md)
+      * [3.3.1私有任务](chuang-jian-ren-wu-liu-cheng/3.-xiang-filecoin-wang-luo-fa-song-jiao-yi/3.3-chuang-jian-ren-wu/3.3.1-si-ren-ren-wu.md)
       * [3.3.2公开和自动竞价任务](chuang-jian-ren-wu-liu-cheng/3.-xiang-filecoin-wang-luo-fa-song-jiao-yi/3.3-chuang-jian-ren-wu/3.3.2-gong-kai-ren-wu.md)
       * [3.3.3公开任务和手动竞价任务](chuang-jian-ren-wu-liu-cheng/3.-xiang-filecoin-wang-luo-fa-song-jiao-yi/3.3-chuang-jian-ren-wu/3.3.3-zi-dong-jing-jia-mo-shi.md)
 * [发送交易](fa-song-jiao-yi/README.md)

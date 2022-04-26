@@ -31,7 +31,7 @@
 * \[main].api\_key, 见配置文件
 * \[main].access\_token, 见配置文件
 
-**此步骤之后生成的文件：**
+**此步骤之后每个任务生成的文件：**
 
 * \[task-name]-auto.csv: 为更新离线交易状态和填充离线dealCID而生成的CSV
 * \[task-name]-auto-deals.csv: 基于下一步生成的\[task-name]-metadata.csv更新dealCID
