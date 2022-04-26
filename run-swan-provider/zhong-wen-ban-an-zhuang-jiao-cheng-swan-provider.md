@@ -80,7 +80,7 @@ vim ~/.swan/provider/config.toml
 输入以下命令行执行Swan- Provider
 
 ```
-./swan-provider-0.2.0-unix    #After installation from Option 1
+./swan-provider-0.2.1-rc2-unix   #After installation from Option 1
 ```
 
 #### 3.2- option 2⃣️ 如果你在安装中选择了第二个选项Source Code
@@ -104,7 +104,7 @@ vim ~/.swan/provider/config.toml
 #### Option 1⃣️如果你在安装中选择了第一个选项Prebuilt Package&#x20;
 
 ```
-nohup ./swan-provider-0.2.0-unix >> swan-provider.log &   #After installation from Option 1
+nohup ./swan-provider-0.2.1-rc2-unix >> swan-provider.log &   #After installation from Option 1
 ```
 
 #### Option 2⃣️如果你在安装中选择了第二个选项Source Code
