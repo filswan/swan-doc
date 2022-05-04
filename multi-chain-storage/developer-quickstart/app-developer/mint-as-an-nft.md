@@ -1,2 +1,0 @@
-# Mint as an NFT
-

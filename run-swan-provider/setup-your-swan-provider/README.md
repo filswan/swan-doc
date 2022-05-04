@@ -18,7 +18,7 @@ For more information, please check [lotus mine deals](https://docs.filecoin.io/m
 
 ### Step 1: Obtain your API keys
 
-Get your[ API Keys](../../getting-started/authentication/api-keys.md) so that Swan can authenticate your integration’s API requests.
+Get your[ API Keys](../../development-resource/api-keys.md) so that Swan can authenticate your integration’s API requests.
 
 ### Step 2:  Update your config
 

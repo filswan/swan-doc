@@ -1,54 +1,46 @@
 # Table of contents
 
-* [FilSwan Overview](README.md)
-* [Contact Us](contact-us/README.md)
-  * [Social Accounts & Communities](contact-us/social-accounts-and-communities.md)
-  * [Business Partnerships](contact-us/business-partnerships.md)
-
 ## Getting Started
 
-* [Beginner Walkthrough](getting-started/beginner-walkthrough/README.md)
-  * [Public Testnet](getting-started/beginner-walkthrough/public-testnet/README.md)
-    * [Setup MetaMask](getting-started/beginner-walkthrough/public-testnet/setup-metamask.md)
-* [Authentication](getting-started/authentication/README.md)
-  * [API keys](getting-started/authentication/api-keys.md)
-* [Find Storage Providers](getting-started/find-storage-providers/README.md)
-  * [Storage Provider Details](getting-started/find-storage-providers/storage-provider-details.md)
+* [FilSwan Overview](README.md)
+
+## Multi-Chain Storage
+
+* [Overview](multi-chain-storage/overview/README.md)
+  * [Flink](multi-chain-storage/overview/flink.md)
+* [MCS User Guide](multi-chain-storage/mcp-user-guide/README.md)
+  * [Public Testnet](multi-chain-storage/mcp-user-guide/public-testnet.md)
+  * [Setup MetaMask](multi-chain-storage/mcp-user-guide/setup-metamask.md)
+  * [Configure MetaMask with Alchemy RPC URL](multi-chain-storage/mcp-user-guide/configure-metamask-with-alchemy-rpc-url.md)
+* [Developer Quickstart](multi-chain-storage/developer-quickstart/README.md)
+  * [SDK](multi-chain-storage/developer-quickstart/sdk/README.md)
+    * [js-mcs-sdk](multi-chain-storage/developer-quickstart/sdk/js-mcs-sdk.md)
+    * [Get Started](multi-chain-storage/developer-quickstart/sdk/get-started.md)
+    * [Upload Files](multi-chain-storage/developer-quickstart/sdk/upload-files.md)
+    * [Pay for data storage](multi-chain-storage/developer-quickstart/sdk/pay-for-data-storage.md)
+    * [Mint Assets as NFTs](multi-chain-storage/developer-quickstart/sdk/mint-assets-as-nfts.md)
+    * [List Files](multi-chain-storage/developer-quickstart/sdk/list-files.md)
+    * [Get File Details](multi-chain-storage/developer-quickstart/sdk/get-file-details.md)
+    * [Get Filecoin Status for File](multi-chain-storage/developer-quickstart/sdk/get-filecoin-status-for-file.md)
+    * [Installation Tutorial Video](multi-chain-storage/developer-quickstart/sdk/installation-tutorial-video.md)
+  * [Additional Resources](multi-chain-storage/developer-quickstart/additional-resources.md)
+* [Running a MCS Node](multi-chain-storage/running-a-mcp-node.md)
 
 ## Filswan Platform
 
 * [Overview](filswan-platform/overview/README.md)
   * [FilSwan Auction System](filswan-platform/overview/filswan-auction-system.md)
   * [Reputation System](filswan-platform/overview/reputation-system.md)
-* [Core modules](filswan-platform/core-modules/README.md)
+* [Key functionalities](filswan-platform/core-modules/README.md)
   * [Task Management](filswan-platform/core-modules/task-management/README.md)
     * [Create a New Task](filswan-platform/core-modules/task-management/create-a-new-task.md)
     * [Navigate Tasks](filswan-platform/core-modules/task-management/navigate-tasks.md)
     * [Update Tasks](filswan-platform/core-modules/task-management/update-tasks.md)
-    * [Assign a Task](filswan-platform/core-modules/task-management/assign-a-task.md)
-    * [Export Task Result from Platform](filswan-platform/core-modules/task-management/export-task-result-from-platform.md)
+    * [Assign Tasks](filswan-platform/core-modules/task-management/assign-a-task.md)
   * [My Profile](filswan-platform/core-modules/my-profile/README.md)
-    * [Swan Storage Provider](filswan-platform/core-modules/my-profile/swan-storage-provider/README.md)
-      * [Registering your storage provider](filswan-platform/core-modules/my-profile/swan-storage-provider/registering-your-storage-provider.md)
-  * [Hosted Payment](filswan-platform/core-modules/hosted-payment.md)
-  * [Edge Caching Technology](filswan-platform/core-modules/edge-caching-technology.md)
-
-## Multi-Chain Storage
-
-* [Overview](multi-chain-storage/overview/README.md)
-  * [Flink](multi-chain-storage/overview/flink.md)
-  * [Filecoin Storage DAO](multi-chain-storage/overview/filecoin-storage-dao.md)
-* [MCS User Guide](multi-chain-storage/mcp-user-guide.md)
-* [Developer Quickstart](multi-chain-storage/developer-quickstart/README.md)
-  * [App Developer](multi-chain-storage/developer-quickstart/app-developer/README.md)
-    * [File Upload](multi-chain-storage/developer-quickstart/app-developer/file-upload.md)
-    * [Mint as an NFT](multi-chain-storage/developer-quickstart/app-developer/mint-as-an-nft.md)
-    * [SDK](multi-chain-storage/developer-quickstart/app-developer/sdk/README.md)
-      * [Alchemy polygon to MetaMask instructions](multi-chain-storage/developer-quickstart/app-developer/sdk/alchemy-polygon-to-metamask-instructions.md)
-      * [js-mcs-sdk](multi-chain-storage/developer-quickstart/app-developer/sdk/js-mcs-sdk/README.md)
-        * [SDK installation tutorial](multi-chain-storage/developer-quickstart/app-developer/sdk/js-mcs-sdk/sdk-installation-tutorial.md)
-        * [SDK User Case](multi-chain-storage/developer-quickstart/app-developer/sdk/js-mcs-sdk/sdk-user-case.md)
-* [Running a MCS Node](multi-chain-storage/running-a-mcp-node.md)
+    * [Register as a storage provider](filswan-platform/core-modules/my-profile/registering-your-storage-provider.md)
+  * [Find Storage Providers](filswan-platform/core-modules/find-storage-providers/README.md)
+    * [Storage Provider Details](filswan-platform/core-modules/find-storage-providers/storage-provider-details.md)
 
 ## Swan Provider
 
@@ -118,4 +110,8 @@
 * [MCS API](development-resource/mcp-api.md)
 * [Flink API](development-resource/flink-api.md)
 * [FS3 API](development-resource/fs3-api.md)
+* [API keys](development-resource/api-keys.md)
 * [FilSwan FAQ](development-resource/filswan-faq.md)
+* [Contact Us](development-resource/contact-us/README.md)
+  * [Social Accounts & Communities](development-resource/contact-us/social-accounts-and-communities.md)
+  * [Business Partnerships](development-resource/contact-us/business-partnerships.md)

@@ -34,7 +34,7 @@ lotus-miner auth create-token --perm write
 
 ### 2.1 Register your storage provider
 
-You need to [Register your Strorage Provider](../../filswan-platform/core-modules/my-profile/swan-storage-provider/registering-your-storage-provider.md) before you can start bidding.
+You need to [Register your Strorage Provider](../../filswan-platform/core-modules/my-profile/registering-your-storage-provider.md) before you can start bidding.
 
 ### 2.2 Install Swan Provider Binary
 

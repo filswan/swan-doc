@@ -1,2 +1,0 @@
-# Swan Storage Provider
-

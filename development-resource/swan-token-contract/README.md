@@ -9,7 +9,7 @@
 ### Mumbai Testnet <a href="#mumbai-testnet" id="mumbai-testnet"></a>
 
 {% hint style="info" %}
-If you have not set up your MetaMask wallet, please refer to [Beginner Walkthrough](../../getting-started/beginner-walkthrough/public-testnet/setup-metamask.md) to set up your MetaMask wallet first.
+If you have not set up your MetaMask wallet, please refer to [Beginner Walkthrough](../../multi-chain-storage/mcp-user-guide/setup-metamask.md) to set up your MetaMask wallet first.
 {% endhint %}
 
 {% hint style="success" %}
