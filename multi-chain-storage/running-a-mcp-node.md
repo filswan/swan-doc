@@ -1,5 +1,4 @@
 ---
-layout: nodes.liquid
 section: nodeOperator
 date: Last Modified
 title: Running a Chainlink Node
@@ -18,13 +17,13 @@ metadata:
     '0': /files/OpenGraph_V3.png
 ---
 
-# Running a MCS Node
+# Running an MCS Node
 
 In this section, we'll explain the requirements and basics for running your own MCS node.
 
-It's important to note that nodes can fulfill requests for open APIs out-of-the-box using our [Tasks](../docs/tasks/) without needing any additional configuration.
+It's important to note that nodes can fulfill requests for open APIs out-of-the-box using our [Tasks](../filswan-platform/overview/filswan-auction-system.md) without needing any additional configuration.
 
-If you would like to provide data from an authenticated API, you can add an [external adapter](../external-adapters/) to enable connectivity through the MCS node.
+If you would like to provide data from an authenticated API, you can add an external adapter to enable connectivity through the MCS node.
 
 ![Chainlink Node Diagr](<../.gitbook/assets/image (43).png>)
 
@@ -36,15 +35,15 @@ Your MCS node should be run on a server that has a public IP address.
 
 #### Minimum
 
-To get started running a MCS node, you will need a machine with at least **4 cores** and **4 GB of RAM**.
+To get started running an MCS node, you will need a machine with at least **4 cores** and **4 GB of RAM**.
 
 #### Recommended
 
-The requirements for running a MCS node scale as the number of jobs your node services also scales. For nodes with over 100 jobs, you will need at least **4 cores** and **8GB of RAM**.
+The requirements for running an MCS node scale as the number of jobs your node services also scale. For nodes with over 100 jobs, you will need at least **4 cores** and **8GB of RAM**.
 
 ### MySQL Database
 
-In addition to running a MCS node, you will also need a PostgreSQL database. Please use a version >= 11, and be sure that your DB host provides access to logs.
+In addition to running an MCS node, you will also need a PostgreSQL database. Please use a version >= 11, and be sure that your DB host provides access to logs.
 
 #### Minimum
 
@@ -66,13 +65,13 @@ Connectivity to an Ethereum client is also required for communication with the F
 
 ### Chainlink node
 
-Operating a Chainlink node allows you to be part of the Chainlink Network, helping developers build hybrid smart contracts, giving them access to real-world data and services.
+Operating a Chainlink node allows you to be part of the Chainlink Network, helping developers build hybrid smart contracts, and giving them access to real-world data and services.
 
 Learn more about Chainlink nodes with our step‑by‑step tutorials and documentation:
 
 **Set Up a Chainlink Node**
 
-Install and Run your own node on a local machine or remote server.
+Install and run your own node on a local machine or remote server.
 
 [Learn More ![Right arrow](https://docs.chain.link/images/card-icons/navigation-arrow-right.svg)](https://docs.chain.link/docs/running-a-chainlink-node)![](https://uploads-ssl.webflow.com/5e444500cbc42eeb5198206f/5e7898724c71bd62c149df16\_Example.svg)
 
@@ -90,7 +89,7 @@ Bring high-quality data and premium web APIs to contract developers.
 
 ## Running From Source
 
-To run a MCS node from source, use the [following instructions](https://github.com/smartcontractkit/chainlink#install).
+To run an MCS node from the source, use the [following instructions](https://github.com/smartcontractkit/chainlink#install).
 
 ## Using Docker
 

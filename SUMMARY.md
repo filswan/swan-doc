@@ -24,7 +24,7 @@
     * [Get Filecoin Status for File](multi-chain-storage/developer-quickstart/sdk/get-filecoin-status-for-file.md)
     * [Installation Tutorial Video](multi-chain-storage/developer-quickstart/sdk/installation-tutorial-video.md)
   * [Additional Resources](multi-chain-storage/developer-quickstart/additional-resources.md)
-* [Running a MCS Node](multi-chain-storage/running-a-mcp-node.md)
+* [Running an MCS Node](multi-chain-storage/running-a-mcp-node.md)
 
 ## Filswan Platform
 
