@@ -38,7 +38,7 @@ You need to [Register your Strorage Provider](../../filswan-platform/core-module
 
 ### 2.2 Install Swan Provider Binary
 
-At the time of this writing, the latest release is **release-v0.2.1-rc2**
+At the time of this writing, the latest release is **release-v0.2.1-rc1**
 
 The Swan Provider is a binary that is created from the [Swan Provider](https://github.com/filswan/go-swan-provider/tree/release-0.2.0) repository.
 
