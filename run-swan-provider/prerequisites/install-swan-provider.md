@@ -61,7 +61,7 @@ chmod +x ./install.sh
 **Execute swan-provider**
 
 ```
-./swan-provider-0.2.0-unix 
+./swan-provider-<release_version>-unix 
 ```
 
 #### Option2️⃣ Source Code：&#x20;
@@ -103,7 +103,7 @@ The Swan Provider is currently only supported on x86\_64 Linux systems.
 **Option**1️⃣&#x20;
 
 ```
-nohup ./swan-provider-0.2.0-unix >> swan-provider.log &   #After installation from Option 1
+nohup ./swan-provider-<release_branch>-unix >> swan-provider.log &   #After installation from Option 1
 ```
 
 #### Option2⃣️
