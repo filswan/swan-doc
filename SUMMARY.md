@@ -45,13 +45,15 @@
 ## Swan Provider
 
 * [Overview](run-swan-provider/overview.md)
-* [Prerequisites](run-swan-provider/prerequisites/README.md)
-  * [Requirements](run-swan-provider/prerequisites/hardware-requirements.md)
+* [Basic Concepts](swan-provider/basic-concepts.md)
+* [Get started](run-swan-provider/prerequisites/README.md)
   * [Install Swan Provider](run-swan-provider/prerequisites/install-swan-provider.md)
-* [Setup Your Swan Provider](run-swan-provider/setup-your-swan-provider/README.md)
+  * [Configuration](swan-provider/prerequisites/configuration.md)
+  * [Restart](swan-provider/prerequisites/restart.md)
+* [Run Your Swan Provider](run-swan-provider/setup-your-swan-provider/README.md)
   * [Run in autobid mode](run-swan-provider/setup-your-swan-provider/run-in-autobid-mode.md)
   * [Run in manual bid mode](run-swan-provider/setup-your-swan-provider/run-in-manual-bid-mode.md)
-  * [Swan Provider Installation Tutorial](run-swan-provider/setup-your-swan-provider/video-tutorial.md)
+* [Swan Provider Tutorial Video](swan-provider/video-tutorial.md)
 * [Swan Provider安装教程中文版](run-swan-provider/zhong-wen-ban-an-zhuang-jiao-cheng-swan-provider.md)
 
 ## Swan Client

@@ -1,10 +1,14 @@
+---
+description: A specialized tool for Filecoin storage providers.
+---
+
 # Overview
 
 ## Introduction
 
-Swan provider is a special type Filecoin storage provider. It runs on the same node as lotus miner nodes running and assistant lotus miner process deals.
+Swan Provider runs on the same node as lotus miner nodes running and assistant lotus miner process deals. It makes it easy for miners to manage tasks, import deals, and synchronize deals with the Swan platform.
 
-In order better share the information with Flilswan client, [authentication](broken-reference/) from Filswan platform is required.
+In order better share the information with the Flilswan client, [authentication](broken-reference/) from the Filswan platform is required.
 
 ![Swan Provider Business Flow](<../.gitbook/assets/image (22).png>)
 
