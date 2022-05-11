@@ -27,7 +27,7 @@ git checkout <release_branch>
 
 After installation, Swan Provider may quit unexpectedly due to lack of configuration. Under this situation, you need
 
-At the time of this writing, the latest release is **release-v0.2.1-rc2**
+At the time of this writing, the latest release is **release-v0.2.1**
 
 * 1️⃣ Edit config file **\~/.swan/provider/config.toml** to solve this.
 * 2️⃣ Execute **swan-provider** using one of the following commands\
