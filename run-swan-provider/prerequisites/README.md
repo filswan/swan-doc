@@ -1,6 +1,6 @@
 # Get started
 
-Swan Provider is designed to run on a machine with a lotus miner node. Check [lotus miner node](https://docs.filecoin.io/mine/lotus/) spec to make sure you meet the hardware requirements.
+Swan Provider is designed to run on a machine with a lotus miner node. Check [lotus miner node](https://lotus.filecoin.io/tutorials/lotus-miner/run-a-miner/#lotus-node-setup) spec to make sure you meet the hardware requirements.
 
 ### Prerequisites
 
