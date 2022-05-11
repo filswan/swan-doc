@@ -21,9 +21,9 @@ If there is an old version of the Swan Provider running, you need to add the new
 
 #### \[lotus]
 
-* ‼️**client\_api\_url:** Url of lotus client web api, such as: `http://[ip]:[port]/rpc/v0`, generally the `[port]` is `1234`. See [Lotus API](https://docs.filecoin.io/reference/lotus-api/)
-* ‼️**market\_api\_url:** Url of lotus market web api, such as: `http://[ip]:[port]/rpc/v0`, generally the `[port]` is `2345`. When market and miner are not separate, it is also the url of miner web api. See [Lotus API](https://docs.filecoin.io/reference/lotus-api/)
-* ‼️**market\_access\_token:** Access token of lotus market web api. When market and miner are not separate, it is also the access token of miner access token. See [Obtaining Tokens](https://docs.filecoin.io/build/lotus/api-tokens/#obtaining-tokens)
+* ‼️**client\_api\_url:** Url of lotus client web api, such as: `http://[ip]:[port]/rpc/v0`, generally the `[port]` is `1234`. See [Lotus API](https://lotus.filecoin.io/developers/api-access/)
+* ‼️**market\_api\_url:** Url of lotus market web api, such as: `http://[ip]:[port]/rpc/v0`, generally the `[port]` is `2345`. When market and miner are not separate, it is also the url of miner web api. See [Lotus API](https://lotus.filecoin.io/developers/api-access/)
+* ‼️**market\_access\_token:** Access token of lotus market web api. When market and miner are not separate, it is also the access token of miner access token. See [Obtaining Tokens](https://lotus.filecoin.io/developers/api-access/?#obtaining-tokens)
 
 #### \[aria2]
 
