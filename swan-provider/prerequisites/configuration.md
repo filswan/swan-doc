@@ -11,13 +11,13 @@ Please set up your deal price on lotus miner,e.g.
 lotus-miner storage-deals set-ask --price=0.00000001 --verified-price=0 --min-piece-size=4096Mib --max-piece-size=32Gib
 ```
 
-For more information, please check [lotus mine deals](https://docs.filecoin.io/mine/lotus/manage-storage-deals/#offline-deal-workflow)
+For more information, please check [lotus mine deals](https://lotus.filecoin.io/storage-providers/operate/manage-storage-deals/#offline-deal-workflow)
 
 ### **Add configuration item**
 
-* \*\* purge\_interval\*\*: 600 seconds or 10 minutes. Purge downloaded car file
 
-If there is an old version of the Swan Provider running, you need to add the new parameter manually. You can reference [Readme](https://github.com/filswan/go-swan-provider) on how to config them
+
+If there is an old version of the Swan Provider running, you need to add the new parameter manually. You can reference [Readme](https://github.com/filswan/go-swan-provider/tree/release-0.2.1) on how to config them
 
 #### \[lotus]
 
@@ -38,9 +38,10 @@ If there is an old version of the Swan Provider running, you need to add the new
 * **miner\_fid:** Your filecoin Miner ID
 * **import\_interval:** 600 seconds or 10 minutes. Importing interval between each deal.
 * **scan\_interval:** 600 seconds or 10 minutes. Time interval to scan all the ongoing deals and update status on Swan platform.
-* **api\_key:** Your api key. Acquire from [Swan Platform](https://www.filswan.com) -> "My Profile"->"Developer Settings". You can also check the Guide.
-* **access\_token:** Your access token. Acquire from [Swan Platform](https://www.filswan.com) -> "My Profile"->"Developer Settings". You can also check the Guide.
+* **api\_key:** Your api key. Acquire from [Swan Platform ](https://console.filswan.com/#/dashboard)-> "My Profile"->"Developer Settings". You can also check the Guide.
+* **access\_token:** Your access token. Acquire from [Swan Platform](https://console.filswan.com/#/dashboard) -> "My Profile"->"Developer Settings". You can also check the Guide.
 * **api\_heartbeat\_interval:** 300 seconds or 5 minutes. Time interval to send heartbeat.
+* **purge\_interval:** 600 seconds or 10 minutes. Time interval to purge downloaded car files whose deal status are Completed, ImportFailed or DealExpired
 
 #### \[bid]
 
