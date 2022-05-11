@@ -23,7 +23,7 @@ bid_mode = 1
 You are now ready to stop & restart your swan provider
 
 ```
-./swan-provider-0.2.0-unix   #After installation from Option 1
-./build/swan-provider        #After installation from Option 2
+./swan-provider-0.2.1-linux-amd64   #After installation from Option 1
+./build/swan-provider               #After installation from Option 2
 ```
 
