@@ -5,7 +5,7 @@ Make sure your [Lotus miner](https://docs.filecoin.io/mine/lotus/) is running on
 After installation from Option1⃣️
 
 ```
-./swan-provider-0.2.1-linux-amd64
+./swan-provider-0.2.0-unix
 ```
 
 After installation from Option2⃣️
