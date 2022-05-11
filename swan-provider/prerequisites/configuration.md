@@ -17,7 +17,7 @@ For more information, please check [lotus mine deals](https://docs.filecoin.io/m
 
 * \*\* purge\_interval\*\*: 600 seconds or 10 minutes. Purge downloaded car file
 
-If there is an old version of the Swan Provider running, you need to add the new parameter manually. You can reference [Readme](https://github.com/filswan/go-swan-provider) on how to config them
+If there is an old version of the Swan Provider running, you need to add the new parameter manually. You can reference [Readme](https://github.com/filswan/go-swan-provider/tree/release-0.2.1) on how to config them
 
 #### \[lotus]
 
