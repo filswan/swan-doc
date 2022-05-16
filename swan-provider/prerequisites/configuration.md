@@ -34,12 +34,12 @@ If there is an old version of the Swan Provider running, you need to add the new
 
 #### \[main]
 
-* **api\_url:** Swan API address. For Swan production, it is "[https://api.filswan.com](https://api.filswan.com)"
+* **api\_url:** Swan API address. For Swan production, it is "[https://api.filswan.com](https://api.filswan.com/)"
 * **miner\_fid:** Your filecoin Miner ID
 * **import\_interval:** 600 seconds or 10 minutes. Importing interval between each deal.
 * **scan\_interval:** 600 seconds or 10 minutes. Time interval to scan all the ongoing deals and update status on Swan platform.
-* **api\_key:** Your api key. Acquire from [Swan Platform ](https://console.filswan.com/#/dashboard)-> "My Profile"->"Developer Settings". You can also check the Guide.
-* **access\_token:** Your access token. Acquire from [Swan Platform](https://console.filswan.com/#/dashboard) -> "My Profile"->"Developer Settings". You can also check the Guide.
+* **api\_key:** Your api key. Acquire from [Swan Platform ](https://console.filswan.com/#/dashboard)-> "My Profile"->"Developer Settings"->"As Storage Provider". You can also check the Guide.
+* **access\_token:** Your access token. Acquire from [Swan Platform](https://console.filswan.com/#/dashboard) -> "My Profile"->"Developer Settings"->"As Storage Provider". You can also check the Guide.
 * **api\_heartbeat\_interval:** 300 seconds or 5 minutes. Time interval to send heartbeat.
 * **purge\_interval:** 600 seconds or 10 minutes. Time interval to purge downloaded car files whose deal status are Completed, ImportFailed or DealExpired
 
