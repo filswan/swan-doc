@@ -140,11 +140,11 @@ nohup ./build/swan-provider >> swan-provider.log &        #After installation fr
 * :information\_source:miner\_fid: 你的存储服务商ID 号
 * import\_interval: 每个交易中间的导入时间间隔，600 秒/10 分钟，一般无需更改
 * scan\_interval: 在 Swan 平台上扫描所有正在进行的交易和更新状态的时间间隔，600 秒/10 分钟，一般无需更改
-* :information\_source:api\_key: 你的 api key. 可以从Swan 平台得到，打开[网址](https://www.filswan.com)，点击 "个人信息"->"开发人员设置". 如图所示
+* :information\_source:api\_key: 你的 api key. 可以从Swan 平台得到，打开[网址](https://www.filswan.com)，点击 "个人信息"->"开发人员设置"->"作为存储服务商". 如图所示
 
 ![](<../.gitbook/assets/Swan Provider 中文版安装教程(1).tiff>)
 
-* :information\_source:access\_token: 你的access token. 可以从Swan 平台得到，打开[网址](https://www.filswan.com)-> "个人信息"->"开发人员设置".
+* :information\_source:access\_token: 你的access token. 可以从Swan 平台得到，打开[网址](https://www.filswan.com/)-> "个人信息"->"开发人员设置"->"作为存储服务商".
 * api\_heartbeat\_interval: 心跳检测的时间间隔，300 秒或者5 分钟，一般无需更改
 
 #### 5.5 \[bid]用于设置自动竞拍
