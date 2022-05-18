@@ -25,7 +25,11 @@ It's important to note that nodes can fulfill requests for open APIs out-of-the-
 
 If you would like to provide data from an authenticated API, you can add an external adapter to enable connectivity through the MCS node.
 
-![Chainlink Node Diagr](<../.gitbook/assets/image (43).png>)
+{% embed url="https://github.com/filswan/filecoin-chart" %}
+
+{% embed url="https://github.com/filswan/filecoin-docker" %}
+
+{% embed url="https://github.com/filswan/filecoin_tools" %}
 
 ## Hardware Requirements
 
@@ -93,7 +97,7 @@ To run an MCS node from the source, use the [following instructions](https://git
 
 ## Using Docker
 
-It's recommended to run the MCS node with [Docker](https://www.docker.com). This is because we continuously build and deploy the code from our [repository on Github](https://github.com/smartcontractkit/chainlink), which means you don't need a complete development environment to run a node.
+It's recommended to run the MCS node with [Docker](https://www.docker.com/). This is because we continuously build and deploy the code from our [repository on Github](https://github.com/smartcontractkit/chainlink), which means you don't need a complete development environment to run a node.
 
 ### Requirements
 

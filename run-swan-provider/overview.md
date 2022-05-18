@@ -10,6 +10,8 @@ Swan Provider runs on the same node as lotus miner nodes running and assistant l
 
 In order better share the information with the Flilswan client, authentication from the Filswan platform is required.
 
+{% embed url="https://github.com/filswan/go-swan-provider" %}
+
 ![Swan Provider Business Flow](<../.gitbook/assets/image (22).png>)
 
 ![Swan Provider System Architect](<../.gitbook/assets/image (24).png>)

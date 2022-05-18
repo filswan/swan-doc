@@ -14,6 +14,8 @@ Filecoin is the best option for users from blockchains like Ethereum, BSC, and P
 
 [An External adapter](https://docs.chain.link/docs/external-adapters) can allow access to high-quality data and enable extreme flexibility to connect smart contracts to premium web APIs. With Chainlink external adapter, user can check their deal information on oracle node operators.
 
+{% embed url="https://github.com/filswan/flink" %}
+
 ### **Sample Use Case**
 
 **Polygon NFTs USDC payment for Filecoin storage**

@@ -19,6 +19,8 @@ const mintTx = await client.mintAsset(PAYLOAD_CID, nft)
 console.log(mintTx)
 ```
 
+{% embed url="https://github.com/filswan/nft" %}
+
 ### Parameters
 
 * **payloadCid**: payload cid of the file

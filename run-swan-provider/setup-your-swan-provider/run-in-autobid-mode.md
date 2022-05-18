@@ -6,6 +6,8 @@ description: An autobid market build by filswan
 
 Autobid is a simplified process for swan provider who can fast join the auction process. By default, swan provider is running in autobid mode.
 
+{% embed url="https://github.com/filswan/autobid" %}
+
 ![Task Distribution to multiple Swan Provider](<../../.gitbook/assets/image (25).png>)
 
 edit `~/.swan/provider/config.toml` as follows

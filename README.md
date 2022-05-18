@@ -23,6 +23,8 @@ Since 2018, FilSwan has been dedicated to decentralized storage and computing so
 * FilSwan offers an alternative to the current mainstream cloud storage that bridges Filecoin and S3.
 * FilSwan migrates petabytes of data while ensuring efficiency and cost-effectiveness.
 
+{% embed url="https://github.com/filswan" %}
+
 ## Core Product
 
 {% content-ref url="broken-reference" %}

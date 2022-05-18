@@ -4,7 +4,7 @@ description: https://github.com/filswan/js-mcs-sdk
 
 # js-mcs-sdk
 
-[js-mcs-sdk ](https://github.com/filswan/js-mcs-sdk)is a javascript client library for the MCS service. It provides a convenient interface for working with the MCS API from a web browser or Node.js.&#x20;
+js-mcs-sdk is a javascript client library for the MCS service. It provides a convenient interface for working with the MCS API from a web browser or Node.js.&#x20;
 
 The client has the following functionalities:
 
@@ -14,6 +14,8 @@ The client has the following functionalities:
 * GET       list of files uploaded
 * GET       files by CID
 * GET       storage status from Filecoin
+
+{% embed url="https://github.com/filswan/js-mcs-sdk" %}
 
 ### Sponsors
 

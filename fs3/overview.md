@@ -2,7 +2,9 @@
 
 ## **What is FS3?** <a href="#9ffa" id="9ffa"></a>
 
-FS3 is API compatible with Amazon S3 cloud storage service for Filecoin network. It is committed to create a simpler and faster storage service for Filecoin network.  Simply put, it is a bridge connecting S3 and FIL.&#x20;
+{% embed url="https://github.com/filswan/fs3-mc" %}
+
+FS3 is API compatible with Amazon S3 cloud storage service for the Filecoin network. It is committed to create a simpler and faster storage service for Filecoin network.  Simply put, it is a bridge connecting S3 and FIL.&#x20;
 
 Similar to S3 object storage tool which is widely used in the industry, FS3 can also handle structured and unstructured data, including log files, artifacts, backups, container images, photos and videos.&#x20;
 
@@ -51,7 +53,7 @@ In addition, FS3 is used as middleware and more development teams can also build
 
 ## **Want to experience the FS3 testnet? Come and try it here:**
 
-FS3 calibration network public test entrance: [https://calibration-fs3.filswan.com](https://calibration-fs3.filswan.com)
+FS3 calibration network public test entrance: [https://calibration-fs3.filswan.com](https://calibration-fs3.filswan.com/)
 
 Test username: fs3\_demo
 
