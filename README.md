@@ -1,8 +1,7 @@
 ---
 description: >-
-  FilSwan has been dedicated to decentralized storage solutions in the Web 3
-  era, providing layer-2 cross-chain solutions for Web3 projects by integrating
-  data, computing, and payment into one suite.
+  FilSwan provides a layer 2 cross-chain infrastructure for Web3 projects by
+  integrating data, computing, and payment into one suite.
 ---
 
 # FilSwan Overview
