@@ -57,5 +57,3 @@ _****_:file\_folder:_**Task status:**_
 
 * This JSON file generated in each step will be used in its next step and can be used to rebuild the graph in the future.
 * Uuid is generated for future index purposes.
-
-{% embed url="https://github.com/filswan/swan-client" %}

@@ -53,7 +53,13 @@
   * [Run in autobid mode](run-swan-provider/setup-your-swan-provider/run-in-autobid-mode.md)
   * [Run in manual bid mode](run-swan-provider/setup-your-swan-provider/run-in-manual-bid-mode.md)
 * [Swan Provider Tutorial Video](swan-provider/video-tutorial.md)
-* [Swan Provider安装教程中文版](run-swan-provider/zhong-wen-ban-an-zhuang-jiao-cheng-swan-provider.md)
+
+***
+
+* [Swan Provider概括](swan-provider-gai-kuo/README.md)
+  * [前提条件](swan-provider-gai-kuo/qian-ti-tiao-jian.md)
+  * [安装配置](swan-provider-gai-kuo/an-zhuang-pei-zhi.md)
+  * [Swan Provider安装教程中文版](swan-provider-gai-kuo/zhong-wen-ban-an-zhuang-jiao-cheng-swan-provider.md)
 
 ## Swan Client
 
@@ -109,6 +115,7 @@
   * [Acquire Testnet USDC and MATIC tokens](development-resource/swan-token-contract/acquire-testnet-usdc-and-matic-tokens.md)
 * [FilSwan API](development-resource/filswan-api.md)
 * [MCS API](development-resource/mcp-api.md)
+* [MCS 2.0 API](development-resource/mcp-api-1.md)
 * [Flink API](development-resource/flink-api.md)
 * [FS3 API](development-resource/fs3-api.md)
 * [API keys](development-resource/api-keys.md)

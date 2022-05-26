@@ -20,8 +20,6 @@ MCS is a cutting-edge blockchain storage solution providing a data cache and pre
 * Access services by connecting a third-party wallet (MetaMask)
 * Sent or get deals automatically through the build-in auto-bid system.
 
-{% embed url="https://github.com/filswan/multi-chain-payment" %}
-
 ### **Advantages**
 
 Filecoin is an open-source, public cryptocurrency and digital payment system intended to be a blockchain-based cooperative digital storage and data retrieval method. As a powerful and dynamic distributed cloud storage network, Filecoin is adopted by multiple blockchain projects like Near and Polygon.
@@ -29,3 +27,5 @@ Filecoin is an open-source, public cryptocurrency and digital payment system int
 However, those individual chains or projects each operate in isolation and can hardly communicate with the others. Global users are consequently facing a large number of networks with different algorithms, transaction types, rules, etc. It prevents users from enjoying the full potential of blockchain technology.
 
 **That is why MCS is working to guarantee the seamless interoperability of blockchains.** Since its launch, MCS has been dedicated to closing the gap by allowing users to swap other tokens to Fil to pay for data storage. MCS will bring data storage to the next level of security, decentralization, and democratization.
+
+{% embed url="https://github.com/filswan/multi-chain-storage/tree/qa_single_miner" %}
