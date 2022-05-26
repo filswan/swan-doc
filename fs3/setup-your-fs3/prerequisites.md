@@ -3,7 +3,7 @@
 * Golang 1.15+.
 * Node Js 14.0+.
 * PostgreSQL 10.19+.
-  * A PostgreSQL database is required to be pre-built for FS3 server usage. Check [PostgreSQL Tutorial](https://www.postgresqltutorial.com) on installation and connection instructions.&#x20;
+  * A PostgreSQL database is required to be pre-built for FS3 server usage. Check [PostgreSQL Tutorial](https://www.postgresqltutorial.com/) on installation and connection instructions.&#x20;
 * IPFS 0.8.0+.
   * A running IPFS node is needed for CAR file generation and files uploading and storage. You can refer [IPFS Command-line Docs](https://docs.ipfs.io/install/command-line/#official-distributions) for installation instructions and configuration
 * Lotus node 1.13

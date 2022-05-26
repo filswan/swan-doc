@@ -1,11 +1,11 @@
 # Mint Assets as NFTs
 
-`mintAsset(payloadCid, nftObject)`
+`mintAsset(sourceFileUploadId, nftObject)`
 
 The following code example mints an uploaded file as a NFT viewable on Opensea. Create an NFT object and provide the payload\_cid of the file. The NFT object follows the [Opensea metadata standards](https://docs.opensea.io/docs/metadata-standards).&#x20;
 
 ```
-const PAYLOAD_CID = ''
+const SOURCE_FILE_UPLOAD_ID = ''
 const IPFS_URL = ''
  
 const nft = {
@@ -15,7 +15,7 @@ const nft = {
   attributes: [], // NFT attributes displayed on Opensea
 }
  
-const mintTx = await client.mintAsset(PAYLOAD_CID, nft)
+const mintTx = await client.mintAsset(SOURCE_FILE_UPLOAD_ID, nft)
 console.log(mintTx)
 ```
 
@@ -23,7 +23,7 @@ console.log(mintTx)
 
 ### Parameters
 
-* **payloadCid**: payload cid of the file
+* **sourceFileUploadId**: upload Id of the file
 * **nftObject**: object following Opensea Metadata Standards
   * **name**: name of your NFT (required)
   * **image**: IPFS URL of your file (required)

@@ -4,9 +4,9 @@ description: https://github.com/filswan/js-mcs-sdk
 
 # js-mcs-sdk
 
-js-mcs-sdk is a javascript client library for the MCS service. It provides a convenient interface for working with the MCS API from a web browser or Node.js.&#x20;
+js-mcs-sdk is a javascript software development kit for the MCS service. It provides a convenient interface for working with the MCS API from a web browser or Node.js.&#x20;
 
-The client has the following functionalities:
+The SDK has the following functionalities:
 
 * POST    upload file to FilSwan IPFS gateway
 * POST    make payment to Swan Filecoin storage gateway

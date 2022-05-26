@@ -9,9 +9,9 @@
 
 #### \[main]
 
-* **api\_url**: Swan API address. For Swan production, it is "[https://api.filswan.com](https://api.filswan.com)". It can be ignored if `[sender].offline_mode=true`.
-* ‼️**api\_key**: Your Swan API key. Acquire from [Swan Platform](https://www.filswan.com) -> "My Profile"->"Developer Settings". It can be ignored if `[sender].offline_mode=true`.
-* ‼️**access\_token**: Your Swan API access token. Acquire from [Swan Platform](https://www.filswan.com) -> "My Profile"->"Developer Settings". It can be ignored if `[sender].offline_mode=true`.
+* **api\_url**: Swan API address. For Swan production, it is "[https://api.filswan.com](https://api.filswan.com/)". It can be ignored if `[sender].offline_mode=true`.
+* ‼️**api\_key**: Your Swan API key. Acquire from [Swan Platform](https://www.filswan.com/) -> "My Profile"->"Developer Settings". It can be ignored if `[sender].offline_mode=true`.
+* ‼️**access\_token**: Your Swan API access token. Acquire from [Swan Platform](https://www.filswan.com/) -> "My Profile"->"Developer Settings". It can be ignored if `[sender].offline_mode=true`.
 * ‼️**storage\_server\_type**: "ipfs server" or "web server"
 
 #### \[web-server]

@@ -8,7 +8,7 @@ If you already have Testnet USDC and MATIC tokens, please skip to [MCP User Guid
 
 ## Testnet Swan Faucet <a href="#testnet-link-faucet" id="testnet-link-faucet"></a>
 
-By using the [Swan faucet](https://calibration-faucet.filswan.com), you can get Testnet USDC and MATIC tokens for your account on the Polygon Mumbai network.&#x20;
+By using the [Swan faucet](https://calibration-faucet.filswan.com/), you can get Testnet USDC and MATIC tokens for your account on the Polygon Mumbai network.&#x20;
 
 ![](<../../.gitbook/assets/image (47).png>)
 

@@ -17,11 +17,11 @@ const fileArray = [
 //optional, showing default options
 const options = {
   delay: 1000, // delay between upload API calls for each file. May need to be raised for larger files
-  duration: 180, // the number of days to store the file on the Filecoin network.
+  duration: 525, // the number of days to store the file on the Filecoin network.
   fileType: 0, // set to 1 for nft metadata files. type 1 files will not show on the UI.
 }
 
-const uploadResponses = await client.upload(fileArray, options)
+const uploadResponses = await mcs.upload(fileArray, options)
 console.log(uploadResponses)
 ```
 
@@ -32,7 +32,7 @@ console.log(uploadResponses)
   * **file**: file contents (using `fs` is a simple way to get the file contents)
 * **options**: an optional object can also be passed to specify certain parameters:
   * **delay**: delay in milliseconds between upload API calls. Default is 1000, but may need to be increased for many larger files
-  * **duration**: Number of days to store your file on the Filecoin network. (default 180)
+  * **duration**: Number of days to store your file on the Filecoin network. (default 525)
   * **fileType**: Files of type one will be hidden from the upload list and the UI. NFT metadata files are type 1. (default 0)
 
 ### Return

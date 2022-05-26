@@ -22,15 +22,15 @@ Add a custom RPC network to connect your wallet account to the Mumbai Testnet, c
 | RPC URL            | <p><code>https://rpc-mumbai.matic.today</code> or<br><code>https://matic-mumbai.chainstacklabs.com</code> or<br><code>https://rpc-mumbai.maticvigil.com</code> or<br><code>https://matic-testnet-archive-rpc.bwarelabs.com</code></p> |
 | ChainID            | 80001                                                                                                                                                                                                                                 |
 | Symbol             | MATIC                                                                                                                                                                                                                                 |
-| Block Explorer URL | [https://mumbai.polygonscan.com/](https://mumbai.polygonscan.com)                                                                                                                                                                     |
+| Block Explorer URL | [https://mumbai.polygonscan.com/](https://mumbai.polygonscan.com/)                                                                                                                                                                    |
 
-![](<../../../.gitbook/assets/image (29).png>)
+![](<../../.gitbook/assets/image (29).png>)
 
 After the parameters are configured, click 'Save' button below and successfully add Mumbai Testnet.&#x20;
 
 If you want to add more wallet accounts, you can create them by importing the private key of your existing other wallets; or, you can directly click Create Account, and remember to save the private key after creation.
 
-&#x20;                                               ![](<../../../.gitbook/assets/image (41) (1).png>)
+&#x20;                                               ![](<../../.gitbook/assets/image (41) (1).png>)
 
 
 

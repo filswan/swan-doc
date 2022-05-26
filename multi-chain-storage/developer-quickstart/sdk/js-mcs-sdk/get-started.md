@@ -1,5 +1,5 @@
 ---
-description: This guide will explain how to install the mcs-client and its basic usage
+description: This guide will explain how to install the js-mcs-sdk and its basic usage
 ---
 
 # Get Started
@@ -7,17 +7,17 @@ description: This guide will explain how to install the mcs-client and its basic
 ## Prerequisites
 
 * [Node.js](https://nodejs.org/en/) - This SDK was built using version v16.13.0 (npm v8.1.0)
-* Polygon Mumbai Testnet Wallet - [Metamask Tutorial](../../mcp-user-guide/setup-metamask.md)
-* Polygon Mumbai Testnet Alchemy RPC - [Alchemy Tutorial](../../mcp-user-guide/configure-metamask-with-alchemy-rpc-url.md#alchemypolygontometamaskinstructions-2.createalchemymumbaipolygonrpc)
+* Polygon Mumbai Testnet Wallet - [Metamask Tutorial](../../../mcp-user-guide/setup-metamask.md)
+* Polygon Mumbai Testnet Alchemy RPC - [Alchemy Tutorial](../../../mcp-user-guide/configure-metamask-with-alchemy-rpc-url.md#alchemypolygontometamaskinstructions-2.createalchemymumbaipolygonrpc)
 
-Mumbai Testnet USDC and MATIC funds are also necessary - [Swan Faucet Tutorial](../../../development-resource/swan-token-contract/acquire-testnet-usdc-and-matic-tokens.md)
+Mumbai Testnet USDC and MATIC funds are also necessary - [Swan Faucet Tutorial](../../../../development-resource/swan-token-contract/acquire-testnet-usdc-and-matic-tokens.md)
 
 ## Installation
 
 Install the package using npm. It is recommended to create a new directory for a new project.
 
 ```
-npm install mcs-client
+npm install js-mcs-sdk
 ```
 
 ## Environment Variables
@@ -40,19 +40,19 @@ Here is a simple example to upload a single file to MCS. Made a new file named `
 
 ```
 require('dotenv').config()
-const { mcsClient } = require('mcs-client')
+const { mcsSdk } = require('js-mcs-sdk')
 
-// set up mcs-client
-const client = new mcsClient({
+// set up js-mcs-sdk
+const mcs = new mcsSdk({
   privateKey: process.env.PRIVATE_KEY,
   rpcUrl: process.env.RPC_URL,
 })
 
 async function main() {
-  const testFile = JSON.stringify({ address: client.publicKey })
+  const testFile = JSON.stringify({ address: mcs.publicKey })
   const fileArray = [{ fileName: 'testFile.json', file: testFile }]
 
-  const uploadResponse = await client.upload(fileArray)
+  const uploadResponse = await mcs.upload(fileArray)
   console.log(uploadResponse)
 }
 
@@ -63,10 +63,10 @@ Use the command `node upload.js` to run the code. This snippet creates the MCS-C
 
 ## Documentation Note
 
-The following documentation for this client will assume you have a MCS client instantiated. Using the `client` variable for the following examples.
+The following documentation for this client will assume you have the MCS SDK instantiated. Using the `mcs` variable for the following examples.
 
 ```
-const client = new mcsClient({
+const mcs = new mcsSdk({
   privateKey: process.env.PRIVATE_KEY,
   rpcUrl: process.env.RPC_URL,
 })

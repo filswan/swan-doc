@@ -38,10 +38,6 @@ At the time of this writing, the latest release is **release-v0.2.1**
 ./build/swan-provider               #After installation from Option 2
 ```
 
-```
-./swan-provider-0.2.0-unix 
-```
-
 #### Note
 
 * Logs are in directory ./logs
@@ -49,10 +45,6 @@ At the time of this writing, the latest release is **release-v0.2.1**
 * You can add `>> swan-provider.log` in the command to let all the logs output to `swan-provider.log`.
 * You can add `&` at the end of the command to let the program run in background.
 * Such as:
-
-```
-nohup ./swan-provider-0.2.0-unix >> swan-provider.log &   #After installation from Option 1
-```
 
 ```
 nohup ./swan-provider-0.2.1-linux-amd64 >> swan-provider.log &   #After installation from Option 1

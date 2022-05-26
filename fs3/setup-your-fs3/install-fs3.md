@@ -4,7 +4,7 @@
 
 #### PostgreSQL
 
-A PostgreSQL database is required to be pre-built for FS3 server usage. Check [PostgreSQL Tutorial](https://www.postgresqltutorial.com) on installation and connection instructions.&#x20;
+A PostgreSQL database is required to be pre-built for FS3 server usage. Check [PostgreSQL Tutorial](https://www.postgresqltutorial.com/) on installation and connection instructions.&#x20;
 
 **Install PostgreSQL on Ubuntu**
 
@@ -137,7 +137,7 @@ vim .env
 * **CAR\_FILE\_SIZE** : A fixed car file size in bytes need to be predefined before generating car files for trunk via variable `CarFileSize`, such as `8589934592` for 8Gb as default.
 * **IPFS\_API\_ADDRESS** : An available ipfs address with port need to be set up. For example, `https://MyIpfsUrl:Port`.
 * **IPFS\_GATEWAY** : An available ipfs address with port need to be set up for file downloading. For example, `https://MyIpfsGatewayUrl:Port`.
-* **SWAN\_TOKEN** : A valid swan token is required for posting task on swan platform. It can be received after creating an account on [Filswan](https://www.filswan.com). Check [Filswan APIs](https://documenter.getpostman.com/view/13140808/TWDZJbzV) for more details on how to get authorization token.
+* **SWAN\_TOKEN** : A valid swan token is required for posting task on swan platform. It can be received after creating an account on [Filswan](https://www.filswan.com/). Check [Filswan APIs](https://documenter.getpostman.com/view/13140808/TWDZJbzV) for more details on how to get authorization token.
 {% endhint %}
 
 **Build up FS3 server**
@@ -176,6 +176,6 @@ make
 
 ## **Open** FS3 Browser
 
-You can test the deployment using the FS3 Browser, an embedded web-based object browser built into FS3 Server. Point a web browser running on the host machine to [http://127.0.0.1:9000](http://127.0.0.1:9000) and log in with the root credentials. You can use the Browser to create buckets, upload objects, send deals, retrieve data and browse the contents of the FS3 server.
+You can test the deployment using the FS3 Browser, an embedded web-based object browser built into FS3 Server. Point a web browser running on the host machine to [http://127.0.0.1:9000](http://127.0.0.1:9000/) and log in with the root credentials. You can use the Browser to create buckets, upload objects, send deals, retrieve data and browse the contents of the FS3 server.
 
 You can also connect using any S3-compatible tool, such as the [FS3-mc](https://github.com/filswan/fs3-mc) commandline tool.

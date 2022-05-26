@@ -39,7 +39,7 @@ If you're looking to discover how MCS works, the best place to begin is by the [
 
 **Data DAO:** More information can be found at [Flink](https://github.com/filswan/flink).
 
-**IPFS:** More information can be found **** [here](https://docs.ipfs.io).
+**IPFS:** More information can be found **** [here](https://docs.ipfs.io/).
 
 **Filecoin Storage:** More information can be found [here](https://lotus.filecoin.io/docs/set-up/install/).
 
