@@ -59,7 +59,7 @@
 * [Swan Provider概括](swan-provider-gai-kuo/README.md)
   * [前提条件](swan-provider-gai-kuo/qian-ti-tiao-jian.md)
   * [安装配置](swan-provider-gai-kuo/an-zhuang-pei-zhi.md)
-  * [Swan Provider安装教程中文版](swan-provider-gai-kuo/zhong-wen-ban-an-zhuang-jiao-cheng-swan-provider.md)
+  * [Swan Provider支持](run-swan-provider/zhong-wen-ban-an-zhuang-jiao-cheng-swan-provider.md)
 
 ## Swan Client
 
