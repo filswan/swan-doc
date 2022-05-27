@@ -1,3 +1,7 @@
+---
+description: Get Details about a specific file
+---
+
 # Get File Details
 
 `getFileDetails(sourceFileUploadId, dealId)`
@@ -8,7 +12,7 @@ The following code example gets the file details of an uploaded file. This metho
 const SOURCE_FILE_UPLOAD_ID = ''
 const DEAL_ID = ''
  
-console.log(await client.getFileDetails(SOURCE_FILE_UPLOAD_ID, DEAL_ID))
+console.log(await mcs.getFileDetails(SOURCE_FILE_UPLOAD_ID, DEAL_ID))
 ```
 
 ### Parameters

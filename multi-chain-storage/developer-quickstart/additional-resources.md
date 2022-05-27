@@ -4,7 +4,7 @@
 
 {% embed url="https://github.com/filswan/js-mcs-sdk" %}
 
-{% embed url="https://www.npmjs.com/package/mcs-client" %}
+{% embed url="https://www.npmjs.com/package/js-mcs-sdk" %}
 
 ### What is Filecoin?
 

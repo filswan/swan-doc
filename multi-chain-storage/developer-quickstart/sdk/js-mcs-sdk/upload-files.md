@@ -1,5 +1,5 @@
 ---
-description: Upload file(s) to MCS using the MCS Client
+description: Upload file(s) to MCS using the MCS SDK
 ---
 
 # Upload Files

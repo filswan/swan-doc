@@ -1,3 +1,7 @@
+---
+description: View your uploaded files
+---
+
 # List Files
 
 `getUploads(walletAddress, payloadCid, fileName, orderBy, isAscend, status, isMinted, pageNumber, pageSize)`

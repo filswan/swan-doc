@@ -1,3 +1,7 @@
+---
+description: Get Filecoin storage status of a file
+---
+
 # Get Filecoin Status for File
 
 `getFileStatus(dealId)`

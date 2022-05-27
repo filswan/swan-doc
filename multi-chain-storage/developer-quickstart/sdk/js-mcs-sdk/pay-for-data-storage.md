@@ -1,3 +1,7 @@
+---
+description: Pay for storage on MCS
+---
+
 # Pay for data storage
 
 `makePayment(wCid, minAmount, fileSize)`

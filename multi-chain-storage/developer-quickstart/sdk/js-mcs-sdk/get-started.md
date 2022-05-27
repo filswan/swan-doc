@@ -59,11 +59,11 @@ async function main() {
 main()
 ```
 
-Use the command `node upload.js` to run the code. This snippet creates the MCS-Client instance, creates a JSON file with your wallet address, and uploads the file to MCS.
+Use the command `node upload.js` to run the code. This snippet creates the MCS SDK instance, creates a JSON file with your wallet address, and uploads the file to MCS.
 
 ## Documentation Note
 
-The following documentation for this client will assume you have the MCS SDK instantiated. Using the `mcs` variable for the following examples.
+The following documentation for this SDK will assume you have the MCS SDK instantiated. Using the `mcs` variable for the following examples.
 
 ```
 const mcs = new mcsSdk({

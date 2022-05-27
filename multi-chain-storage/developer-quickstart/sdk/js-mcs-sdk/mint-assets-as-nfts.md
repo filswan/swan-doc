@@ -1,3 +1,7 @@
+---
+description: Mint NFT to MCS Opensea Collection
+---
+
 # Mint Assets as NFTs
 
 `mintAsset(sourceFileUploadId, nftObject)`
@@ -15,9 +19,11 @@ const nft = {
   attributes: [], // NFT attributes displayed on Opensea
 }
  
-const mintTx = await client.mintAsset(SOURCE_FILE_UPLOAD_ID, nft)
+const mintTx = await mcs.mintAsset(SOURCE_FILE_UPLOAD_ID, nft)
 console.log(mintTx)
 ```
+
+
 
 {% embed url="https://github.com/filswan/nft" %}
 
