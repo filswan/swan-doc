@@ -2,7 +2,7 @@
 
 ## **Github and NPM** <a href="#sdkusercase-whatisfilecoin" id="sdkusercase-whatisfilecoin"></a>
 
-{% embed url="https://github.com/filswan/js-mcs-sdk" %}
+{% embed url="https://github.com/filswan/js-mcs-sdk/tree/multiminer" %}
 
 {% embed url="https://www.npmjs.com/package/js-mcs-sdk" %}
 
