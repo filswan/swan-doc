@@ -10,11 +10,11 @@ This setting is off by default. To turn it on, navigate to Settings > Advanced >
 
 First, you will need an Alchemy account. On the Dashboard page, click "+ CREATE APP", configure the app to be on "Polygon Mumbai"
 
-![](<../../.gitbook/assets/4 (1).png>)
+![](<../../.gitbook/assets/4 (1) (1).png>)
 
-![](../../.gitbook/assets/5.png)
+![](<../../.gitbook/assets/5 (1).png>)
 
-![](../../.gitbook/assets/6.png)
+![](<../../.gitbook/assets/6 (1).png>)
 
 ### 3. Add the HTTP URL to Metamask <a href="#alchemypolygontometamaskinstructions-3.addthehttpurltometamask" id="alchemypolygontometamaskinstructions-3.addthehttpurltometamask"></a>
 
@@ -26,4 +26,4 @@ On your Alchemy dashboard, click the "VIEW KEY" button to view the RPC URL of yo
 * Currency Symbol: MATIC
 * Blockchain Explorer URL: [https://mumbai.polygonscan.com/](https://mumbai.polygonscan.com/)
 
-![](../../.gitbook/assets/7.png) ![](../../.gitbook/assets/8.png) ![](../../.gitbook/assets/9.png)
+![](../../.gitbook/assets/7.png) ![](<../../.gitbook/assets/8 (2).png>) ![](../../.gitbook/assets/9.png)

@@ -26,11 +26,11 @@ Click on the **Connect Wallet** button to connect your MetaMask wallet, and make
 
 ![](<../../.gitbook/assets/2 (2).png>)
 
-![](<../../.gitbook/assets/image (40) (1).png>)
+![](<../../.gitbook/assets/3 (2).png>)
 
 After Submitting your request, an uploading window will show up. Uploading time varies depends on the size of your file. Please keep the window open until uploading completes.
 
-![](../../.gitbook/assets/chrome-capture-upload.gif)
+![](<../../.gitbook/assets/4 (1).png>)
 
 ### **3. Lock fund with MetaMask**
 
@@ -38,11 +38,13 @@ After the file has been successfully uploaded to IPFS, the next step is Lock fun
 
 Waiting time varies depends on the blockchain congestion.
 
-![](<../../.gitbook/assets/chrome-capture (5).gif>)
+![](../../.gitbook/assets/5.png)
+
+![](../../.gitbook/assets/6.png)
 
 While the payment is completed, a pop-up window with the transaction link shows up. You can either click on the link or check your MetaMask activity to see the transaction at the block explorer.
 
-![](<../../.gitbook/assets/image (45).png>)
+![](<../../.gitbook/assets/7 (1).png>)
 
 {% hint style="info" %}
 **TIPS:** If you changed your mind and wanted to select another plan?
@@ -64,7 +66,7 @@ On this page, you can find all the files you have uploaded. It provides you some
 **GOOD TO KNOW:** In order to improve the efficiency, MCS system is using FilSwan's AutoBid function. A qualified and optimal provider will be automatically assigned to your deal. The storage provider will complete following backup procedure, and synchronize the 'Deal status' to our platform.
 {% endhint %}
 
-![](<../../.gitbook/assets/image (34) (2).png>)
+![](../../.gitbook/assets/8.png)
 
 {% hint style="info" %}
 **TIPS:** A search bar is provided on the top of file list. You can search your file by partial file name.&#x20;
@@ -72,7 +74,7 @@ On this page, you can find all the files you have uploaded. It provides you some
 
 To view more details, simply click on the **file name**. You can find all the related information on this page, including the IPFS download link, the retrieval from Filecoin Network command, and DAO signature information and status. You won't need to bother to check the deal with a blockchain explorer.:smile:
 
-![](<../../.gitbook/assets/chrome-capture (6).gif>)
+![](<../../.gitbook/assets/9 (3).gif>)
 
 #### DAO Signature Process:
 
@@ -93,14 +95,14 @@ To mint a NFT. You just need to click on the **MINT** button of the correspondin
 
 By clicking on the **Mint NFT** button, a MetaMask window will popup for authorization purpose. A little bit gas fee will be consumed to confirm this mint transaction.&#x20;
 
-![](../../.gitbook/assets/chrome-capture-mint.gif)
+![](../../.gitbook/assets/12.gif)
 
 Once the mint process is completed, a View Your NFT window will popup. The transaction hash and a link to view your NFT on OpenSea are provided. You can click on the transaction has and OpenSea links to view more details.
 
-![](<../../.gitbook/assets/image (43).png>)
+![](../../.gitbook/assets/12.png)
 
 ### 6. Billing History
 
 Users can view the billing history of all deals in 'Billing history' page. It covers all the information about the order such as the transaction hash, amount, unlock amount, token, data CID, wallet address, etc.
 
-![](<../../.gitbook/assets/image (29) (1) (1).png>)
+![](../../.gitbook/assets/10.png)
