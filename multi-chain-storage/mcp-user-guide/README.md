@@ -97,6 +97,8 @@ By clicking on the **Mint NFT** button, a MetaMask window will popup for authori
 
 ![](../../.gitbook/assets/12.gif)
 
+![](../../.gitbook/assets/14.png)
+
 Once the mint process is completed, a View Your NFT window will popup. The transaction hash and a link to view your NFT on OpenSea are provided. You can click on the transaction has and OpenSea links to view more details.
 
 ![](../../.gitbook/assets/12.png)
