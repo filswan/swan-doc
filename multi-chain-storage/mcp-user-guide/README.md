@@ -21,7 +21,7 @@ Click on the **Connect Wallet** button to connect your MetaMask wallet, and make
 
 * Click the button of **Upload More** .
 * Choose the file you would like to backup to Filecoin Network. The file name and file size will be displayed below upload button.
-* An estimated storage cost will be calculated according to the file size, the duration you set, and the average provider price.
+* An estimated storage cost will be calculated according to the file size, the duration , and the average provider price.
 * Based on the real-time DeFi exchange rate which got from Sushi Swap, three lock funds plans are provided to our users. The more funds are locked, the sooner your file will be stored on the Filecoin network. Any overpaid funds will be automatically refunded to users after the deal is on chain and contract collects enough DAO signatures.
 
 ![](<../../.gitbook/assets/2 (2).png>)
