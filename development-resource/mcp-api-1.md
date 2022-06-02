@@ -21,14 +21,14 @@ When not provided, use default: 100
 ```javascript
 {
     "status": "success",
-    "code": "200",
+    "code": 200,
     "data": {
-        "LOCK_TIME": "6",
-        "MINT_CONTRACT": "0x1A1e5AC88C493e0608C84c60b7bb5f04D9cF50B3",
-        "PAY_GAS_LIMIT": "9999999",
-        "PAY_WITH_MULTIPLY_FACTOR": "1.5",
-        "RECIPIENT": "0xABeAAb124e6b52afFF504DB71bbF08D0A768D053",
-        "SWAN_PAYMENT_CONTRACT_ADDRESS": "0x7ab09f9Ab4D39cfBE0551dfb6AdAc63C89bB955b",
+        "GAS_LIMIT": 8000000,
+        "LOCK_TIME": 6,
+        "MINT_CONTRACT_ADDRESS": "0x1A1e5AC88C493e0608C84c60b7bb5f04D9cF50B3",
+        "PAYMENT_CONTRACT_ADDRESS": "0x80a186DCD922175019913b274568ab172F6E20b1",
+        "PAYMENT_RECIPIENT_ADDRESS": "0xc4fcaAdCb0b00a9501e56215c37B10fAF9e79c0a",
+        "PAY_MULTIPLY_FACTOR": 1.5,
         "USDC_ADDRESS": "0xe11A86849d99F524cAC3E7A0Ec1241828e332C62"
     }
 }
@@ -101,13 +101,13 @@ days for the uploaded file to be kept on miner
 ```javascript
 {
     "status": "success",
-    "code": "200",
+    "code": 200,
     "data": {
-        "source_file_id": 593,
-        "payload_cid": "bafykbzacecjq3txd5liqtv52cmguj6mmx7uwhdhb6cfxlgv53ytk4xk5osyvg",
-        "ipfs_url": "https://calibration-ipfs.filswan.com/ipfs/QmdJGnSpXCX9zGEh1G9RwBRUH1KYhtNqsZH1ZdXRQidXWR",
-        "need_pay": 0,
-        "file_size": 2504638
+        "source_file_upload_id": 4,
+        "payload_cid": "QmeHeqoByW6dGSba9joVUiPuyVafTm5m1qsEtRcYBmjtdr",
+        "ipfs_url": "http://192.168.88.41:5050/ipfs/QmeHeqoByW6dGSba9joVUiPuyVafTm5m1qsEtRcYBmjtdr",
+        "file_size": 1048671,
+        "w_cid": "97286d72-78ac-4e9b-b0d9-f213df3c1698QmeHeqoByW6dGSba9joVUiPuyVafTm5m1qsEtRcYBmjtdr"
     }
 }
 ```
@@ -130,128 +130,180 @@ file name of the uploaded file
 {% endswagger-parameter %}
 
 {% swagger-parameter in="path" name="page_size" type="Number" %}
-upper limit or records to return this time
+valid integer, otherwise 10(default)
 {% endswagger-parameter %}
 
 {% swagger-parameter in="path" name="page_number" type="Number" %}
 if not a valid number, or <=0, then 1, else use provided value
 {% endswagger-parameter %}
 
-{% swagger-parameter in="path" required="false" name="payload_cid" %}
-payload cid of the car file for uploaded file
+{% swagger-parameter in="path" name="order_by" %}
+file_name,file_size,upload_at(default)
 {% endswagger-parameter %}
 
-{% swagger-response status="200: OK" description="" %}
-```javascript
-{
-    code: "200"
-    data: 
-    [
-        {
-            id: 0, 
-            user_id:, 
-            file_name: "", 
-            file_size: "",…
-        },…
-    ]
-    page_info: 
-    {
-        page_number: "1", 
-        page_size: "10", 
-        total_record_count: ""
-    }
-    status: "success"
-}
-```
-{% endswagger-response %}
-{% endswagger %}
-
-{% swagger method="get" path="/api/v1/storage/deal/detail/<deal_id>" baseUrl="https://mcs-api.filswan.com" summary="Get deal details" %}
-{% swagger-description %}
-This endpoint allows you to get deal details and DAO details.
-{% endswagger-description %}
-
-{% swagger-parameter in="path" name="payload_cid" required="true" %}
-payload cid of the car file for uploaded file
+{% swagger-parameter in="path" name="is_ascend" %}
+y:ascend, others: descend(default)
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="" %}
 ```javascript
 {
     "status": "success",
-    "code": "200",
+    "code": 200,
     "data": {
-        "dao": [
+        "source_file_upload": [
             {
-                "dao_name": "Dao2",
-                "dao_address": "0x6f2B76024196e82D81c8bC5eDe7cff0B0276c9C1",
-                "order_index": "2",
-                "deal_id": 4813917,
-                "dao_pass_time": "1648074606",
-                "payload_cid": "bafykbzacedp5sm4hgjc5l5d3hadkjw7t6dz6qtkyug4kdb7vyojlgwojuhr32",
-                "dao_address_event": "0x6f2B76024196e82D81c8bC5eDe7cff0B0276c9C1",
-                "tx_hash": "0x38d63b594193ecc568219f73ed138f152ebcb76e1b3e821acb20eb4cc18702d8",
-                "status": "1"
+                "source_file_upload_id": 1,
+                "car_file_id": 1,
+                "file_name": "test20",
+                "file_size": 1048671,
+                "upload_at": 1651507047,
+                "duration": 525,
+                "pin_status": "Pinned",
+                "payload_cid": "bafybeicxl5dk3iqejtbbcj2b77icx45unajw4qrakmd5ag46jlnidykk2y",
+                "status": "Processing",
+                "token_id": "",
+                "mint_address": "",
+                "nft_tx_hash": "",
+                "offline_deal": [
+                    {
+                        "id": 1,
+                        "car_file_id": 1,
+                        "deal_cid": "bafyreihwmwh2jgapiube6wrviax2zolpe26w35w4wy2x6b7q6blff7mpwe",
+                        "miner_id": 1,
+                        "verified": false,
+                        "start_epoch": 926524,
+                        "sender_wallet_id": 1,
+                        "deal_id": 167814,
+                        "status": "Created",
+                        "note": null,
+                        "on_chain_status": "StorageDealError",
+                        "tx_hash_unlock": null,
+                        "unlock_at": 0,
+                        "create_at": 1651507495,
+                        "update_at": 1651516351,
+                        "miner_fid": "t03354"
+                    }
+                ]
             },
             {
-                "dao_name": "Dao3",
-                "dao_address": "0x800210CfB747992790245eA878D32F188d01a03A",
-                "order_index": "3",
-                "deal_id": 4813917,
-                "dao_pass_time": "1648074636",
-                "payload_cid": "bafykbzacedp5sm4hgjc5l5d3hadkjw7t6dz6qtkyug4kdb7vyojlgwojuhr32",
-                "dao_address_event": "0x800210CfB747992790245eA878D32F188d01a03A",
-                "tx_hash": "0x4db5ffcac1231a4a10b8cfb926e2273f47ac0f6998db8f419d40da56ee249b2d",
-                "status": "1"
+                "source_file_upload_id": 2,
+                "car_file_id": 2,
+                "file_name": "test20",
+                "file_size": 1048671,
+                "upload_at": 1651509153,
+                "duration": 525,
+                "pin_status": "Pinned",
+                "payload_cid": "bafybeicxl5dk3iqejtbbcj2b77icx45unajw4qrakmd5ag46jlnidykk2y",
+                "status": "Processing",
+                "token_id": "",
+                "mint_address": "",
+                "nft_tx_hash": "",
+                "offline_deal": [
+                    {
+                        "id": 2,
+                        "car_file_id": 2,
+                        "deal_cid": "bafyreic6dd722zindqx6svw4snk5czwn4hi4dprzcps3xkiiklqrz5ay5a",
+                        "miner_id": 1,
+                        "verified": false,
+                        "start_epoch": 926588,
+                        "sender_wallet_id": 1,
+                        "deal_id": 167815,
+                        "status": "Created",
+                        "note": null,
+                        "on_chain_status": "StorageDealError",
+                        "tx_hash_unlock": null,
+                        "unlock_at": 0,
+                        "create_at": 1651509304,
+                        "update_at": 1651516351,
+                        "miner_fid": "t03354"
+                    }
+                ]
             },
             {
-                "dao_name": "Dao1",
-                "dao_address": "0x05856015d07F3E24936B7D20cB3CcfCa3D34B41d",
-                "order_index": "1",
-                "deal_id": 0,
-                "dao_pass_time": "",
+                "source_file_upload_id": 3,
+                "car_file_id": 0,
+                "file_name": "test20",
+                "file_size": 1048671,
+                "upload_at": 1651516702,
+                "duration": 525,
+                "pin_status": "Pinned",
                 "payload_cid": "",
-                "dao_address_event": "",
-                "tx_hash": "",
-                "status": ""
+                "status": "Pending",
+                "token_id": "",
+                "mint_address": "",
+                "nft_tx_hash": "",
+                "offline_deal": []
+            },
+            {
+                "source_file_upload_id": 4,
+                "car_file_id": 0,
+                "file_name": "test20",
+                "file_size": 1048671,
+                "upload_at": 1651519341,
+                "duration": 525,
+                "pin_status": "Pinned",
+                "payload_cid": "",
+                "status": "Pending",
+                "token_id": "",
+                "mint_address": "",
+                "nft_tx_hash": "",
+                "offline_deal": []
             }
         ],
-        "dao_thresh_hold": 2,
-        "dao_total_count": 3,
-        "deal": {
-            "deal_id": 4813917,
-            "deal_cid": "bafyreiha2opmhanchdezyynfwbnbgvfhsd7l6al6r32tjgzovwews75fba",
-            "message_cid": "bafy2bzacedwh5otlxmyyruk3k6hue4dm6qhegvuisv7tjib37wnlgllqf26ec",
-            "height": 1658913,
-            "piece_cid": "baga6ea4seaqeqjfpuk76spigclf5hti2v3tia2mz4pyomxxnkegcdzhlcge4agi",
-            "verified_deal": true,
+        "total_record_count": 4
+    }
+}
+```
+{% endswagger-response %}
+{% endswagger %}
+
+{% swagger method="get" path="/api/v1/storage/deal/detail/<source_file_upload_id>" baseUrl="https://mcs-api.filswan.com" summary="Get deal details" %}
+{% swagger-description %}
+This endpoint allows you to get deal details and DAO details.
+{% endswagger-description %}
+
+{% swagger-parameter in="path" name="source_file_upload_id" required="true" %}
+
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="" %}
+```javascript
+{
+    "status": "success",
+    "code": 200,
+    "data": {
+        "dao_threshold": 2,
+        "source_file_upload_deal": {
+            "deal_id": 0,
+            "deal_cid": "",
+            "message_cid": "",
+            "height": 0,
+            "piece_cid": "",
+            "verified_deal": false,
             "storage_price_per_epoch": 0,
             "signature": "",
             "signature_type": "",
-            "created_at": 1648073790,
+            "created_at": 0,
             "piece_size_format": "",
-            "start_height": 1669905,
-            "end_height": 3184293,
-            "client": "f14r2jybmccwiu6hze4fu55jyhclktvwacec56hea",
-            "client_collateral_format": "000000000000000000",
-            "provider": "f019104",
+            "start_height": 0,
+            "end_height": 0,
+            "client": "",
+            "client_collateral_format": "",
+            "provider": "",
             "provider_tag": "",
             "verified_provider": 0,
-            "provider_collateral_format": "000000000000000000",
+            "provider_collateral_format": "",
             "status": 0,
-            "network_name": "filecoin_mainnet",
+            "network_name": "",
             "storage_price": 0,
-            "ipfs_url": "https://calibration-ipfs.filswan.com/ipfs/QmP6TY2Nm1BJmQsypnUYbfSe1sQ8KpEU2DpSVP8T9siTFC",
-            "file_name": "instruction148.docx"
-        },
-        "found": {
-            "payload_cid": "bafykbzacedp5sm4hgjc5l5d3hadkjw7t6dz6qtkyug4kdb7vyojlgwojuhr32",
-            "client_wallet_address": "",
-            "create_at": "1648054345164",
-            "locked_fee": "263721000000000"
-        },
-        "signed_dao_count": 2,
-        "unlock_status": true
+            "ipfs_url": "http://192.168.88.41:5050/ipfs/QmeHeqoByW6dGSba9joVUiPuyVafTm5m1qsEtRcYBmjtdr",
+            "file_name": "test20",
+            "w_cid": "cff75975-144c-4e10-a1d7-ae0c30c1365cQmeHeqoByW6dGSba9joVUiPuyVafTm5m1qsEtRcYBmjtdr",
+            "locked_at": 1651507068,
+            "locked_fee": "5364546000000000",
+            "unlocked": false
+        }
     }
 }
 ```
@@ -265,45 +317,30 @@ This endpoint allows you to get offline deal logs
 
 {% swagger-response status="200: OK" description="" %}
 ```javascript
-{
-    "status": "success",
-    "code": "200",
+{{{{status": "success",
+    "code": 200,
     "data": {
-        "offline_deal_logs": [
+        "offline_deal_log": [
             {
-                "id": 57,
-                "deal_cid": "bafyreic7izff2iezvpgepliv2mfrzhdcmxixx2w637kprg6p3f7uvoaefe",
-                "status": "StorageDealActive",
-                "message": "",
-                "create_at": "1646998800016"
+                "id": 1,
+                "offline_deal_id": 1,
+                "on_chain_status": "StorageDealCheckForAcceptance",
+                "on_chain_message": "Provider state: StorageDealWaitingForData",
+                "create_at": 1651507615
             },
             {
-                "id": 49,
-                "deal_cid": "bafyreic7izff2iezvpgepliv2mfrzhdcmxixx2w637kprg6p3f7uvoaefe",
-                "status": "StorageDealAwaitingPreCommit",
-                "message": "",
-                "create_at": "1646968320019"
+                "id": 2,
+                "offline_deal_id": 1,
+                "on_chain_status": "StorageDealCheckForAcceptance",
+                "on_chain_message": "Provider state: StorageDealPublish",
+                "create_at": 1651507915
             },
             {
-                "id": 48,
-                "deal_cid": "bafyreic7izff2iezvpgepliv2mfrzhdcmxixx2w637kprg6p3f7uvoaefe",
-                "status": "StorageDealCheckForAcceptance",
-                "message": "Provider state: StorageDealPublishing",
-                "create_at": "1646968080008"
-            },
-            {
-                "id": 47,
-                "deal_cid": "bafyreic7izff2iezvpgepliv2mfrzhdcmxixx2w637kprg6p3f7uvoaefe",
-                "status": "StorageDealCheckForAcceptance",
-                "message": "Provider state: StorageDealPublish",
-                "create_at": "1646967360012"
-            },
-            {
-                "id": 46,
-                "deal_cid": "bafyreic7izff2iezvpgepliv2mfrzhdcmxixx2w637kprg6p3f7uvoaefe",
-                "status": "StorageDealCheckForAcceptance",
-                "message": "Provider state: StorageDealWaitingForData",
-                "create_at": "1646966400009"
+                "id": 3,
+                "offline_deal_id": 1,
+                "on_chain_status": "StorageDealCheckForAcceptance",
+                "on_chain_message": "Provider state: StorageDealUnknown",
+                "create_at": 1651509124
             }
         ]
     }
