@@ -36,6 +36,27 @@ When not provided, use default: 100
 {% endswagger-response %}
 {% endswagger %}
 
+{% swagger method="get" path="/api/v1/common/host/info" baseUrl="https://mcs-api.filswan.com" summary="Get host info" %}
+{% swagger-description %}
+
+{% endswagger-description %}
+
+{% swagger-response status="200: OK" description="" %}
+```javascript
+{
+    "status": "success",
+    "data": {
+        "version": "MCS-2.0.0",
+        "operating_system": "darwin",
+        "architecture": "arm64",
+        "cpu_number": 8,
+        "current_unix_nano": 1654203545105082000
+    }
+}
+```
+{% endswagger-response %}
+{% endswagger %}
+
 ## Upload file
 
 {% swagger method="get" path="/api/v1/billing/price/filecoin" baseUrl="https://mcs-api.filswan.com" summary="Get USDC/Filecoin exchange rate" %}
