@@ -317,7 +317,8 @@ This endpoint allows you to get offline deal logs
 
 {% swagger-response status="200: OK" description="" %}
 ```javascript
-{{{{status": "success",
+{
+    "status": "success",
     "code": 200,
     "data": {
         "offline_deal_log": [
@@ -354,19 +355,20 @@ This endpoint allows you to get offline deal logs
 This endpoint allows you to get the specific payment information by payload CID.
 {% endswagger-description %}
 
-{% swagger-parameter in="path" name="payload_cid" required="true" %}
-payload cid of the car file for the source file
+{% swagger-parameter in="path" name="source_file_upload_id" required="true" %}
+
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="" %}
 ```javascript
 {
     "status": "success",
-    "code": "200",
+    "code": 200,
     "data": {
-        "locked_fee": "7283883000000000",
-        "payload_cid": "bafykbzacebk3f4v4cqdfch35h3arwelg4hodutkahwa45nrnpbadui7uzaky6",
-        "tx_hash": "0xe53608744eac42fcc784d4ba8cef151583c33ff3b8f42424166867be25305f7f"
+        "w_cid": "cff75975-144c-4e10-a1d7-ae0c30c1365cQmeHeqoByW6dGSba9joVUiPuyVafTm5m1qsEtRcYBmjtdr",
+        "pay_amount": "5364546000000000",
+        "pay_tx_hash": "0x864cb80257ea9e51d8ac8bedbd367d69b8effd7278db845d72c38a45b68f5fed",
+        "token_address": "0xe11A86849d99F524cAC3E7A0Ec1241828e332C62"
     }
 }
 ```
@@ -406,35 +408,62 @@ This endpoint allows you to get the billing history related to current wallet ac
 wallet who pay the file
 {% endswagger-parameter %}
 
-{% swagger-parameter in="path" name="tx_hash" %}
-transaction hash of payment
-{% endswagger-parameter %}
-
 {% swagger-parameter in="path" name="page_size" type="Number" %}
-when empty, use default:10, max records returned each time
+valid integer, otherwise 10(default)
 {% endswagger-parameter %}
 
 {% swagger-parameter in="path" name="page_number" type="Number" %}
-when empty string, then 1
+valid integer, otherwise 1(default)
+{% endswagger-parameter %}
+
+{% swagger-parameter in="path" name="file_name" %}
+file whose file_name include the parameter
+{% endswagger-parameter %}
+
+{% swagger-parameter in="path" name="order_by" %}
+pay_amount,unlock_amount,file_name,pay_at(default),unlock_at,deadline
+{% endswagger-parameter %}
+
+{% swagger-parameter in="path" name="is_ascend" %}
+y:ascend, others: descend(default)
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="" %}
 ```javascript
 {
-    code: "200"
-    data: 
-    [
-        {
-            tx_hash: "",…
-        }
-    ]
-    page_info: 
-    {
-        page_number: "1", 
-        page_size: "10", 
-        total_record_count: ""
+    "status": "success",
+    "code": 200,
+    "data": {
+        "billing": [
+            {
+                "pay_id": 1,
+                "pay_tx_hash": "0x864cb80257ea9e51d8ac8bedbd367d69b8effd7278db845d72c38a45b68f5fed",
+                "pay_amount": "5364546000000000",
+                "unlock_amount": "",
+                "file_name": "test20",
+                "payload_cid": "bafybeicxl5dk3iqejtbbcj2b77icx45unajw4qrakmd5ag46jlnidykk2y",
+                "pay_at": 1651507068,
+                "unlock_at": 0,
+                "deadline": 1652025461,
+                "network_name": "polygon",
+                "token_name": "USDC"
+            },
+            {
+                "pay_id": 2,
+                "pay_tx_hash": "0x9d0bd6698230aadfd1c8fafe34db730385173fddeed1275f3c3a93563b16f8c5",
+                "pay_amount": "5364546000000000",
+                "unlock_amount": "",
+                "file_name": "test20",
+                "payload_cid": "bafybeicxl5dk3iqejtbbcj2b77icx45unajw4qrakmd5ag46jlnidykk2y",
+                "pay_at": 1651509167,
+                "unlock_at": 0,
+                "deadline": 1652027565,
+                "network_name": "polygon",
+                "token_name": "USDC"
+            }
+        ],
+        "total_record_count": 2
     }
-    status: "success"    
 }
 ```
 {% endswagger-response %}
