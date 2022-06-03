@@ -13,10 +13,6 @@ description: >-
 This endpoint allows you to get system config
 {% endswagger-description %}
 
-{% swagger-parameter in="path" name="limit" %}
-When not provided, use default: 100
-{% endswagger-parameter %}
-
 {% swagger-response status="200: OK" description="" %}
 ```javascript
 {
