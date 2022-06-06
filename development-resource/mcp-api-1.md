@@ -275,7 +275,7 @@ y:ascend, others: descend(default)
 {% endswagger-response %}
 {% endswagger %}
 
-{% swagger method="get" path="/api/v1/storage/deal/detail/<source_file_upload_id>" baseUrl="https://mcs-api.filswan.com" summary="Get deal details" %}
+{% swagger method="get" path="/api/v1/storage/deal/detail/<deal_id>" baseUrl="https://mcs-api.filswan.com" summary="Get deal details" %}
 {% swagger-description %}
 This endpoint allows you to get deal details and DAO details.
 {% endswagger-description %}
@@ -327,7 +327,7 @@ This endpoint allows you to get deal details and DAO details.
 {% endswagger-response %}
 {% endswagger %}
 
-{% swagger method="get" path="/api/v1/storage/deal/log/<deal_cid>" baseUrl="https://mcs-api.filswan.com" summary="get deal logs" %}
+{% swagger method="get" path="/api/v1/storage/deal/log/<offline_deal_id>" baseUrl="https://mcs-api.filswan.com" summary="get deal logs" %}
 {% swagger-description %}
 This endpoint allows you to get offline deal logs
 {% endswagger-description %}
