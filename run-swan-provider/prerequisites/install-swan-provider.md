@@ -1,11 +1,11 @@
 # Install Swan Provider
 
-**Option**1️⃣ **Prebuilt package**:
+#### Option1️⃣ **Prebuilt package**: See [release assets](https://github.com/filswan/go-swan-provider/releases)
 
 ```
 mkdir swan-provider
 cd swan-provider
-wget --no-check-certificate https://github.com/filswan/go-swan-provider/releases/download/v0.2.1/install.sh
+wget --no-check-certificate https://github.com/filswan/go-swan-provider/releases/download/v2.0.0-rc1/install.sh
 chmod +x ./install.sh
 ./install.sh
 ```
@@ -23,19 +23,17 @@ git checkout <release_branch>
 ./build_from_source.sh
 ```
 
-#### 💥Important
+#### ‼️ Important
 
-After installation, Swan Provider may quit unexpectedly due to lack of configuration. Under this situation, you need
-
-At the time of this writing, the latest release is **release-v0.2.1**
+After installation, swan-provider maybe quit due to lack of configuration. Under this situation, you need
 
 * 1️⃣ Edit config file **\~/.swan/provider/config.toml** to solve this.
 * 2️⃣ Execute **swan-provider** using one of the following commands\
 
 
 ```
-./swan-provider-0.2.1-linux-amd64   #After installation from Option 1
-./build/swan-provider               #After installation from Option 2
+./swan-provider-2.0.0-rc1-linux-amd64 daemon  #After installation from Option 1
+./build/swan-provider daemon                  #After installation from Option 2
 ```
 
 #### Note
@@ -47,6 +45,6 @@ At the time of this writing, the latest release is **release-v0.2.1**
 * Such as:
 
 ```
-nohup ./swan-provider-0.2.1-linux-amd64 >> swan-provider.log &   #After installation from Option 1
-nohup ./build/swan-provider >> swan-provider.log &               #After installation from Option 2
+nohup ./swan-provider-2.0.0-rc1-linux-amd64 daemon >> swan-provider.log &   #After installation from Option 1
+nohup ./build/swan-provider daemon >> swan-provider.log &                   #After installation from Option 2
 ```

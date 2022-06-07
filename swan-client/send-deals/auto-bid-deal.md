@@ -2,16 +2,14 @@
 
 ### Option2️⃣ Auto-bid deal
 
-* After a miner has been allocated to a task by Market Matcher, the client needs to send auto-bid deals using the information submitted to swan in step [Create A Task](https://github.com/filswan/go-swan-client/tree/release-v0.1.0-rc1#Create-A-Task).
-* This step is executed in infinite loop mode, it will send auto-bid deals continuously when there are deals that can meet the below conditions.
+* After a miner is allocated to a car file by Market Matcher, the client needs to send auto-bid deals using the information submitted to swan in step [Create A Task](https://github.com/filswan/go-swan-client/tree/main#Create-A-Task).
+* This step is executed in infinite loop mode, it will send auto-bid deals contiuously when there are deals that can meet below conditions.
 
 **Conditions:**
 
 * `your tasks in swan`
-* `task.is_public=true`
 * `task.bid_mode=1`
-* `task.status=Assigned`
-* `task.miner is not null`
+* `offline_deals.status=Assigned`
 
 ```
 ./swan-client auto -out-dir [output_files_dir]
@@ -19,28 +17,28 @@
 
 **Command parameters used in this step:**
 
-* \-out-dir(optional): Swan deal final metadata files will be generated to the given directory. When ommitted, use default: `[sender].output_dir`. See [Configuration](https://github.com/filswan/go-swan-client/tree/release-v0.1.0-rc1#Configuration)
+* \-out-dir(optional): Swan deal final metadata files will be generated to the given directory. When ommitted, use default: `[sender].output_dir`. See [Configuration](https://github.com/filswan/go-swan-client/tree/main#Configuration)
 
 **Configurations used in this step:**
 
-* \[sender].wallet, see [Configuration](https://github.com/filswan/go-swan-client/tree/release-v0.1.0-rc1#Configuration)
-* \[sender].relative\_epoch\_to\_main\_network, see [Configuration](https://github.com/filswan/go-swan-client/tree/release-v0.1.0-rc1#Configuration)
-* \[sender].output\_dir, only used when -out-dir is omitted in command, see [Configuration](https://github.com/filswan/go-swan-client/tree/release-v0.1.0-rc1#Configuration)
-* \[main].api\_url, see [Configuration](https://github.com/filswan/go-swan-client/tree/release-v0.1.0-rc1#Configuration)
-* \[main].api\_key, see [Configuration](https://github.com/filswan/go-swan-client/tree/release-v0.1.0-rc1#Configuration)
-* \[main].access\_token, see [Configuration](https://github.com/filswan/go-swan-client/tree/release-v0.1.0-rc1#Configuration)
+* \[sender].wallet, see [Configuration](https://github.com/filswan/go-swan-client/tree/main#Configuration)
+* \[sender].output\_dir, only used when -out-dir is omitted in command, see [Configuration](https://github.com/filswan/go-swan-client/tree/main#Configuration)
+* \[main].api\_url, see [Configuration](https://github.com/filswan/go-swan-client/tree/main#Configuration)
+* \[main].api\_key, see [Configuration](https://github.com/filswan/go-swan-client/tree/main#Configuration)
+* \[main].access\_token, see [Configuration](https://github.com/filswan/go-swan-client/tree/main#Configuration)
 
 **Files generated for each task after this step:**
 
-* \[task-name]-auto.csv: A CSV generated for updating task status and fill deal CID for offline deals
-* \[task-name]-auto-deals.csv: Deal CID updated based on \[task-name]-metadata.csv generated on next step.
-* \[task-name]-auto-deals.json: Deal CID updated based on \[task-name]-metadata.json generated on next step. See [Offline Deal](https://github.com/filswan/go-swan-client/tree/release-v0.1.0-rc1#Offline-Deal)
+* \[task-name]-auto-deals.json: Deal CID updated based on \[task-name]-metadata.json generated on next step. See [Offline Deal](https://github.com/filswan/go-swan-client/tree/main#Offline-Deal)
 
 **Note:**
 
 * Logs are in directory ./logs
-* To avoid program exit when you log out, you can run the program like this:
+* You can add `nohup` before `./swan-client` to ignore the HUP (hangup) signal and therefore avoid stop when you log out.
+* You can add `>> swan-client.log` in the command to let all the logs output to `swan-client.log`.
+* You can add `&` at the end of the command to let the program run in background.
+* Such as:
 
 ```
-nohup ./swan-client auto -out-dir [output_files_dir] >> swan-client.log 2>&1 &
+nohup ./swan-client auto -out-dir [output_files_dir] >> swan-client.log &
 ```

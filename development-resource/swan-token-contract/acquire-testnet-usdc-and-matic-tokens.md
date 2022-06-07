@@ -18,7 +18,7 @@ By using the [Swan faucet](https://calibration-faucet.filswan.com/), you can get
 * Paste that address into the Swan Faucet `Testnet account address` input field, and click the `Send request` button.
 * You should see a window show up with the text 'Transaction initiated'.
 
-![](<../../.gitbook/assets/image (39).png>)
+![](<../../.gitbook/assets/image (39) (1).png>)
 
 * Once the transaction is confirmed on-chain, the window will show 'Request complete', along with the transaction hash of your request.
 
@@ -43,7 +43,7 @@ By using the [Swan faucet](https://calibration-faucet.filswan.com/), you can get
 
 * Paste the token contract address into MetaMask in the `Token Contract Address` input. The token symbol and decimals of precision will auto-populate. Click on the `Add Custom Token` button.
 
-&#x20;                                           ![](<../../.gitbook/assets/image (39) (1).png>)
+&#x20;                                           ![](<../../.gitbook/assets/image (39) (1) (1).png>)
 
 * A new window will appear, showing the USDC token details. Click on the `Import Tokens` button.
 

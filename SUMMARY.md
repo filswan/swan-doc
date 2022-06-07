@@ -48,10 +48,6 @@
 * [Get started](run-swan-provider/prerequisites/README.md)
   * [Install Swan Provider](run-swan-provider/prerequisites/install-swan-provider.md)
   * [Configuration](swan-provider/prerequisites/configuration.md)
-  * [Restart](swan-provider/prerequisites/restart.md)
-* [Run Your Swan Provider](run-swan-provider/setup-your-swan-provider/README.md)
-  * [Run in autobid mode](run-swan-provider/setup-your-swan-provider/run-in-autobid-mode.md)
-  * [Run in manual bid mode](run-swan-provider/setup-your-swan-provider/run-in-manual-bid-mode.md)
 * [Swan Provider Tutorial Video](swan-provider/video-tutorial.md)
 
 ***
@@ -72,9 +68,8 @@
     * [Prepare data for sending deals](swan-client/create-a-swan-task/create-deal-to-filecoin-network/prepare-the-data-for-sending-deals.md)
     * [Upload Car files to IPFS/web server](swan-client/create-a-swan-task/create-deal-to-filecoin-network/upload-car-files-to-ipfs-web-server.md)
     * [Create a task](swan-client/create-a-swan-task/create-deal-to-filecoin-network/create-a-task/README.md)
-      * [Private Task](swan-client/create-a-swan-task/create-deal-to-filecoin-network/create-a-task/private-task.md)
-      * [Public and Auto-Bid Task](swan-client/create-a-swan-task/create-deal-to-filecoin-network/create-a-task/public-task.md)
-      * [Public and Manual-Bid Task](swan-client/create-a-swan-task/create-deal-to-filecoin-network/create-a-task/set-auto-bid-mode.md)
+      * [None-bid Mode](swan-client/create-a-swan-task/create-deal-to-filecoin-network/create-a-task/private-task.md)
+      * [Manual-bid or Auto-Bid mode](swan-client/create-a-swan-task/create-deal-to-filecoin-network/create-a-task/public-task.md)
 * [Send Deals](swan-client/send-deals/README.md)
   * [Manual Deal](swan-client/send-deals/manual-deal.md)
   * [Auto-bid Deal](swan-client/send-deals/auto-bid-deal.md)

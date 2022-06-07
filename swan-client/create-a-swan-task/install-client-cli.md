@@ -1,16 +1,28 @@
 # Install Swan Client Tool
 
-## Code Repository
-
-[https://github.com/filswan/go-swan-client/tree/release-v0.1.0-rc1](https://github.com/filswan/go-swan-client/tree/release-v0.1.0-rc1)
-
 ## Prerequisite
 
 * Lotus node
 
-**Note:**
+### Ubuntu
 
-* To ensure the source files can be imported into Lotus correctly and tasks can be sent successfully, go-swan-client and Lotus node need to be installed on the same machine.
+* install missing packages as required
+
+### Mac
+
+* install missing packages as required
+* hwloc, such as\
+
+
+```
+brew install hwloc
+```
+
+* set path LIBRARY\_PATH to point to hwloc, such as
+
+```
+export LIBRARY_PATH=/opt/homebrew/Cellar/hwloc/2.6.0/lib
+```
 
 ## Installation
 
@@ -19,8 +31,8 @@
 ```
 mkdir swan-client
 cd swan-client
-wget https://github.com/filswan/go-swan-client/releases/download/v0.1.0-rc1/install.sh --no-check-certificate
-chmod +x ./install.sh
+wget --no-check-certificate https://github.com/filswan/go-swan-client/releases/download/v2.0.0-rc1/install.sh
+chmod +x install.sh
 ./install.sh
 ```
 
@@ -37,7 +49,7 @@ git checkout <release_branch>
 
 ### After Installation
 
-* The binary file `swan-client` for Option2️⃣ is under `./build` directory, you need to switch to it.
+* If you install from the source code, the binary file `swan-client` is under `./build` directory, you need to switch to it.
 
 ```
 cd build
