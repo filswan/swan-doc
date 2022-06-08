@@ -1,13 +1,13 @@
 # SDK
 
-## Introduction
+## 介绍 <a href="#jie-shao-2" id="jie-shao-2"></a>
 
-MCS SDK is the development kit for Swan MCS developers, providing a convenient interface for working with the MCS API.
+MCS SDK 是 Swan MCS 开发人员的开发工具包，为使用 MCS API 提供了一个方便的接口。
 
-* **Zero Cost, Free to Use**
-* **Access by Wallet (Metamask)**
-* **Seamless Integration, Easy to Implement**
+* **零成本，免费使用**
+* **通过钱包访问（Metamask）**
+* **无缝集成，易于实施**
 
-### Current Supported Languages:
+#### 当前支持的语言 <a href="#dang-qian-zhi-chi-de-yu-yan" id="dang-qian-zhi-chi-de-yu-yan"></a>
 
 * Javascript

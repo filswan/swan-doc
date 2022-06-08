@@ -2,58 +2,96 @@
 
 ### 任务 <a href="#task" id="task"></a>
 
-在Filswan项目中，一个任务可以包含一个或者多个离线交易。
+* 一个任务可以包含一个或多个Car文件
+* 每个Car文件可以发送给一个或多个矿工
+* 为任务中的每个Car文件设置矿工的接单模式
+  * **Auto-bid**: `task.bid_mode=1`, 市场匹配器将基于声誉系统和任务中Car文件最大副本数量的需要，自动为每个Car文件分配矿工。
+  * **Manual-bid**: `task.bid_mode=0`, 竞价人中标后，任务持有人需要向中标者发起任务(交易)。
+  * **None-bid**: `task.bid_mode=2`, 需要将任务中每个Car文件发送给指定的矿工。
+* 任务状态:
+  * **Created**: 任务创建后，不管它是什么类型，它的初始状态都是`created`。
+  *   **ActionRequired**: 自动竞价任务（也就是`task.bid_mode=1`）有一些信息缺失或无效：
 
-📁任务类型：包括两种基本的任务类型：
+      * MaxPrice:缺失或不是一个有效的数字
+      * FastRetrieval: 缺失
+      * Type: 缺失，或没有有效值
 
-* 公开任务：指公开竞价的交易集合，包括两种类型：
-  * 自动竞价：自动竞价的任务会被自动分配给选中的存储提供者，这些存储提供者是基于信誉系统(reputation system)和市场匹配器(Market Matcher)筛选得到的。
-  * 手动竞价：当出价人(Storage Provider)赢得竞价时，任务持有方（Client）需要发起手动竞价任务给获胜的一方(Storage Provider)。
-* 私有任务：指客户端会发起一个私有任务(交易的集合)给特定的存储提供者。
+      🔔 需要解决上述问题，并将任务状态更改为`Created`，以便参与运行市场匹配器下一轮匹配中去。
 
-_**​**_📁_**任务状态:**_
+### CAR文件 <a href="#task" id="task"></a>
 
-* **已创建**：表示该任务第一次在filswan平台上被成功创建，此状态与任务类型无关。
-* **已分配**：表示该任务已经被用户分配给一个存储提供者，包括用户手动分配和被自动竞价模块----市场匹配器(Market Matcher) 两种情况。
-*   **需操作**：表示该自动竞价任务(系统设置为bid\_mode=1, public\_deal=true)有部分信息缺失或者无效：
-
-    * MaxPrice: 缺失或者是一个无效的数字
-    * FastRetrieval: 缺失
-    * Type: 缺失或者值无效
-    * 该任务不包含离线交易
-
-    🔔注意：必须要解决以上问题并且将任务状态修改为Created才能参与到市场匹配器(Market Matcher)下一轮的匹配中去。
-* **交易已发送**：表示该任务中所有的离线交易已经被发送到分配给该任务的存储提供者；
-* **异常过程**：表示该任务中只有部分交易(不是所有交易)被发送到分配给该任务的存储提供者。
+* Car文件是发送给矿工的一个独立单元
+* 每个Car文件可以发送给一个或多个矿工
+* Car文件可将源文件通过Lotus、Graph-split或IPFS生成
+* Car文件最大为64GB
+* Car文件状态:
+  * **Created**: 任务创建后，任务中所有Car文件都处于这种状态
+  * **ActionRequired**:自动竞价任务（也就是`task.bid_mode=1`）有一些信息缺失或无效：
+    * FileSize: 缺失或不是一个有效的数字
+    * FileUrl: 缺失
+    * StartEpoch: 缺失，或当前值无效、小于0或小于当前高度(currentEpoch)
+    * PayloadCid: 缺失
+    * PieceCid: 缺失
+  * **Assigned**: 当其任务处于自动竞价模式时，即`task.bid_mode=1`，表示一个Car文件已经被市场匹配器自动分配给一些矿工。
 
 ### 离线交易 <a href="#offline-deal" id="offline-deal"></a>
 
-* 每个离线交易包含了由客户端工具生成的car文件的信息
-* 一个car文件的大小最多为64GiB
-* 该工具的每一步完成后会生成一个JSON文件，其中包含的文件信息如下：
+* 离线交易是指将Car文件发送给矿工的交易
+* 离线交易状态:
+  * **Assigned**: 只有在自动竞价模式，即`task.bid_mode=1`，当一个Car文件被分配给一个矿工时，一个离线交易记录被创建，它的状态是`Assigned`。
+  * **Created**: 对于所有的竞价模式，Car文件发送给矿工后，对应的交易状态为 `Created`.
+  * **…**: 还有其他几种状态，由Swan Provider和Swan Platform生成和使用，它们对所有竞价模式的任务具有相同的含义。
+* 这个工具的每一步都会生成一个JSON文件，其中包含如下所示的文件信息:
 
 ```
 [
  {
-  "Uuid": "261ac5ae-cfbb-4ae2-a924-3361075b0e60",
-  "SourceFileName": "test3.txt",
-  "SourceFilePath": "[source_file_dir]/test3.txt",
-  "SourceFileMd5": "17d6f25c72392fc0895b835fa3e3cf52",
-  "SourceFileSize": 43857488,
-  "CarFileName": "test3.txt.car",
-  "CarFilePath": "[car_file_dir]/test3.txt.car",
-  "CarFileMd5": "9eb7d54ac1ed8d3927b21a4dcd64a9eb",
-  "CarFileUrl": "http://[IP]:[PORT]/ipfs/Qmb7TMcABYnnM47dznCPxpJKPf9LmD1Yh2EdZGvXi2824C",
-  "CarFileSize": 12402995,
-  "DealCid": "bafyreiccgalsj2a3wtrxygcxpp2hfq3h2fwafh63wcld3uq5hakyimpura",
-  "DataCid": "bafykbzacecpuzwmiaxc2u4r5bb7p3ukkhotmkfw4mfv3un6huvk6ctugowikq",
-  "PieceCid": "baga6ea4seaqjcip2xh265h2pucvwxv7seeawm4gfksfua4zsbb24zujplzsukja",
-  "MinerFid": "[miner_fid]",
-  "StartEpoch": 1266686,
-  "SourceId": 2
+  "Uuid": "",
+  "SourceFileName": "srcFiles",
+  "SourceFilePath": "[source file path]",
+  "SourceFileMd5": "",
+  "SourceFileSize": 5231342,
+  "CarFileName": "bafybeidezzxpy3lrvzz2py56vasl7modkss4v56qwh67tzhetsn2qh3aem.car",
+  "CarFilePath": "[car file path]",
+  "CarFileMd5": "30fc76af655688cc6ef49bbb96ce938a",
+  "CarFileUrl": "[car file url]",
+  "CarFileSize": 5234921,
+  "PayloadCid": "bafybeidezzxpy3lrvzz2py56vasl7modkss4v56qwh67tzhetsn2qh3aem",
+  "PieceCid": "baga6ea4seaqfbtlhrfnzuhbmwnjw4a7ovtjijae32g25o56jcuidk2fdzrjgmoi",
+  "StartEpoch": null,
+  "SourceId": null,
+  "Deals": null
  }
 ]
 ```
 
-* 在每一步中生成的JSON文件将会在下一步中使用，而且在以后可以用来重建文件图形
-* uuid 是为了后期索引目的而生成的。
+```
+[
+ {
+  "Uuid": "072f8d4a-b79e-42b7-9452-3b8d1d41c11c",
+  "SourceFileName": "",
+  "SourceFilePath": "",
+  "SourceFileMd5": "",
+  "SourceFileSize": 0,
+  "CarFileName": "",
+  "CarFilePath": "",
+  "CarFileMd5": "",
+  "CarFileUrl": "[car file url]",
+  "CarFileSize": 5234921,
+  "PayloadCid": "bafybeidezzxpy3lrvzz2py56vasl7modkss4v56qwh67tzhetsn2qh3aem",
+  "PieceCid": "baga6ea4seaqfbtlhrfnzuhbmwnjw4a7ovtjijae32g25o56jcuidk2fdzrjgmoi",
+  "StartEpoch": null,
+  "SourceId": 2,
+  "Deals": [
+   {
+    "DealCid": "bafyreih2feyqpckrsmjnwgkm44el45obi3em7cjh7udkq6jgp4flkce6ra",
+    "MinerFid": "t03354",
+    "StartEpoch": 575856
+   }
+  ]
+ }
+]
+```
+
+* 在每个步骤中生成的这个JSON文件将在其下一步中使用，并可用于将来重建graph。
+* 生成`Uuid`是为了将来建立索引

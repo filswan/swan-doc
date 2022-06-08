@@ -4,22 +4,22 @@ description: https://github.com/filswan/js-mcs-sdk
 
 # js-mcs-sdk
 
-js-mcs-sdk is a javascript software development kit for the MCS service. It provides a convenient interface for working with the MCS API from a web browser or Node.js.&#x20;
+js-mcs-sdk 是一个用于 MCS 服务的 javascript 软件开发工具包。 它为从 Web 浏览器或 Node.js 使用 MCS API 提供了一个方便的界面。
 
-The SDK has the following functionalities:
+SDK 具有以下功能：
 
-* POST    upload file to FilSwan IPFS gateway
-* POST    make payment to Swan Filecoin storage gateway
-* POST    mint asset as NFT
-* GET       list of files uploaded
-* GET       files by CID
-* GET       storage status from Filecoin
+* POST 上传文件到 FilSwan IPFS 网关
+* POST 支付给 Swan Filecoin 存储网关
+* 铸造为 NFT
+* 获取上传的文件列表
+* 按 CID 获取文件
+* 从 Filecoin 获取存储状态
 
 {% embed url="https://github.com/filswan/js-mcs-sdk" %}
 
-### Sponsors
+#### 赞助商 <a href="#zan-zhu-shang" id="zan-zhu-shang"></a>
 
-This project is sponsored by Filecoin Foundation
+该项目由 Filecoin 基金会赞助
 
 [Flink SDK - A data provider offers Chainlink Oracle service for Filecoin Network](https://github.com/filecoin-project/devgrants/issues/463)
 

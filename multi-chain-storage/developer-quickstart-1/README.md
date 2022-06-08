@@ -1,172 +1,173 @@
-# Copy of Developer Quickstart
+# 开发人员快速入门
 
-Multi-Chain Storage (hereinafter called the 'MCS') is a suite of Ethereum scaling solutions that enables high-throughput, low cost smart contracts while remaining trustworthy secure.&#x20;
+多链存储（以下称为“MCS”）是一套以太坊扩展解决方案，可实现高吞吐量、低成本的智能合约，同时保持可信赖的安全性。
 
-The following documentation describes how to use MCS, which is currently live on Polygon Mumbai Testnet. Whether you're a developer that just wants to start building or you're curious into digging deeper into the internals of MCS and how it works, this site is the right place for you.
+以下文档描述了如何使用 MCS，它目前在 Polygon Mumbai 测试网上运行。 无论您是只想开始构建的开发人员，还是想深入了解 MCS 的内部结构及其工作原理，此站点都是适合您的地方。
 
-## System Design
+### 系统设计 <a href="#xi-tong-she-ji" id="xi-tong-she-ji"></a>
 
-![](<../../.gitbook/assets/image (29) (1).png>)
+![](<../../.gitbook/assets/MCS 2.0.0.drawio.png>)
 
-## How does MCS work? <a href="#how-does-arbitrum-work" id="how-does-arbitrum-work"></a>
+### MCS 是如何运行的？ <a href="#mcs-shi-ru-he-yun-hang-de" id="mcs-shi-ru-he-yun-hang-de"></a>
 
-If you're looking to discover how MCS works, the best place to begin is by the [User Guide](../mcp-user-guide/) section, which gives a high level overview of MCS's internals. From there, you can jump into more detailed explainers on various components of the system.
+如果您想了解 MCS 的运行原理，最好从 用户指南部分开始，它提供了 MCS 内部结构的概述。 从那里，您可以跳转到有关系统各个组件的更详细的解释。
 
-## Modules <a href="#__docusaurus" id="__docusaurus"></a>
+### 模块 <a href="#mo-kuai" id="mo-kuai"></a>
 
-**Token Swap:** Token Swap module is in charge of swap the user's token to wrapped token, it can be USDC or other tokens.
+**代币交换：** 代币交换模块负责将用户的代币换成包裹的代币，可以是USDC或其他代币。
 
-1. Users pay USDC or other tokens, which are called user tokens, when uploading a file.
-2. MCS uses FIL, which is called wrapped token, to pay when store data to Filecoin network.
-3. User tokens should be changed to wrapped token by this module and this step is called token exchange(swap).
-4. Token exchange(swap) is done through Sushi Swap which is a DEX.
+1、用户在上传文件时支付 USDC 或其他代币，这些代币称为用户代币。
 
-#### Payment Module:
+2、MCS 在将数据存储到 Filecoin 网络时使用 FIL（称为包装代币）进行支付。
 
-1.  After a file is uploaded, the money to be paid is estimated based on the
+3、用户代币应通过此模块更改为包装代币，此步骤称为代币交换。
 
-    * the average price of all the swan **** miners;
-    * file size;
-    * duration;
+4、代币交换是通过 DEX 的 Sushi Swap 完成的。
 
-    Then the estimated amount of money will be locked to the payment contract address, see [Configuration](https://github.com/filswan/multi-chain-payment#Configuration).
-2. In unlock step, the amount pay to Filecoin network by swan platform FIL wallet, will be transferred to MCS payment receiver address, see [Configuration](https://github.com/filswan/multi-chain-payment#Configuration).
-3. In refund step, the overpayment part that is locked will be returned to user wallet
+**支付模块：**
 
-**Swan Client API:** More information can be found [here](https://github.com/filswan/go-swan-client).
+1、上传文件后，根据 ：
 
-**DAO Signature:** If DAO detects that the file uploaded has been chained, it will trigger a signature operation
+* 矿工平均价格
+* 文件大小
+* 持续时间
 
-**Data DAO:** More information can be found at [Flink](https://github.com/filswan/flink).
+然后估计的金额将被锁定到付款合同地址，请参阅[配置](https://github.com/filswan/multi-chain-payment#Configuration)。
 
-**IPFS:** More information can be found **** [here](https://docs.ipfs.io/).
+2、在解锁步骤中，通过Swan平台FIL钱包向Filecoin网络支付的金额，将转入MCS支付接收地址，详见[配置](https://github.com/filswan/multi-chain-payment#Configuration)。
 
-**Filecoin Storage:** More information can be found [here](https://lotus.filecoin.io/docs/set-up/install/).
+3、在退款步骤中，锁定的超额支付部分将返回到用户钱包。
 
-## How Can I Start Building <a href="#how-can-i-start-building" id="how-can-i-start-building"></a>
+\*\*Swan Client API：\*\*可以找到更多信息 [这里](https://github.com/filswan/go-swan-client)。
 
-### Prerequisites
+\*\*DAO 签名：\*\*如果 DAO 检测到上传的文件已被链接，则会触发签名操作。
 
-* OS: Ubuntu 20.04 LTS
+\*\*Data DAO：\*\*更多信息可以在 [Flink](https://github.com/filswan/flink)。
+
+\*\*IPFS：\*\*可以找到更多信息 [这里](https://docs.ipfs.io/)。
+
+\*\*Filecoin存储：\*\*可以找到更多信息 [这里](https://lotus.filecoin.io/docs/set-up/install/)。
+
+### 如何开始构建 <a href="#ru-he-kai-shi-gou-jian" id="ru-he-kai-shi-gou-jian"></a>
+
+#### 先决条件 <a href="#xian-jue-tiao-jian" id="xian-jue-tiao-jian"></a>
+
+* 操作系统： Ubuntu 20.04 LTS
 * Mysql5.5+
-* [Lotus Node](https://github.com/filswan/multi-chain-payment#Lotus-Node)
-* [IPFS Client](https://docs.ipfs.io/install/)
+* Lotus 节点
+* IPFS Client
 
-#### Lotus Node
+**Lotus 节点**
 
-* Lotus node is used for making car files and sending offline deals.
-* Install lotus node or louts lite node in the same machine as MCS.
-* Lotus full node is too heavy compared with lotus lite node, so lotus lite node is preferred.
-* Lotus lite node depends on a lotus node, so ensure that a lotus node exists somewhere when using lotus lite node.
+* Lotus 节点用于制作Car文件和发送离线交易。
+* 在与 MCS 相同的机器上安装 Lotus 节点或 Lotus lite 节点。
+* Lotus全节点相对于Lotus轻节点来说太重了，所以首选Lotus轻节点。
+* Lotus lite 节点依赖于一个 Lotus 节点，所以在使用 Lotus lite 节点时要确保某个地方有一个 Lotus 节点。
 
-**Option1️⃣** [**install a lotus full node**](https://lotus.filecoin.io/docs/set-up/install/)
+**Option1️⃣** [安装Lotus全节点](https://lotus.filecoin.io/docs/set-up/install/)
 
-**Option2️⃣** [**install a lotus lite node**](https://lotus.filecoin.io/docs/set-up/lotus-lite/#amd-and-intel-based-computers)
+\*\*选项2️⃣ \*\*[安装Lotus轻节点](https://lotus.filecoin.io/docs/set-up/lotus-lite/#amd-and-intel-based-computers)
 
-### Installation
+#### 安装 <a href="#an-zhuang" id="an-zhuang"></a>
 
-#### Option1️⃣ **Prebuilt package**: See [release assets](https://github.com/filswan/multi-chain-payment/releases)
+\*\*选项1️⃣ 预构建包：\*\*请参阅[**release assets**](https://github.com/filswan/multi-chain-payment/releases)资产
 
-```
+```shell
 wget https://github.com/filswan/multi-chain-payment/releases/tag/v1.0.1/install.sh
 ./install.sh
 ```
 
-#### Option2️⃣ Source Code
+**选项2️⃣ 源代码**
 
-🔔**go 1.16+** is required
+🔔**go 1.16+** 为必填项
 
-```
+```shell
 git clone https://github.com/filswan/multi-chain-payment.git
 cd multi-chain-payment
 git checkout <release_branch>
 ./build_from_source.sh
 ```
 
-### After Installation
+#### 安装后 <a href="#an-zhuang-hou" id="an-zhuang-hou"></a>
 
-* Before executing, you should check your configuration in `~/.swan/mcp/config.toml` to ensure it is right.
+* 在执行之前，您应该在 `~/.swan/mcp/config.toml` 中检查您的配置，以确保它是正确的。
 
-```
+```shell
 vi ~/.swan/mcp/config.toml
 ```
 
-* Before executing, you should check your enviornment variable in `~/.swan/mcp/.env` to ensure it is right.
+* 在执行之前，您应该在 `~/.swan/mcp/.env` 中检查您的环境变量，以确保它是正确的。
 
-```
+```shell
 vi ~/.swan/mcp/.env
 ```
 
-* After set your config and env variable in the related files, you can run `multi-chain-payment` in `./build` directory.
+* 在相关文件中设置配置和 env 变量后，您可以在 `./build` 目录中运行`多链支付`。
 
-```
+```shell
 ./build/multi-chain-payment
 ```
 
-#### Note
+**注意**
 
-* Logs are in directory `./logs`
-* You can add `nohup` before `./multi-chain-payment` to ignore the HUP (hangup) signal and therefore avoid stop when you log out.
-* You can add `>> mcp.log` in the command to let all the logs output to `mcp.log`.
-* You can add `&` at the end of the command to let the program run in background.
-* Such as:
+* 日志位于目录 `./logs 中`
+* 您可以在`./multi-chain-payment`之前添加 `nohup`，以忽略 HUP（挂断）信号，从而避免在注销时停止。
+* 你可以加 `>> mcp.log`在命令中让所有日志输出到 `mcp.log`.
+* 你可以加 `&`在命令末尾让程序在后台运行。
+* 如：
 
-```
+```shell
 nohup ./multi-chain-payment-0.2.1-rc1-unix >> mcp.log &   #After installation from Option 1
 nohup ./build/multi-chain-payment >> ./build/mcp.log &    #After installation from Option 2
 ```
 
-### Configuration
+### 配置 <a href="#pei-zhi" id="pei-zhi"></a>
 
-You need to modify the config file and input your config params, the configuration items will be introduced below:
+您需要修改配置文件并输入您的配置参数，下面将介绍配置项：
 
-#### config.toml
+\*\*config.toml \*\*
 
-* **port**: Web api port.
-* **release**: When work in release mode: set this to true, otherwise to false and environment. variable GIN\_MODE not to release.
-* **swan\_platform\_fil\_wallet**: The wallet address used to pay on the Filecoin network.
-* **filink\_url**: Deals data can be searched from here.
+* **port**：Web API 端口。
+* **release** ：在发布模式下工作时：将此设置为 true，否则设置为 false 和环境。 变量 GIN\_MODE 不释放。
+* **swan\_platform\_fil\_wallet** ：用于在 Filecoin 网络上支付的钱包地址。
+* **filink\_url** ：可以从这里搜索交易数据。
 
-**\[lotus]**
+\*\*Lotus \*\*
 
-* **client\_api\_url**: URL of lotus client web api, such as: `http://[ip]:[port]/rpc/v0`, generally the `[port]` is `1234`. See [Lotus API](https://docs.filecoin.io/reference/lotus-api/#features)
-* **client\_access\_token**: Access token of lotus client web api. It should have admin access right. You can get it from your lotus node machine using command `lotus auth create-token --perm admin`. See [Obtaining Tokens](https://docs.filecoin.io/build/lotus/api-tokens/#obtaining-tokens)
+* **client\_api\_url** ：lotus 客户端 web api 的 URL，如： `http://[ip]:[port]/rpc/v0`，一般来说 `[port]`是 `1234`. 请参阅 [Lotus API](https://docs.filecoin.io/reference/lotus-api/#features)
+* **client\_access\_token** ：lotus 客户端 web api 的访问令牌。 它应该具有管理员访问权限。 您可以使用命令从您的 Lotus 节点机器获取它 `lotus auth create-token --perm admin`. 请参阅 [Obtaining Tokens](https://docs.filecoin.io/build/lotus/api-tokens/#obtaining-tokens)
 
-**\[ipfs\_server]**
+**ipfs\_server**
 
-* **download\_url\_prefix**: IPFS server url prefix, such as: `http://[ip]:[port]`. Store car files for downloading by storage provider. Car file url will be `[download_url_prefix]/ipfs/[file_hash]`
-* **upload\_url\_prefix**: IPFS server url for uploading files, such as `http://[ip]:[port]`
+* **download\_url\_prefix** ：IPFS 服务器 url 前缀，如： `http://[ip]:[port]`. 存储Car文件以供存储提供商下载。 Car文件网址将是 `[download_url_prefix]/ipfs/[file_hash]`
+* **upload\_url\_prefix** ：上传文件的IPFS服务器url，如 `http://[ip]:[port]`
 
-**\[swan\_task]**
+**swan\_task**
 
-* **dir\_deal**: Output directory for saving generated Car files and CSVs.
-* **verified\_deal**: \[true/false] Whether deals in this task are going to be sent as verified.
-* **fast\_retrieval**: \[true/false] Indicates that data should be available for fast retrieval.
-* **start\_epoch\_hours**: start\_epoch for deals in hours from current time.
-* **expired\_days**: expected completion days for storage provider sealing data.
-* **max\_price**: Max price willing to pay per GiB/epoch for offline deal.
-* **generate\_md5**: \[true/false] Whether to generate MD5 for each car file, note: this is a resource consuming action.
+* **dir\_deal** ：用于保存生成的 Car 文件和 CSV 的输出目录。
+* **verify\_deal** : \[true/false] 此任务中的交易是否为真实数据。
+* **fast\_retrieval** : \[true/false] 表示数据应该可用于快速检索。
+* **start\_epoch\_hours** : start\_epoch 从当前时间开始以小时为单位的交易。
+* **expired\_days** ：存储提供商密封数据的预期完成天数。
+* **max\_price** ：愿意为每个 GiB/epoch 支付离线交易的最高价格。
+* **generate\_md5** : \[true/false] 是否为每个Car文件生成MD5，注意：这是一个消耗资源的动作。
 
-**\[polygon]**
+**Polygon**
 
-* **rpc\_url**: your polygon network RPC URL.
-* **payment\_contract\_address**: swan payment gateway address on polygon to lock money.
-* **sushi\_dex\_address**: sushi address on polygon.
-* **usdc\_wFil\_pool\_contract**: address to get exchange rate between USDC and wFil from sushi on polygon.
-* **dao\_contract\_address**: swan DAO address on polygon, to receive DAO signatures.
-* **mcp\_payment\_receiver\_address**: MCS wallet address to receive money from unlock operation.
-* **gas\_limit**: gas limit for transaction.
-* **unlock\_interval\_minute**: unlock interval in minutes between 2 unlock operations, in cannot be less than 1.
+* **rpc\_url** ：您的Polygon网络 RPC URL。
+* **payment\_contract\_address** ：Polygon上的Swan支付网关地址以锁定资金。
+* **sushi\_dex\_address** : Polygon上的寿司地址。
+* **usdc\_wFil\_pool\_contract** ：从Polygon上的寿司获取 USDC 和 wFil 之间汇率的地址。
+* **dao\_contract\_address** ：Polygon上的Swan DAO 地址，用于接收 DAO 签名。
+* **mcp\_payment\_receiver\_address** ：MCS 钱包地址，用于从解锁操作中接收资金。
+* **gas\_limit** ：交易的Gas限制。
+* **unlock\_interval\_minute** : 2 次解锁操作之间的解锁间隔（分钟），不能小于 1。
 
-#### .env
+\*\*.env \*\*
 
-* **privateKeyOnPolygon**: private key of the wallet used to execute contract methods on the polygon network and pay for gas.
-
-
+* **privateKeyOnPolygon** ：钱包的私钥，用于在Polygon网络上执行合约方法并支付 gas。
 
 
-
-**Want to learn more? Check out the** [**open source code**](https://github.com/filswan/payment-bridge) **and** [**API**](../../development-resource/mcp-api.md)**. Join the team on** [**Discord**](https://discord.gg/djsVYe4b)**.**
 
 ### &#x20;<a href="#setup-local-geth-and-rollup-blockchain" id="setup-local-geth-and-rollup-blockchain"></a>
 
