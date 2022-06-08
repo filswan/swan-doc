@@ -14,9 +14,10 @@ Mumbai Testnet USDC and MATIC funds are also necessary - [Swan Faucet Tutorial](
 
 ## Installation
 
-Install the package using npm. It is recommended to create a new directory for a new project.
+Install the package using npm. It is recommended to create a new directory for a new project. Run the init command to setup a package.json file
 
 ```
+npm init -y
 npm install js-mcs-sdk
 ```
 
@@ -41,6 +42,7 @@ Here is a simple example to upload a single file to MCS. Made a new file named `
 ```
 require('dotenv').config()
 const { mcsSdk } = require('js-mcs-sdk')
+const fs = require('fs')
 
 // set up js-mcs-sdk
 const mcs = new mcsSdk({
@@ -50,7 +52,7 @@ const mcs = new mcsSdk({
 
 async function main() {
   const testFile = JSON.stringify({ address: mcs.publicKey })
-  const fileArray = [{ fileName: 'testFile.json', file: testFile }]
+  const fileArray = [{ fileName: `${mcs.publicKey}.txt`, file: testFile }]
 
   const uploadResponse = await mcs.upload(fileArray)
   console.log(uploadResponse)

@@ -9,9 +9,13 @@ description: Upload file(s) to MCS using the MCS SDK
 You can use the upload function to upload an array of file(s) to FilSwan IPFS gateway. The array holds a list of objects, and returns an array of response objects. Using `fs` is a simple way to read the file data. The options object is also optional to customize the upload.
 
 ```
+// ENTER PARAMETERS
+const PATH_1 = ''
+const PATH_2 = ''
+
 const fileArray = [
-  { fileName: 'file1', file: fs.createReadStream('./file1.txt') },
-  { fileName: 'file2', file: fs.createReadStream('./file2.txt') },
+  { fileName: 'file1', file: fs.createReadStream(PATH_1) },
+  { fileName: 'file2', file: fs.createReadStream(PATH_2) },
 ]
 
 //optional, showing default options

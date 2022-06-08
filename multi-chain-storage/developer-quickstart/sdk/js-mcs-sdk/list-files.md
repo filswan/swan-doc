@@ -9,6 +9,7 @@ description: View your uploaded files
 The following code example lists a user's uploaded files. The list can be searched by file name, and also be filtered or sorted.
 
 ```
+// ENTER PARAMETERS
 const FILE_NAME = ''
 const ORDER_BY = ''
 const IS_ASCEND = ''

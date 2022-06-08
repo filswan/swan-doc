@@ -9,6 +9,7 @@ description: Get Filecoin storage status of a file
 The following code example returns the FIlecoin storage status of a paid file. This method requires the deal id of the deal. This can also be obtained by the getUploads method.
 
 ```
+// ENTER PARAMETERS
 const DEAL_ID = 0
 
 const mintResponse = await mcs.getFileStatus(DEAL_ID)

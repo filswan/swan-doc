@@ -9,6 +9,7 @@ description: Pay for storage on MCS
 After a file is uploaded, the file can be paid for by its payload cid. The method takes the payload cid as the first parameter and the minimum amount as the second.
 
 ```
+// ENTER PARAMETERS
 const W_CID = ''
 const MIN_AMOUNT = '1'
 const FILE_SIZE = ''

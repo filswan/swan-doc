@@ -9,18 +9,23 @@ description: Mint NFT to MCS Opensea Collection
 The following code example mints an uploaded file as a NFT viewable on Opensea. Create an NFT object and provide the payload\_cid of the file. The NFT object follows the [Opensea metadata standards](https://docs.opensea.io/docs/metadata-standards).&#x20;
 
 ```
-const SOURCE_FILE_UPLOAD_ID = ''
-const IPFS_URL = ''
- 
-const nft = {
-  name: 'NFT NAME', // the name of your NFT
-  image: IPFS_URL, // asset URI, images will render on Opensea
-  description: 'NFT DESCRIPTION', // description of your NFT
-  attributes: [], // NFT attributes displayed on Opensea
-}
- 
-const mintTx = await mcs.mintAsset(SOURCE_FILE_UPLOAD_ID, nft)
-console.log(mintTx)
+  // ENTER PARAMETERS
+  const SOURCE_FILE_UPLOAD_ID = 0
+  const IPFS_URL = ''
+  const NFT_NAME = ''
+
+  const NFT_DESCRIPTION = '' // optional
+
+  const nft = {
+    name: NFT_NAME, // the name of your NFT
+    image: IPFS_URL, // asset URI, images will render on Opensea
+    external_url: IPFS_URL, // Opensea will provide a link to view the source
+    description: NFT_DESCRIPTION, // description of your NFT
+    attributes: [], // NFT attributes displayed on Opensea
+  }
+
+  const mintTx = await mcs.mintAsset(SOURCE_FILE_UPLOAD_ID, nft)
+  console.log(mintTx)
 ```
 
 

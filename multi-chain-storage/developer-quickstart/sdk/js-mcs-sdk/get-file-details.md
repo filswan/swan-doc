@@ -9,6 +9,7 @@ description: Get Details about a specific file
 The following code example gets the file details of an uploaded file. This method takes the upload id of the file, and the deal id of the file. The deal id can be obtained by the getUploads method
 
 ```
+// ENTER PARAMETERS
 const SOURCE_FILE_UPLOAD_ID = ''
 const DEAL_ID = ''
  
