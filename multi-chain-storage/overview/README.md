@@ -19,7 +19,7 @@ MCS is a cutting-edge blockchain storage solution providing a data cache and pre
 * Mint NFTs directly to OpenSea.
 * Access services by connecting a third-party wallet (MetaMask)
 * Sent or get deals automatically through the build-in auto-bid system.
-* Merge small files to large CAR file.
+* Merge small files to a large CAR file.
 * Support to multiple miners for storage.
 
 ### **Advantages**

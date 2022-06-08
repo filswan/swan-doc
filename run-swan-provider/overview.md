@@ -14,4 +14,4 @@ In order better share the information with the Flilswan client, authentication f
 
 ![Swan Provider System Architect](<../.gitbook/assets/image (24).png>)
 
-{% embed url="https://github.com/filswan/go-swan-provider/tree/release-0.2.1" %}
+{% embed url="https://github.com/filswan/go-swan-provider" %}

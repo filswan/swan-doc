@@ -11,4 +11,4 @@ Client Tool provides the following functions:
 * Create tasks and offline deals on Swan Platform.
 * Send deals automatically to auto-bid storage providers.
 
-{% embed url="https://github.com/filswan/go-swan-client/tree/release-v0.1.0-rc1" %}
+{% embed url="https://github.com/filswan/go-swan-client" %}

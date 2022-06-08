@@ -2,7 +2,7 @@
 
 ## Code Repository
 
-[https://github.com/filswan/go-swan-client/tree/release-v0.1.0-rc1](https://github.com/filswan/go-swan-client/tree/release-v0.1.0-rc1)
+[https://github.com/filswan/go-swan-client](https://github.com/filswan/go-swan-client)
 
 ## Client Tool Function List
 

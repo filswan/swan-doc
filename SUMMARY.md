@@ -24,6 +24,23 @@
       * [Get Filecoin Status for File](multi-chain-storage/developer-quickstart/sdk/js-mcs-sdk/get-filecoin-status-for-file.md)
   * [Additional Resources](multi-chain-storage/developer-quickstart/additional-resources.md)
 * [Running an MCS Node](multi-chain-storage/running-a-mcp-node.md)
+* [MCS 概述](multi-chain-storage/overview-1/README.md)
+  * [Flink](multi-chain-storage/overview-1/flink.md)
+* [Copy of MCS User Guide](multi-chain-storage/mcp-user-guide-1/README.md)
+  * [Public Testnet](multi-chain-storage/mcp-user-guide-1/public-testnet.md)
+  * [Setup MetaMask](multi-chain-storage/mcp-user-guide-1/setup-metamask.md)
+  * [Configure MetaMask with Alchemy RPC URL](multi-chain-storage/mcp-user-guide-1/configure-metamask-with-alchemy-rpc-url.md)
+* [Copy of Developer Quickstart](multi-chain-storage/developer-quickstart-1/README.md)
+  * [SDK](multi-chain-storage/developer-quickstart-1/sdk/README.md)
+    * [js-mcs-sdk](multi-chain-storage/developer-quickstart-1/sdk/js-mcs-sdk/README.md)
+      * [Get Started](multi-chain-storage/developer-quickstart-1/sdk/js-mcs-sdk/get-started.md)
+      * [Upload Files](multi-chain-storage/developer-quickstart-1/sdk/js-mcs-sdk/upload-files.md)
+      * [Pay for data storage](multi-chain-storage/developer-quickstart-1/sdk/js-mcs-sdk/pay-for-data-storage.md)
+      * [Mint Assets as NFTs](multi-chain-storage/developer-quickstart-1/sdk/js-mcs-sdk/mint-assets-as-nfts.md)
+      * [List Files](multi-chain-storage/developer-quickstart-1/sdk/js-mcs-sdk/list-files.md)
+      * [Get File Details](multi-chain-storage/developer-quickstart-1/sdk/js-mcs-sdk/get-file-details.md)
+      * [Get Filecoin Status for File](multi-chain-storage/developer-quickstart-1/sdk/js-mcs-sdk/get-filecoin-status-for-file.md)
+  * [Additional Resources](multi-chain-storage/developer-quickstart-1/additional-resources.md)
 
 ## Filswan Platform
 
