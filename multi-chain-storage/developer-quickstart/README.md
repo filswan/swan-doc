@@ -6,7 +6,7 @@ The following documentation describes how to use MCS, which is currently live on
 
 ## System Design
 
-![](<../../.gitbook/assets/MCS 2.0.0.drawio.png>)
+![](../../.gitbook/assets/WID.png)
 
 ## How does MCS work? <a href="#how-does-arbitrum-work" id="how-does-arbitrum-work"></a>
 

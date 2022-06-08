@@ -6,7 +6,7 @@
 
 ### 系统设计 <a href="#xi-tong-she-ji" id="xi-tong-she-ji"></a>
 
-![](<../../.gitbook/assets/MCS 2.0.0.drawio.png>)
+![](../../.gitbook/assets/WID.png)
 
 ### MCS 是如何运行的？ <a href="#mcs-shi-ru-he-yun-hang-de" id="mcs-shi-ru-he-yun-hang-de"></a>
 
