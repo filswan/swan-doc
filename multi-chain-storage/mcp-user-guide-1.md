@@ -13,7 +13,7 @@ MCS 同时使用 **MATIC** 和 **USDC** 将文件上传到Polygon网络。我们
 
 #### 1、使用MetaMask钱包Mumbai Testnet连接网站 <a href="#shi-yong-metamask-qian-bao-mumbaitestnet-lian-jie-wang-zhan" id="shi-yong-metamask-qian-bao-mumbaitestnet-lian-jie-wang-zhan"></a>
 
-点击**连接钱包**按钮连接您的MetaMask钱包，并确保在MetaMask钱包上选择相应的网络。（目前，我们只支持Mumbai Testnet测试网。未来，它将正式上线到Polygon主网中。我们还计划增加其他主要网络，如以太坊，BSC，Fantom等。
+前往MCS: [https://mcs.filswan.com/](https://mcs.filswan.com/)。点击**连接钱包**按钮连接您的MetaMask钱包，并确保在MetaMask钱包上选择相应的网络。（目前，我们只支持Mumbai Testnet测试网。未来，它将正式上线到Polygon主网中。我们还计划增加其他主要网络，如以太坊，BSC，Fantom等。
 
 ![img](https://576435799-files.gitbook.io/\~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MauK7Ig3eWeXC35bZV7%2Fuploads%2FZ7gKfWydrYh1omEgB1ZD%2F1.png?alt=media\&token=96b713fd-4729-40ae-abb0-50b0a5a133df)
 

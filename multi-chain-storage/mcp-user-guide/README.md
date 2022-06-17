@@ -13,7 +13,7 @@ MCS use both **MATIC** and **USDC** for uploading files to polygon network. We s
 
 ### **1. Connect to your MetaMask wallet on Mumbai Testnet**
 
-Click on the **Connect Wallet** button to connect your MetaMask wallet, and make sure to select the corresponding network on the MetaMask wallet. (Currently, we only support the Polygon Mumbai Testnet. In the future, it will be officially launched into the Polygon Mainnet. And we also planned to add other main networks such as Ethereum, BSC, Fantom, etc.)
+Go to MCS: [https://mcs.filswan.com/](https://mcs.filswan.com/). Click on the **Connect Wallet** button to connect your MetaMask wallet, and make sure to select the corresponding network on the MetaMask wallet. (Currently, we only support the Polygon Mumbai Testnet. In the future, it will be officially launched into the Polygon Mainnet. And we also planned to add other main networks such as Ethereum, BSC, Fantom, etc.)
 
 ![](<../../.gitbook/assets/1 (3).png>)
 
