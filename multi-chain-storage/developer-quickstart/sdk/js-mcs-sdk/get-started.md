@@ -23,7 +23,7 @@ npm install js-mcs-sdk
 
 ## Environment Variables
 
-Once you have your Mumbai wallet and RPC URL, create a file named `.env` and store your wallet's private key and the RPC URL.
+Once you have your Mumbai wallet and RPC URL, create a file named `.env` in your project directory and store your wallet's private key and the RPC URL.
 
 ```
 PRIVATE_KEY=<PRIVATE_KEY>
@@ -32,7 +32,58 @@ RPC_URL=https://polygon-mumbai.g.alchemy.com/v2/<API_KEY>
 
 {% hint style="info" %}
 Be careful not to expose this information! \
-Revealing your private key to others will give them access to your wallet
+Revealing your private key to others will give them access to your wallet.
+{% endhint %}
+
+## Writing SDK Scripts
+
+To begin writing a script utilizing the SDK, create a new `.js` file. Let's create a file named `demo.js`
+
+At the top of this file, require the necessary packages for the script.
+
+```
+// demo.js
+require('dotenv').config()
+const { mcsSdk } = require('js-mcs-sdk')
+```
+
+* `require('donenv').config()` will add the variables in your `.env` file to `process.env`
+* `const { mcsSdk } = require('js-mcs-sdk')` will require the SDK
+
+Next, after requiring the SDK, we still need to initialize it
+
+```
+require('dotenv').config()
+const { mcsSdk } = require('js-mcs-sdk')
+
+// set up js-mcs-sdk
+const mcs = new mcsSdk({
+  privateKey: process.env.PRIVATE_KEY,
+  rpcUrl: process.env.RPC_URL,
+})
+```
+
+Now we can begin using the SDK methods. Since these functions are [asynchronous](https://javascript.info/async-await), we will need to create an `async` function to run the SDK methods.
+
+```
+require('dotenv').config()
+const { mcsSdk } = require('js-mcs-sdk')
+
+// set up js-mcs-sdk
+const mcs = new mcsSdk({
+  privateKey: process.env.PRIVATE_KEY,
+  rpcUrl: process.env.RPC_URL,
+})
+
+async function main() {
+  // code snippets found in the documentation go here
+}
+
+main()
+```
+
+{% hint style="info" %}
+This is the boilerplate code for all snippets found in the SDK documentation
 {% endhint %}
 
 ## Upload File Example
@@ -42,7 +93,6 @@ Here is a simple example to upload a single file to MCS. Made a new file named `
 ```
 require('dotenv').config()
 const { mcsSdk } = require('js-mcs-sdk')
-const fs = require('fs')
 
 // set up js-mcs-sdk
 const mcs = new mcsSdk({
@@ -62,16 +112,3 @@ main()
 ```
 
 Use the command `node upload.js` to run the code. This snippet creates the MCS SDK instance, creates a JSON file with your wallet address, and uploads the file to MCS.
-
-## Documentation Note
-
-The following documentation for this SDK will assume you have the MCS SDK instantiated. Using the `mcs` variable for the following examples.
-
-```
-const mcs = new mcsSdk({
-  privateKey: process.env.PRIVATE_KEY,
-  rpcUrl: process.env.RPC_URL,
-})
-```
-
-and all following snippets will replace the contents of the `main()` function above.

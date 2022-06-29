@@ -9,24 +9,38 @@ description: Upload file(s) to MCS using the MCS SDK
 You can use the upload function to upload an array of file(s) to FilSwan IPFS gateway. The array holds a list of objects, and returns an array of response objects. Using `fs` is a simple way to read the file data. The options object is also optional to customize the upload.
 
 ```
-// ENTER PARAMETERS
-const PATH_1 = ''
-const PATH_2 = ''
+require('dotenv').config()
+const { mcsSdk } = require('js-mcs-sdk')
+const fs = require('fs') // used to read files
 
-const fileArray = [
-  { fileName: 'file1', file: fs.createReadStream(PATH_1) },
-  { fileName: 'file2', file: fs.createReadStream(PATH_2) },
-]
+// set up js-mcs-sdk
+const mcs = new mcsSdk({
+  privateKey: process.env.PRIVATE_KEY,
+  rpcUrl: process.env.RPC_URL,
+})
 
-//optional, showing default options
-const options = {
-  delay: 1000, // delay between upload API calls for each file. May need to be raised for larger files
-  duration: 525, // the number of days to store the file on the Filecoin network.
-  fileType: 0, // set to 1 for nft metadata files. type 1 files will not show on the UI.
+async function main() {
+  // ENTER PARAMETERS
+  const PATH_1 = ''
+  const PATH_2 = ''
+  
+  const fileArray = [
+    { fileName: 'file1', file: fs.createReadStream(PATH_1) },
+    { fileName: 'file2', file: fs.createReadStream(PATH_2) },
+  ]
+  
+  //optional, showing default options
+  const options = {
+    delay: 1000, // delay between upload API calls for each file. May need to be raised for larger files
+    duration: 525, // the number of days to store the file on the Filecoin network.
+    fileType: 0, // set to 1 for nft metadata files. type 1 files will not show on the UI.
+  }
+  
+  const uploadResponses = await mcs.upload(fileArray, options)
+  console.log(uploadResponses)
 }
 
-const uploadResponses = await mcs.upload(fileArray, options)
-console.log(uploadResponses)
+main()
 ```
 
 ### Parameters
@@ -42,3 +56,18 @@ console.log(uploadResponses)
 ### Return
 
 This function returns an array of the upload API responses.
+
+```
+[
+  {
+    status: 'success',
+    data: {
+      source_file_upload_id: <ID>,
+      payload_cid: <'Qm...'>,
+      ipfs_url: <'https://calibration-ipfs.filswan.com/ipfs/Qm...'>,
+      file_size: <FILE_SIZE>,
+      w_cid: <UNIQUE_CID>
+    }
+  }, ...
+]
+```

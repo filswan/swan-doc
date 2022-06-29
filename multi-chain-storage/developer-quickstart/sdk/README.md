@@ -10,4 +10,4 @@ MCS SDK is the development kit for Swan MCS developers, providing a convenient i
 
 ### Current Supported Languages:
 
-* Javascript
+* [Javascript](js-mcs-sdk/)

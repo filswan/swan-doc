@@ -9,11 +9,25 @@ description: Get Details about a specific file
 The following code example gets the file details of an uploaded file. This method takes the upload id of the file, and the deal id of the file. The deal id can be obtained by the getUploads method
 
 ```
-// ENTER PARAMETERS
-const SOURCE_FILE_UPLOAD_ID = ''
-const DEAL_ID = ''
- 
-console.log(await mcs.getFileDetails(SOURCE_FILE_UPLOAD_ID, DEAL_ID))
+require('dotenv').config()
+const { mcsSdk } = require('js-mcs-sdk')
+const fs = require('fs') // used to read files
+
+// set up js-mcs-sdk
+const mcs = new mcsSdk({
+  privateKey: process.env.PRIVATE_KEY,
+  rpcUrl: process.env.RPC_URL,
+})
+
+async function main() {
+  // ENTER PARAMETERS
+  const SOURCE_FILE_UPLOAD_ID = ''
+  const DEAL_ID = ''
+   
+  console.log(await mcs.getFileDetails(SOURCE_FILE_UPLOAD_ID, DEAL_ID))
+}
+
+main()
 ```
 
 ### Parameters
@@ -24,3 +38,44 @@ console.log(await mcs.getFileDetails(SOURCE_FILE_UPLOAD_ID, DEAL_ID))
 ### Return
 
 Returns the response from the `/deal/detail/` API
+
+```
+{
+  status: 'success',
+  data: {
+    dao_signature: [ [Object], [Object], [Object], [Object] ],
+    dao_threshold: 2,
+    source_file_upload_deal: {
+      deal_id: <ID>,
+      deal_cid: '',
+      message_cid: <'bafy...'>,
+      height: <NUMBER>,
+      piece_cid: <'...'>,
+      verified_deal: <BOOLEAN>,
+      storage_price_per_epoch: 0,
+      signature: '',
+      signature_type: '',
+      created_at: <TIME>,
+      piece_size_format: null,
+      start_height: <NUMBER>,
+      end_height: <NUMBER>,
+      client: <'f...'>,
+      client_collateral_format: '000000000000000000',
+      provider: <'f...'>,
+      provider_tag: '',
+      verified_provider: 0,
+      provider_collateral_format: '000000000000000000',
+      status: 0,
+      network_name: 'filecoin_mainnet',
+      storage_price: 0,
+      ipfs_url: <'https://calibration-ipfs.filswan.com/ipfs/Qm...'>,
+      file_name: <FILE_NAME>,
+      w_cid: <UNIQUE_CID>,
+      car_file_payload_cid: <'bafy...'>,
+      locked_at: <TIME>,
+      locked_fee: <AMOUNT>,
+      unlocked: <BOOLEAN>
+    }
+  }
+}
+```
