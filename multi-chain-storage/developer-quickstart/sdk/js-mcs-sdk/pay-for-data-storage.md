@@ -10,10 +10,10 @@ After a file is uploaded, the file can be paid for by its payload cid. The metho
 
 ```
 require('dotenv').config()
-const { mcsSdk } = require('js-mcs-sdk')
+const { mcsSDK } = require('js-mcs-sdk')
 
 // set up js-mcs-sdk
-const mcs = new mcsSdk({
+const mcs = new mcsSDK({
   privateKey: process.env.PRIVATE_KEY,
   rpcUrl: process.env.RPC_URL,
 })

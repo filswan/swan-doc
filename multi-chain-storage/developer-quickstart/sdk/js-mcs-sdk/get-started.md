@@ -44,20 +44,20 @@ At the top of this file, require the necessary packages for the script.
 ```
 // demo.js
 require('dotenv').config()
-const { mcsSdk } = require('js-mcs-sdk')
+const { mcsSDK } = require('js-mcs-sdk')
 ```
 
 * `require('donenv').config()` will add the variables in your `.env` file to `process.env`
-* `const { mcsSdk } = require('js-mcs-sdk')` will require the SDK
+* `const { mcsSDK } = require('js-mcs-sdk')` will require the SDK
 
 Next, after requiring the SDK, we still need to initialize it
 
 ```
 require('dotenv').config()
-const { mcsSdk } = require('js-mcs-sdk')
+const { mcsSDK } = require('js-mcs-sdk')
 
 // set up js-mcs-sdk
-const mcs = new mcsSdk({
+const mcs = new mcsSDK({
   privateKey: process.env.PRIVATE_KEY,
   rpcUrl: process.env.RPC_URL,
 })
@@ -67,10 +67,10 @@ Now we can begin using the SDK methods. Since these functions are [asynchronous]
 
 ```
 require('dotenv').config()
-const { mcsSdk } = require('js-mcs-sdk')
+const { mcsSDK } = require('js-mcs-sdk')
 
 // set up js-mcs-sdk
-const mcs = new mcsSdk({
+const mcs = new mcsSDK({
   privateKey: process.env.PRIVATE_KEY,
   rpcUrl: process.env.RPC_URL,
 })
@@ -92,10 +92,10 @@ Here is a simple example to upload a single file to MCS. Made a new file named `
 
 ```
 require('dotenv').config()
-const { mcsSdk } = require('js-mcs-sdk')
+const { mcsSDK } = require('js-mcs-sdk')
 
 // set up js-mcs-sdk
-const mcs = new mcsSdk({
+const mcs = new mcsSDK({
   privateKey: process.env.PRIVATE_KEY,
   rpcUrl: process.env.RPC_URL,
 })

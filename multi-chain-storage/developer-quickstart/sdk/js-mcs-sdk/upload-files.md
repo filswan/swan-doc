@@ -10,11 +10,11 @@ You can use the upload function to upload an array of file(s) to FilSwan IPFS ga
 
 ```
 require('dotenv').config()
-const { mcsSdk } = require('js-mcs-sdk')
+const { mcsSDK } = require('js-mcs-sdk')
 const fs = require('fs') // used to read files
 
 // set up js-mcs-sdk
-const mcs = new mcsSdk({
+const mcs = new mcsSDK({
   privateKey: process.env.PRIVATE_KEY,
   rpcUrl: process.env.RPC_URL,
 })
