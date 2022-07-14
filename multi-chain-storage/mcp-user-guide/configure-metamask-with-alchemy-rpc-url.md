@@ -8,7 +8,7 @@ This setting is off by default. To turn it on, navigate to Settings > Advanced >
 
 ### **2. Create Alchemy Mumbai Polygon RPC** <a href="#alchemypolygontometamaskinstructions-2.createalchemymumbaipolygonrpc" id="alchemypolygontometamaskinstructions-2.createalchemymumbaipolygonrpc"></a>
 
-First, you will need an Alchemy account. Go to the [Dashboard page](https://dashboard.alchemyapi.io), click "+ CREATE APP", configure the app to be on "Polygon Mumbai"
+First, you will need to create an account on [Alchemy](https://dashboard.alchemyapi.io). On the Dashboard page, click "+ CREATE APP", configure the app to be on "Polygon Mumbai"
 
 ![](<../../.gitbook/assets/4 (1) (1).png>)
 
