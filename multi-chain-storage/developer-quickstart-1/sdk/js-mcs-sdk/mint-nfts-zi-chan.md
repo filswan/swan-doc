@@ -63,3 +63,18 @@ main()
 #### 返回 <a href="#fan-hui-2" id="fan-hui-2"></a>
 
 返回来自 `/mint/info` API 的响应
+
+```
+{
+  status: 'success',
+  data: {
+    id: <ID>,
+    source_file_upload_id: <ID>,
+    nft_tx_hash: <'0x...'>,
+    mint_address: '0x1A1e5AC88C493e0608C84c60b7bb5f04D9cF50B3',
+    token_id: '<ID>',
+    create_at: <TIME>,
+    update_at: <TIME>
+  }
+}
+```

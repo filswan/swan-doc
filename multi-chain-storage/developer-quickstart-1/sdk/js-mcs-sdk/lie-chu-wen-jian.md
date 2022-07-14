@@ -71,3 +71,27 @@ main()
 #### 返回 <a href="#fan-hui-3" id="fan-hui-3"></a>
 
 返回一个数组，其中包含文件的一些详细信息。
+
+```
+[
+  {
+    source_file_upload_id: <ID>,
+    car_file_id: <ID>,
+    file_name: <FILE_NAME>,
+    file_size: <FILE_SIZE>,
+    upload_at: <TIME>,
+    duration: 525,
+    ipfs_url: <'https://calibration-ipfs.filswan.com/ipfs/Qm...'>,
+    pin_status: 'Pinned',
+    payload_cid: <'bafy...'>,
+    w_cid: <UNIQUE_CID>,
+    status: 'Processing',
+    deal_success: <BOOLEAN>,
+    is_minted: <BOOLEAN>,
+    token_id: <ID>,
+    mint_address: '0x1A1e5AC88C493e0608C84c60b7bb5f04D9cF50B3',
+    nft_tx_hash: <'0x...'>,
+    offline_deal: [ [Object], [Object], [Object], [Object], [Object] ]
+  }, ...
+]
+```
