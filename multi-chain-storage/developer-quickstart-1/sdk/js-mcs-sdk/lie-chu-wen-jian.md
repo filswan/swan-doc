@@ -11,26 +11,41 @@ getUploads(walletAddress, payloadCid, fileName, orderBy, isAscend, status, isMin
 下面的代码示例列出用户上载的文件。该列表可以按文件名搜索，也可以进行筛选或排序。
 
 ```
-const FILE_NAME = ''
-const ORDER_BY = ''
-const IS_ASCEND = ''
-const STATUS = ''
-const IS_MINTED = ''
-const PAGE_NUMBER = 1
-const PAGE_SIZE = 10
+require('dotenv').config()
+const { mcsSDK } = require('js-mcs-sdk')
+const fs = require('fs') // used to read files
 
-const uploads = await mcs.getUploads(
-  mcs.publicKey,
-  FILE_NAME,
-  ORDER_BY,
-  IS_ASCEND,
-  STATUS,
-  IS_MINTED,
-  PAGE_NUMBER,
-  PAGE_SIZE,
-)
+// set up js-mcs-sdk
+const mcs = new mcsSDK({
+  privateKey: process.env.PRIVATE_KEY,
+  rpcUrl: process.env.RPC_URL,
+})
 
-console.log(uploads.data.source_file_upload)
+async function main() {
+  // ENTER PARAMETERS
+  const FILE_NAME = ''
+  const ORDER_BY = ''
+  const IS_ASCEND = ''
+  const STATUS = ''
+  const IS_MINTED = ''
+  const PAGE_NUMBER = 1
+  const PAGE_SIZE = 10
+  
+  const uploads = await mcs.getUploads(
+    mcs.publicKey,
+    FILE_NAME,
+    ORDER_BY,
+    IS_ASCEND,
+    STATUS,
+    IS_MINTED,
+    PAGE_NUMBER,
+    PAGE_SIZE,
+  )
+  
+  console.log(uploads.data.source_file_upload)
+}
+
+main()
 ```
 
 #### 参数 <a href="#can-shu-2" id="can-shu-2"></a>

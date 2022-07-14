@@ -11,12 +11,26 @@ makePayment(wCid, minAmount, fileSize)
 上传文件后，文件可以按其有效负载 cid 付费。该方法将有效负载 cid 作为第一个参数，将最小数量作为第二个参数。
 
 ```shell
-const W_CID = ''
-const MIN_AMOUNT = '1'
-const FILE_SIZE = ''
- 
-const tx = await mcs.makePayment(W_CID, MIN_AMOUNT, FILE_SIZE)
-console.log(tx.transactionHash)
+require('dotenv').config()
+const { mcsSDK } = require('js-mcs-sdk')
+
+// set up js-mcs-sdk
+const mcs = new mcsSDK({
+  privateKey: process.env.PRIVATE_KEY,
+  rpcUrl: process.env.RPC_URL,
+})
+
+async function main() {
+  // ENTER PARAMETERS
+  const W_CID = ''
+  const MIN_AMOUNT = '1'
+  const FILE_SIZE = ''
+   
+  const tx = await mcs.makePayment(W_CID, MIN_AMOUNT, FILE_SIZE)
+  console.log(tx.transactionHash)
+}
+
+main()
 ```
 
 #### 参数 <a href="#can-shu-1" id="can-shu-1"></a>

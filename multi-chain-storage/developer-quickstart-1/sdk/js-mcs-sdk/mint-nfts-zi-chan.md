@@ -13,18 +13,36 @@ mintAsset(sourceFileUploadId, nftObject)
 下面的代码示例将上传的文件铸造为在 Opensea 上可查看的 NFT。创建一个 NFT 对象并提供该文件的payload\_cid。NFT 对象遵循[OpenSea元数据标准](https://docs.opensea.io/docs/metadata-standards)。
 
 ```
-const SOURCE_FILE_UPLOAD_ID = ''
-const IPFS_URL = ''
- 
-const nft = {
-  name: 'NFT NAME', // the name of your NFT
-  image: IPFS_URL, // asset URI, images will render on Opensea
-  description: 'NFT DESCRIPTION', // description of your NFT
-  attributes: [], // NFT attributes displayed on Opensea
+require('dotenv').config()
+const { mcsSDK } = require('js-mcs-sdk')
+
+// set up js-mcs-sdk
+const mcs = new mcsSDK({
+  privateKey: process.env.PRIVATE_KEY,
+  rpcUrl: process.env.RPC_URL,
+})
+
+async function main() {
+  // ENTER PARAMETERS
+  const SOURCE_FILE_UPLOAD_ID = 0
+  const IPFS_URL = ''
+  const NFT_NAME = ''
+
+  const NFT_DESCRIPTION = '' // optional
+
+  const nft = {
+    name: NFT_NAME, // the name of your NFT
+    image: IPFS_URL, // asset URI, images will render on Opensea
+    external_url: IPFS_URL, // Opensea will provide a link to view the source
+    description: NFT_DESCRIPTION, // description of your NFT
+    attributes: [], // NFT attributes displayed on Opensea
+  }
+
+  const mintTx = await mcs.mintAsset(SOURCE_FILE_UPLOAD_ID, nft)
+  console.log(mintTx)
 }
- 
-const mintTx = await mcs.mintAsset(SOURCE_FILE_UPLOAD_ID, nft)
-console.log(mintTx)
+
+main()
 ```
 
 

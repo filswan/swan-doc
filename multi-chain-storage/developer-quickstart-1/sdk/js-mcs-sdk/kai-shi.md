@@ -16,6 +16,7 @@ description: 本指南将解释如何安装 js-mcs-sdk 及其基本用法
 使用 npm 安装包。建议为新项目创建新目录。
 
 ```shell
+npm init -y
 npm install js-mcs-sdk
 ```
 
@@ -38,17 +39,17 @@ RPC_URL=https://polygon-mumbai.g.alchemy.com/v2/<API_KEY>
 
 ```shell
 require('dotenv').config()
-const { mcsSdk } = require('js-mcs-sdk')
+const { mcsSDK } = require('js-mcs-sdk')
 
 // set up js-mcs-sdk
-const mcs = new mcsSdk({
+const mcs = new mcsSDK({
   privateKey: process.env.PRIVATE_KEY,
   rpcUrl: process.env.RPC_URL,
 })
 
 async function main() {
   const testFile = JSON.stringify({ address: mcs.publicKey })
-  const fileArray = [{ fileName: 'testFile.json', file: testFile }]
+  const fileArray = [{ fileName: `${mcs.publicKey}.txt`, file: testFile }]
 
   const uploadResponse = await mcs.upload(fileArray)
   console.log(uploadResponse)
@@ -64,7 +65,11 @@ main()
 此 SDK 的以下文档将假定您已实例化 MCS SDK。 使用 `mcs`以下示例的变量。
 
 ```shell
-const mcs = new mcsSdk({
+require('dotenv').config()
+const { mcsSDK } = require('js-mcs-sdk')
+
+// set up js-mcs-sdk
+const mcs = new mcsSDK({
   privateKey: process.env.PRIVATE_KEY,
   rpcUrl: process.env.RPC_URL,
 })

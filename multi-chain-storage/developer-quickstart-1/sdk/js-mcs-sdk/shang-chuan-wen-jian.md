@@ -11,20 +11,38 @@ upload(fileArray, options)
 您可以使用上传功能将文件数组上传到 FilSwan IPFS 网关。该数组保存对象列表，并返回响应对象数组。使用 `fs` 是读取文件数据的简单方法。选项对象也是自定义上载的可选对象。
 
 ```
-const fileArray = [
-  { fileName: 'file1', file: fs.createReadStream('./file1.txt') },
-  { fileName: 'file2', file: fs.createReadStream('./file2.txt') },
-]
+require('dotenv').config()
+const { mcsSDK } = require('js-mcs-sdk')
+const fs = require('fs') // used to read files
 
-//optional, showing default options
-const options = {
-  delay: 1000, // delay between upload API calls for each file. May need to be raised for larger files
-  duration: 525, // the number of days to store the file on the Filecoin network.
-  fileType: 0, // set to 1 for nft metadata files. type 1 files will not show on the UI.
+// set up js-mcs-sdk
+const mcs = new mcsSDK({
+  privateKey: process.env.PRIVATE_KEY,
+  rpcUrl: process.env.RPC_URL,
+})
+
+async function main() {
+  // ENTER PARAMETERS
+  const PATH_1 = ''
+  const PATH_2 = ''
+  
+  const fileArray = [
+    { fileName: 'file1', file: fs.createReadStream(PATH_1) },
+    { fileName: 'file2', file: fs.createReadStream(PATH_2) },
+  ]
+  
+  //optional, showing default options
+  const options = {
+    delay: 1000, // delay between upload API calls for each file. May need to be raised for larger files
+    duration: 525, // the number of days to store the file on the Filecoin network.
+    fileType: 0, // set to 1 for nft metadata files. type 1 files will not show on the UI.
+  }
+  
+  const uploadResponses = await mcs.upload(fileArray, options)
+  console.log(uploadResponses)
 }
 
-const uploadResponses = await mcs.upload(fileArray, options)
-console.log(uploadResponses)
+main()
 ```
 
 #### 参数 <a href="#can-shu" id="can-shu"></a>
