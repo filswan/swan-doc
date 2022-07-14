@@ -33,6 +33,57 @@ RPC_URL=https://polygon-mumbai.g.alchemy.com/v2/<API_KEY>
 >
 > 向他人透露您的私钥将使他们能够访问您的钱包
 
+**编写SDK脚本**
+
+要开始使用 SDK 编写脚本前, 需创建一个新的`.js` 文件。让我们创建一个名为 `demo.js`文件。
+
+此文件的上方需放置脚本所需的套件。
+
+```
+// demo.js
+require('dotenv').config()
+const { mcsSDK } = require('js-mcs-sdk')
+```
+
+* `require('donenv').config()` 需要加变量在你的 `.env` 文件中以执行`process.env`
+* `const { mcsSDK } = require('js-mcs-sdk')` 需要引入 SDK
+
+接下来，在引入SDK完成后，你需要执行初始化
+
+```
+require('dotenv').config()
+const { mcsSDK } = require('js-mcs-sdk')
+
+// set up js-mcs-sdk
+const mcs = new mcsSDK({
+  privateKey: process.env.PRIVATE_KEY,
+  rpcUrl: process.env.RPC_URL,
+})
+```
+
+现在我们可以开始使用SDK工具，由于这个函数是[异步的](https://javascript.info/async-await), 我们需要创建一个`async` 函数来跑SDK工具。
+
+```
+require('dotenv').config()
+const { mcsSDK } = require('js-mcs-sdk')
+
+// set up js-mcs-sdk
+const mcs = new mcsSDK({
+  privateKey: process.env.PRIVATE_KEY,
+  rpcUrl: process.env.RPC_URL,
+})
+
+async function main() {
+  // code snippets found in the documentation go here
+}
+
+main()
+```
+
+{% hint style="info" %}
+这是SDK文档中所有片段的样板代码。
+{% endhint %}
+
 #### 上传文件示例 <a href="#shang-chuan-wen-jian-shi-li" id="shang-chuan-wen-jian-shi-li"></a>
 
 这是一个将单个文件上传到 MCS 的简单示例。 新建了一个文件名为 `upload.js`
