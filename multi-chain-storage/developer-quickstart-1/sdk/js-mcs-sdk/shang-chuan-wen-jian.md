@@ -58,3 +58,18 @@ main()
 #### 返回 <a href="#fan-hui" id="fan-hui"></a>
 
 此函数返回上载 API 响应的数组。
+
+```
+[
+  {
+    status: 'success',
+    data: {
+      source_file_upload_id: <ID>,
+      payload_cid: <'Qm...'>,
+      ipfs_url: <'https://calibration-ipfs.filswan.com/ipfs/Qm...'>,
+      file_size: <FILE_SIZE>,
+      w_cid: <UNIQUE_CID>
+    }
+  }, ...
+]
+```
