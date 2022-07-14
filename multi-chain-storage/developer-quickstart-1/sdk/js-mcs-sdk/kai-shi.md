@@ -29,9 +29,11 @@ PRIVATE_KEY=<PRIVATE_KEY>
 RPC_URL=https://polygon-mumbai.g.alchemy.com/v2/<API_KEY>
 ```
 
-> 小心不要泄露这些信息
->
-> 向他人透露您的私钥将使他们能够访问您的钱包
+{% hint style="info" %}
+小心不要泄露这些信息
+
+向他人透露您的私钥将使他们能够访问您的钱包
+{% endhint %}
 
 **编写SDK脚本**
 
@@ -45,10 +47,10 @@ require('dotenv').config()
 const { mcsSDK } = require('js-mcs-sdk')
 ```
 
-* `require('donenv').config()` 需要加变量在你的 `.env` 文件中以执行`process.env`
-* `const { mcsSDK } = require('js-mcs-sdk')` 需要引入 SDK
+* `require('donenv').config()` 将加变量在你的 `.env` 文件中以执行`process.env`
+* `const { mcsSDK } = require('js-mcs-sdk')` 将引入 SDK
 
-接下来，在引入SDK完成后，你需要执行初始化
+接下来，在引入SDK完成后，需要执行初始化
 
 ```
 require('dotenv').config()
@@ -61,7 +63,7 @@ const mcs = new mcsSDK({
 })
 ```
 
-现在我们可以开始使用SDK工具，由于这个函数是[异步的](https://javascript.info/async-await), 我们需要创建一个`async` 函数来跑SDK工具。
+现在我们可以开始使用SDK工具，由于这个函数是[异步的](https://javascript.info/async-await)，我们需要创建一个`async` 函数来跑SDK工具。
 
 ```
 require('dotenv').config()
@@ -110,20 +112,3 @@ main()
 ```
 
 使用命令 `node upload.js`运行代码。 此代码段创建 MCS SDK 实例，使用您的钱包地址创建 JSON 文件，并将文件上传到 MCS。
-
-#### 文档说明 <a href="#wen-dang-shuo-ming" id="wen-dang-shuo-ming"></a>
-
-此 SDK 的以下文档将假定您已实例化 MCS SDK。 使用 `mcs`以下示例的变量。
-
-```shell
-require('dotenv').config()
-const { mcsSDK } = require('js-mcs-sdk')
-
-// set up js-mcs-sdk
-const mcs = new mcsSDK({
-  privateKey: process.env.PRIVATE_KEY,
-  rpcUrl: process.env.RPC_URL,
-})
-```
-
-并且所有以上片段将替换 `main()`上面的功能。
