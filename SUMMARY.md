@@ -23,6 +23,7 @@
       * [Get File Details](multi-chain-storage/developer-quickstart/sdk/js-mcs-sdk/get-file-details.md)
       * [Get Filecoin Status for File](multi-chain-storage/developer-quickstart/sdk/js-mcs-sdk/get-filecoin-status-for-file.md)
       * [SDK Installation Tutorial Video](multi-chain-storage/developer-quickstart/sdk/js-mcs-sdk/sdk-installation-tutorial-video.md)
+  * [MCS SDK Python](multi-chain-storage/developer-quickstart/mcs-sdk-python.md)
   * [Additional Resources](multi-chain-storage/developer-quickstart/additional-resources.md)
 * [Running an MCS Node](multi-chain-storage/running-a-mcp-node.md)
 * [MCS 概述](multi-chain-storage/overview-1/README.md)
