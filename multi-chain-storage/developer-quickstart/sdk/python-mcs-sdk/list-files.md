@@ -1,14 +1,12 @@
 ---
-description: 查看您上传的文件
+description: View your uploaded files
 ---
 
-# 列出文件
+# List Files
 
-```
-getUploads(walletAddress, payloadCid, fileName, orderBy, isAscend, status, isMinted, pageNumber, pageSize)
-```
+`getUploads(walletAddress, payloadCid, fileName, orderBy, isAscend, status, isMinted, pageNumber, pageSize)`
 
-下面的代码示例列出用户上载的文件。该列表可以按文件名搜索，也可以进行筛选或排序。
+The following code example lists a user's uploaded files. The list can be searched by file name, and also be filtered or sorted.
 
 ```
 require('dotenv').config()
@@ -48,29 +46,22 @@ async function main() {
 main()
 ```
 
-#### 参数 <a href="#can-shu-2" id="can-shu-2"></a>
+### Parameters
 
-**walletAddress**：列出此帐户上传的文件（必填）
+* **walletAddress**: lists the files uploaded by this account (required)
+* **fileName**: filter by this file name
+* **orderBy**: sort the list by file name, file size, or upload time (default)
+* **isAscend**: y for ascending list, otherwise descend (default)
+* **status**: Pending, Processing, Refundable, Refunded, Success or other
+* **isMinted**: y, n, all (default)
+* **pageNumber**: page number (default 1)
+* **pageSize**: number of results in a page (default 10)
 
-**fileName**：按此文件名筛选
+Only the walletAddress parameter is required, the rest are optional.
 
-**orderBy**：按文件名、文件大小或上传时间（默认）对列表进行排序
+### Return
 
-**isAscend**：y 表示升序列表，否则为降序（默认）
-
-**status**： 待处理， 正在处理， 可退款， 已退款， 成功或其他
-
-**isMinted**： y， n， all （默认）
-
-**pageNumber**：页码（默认为 1）
-
-**pageSize**：页面中的结果数（默认为 10）
-
-只有钱包地址参数是必需的，其余的是可选的。
-
-#### 返回 <a href="#fan-hui-3" id="fan-hui-3"></a>
-
-返回一个数组，其中包含文件的一些详细信息。
+Returns an array containing some details of the file(s).
 
 ```
 [

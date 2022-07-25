@@ -1,16 +1,12 @@
 ---
-description: Mint NFT 到 MCS Opensea Collection
+description: Mint NFT to MCS Opensea Collection
 ---
 
-# Mint NFTs资产
+# Mint Assets as NFTs
 
-Mint NFT 到 MCS Opensea Collection
+`mintAsset(sourceFileUploadId, nftObject)`
 
-```
-mintAsset(sourceFileUploadId, nftObject)
-```
-
-下面的代码示例将上传的文件铸造为在 Opensea 上可查看的 NFT。创建一个 NFT 对象并提供该文件的payload\_cid。NFT 对象遵循[OpenSea元数据标准](https://docs.opensea.io/docs/metadata-standards)。
+The following code example mints an uploaded file as a NFT viewable on Opensea. Create an NFT object and provide the payload\_cid of the file. The NFT object follows the [Opensea metadata standards](https://docs.opensea.io/docs/metadata-standards).&#x20;
 
 ```
 require('dotenv').config()
@@ -45,24 +41,23 @@ async function main() {
 main()
 ```
 
-
+The NFT smart contract can be found in the GitHub repository below:
 
 {% embed url="https://github.com/filswan/nft" %}
 
-#### Parameters <a href="#parameters" id="parameters"></a>
+### Parameters
 
-**sourceFileUploadId**：上传文件的 ID
+* **sourceFileUploadId**: upload Id of the file
+* **nftObject**: object following Opensea Metadata Standards
+  * **name**: name of your NFT (required)
+  * **image**: IPFS URL of your file (required)
+  * **description**: description of your NFT
+  * **external\_url**: viewable link on Opensea UI
+  * **attributes**: array of attribute objects you wish to show on Opensea
 
-**nftObject**：遵循 Opensea Metadata Standards 的对象
+### Return
 
-* **name**：您的 NFT 的名称（必填）
-* **image**：文件的 IPFS URL（必填）
-* **description**： 您的 NFT 的描述
-* **attributes**：您希望在 Opensea 上显示的属性对象数组
-
-#### 返回 <a href="#fan-hui-2" id="fan-hui-2"></a>
-
-返回来自 `/mint/info` API 的响应
+Returns the response from the `/mint/info` API
 
 ```
 {
