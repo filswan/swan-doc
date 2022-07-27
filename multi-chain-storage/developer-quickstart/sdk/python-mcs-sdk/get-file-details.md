@@ -4,36 +4,26 @@ description: Get Details about a specific file
 
 # Get File Details
 
-`getFileDetails(sourceFileUploadId, dealId)`
+`get_payment_info(self, payload_cid, wallet_address, source_file_upload_id)`
 
-The following code example gets the file details of an uploaded file. This method takes the upload id of the file, and the deal id of the file. The deal id can be obtained by the getUploads method
+The following code example gets the file details of an uploaded file. This method takes the upload id of the file, and the deal id of the file.
 
 ```
-require('dotenv').config()
-const { mcsSDK } = require('js-mcs-sdk')
-const fs = require('fs') // used to read files
-
-// set up js-mcs-sdk
-const mcs = new mcsSDK({
-  privateKey: process.env.PRIVATE_KEY,
-  rpcUrl: process.env.RPC_URL,
-})
-
-async function main() {
-  // ENTER PARAMETERS
-  const SOURCE_FILE_UPLOAD_ID = ''
-  const DEAL_ID = ''
-   
-  console.log(await mcs.getFileDetails(SOURCE_FILE_UPLOAD_ID, DEAL_ID))
-}
-
-main()
+    def get_payment_info(self, payload_cid, wallet_address, source_file_upload_id):
+        params = {}
+        if payload_cid:
+            params['payload_cid'] = payload_cid
+        if wallet_address:
+            params['wallet_address'] = wallet_address
+        if wallet_address:
+            params['source_file_upload_id'] = source_file_upload_id
+        return self._request_with_params(GET, PAYMENT_INFO, params, None)
 ```
 
 ### Parameters
 
-* **sourceFileUploadId**: upload id of the file
-* **dealId**: deal id of the file
+* **source\_file\_upload\_id**: upload id of the file
+* **payload\_cid**: not required
 
 ### Return
 

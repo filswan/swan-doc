@@ -1,10 +1,10 @@
 ---
-description: https://github.com/filswan/js-mcs-sdk
+description: https://github.com/filswan/python-mcs-sdk
 ---
 
 # python mcs SDK
 
-js-mcs-sdk is a javascript software development kit for the MCS service. It provides a convenient interface for working with the MCS API from a web browser or Node.js.&#x20;
+py-mcs-sdk is a python software development kit for the MCS service. It provides a convenient interface for working with the MCS API.&#x20;
 
 The SDK has the following functionalities:
 
@@ -15,7 +15,7 @@ The SDK has the following functionalities:
 * GET       files by CID
 * GET       storage status from Filecoin
 
-{% embed url="https://github.com/filswan/js-mcs-sdk" %}
+{% embed url="https://github.com/filswan/python-mcs-sdk" %}
 
 ### Sponsors
 

@@ -4,60 +4,30 @@ description: View your uploaded files
 
 # List Files
 
-`getUploads(walletAddress, payloadCid, fileName, orderBy, isAscend, status, isMinted, pageNumber, pageSize)`
+`get_user_tasks_deals(self, wallet_address)`
 
 The following code example lists a user's uploaded files. The list can be searched by file name, and also be filtered or sorted.
 
 ```
-require('dotenv').config()
-const { mcsSDK } = require('js-mcs-sdk')
-const fs = require('fs') // used to read files
-
-// set up js-mcs-sdk
-const mcs = new mcsSDK({
-  privateKey: process.env.PRIVATE_KEY,
-  rpcUrl: process.env.RPC_URL,
-})
-
-async function main() {
-  // ENTER PARAMETERS
-  const FILE_NAME = ''
-  const ORDER_BY = ''
-  const IS_ASCEND = ''
-  const STATUS = ''
-  const IS_MINTED = ''
-  const PAGE_NUMBER = 1
-  const PAGE_SIZE = 10
-  
-  const uploads = await mcs.getUploads(
-    mcs.publicKey,
-    FILE_NAME,
-    ORDER_BY,
-    IS_ASCEND,
-    STATUS,
-    IS_MINTED,
-    PAGE_NUMBER,
-    PAGE_SIZE,
-  )
-  
-  console.log(uploads.data.source_file_upload)
-}
-
-main()
+def get_user_tasks_deals(self, wallet_address):
+        params = {}
+        if wallet_address:
+            params['wallet_address'] = wallet_address
+        return self._request_with_params(GET, TASKS_DEALS, params, None)
 ```
 
 ### Parameters
 
-* **walletAddress**: lists the files uploaded by this account (required)
-* **fileName**: filter by this file name
-* **orderBy**: sort the list by file name, file size, or upload time (default)
-* **isAscend**: y for ascending list, otherwise descend (default)
+* **wallet\_address**: lists the files uploaded by this account (required)
+* **file\_name**: filter by this file name
+* **order\_by**: sort the list by file name, file size, or upload time (default)
+* **is\_ascend**: y for ascending list, otherwise descend (default)
 * **status**: Pending, Processing, Refundable, Refunded, Success or other
-* **isMinted**: y, n, all (default)
-* **pageNumber**: page number (default 1)
-* **pageSize**: number of results in a page (default 10)
+* **is\_minted**: y, n, all (default)
+* **page\_number**: page number (default 1)
+* **page\_size**: number of results in a page (default 10)
 
-Only the walletAddress parameter is required, the rest are optional.
+Only the wallet\_address parameter is required, the rest are optional.
 
 ### Return
 

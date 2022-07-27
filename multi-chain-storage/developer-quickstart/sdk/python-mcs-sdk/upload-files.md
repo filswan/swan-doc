@@ -4,70 +4,39 @@ description: Upload file(s) to MCS using the MCS SDK
 
 # Upload Files
 
-`upload(fileArray, options)`
+`upload_file(wallet_address, file_path)`
 
-You can use the upload function to upload an array of file(s) to FilSwan IPFS gateway. The array holds a list of objects, and returns an array of response objects. Using `fs` is a simple way to read the file data. The options object is also optional to customize the upload.
+You can use the upload function to upload a single file to FilSwan IPFS gateway.
 
 ```
-require('dotenv').config()
-const { mcsSDK } = require('js-mcs-sdk')
-const fs = require('fs') // used to read files
+def test_upload_file(wallet_info):
+    wallet_address = wallet_info['wallet_address']
 
-// set up js-mcs-sdk
-const mcs = new mcsSDK({
-  privateKey: process.env.PRIVATE_KEY,
-  rpcUrl: process.env.RPC_URL,
-})
-
-async function main() {
-  // ENTER PARAMETERS
-  const PATH_1 = ''
-  const PATH_2 = ''
-  
-  const fileArray = [
-    { fileName: 'file1', file: fs.createReadStream(PATH_1) },
-    { fileName: 'file2', file: fs.createReadStream(PATH_2) },
-  ]
-  
-  //optional, showing default options
-  const options = {
-    delay: 1000, // delay between upload API calls for each file. May need to be raised for larger files
-    duration: 525, // the number of days to store the file on the Filecoin network.
-    fileType: 0, // set to 1 for nft metadata files. type 1 files will not show on the UI.
-  }
-  
-  const uploadResponses = await mcs.upload(fileArray, options)
-  console.log(uploadResponses)
-}
-
-main()
+    api = McsAPI()
+    # upload file to mcs
+    filepath = "/*"
+    father_path = os.path.abspath(os.path.dirname(__file__))
+    upload_file = api.upload_file(wallet_address, father_path + filepath)
 ```
 
 ### Parameters
 
-* **fileArray**: array of objects
-  * **fileName**: name of file
-  * **file**: file contents (using `fs` is a simple way to get the file contents)
-* **options**: an optional object can also be passed to specify certain parameters:
-  * **delay**: delay in milliseconds between upload API calls. Default is 1000, but may need to be increased for many larger files
-  * **duration**: Number of days to store your file on the Filecoin network. (default 525)
-  * **fileType**: Files of type one will be hidden from the upload list and the UI. NFT metadata files are type 1. (default 0)
+* wallet\_address: MetaMask wallet address.
+* file\_path: Location of the file for upload.
 
 ### Return
 
-This function returns an array of the upload API responses.
+This function returns the upload API responses.
 
 ```
-[
-  {
-    status: 'success',
-    data: {
-      source_file_upload_id: <ID>,
-      payload_cid: <'Qm...'>,
-      ipfs_url: <'https://calibration-ipfs.filswan.com/ipfs/Qm...'>,
-      file_size: <FILE_SIZE>,
-      w_cid: <UNIQUE_CID>
-    }
-  }, ...
-]
+{
+  status: 'success',
+  data: {
+    source_file_upload_id: <ID>,
+    payload_cid: <'Qm...'>,
+    ipfs_url: <'https://calibration-ipfs.filswan.com/ipfs/Qm...'>,
+    file_size: <FILE_SIZE>,
+    w_cid: <UNIQUE_CID>
+  }
+}
 ```
