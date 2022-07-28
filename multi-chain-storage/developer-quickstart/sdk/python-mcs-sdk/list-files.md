@@ -4,7 +4,7 @@ description: View your uploaded files
 
 # List Files
 
-`get_user_tasks_deals(self, wallet_address)`
+`McsAPI.get_user_tasks_deals(self, wallet_address)`
 
 The following code example lists a user's uploaded files. The list can be searched by file name, and also be filtered or sorted.
 

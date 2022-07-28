@@ -4,7 +4,7 @@ description: Get Details about a specific file
 
 # Get File Details
 
-`get_payment_info(self, payload_cid, wallet_address, source_file_upload_id)`
+`McsAPI.get_payment_info(self, payload_cid, wallet_address, source_file_upload_id)`
 
 The following code example gets the file details of an uploaded file. This method takes the upload id of the file, and the deal id of the file.
 

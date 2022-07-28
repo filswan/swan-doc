@@ -4,9 +4,9 @@ description: Upload file(s) to MCS using the MCS SDK
 
 # Upload Files
 
-`upload_file(wallet_address, file_path)`
+`McsAPI.upload_file(wallet_address, file_path)`
 
-You can use the upload function to upload a single file to FilSwan IPFS gateway.
+You can use the upload function to upload a single file to FilSwan IPFS gateway. The function takes your MetaMask wallet address and the absolute path of the file for upload.
 
 ```
 def test_upload_file(wallet_info):
@@ -14,19 +14,18 @@ def test_upload_file(wallet_info):
 
     api = McsAPI()
     # upload file to mcs
-    filepath = "/*"
-    father_path = os.path.abspath(os.path.dirname(__file__))
-    upload_file = api.upload_file(wallet_address, father_path + filepath)
+    file_path = "/*"
+    upload_file = api.upload_file(wallet_address, file_path)
 ```
 
 ### Parameters
 
 * wallet\_address: MetaMask wallet address.
-* file\_path: Location of the file for upload.
+* file\_path: Absolute path of the file for upload.
 
 ### Return
 
-This function returns the upload API responses.
+This function returns the upload API responses. This includes `source_file_upload_id`, `file_size` _and_ `w_cid` that will be used for payments.
 
 ```
 {
