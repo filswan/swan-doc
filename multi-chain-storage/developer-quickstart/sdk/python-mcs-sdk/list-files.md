@@ -9,16 +9,21 @@ description: View your uploaded files
 The following code example lists a user's uploaded files. The list can be searched by file name, and also be filtered or sorted.
 
 ```
-def get_user_tasks_deals(self, wallet_address):
-        params = {}
-        if wallet_address:
-            params['wallet_address'] = wallet_address
-        return self._request_with_params(GET, TASKS_DEALS, params, None)
+def list_files(wallet_info):
+    wallet_address = wallet_info['wallet_address']
+
+    api = McsAPI()
+    return api.get_user_tasks_deals(wallet_address)
 ```
 
 ### Parameters
 
 * **wallet\_address**: lists the files uploaded by this account (required)
+
+### Other Parameters of the API&#x20;
+
+Can be used by editing the original get\_user\_tasks\_deals function.
+
 * **file\_name**: filter by this file name
 * **order\_by**: sort the list by file name, file size, or upload time (default)
 * **is\_ascend**: y for ascending list, otherwise descend (default)

@@ -38,6 +38,8 @@ def test_mint_nft(wallet_info):
         nft_uri, tx_hash, file_size)['data']['ipfs_url']
     # mint nft contract
     tx_hash, token_id = w3_api.mint_nft(wallet_address, private_key, meta_url)
+    # update mint info
+    api.get_mint_info(source_file_upload_id, None, tx_hash, token_id, wallet_address)
 ```
 
 ### Parameters
