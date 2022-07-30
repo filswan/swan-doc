@@ -52,6 +52,7 @@
 
 * [Overview](filswan-platform/overview/README.md)
   * [FilSwan Auction System](filswan-platform/overview/filswan-auction-system.md)
+  * [Web3 Automated Market Maker](filswan-platform/overview/web3-automated-market-maker.md)
   * [Reputation System](filswan-platform/overview/reputation-system.md)
 * [Key functionalities](filswan-platform/core-modules/README.md)
   * [Task Management](filswan-platform/core-modules/task-management/README.md)
