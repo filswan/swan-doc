@@ -34,7 +34,7 @@ main()
 ### Parameters
 
 * **wCid**: unique payload cid of the file
-* **minAmount**: minimum amount to pay for the file (in USDC). String value to avoid Big Number precision errors
+* **minAmount**: minimum amount to pay for the file (in USDC). String value to avoid Big Number precision errors. If minAmount is set to empty string or '0', it will default to calculate and use the average storage price
 * **fileSize**: the size of the file
 
 ### Return

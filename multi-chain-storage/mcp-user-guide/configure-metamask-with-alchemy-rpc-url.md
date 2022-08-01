@@ -4,7 +4,7 @@
 
 This setting is off by default. To turn it on, navigate to Settings > Advanced > Show test networks
 
-![](<../../.gitbook/assets/2 (1).png>) ![](<../../.gitbook/assets/1 (1).png>) ![](<../../.gitbook/assets/3 (3).png>)
+![](<../../.gitbook/assets/2 (1).png>) ![](<../../.gitbook/assets/1 (1) (1).png>) ![](<../../.gitbook/assets/3 (3).png>)
 
 ### **2. Create Alchemy Mumbai Polygon RPC** <a href="#alchemypolygontometamaskinstructions-2.createalchemymumbaipolygonrpc" id="alchemypolygontometamaskinstructions-2.createalchemymumbaipolygonrpc"></a>
 
