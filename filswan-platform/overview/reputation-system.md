@@ -98,7 +98,7 @@ The General deals and verified-Storage Provider deals score is calculated with t
 
 General Deals and verified-Storage Provider Deals Score = 60 \* \[0.3 \* 1 + 0.7 \* (1 - Sector Faulty Rate) \* (Normalized verified-Storage Provider Active Rank)]
 
-## **Blacklist Feature**
+## **Blacklist Rule**
 
 ### Introduction
 
