@@ -1,6 +1,8 @@
 # Reputation System
 
-## Methodology
+## Reputation Score
+
+### Methodology
 
 #### Reputation Score = Time-based Reachability + Regional Weighted Adjusted Power + General Deals and Verified-Storage Provider Deals
 
@@ -95,3 +97,36 @@ Thus, the deals score is the weighted sum of verified-Storage Provider deals and
 The General deals and verified-Storage Provider deals score is calculated with the following mathematical formula:
 
 General Deals and verified-Storage Provider Deals Score = 60 \* \[0.3 \* 1 + 0.7 \* (1 - Sector Faulty Rate) \* (Normalized verified-Storage Provider Active Rank)]
+
+## **Blacklist Feature**
+
+### Introduction
+
+Miner will be evaluated not only on its reputation score, but also on its recent deal rejection history.  If a miner rejected a large number of deals over a long period of time, its score will be conducted deduction. The deduction is possible to put the miner on the blacklist and unable it to take more deals.&#x20;
+
+### Methodology
+
+The miner's blacklist status is related to a blacklist score (as the **score** in the rest of the document). The score will be deducted when miners reject deals without a satisfying reason.
+
+Each newly registered miner will start from 100 scores. And miner will lose scores on certain rejections (With a threshold of 5 points per day). This makes sure that inactive miners will not receive deals, and reduce the probability of unsuccessful deals occurring.
+
+There are the rejection responses lead to score deduction:
+
+* Filswan being blacklisted: -1
+* Unidentified rejection: -0.5
+* Unqualified deal: -0.3
+* Error message: -0.1
+* Deal time out: -0.05
+
+After a miner's score is below 30, the miner will be automatically put on the blacklist.
+
+#### Score recovery
+
+For miners on the blacklist, their score can be recovered by being active. For each day the miner's heartbeat status is **Online**, the miner will gain 1 score until the score reaches 30, and the miner will be removed from the blacklist.
+
+#### Scanning
+
+The miner's deal history will be automatic review each day. Offline deals that are rejected will be scanned for score deduction purposes. And the score will be updated afterwards.
+
+
+
