@@ -2,6 +2,18 @@
 
 ### Prerequisites
 
+**Server Requirements**
+
+Please see the hardware requirement below:
+
+| Hardware | Provider Specifications     |
+| -------- | --------------------------- |
+| CPU      | 4-Core CPU with AVX support |
+| RAM      | 8GB DDR4                    |
+| Storage  | 500GB SSD                   |
+
+**Install required software & set the configuration**
+
 * lotus-miner
 * aria2
 
