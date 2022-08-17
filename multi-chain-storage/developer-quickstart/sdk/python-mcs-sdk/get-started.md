@@ -15,7 +15,13 @@ Mumbai Testnet USDC and MATIC funds are also necessary - [Swan Faucet Tutorial](
 
 ## Installation
 
-Install the package from [https://github.com/filswan/python-mcs-sdk](https://github.com/filswan/python-mcs-sdk.git).
+Install package using pip
+
+```
+pip install python-mcs-sdk
+```
+
+Or Install the package from [https://github.com/filswan/python-mcs-sdk](https://github.com/filswan/python-mcs-sdk.git).
 
 ```
 $ git clone https://github.com/filswan/python-mcs-sdk.git
