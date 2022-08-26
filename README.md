@@ -1,7 +1,5 @@
 ---
-description: >-
-  FilSwan provides a layer 2 cross-chain infrastructure for Web3 projects by
-  integrating data, computing, and payment into one suite.
+description: "FilSwan is a layer-2 cross-chain solution that helps Web3 projects to integrate data, computing, storage,\_and payment into one suite."
 ---
 
 # FilSwan Overview
