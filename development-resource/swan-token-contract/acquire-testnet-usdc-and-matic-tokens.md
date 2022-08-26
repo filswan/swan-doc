@@ -10,8 +10,6 @@ If you already have Testnet USDC and MATIC tokens, please skip to [MCP User Guid
 
 By using the [Swan faucet](https://calibration-faucet.filswan.com/), you can get Testnet USDC and MATIC tokens for your account on the Polygon Mumbai network.&#x20;
 
-![](<../../.gitbook/assets/image (47).png>)
-
 ### Get USDC and MATIC tokens from Swan faucet
 
 * Open up MetaMask, click the Wallet account name at the top to copy the wallet address to your clipboard.
@@ -35,11 +33,15 @@ By using the [Swan faucet](https://calibration-faucet.filswan.com/), you can get
 * In order to see your USDC token balance in MetaMask, you will need to import this token.
 * In MetaMask click on the `Import tokens` link under the 'Assets' tab. Copy the following address:
 
-| Parameter              | Value                                      |
-| ---------------------- | ------------------------------------------ |
-| Token Contract Address | 0xe11a86849d99f524cac3e7a0ec1241828e332c62 |
-| Token Symbol           | USDC                                       |
-| Token Decimals         | 18                                         |
+| Network             | Parameter              | Value                                      |
+| ------------------- | ---------------------- | ------------------------------------------ |
+| **Polygon Mumbai**  | Token Contract Address | 0xe11a86849d99f524cac3e7a0ec1241828e332c62 |
+|                     | Token Symbol           | USDC                                       |
+|                     | Token Decimals         | 18                                         |
+|                     |                        |                                            |
+| **BSC Testnet**     | Token Contract Address | 0x28fC65CF1F2bDe09ab2876fddaA7788340bAf1D7 |
+|                     | Token Symbol           | USDC                                       |
+|                     | Token Decimals         | 18                                         |
 
 * Paste the token contract address into MetaMask in the `Token Contract Address` input. The token symbol and decimals of precision will auto-populate. Click on the `Add Custom Token` button.
 
