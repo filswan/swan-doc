@@ -6,14 +6,20 @@ description: This page will show you how to obtain and add testnet USDC to MetaM
 
 If you already have Testnet USDC and MATIC tokens, please skip to [MCP User Guide](../../multi-chain-storage/mcp-user-guide/) start using our multi-chain payment service.
 
+<figure><img src="../../.gitbook/assets/截圖 2022-08-26 上午9.56.42.png" alt=""><figcaption></figcaption></figure>
+
+### Choose the network
+
+<figure><img src="../../.gitbook/assets/截圖 2022-08-26 上午10.19.31.png" alt=""><figcaption></figcaption></figure>
+
 ## Testnet Swan Faucet <a href="#testnet-link-faucet" id="testnet-link-faucet"></a>
 
-By using the [Swan faucet](https://calibration-faucet.filswan.com/), you can get Testnet USDC and MATIC tokens for your account on the Polygon Mumbai network.&#x20;
+By using the [Swan faucet](https://calibration-faucet.filswan.com/), you can get Testnet USDC and MATIC tokens for your account on the Polygon Mumbai or BSC network.&#x20;
 
 ### Get USDC and MATIC tokens from Swan faucet
 
-* Open up MetaMask, click the Wallet account name at the top to copy the wallet address to your clipboard.
-* Paste that address into the Swan Faucet `Testnet account address` input field, and click the `Send request` button.
+* Connect to MetaMask
+* Choose the network of Polygon Mumbai or BSC network, and click the `Send request` button.
 * You should see a window show up with the text 'Transaction initiated'.
 
 ![](<../../.gitbook/assets/image (39) (1).png>)
