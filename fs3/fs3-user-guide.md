@@ -49,7 +49,7 @@ The bucket-level operations on FS3 including "<mark style="color:blue;">**Delete
 
 #### Backup to Filecoin(Online bucket-deals)
 
-To backup a whole bucket to Filecoin, the proceure is same as single file backup. You can choose your storage provider either by filling a specific provider ID or selecting from our provided list. You also need to fill the price input field and the duration input field. After clicking the "<mark style="color:green;">**Send**</mark>" **** button" in green to send the request, you should get a list number of "<mark style="color:blue;">**Deal CID**</mark>" when your deal is sent successfully.&#x20;
+To backup a whole bucket to Filecoin, the procedure is same as single file backup. You can choose your storage provider either by filling a specific provider ID or selecting from our provided list. You also need to fill the price input field and the duration input field. After clicking the "<mark style="color:green;">**Send**</mark>" **** button" in green to send the request, you should get a list number of "<mark style="color:blue;">**Deal CID**</mark>" when your deal is sent successfully.&#x20;
 
 ![](<../.gitbook/assets/chrome-capture (2).gif>)
 
@@ -73,10 +73,10 @@ Users can backup the entire volume with customized schedulers (<mark style="colo
 ### 6. Rebuild backup volume&#x20;
 
 {% hint style="warning" %}
-Rebuild image is accessible **only** when bakup job status is **completed**. Users can not rebuild image when backup process is still running.
+Rebuild image is accessible **only** when backup job status is **completed**. Users can not rebuild image when backup process is still running.
 {% endhint %}
 
-To store your entire FS3 instance from one of your backups, you can use the FS3 "<mark style="color:blue;">**Rebuild Image**</mark>" service. FS3 will fetch a entire backup from Filecoin Network and overwrite your existing system.&#x20;
+To store your entire FS3 instance from one of your backups, you can use the FS3 "<mark style="color:blue;">**Rebuild Image**</mark>" service. FS3 will fetch an entire backup from Filecoin Network and overwrite your existing system.&#x20;
 
 ![](<../.gitbook/assets/2861639177168\_.pic copy.jpg>)
 
