@@ -10,7 +10,7 @@ description: >-
 
 Before you begin this guide, complete the following tasks to make sure you have all of the tools that you need:
 
-* Make sure you meet all the [prerequisites](https://app.gitbook.com/o/-Ma7\_tf6L8A170GHT9fr/s/-MauK7Ig3eWeXC35bZV7/c/9h2HfinXKBQdRYF7ovZb/fs3/setup-your-fs3/prerequisites) before installing
+* Make sure you meet all the [prerequisites](setup-your-fs3/prerequisites.md) before installing
 * Follow the install instructions [here](setup-your-fs3/install-fs3.md) to set up your database and install from sources using Terminal/Command.
 
 ## Instruction
