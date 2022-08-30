@@ -125,6 +125,7 @@
   * [Install FS3](fs3/setup-your-fs3/install-fs3.md)
   * [FS3 Set up Video](fs3/setup-your-fs3/fs3-tutorials.md)
 * [FS3 User Guide](fs3/fs3-user-guide.md)
+* [FS3 User Guide （Cloud Version）](fs3/fs3-user-guide-1.md)
 * [FS3手册中文版](fs3/fs3-shou-ce-zhong-wen-ban.md)
 
 ## Development Resource
