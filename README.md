@@ -13,10 +13,10 @@ FilSwan offers a complete solution that enables web3 developers to integrate dec
 
 Since 2018, FilSwan has been dedicated to decentralized storage and computing solutions. Those services are enhanced by edge computing, IPFS/Filecoin, and decentralized ledger technologies. We are building the largest fog computing network in the Metaverse. Our products are adopted by world-renowned universities, the VR/AR industry, and many other high-performance computing companies.
 
-### Turn-key solutions for Filecoin Users and Storage Providers
+### Turn-key solutions for web3 Developers
 
-* FilSwan offers cutting-edge blockchain storage solutions for decentralized data storage needs.
-* FilSwan reduces queueing time by automatically matching providers and users in need.
+* FilSwan offers cutting-edge blockchain storage and computing solutions for web3 decentralized data needs.
+* FilSwan reduces queuing time by automatically matching web3 providers and users in need.
 * FilSwan offers an alternative to the current mainstream cloud storage that bridges Filecoin and S3.
 * FilSwan migrates petabytes of data while ensuring efficiency and cost-effectiveness.
 
