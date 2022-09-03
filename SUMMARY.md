@@ -3,6 +3,18 @@
 ## Getting Started
 
 * [FilSwan Overview](README.md)
+* [Protocol Stack](getting-started/protocol-stack/README.md)
+  * [Cross-chain Consensus Layer](getting-started/protocol-stack/cross-chain-consensus-layer.md)
+  * [Peer-to-peer (P2P) Network](getting-started/protocol-stack/peer-to-peer-p2p-network.md)
+  * [Payment Channels](getting-started/protocol-stack/payment-channels.md)
+  * [Service Discovery](getting-started/protocol-stack/service-discovery.md)
+  * [Data Marketplace](getting-started/protocol-stack/data-marketplace.md)
+  * [Indexing and Caching Marketplace](getting-started/protocol-stack/indexing-and-caching-marketplace.md)
+  * [Web3 Task bid market](getting-started/protocol-stack/web3-task-bid-market.md)
+  * [Storage Layer](getting-started/protocol-stack/storage-layer.md)
+  * [Computing Layer](getting-started/protocol-stack/computing-layer.md)
+  * [CDN Layer](getting-started/protocol-stack/cdn-layer.md)
+  * [Governance](getting-started/protocol-stack/governance.md)
 
 ## Multi-Chain Storage
 
