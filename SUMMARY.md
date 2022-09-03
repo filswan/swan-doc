@@ -16,6 +16,23 @@
   * [CDN Layer](getting-started/protocol-stack/cdn-layer.md)
   * [Governance](getting-started/protocol-stack/governance.md)
 
+## Filswan Platform
+
+* [Overview](filswan-platform/overview/README.md)
+  * [FilSwan Auction System](filswan-platform/overview/filswan-auction-system.md)
+  * [Web3 Automated Deal Matching](filswan-platform/overview/web3-automated-deal-matching.md)
+  * [Reputation System](filswan-platform/overview/reputation-system.md)
+* [Key functionalities](filswan-platform/core-modules/README.md)
+  * [Task Management](filswan-platform/core-modules/task-management/README.md)
+    * [Create a New Task](filswan-platform/core-modules/task-management/create-a-new-task.md)
+    * [Navigate Tasks](filswan-platform/core-modules/task-management/navigate-tasks.md)
+    * [Update Tasks](filswan-platform/core-modules/task-management/update-tasks.md)
+    * [Assign Tasks](filswan-platform/core-modules/task-management/assign-a-task.md)
+  * [My Profile](filswan-platform/core-modules/my-profile/README.md)
+    * [Register as a storage provider](filswan-platform/core-modules/my-profile/registering-your-storage-provider.md)
+  * [Find Storage Providers](filswan-platform/core-modules/find-storage-providers/README.md)
+    * [Storage Provider Details](filswan-platform/core-modules/find-storage-providers/storage-provider-details.md)
+
 ## Multi-Chain Storage
 
 * [Overview](multi-chain-storage/overview/README.md)
@@ -59,23 +76,6 @@
       * [获取文件详细信息](multi-chain-storage/developer-quickstart-1/sdk/js-mcs-sdk/huo-qu-wen-jian-xiang-xi-xin-xi.md)
       * [获取文件的Filecoin状态](multi-chain-storage/developer-quickstart-1/sdk/js-mcs-sdk/huo-qu-wen-jian-de-filecoin-zhuang-tai.md)
   * [其他资源](multi-chain-storage/developer-quickstart-1/qi-ta-zi-yuan.md)
-
-## Filswan Platform
-
-* [Overview](filswan-platform/overview/README.md)
-  * [FilSwan Auction System](filswan-platform/overview/filswan-auction-system.md)
-  * [Web3 Automated Market Maker](filswan-platform/overview/web3-automated-market-maker.md)
-  * [Reputation System](filswan-platform/overview/reputation-system.md)
-* [Key functionalities](filswan-platform/core-modules/README.md)
-  * [Task Management](filswan-platform/core-modules/task-management/README.md)
-    * [Create a New Task](filswan-platform/core-modules/task-management/create-a-new-task.md)
-    * [Navigate Tasks](filswan-platform/core-modules/task-management/navigate-tasks.md)
-    * [Update Tasks](filswan-platform/core-modules/task-management/update-tasks.md)
-    * [Assign Tasks](filswan-platform/core-modules/task-management/assign-a-task.md)
-  * [My Profile](filswan-platform/core-modules/my-profile/README.md)
-    * [Register as a storage provider](filswan-platform/core-modules/my-profile/registering-your-storage-provider.md)
-  * [Find Storage Providers](filswan-platform/core-modules/find-storage-providers/README.md)
-    * [Storage Provider Details](filswan-platform/core-modules/find-storage-providers/storage-provider-details.md)
 
 ## Swan Provider
 
