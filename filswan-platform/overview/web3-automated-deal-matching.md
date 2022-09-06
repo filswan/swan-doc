@@ -1,3 +1,3 @@
-# Web3 Automated Market Maker
+# Web3 Automated Deal Matching
 
-Web3 Automated Market Makers&#x20;
+Web3 Automated Market Match
