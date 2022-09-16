@@ -1,4 +1,4 @@
-# MCS User Guide
+# Multichain Storage User Guide
 
 ## Requirements <a href="#requirements" id="requirements"></a>
 

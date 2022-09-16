@@ -2,7 +2,7 @@
 description: https://github.com/filswan/js-mcs-sdk
 ---
 
-# js-mcs-sdk
+# js mcs SDK
 
 js-mcs-sdk is a javascript software development kit for the MCS service. It provides a convenient interface for working with the MCS API from a web browser or Node.js.&#x20;
 

@@ -1,4 +1,4 @@
-# MCS 用户指南
+# Multichain.Storage 用户指南
 
 ### 要求 <a href="#yao-qiu" id="yao-qiu"></a>
 
