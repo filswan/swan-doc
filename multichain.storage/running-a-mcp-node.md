@@ -1,3 +1,22 @@
+---
+section: nodeOperator
+date: Last Modified
+title: Running a Chainlink Node
+permalink: docs/running-a-chainlink-node/
+whatsnext:
+  Fulfilling Requests: /docs/fulfilling-requests/
+  Performing System Maintenance: /docs/performing-system-maintenance/
+  Miscellaneous: /docs/miscellaneous/
+  Security and Operation Best Practices: /docs/best-security-practices/
+metadata:
+  title: Running a Chainlink Node
+  description: >-
+    Run your own Chainlink node using this guide which explains the requirements
+    and basics for getting started.
+  image:
+    '0': /files/OpenGraph_V3.png
+---
+
 # Running an MCS Node
 
 In this section, we'll explain the requirements and basics for running your own MCS node.
