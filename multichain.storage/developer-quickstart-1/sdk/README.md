@@ -2,7 +2,7 @@
 
 ## 介绍 <a href="#jie-shao-2" id="jie-shao-2"></a>
 
-MCS SDK 是 Swan MCS 开发人员的开发工具包，为使用 MCS API 提供了一个方便的接口。
+Multichain.Storage SDK 是 Swan Multichain.Storage 开发人员的开发工具包，为使用 MCS API 提供了一个方便的接口。
 
 * **零成本，免费使用**
 * **通过钱包访问（Metamask）**
