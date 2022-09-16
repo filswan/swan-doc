@@ -4,7 +4,7 @@ description: This page will show you how to obtain and add testnet USDC to MetaM
 
 # Acquire Testnet USDC and MATIC tokens
 
-If you already have Testnet USDC and MATIC tokens, please skip to [MCP User Guide](../../multi-chain-storage/mcp-user-guide/) start using our multi-chain payment service.
+If you already have Testnet USDC and MATIC tokens, please skip to [MCP User Guide](../../multichain.storage/mcp-user-guide/) start using our multi-chain payment service.
 
 <figure><img src="../../.gitbook/assets/截圖 2022-08-26 上午9.56.42.png" alt=""><figcaption></figcaption></figure>
 

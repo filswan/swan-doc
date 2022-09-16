@@ -2,13 +2,13 @@
 description: 基于智能合约的跨链存储
 ---
 
-# MCS 概述
+# Multichain Storage 概述
 
 ### 介绍 <a href="#jie-shao" id="jie-shao"></a>
 
-多链存储（MCS）是一基于智能合约的跨链存储，集成了预言机技术。 它通过桥接多个区块链网络来加速分散存储的大规模应用。
+多链存储（Multichain.Storage）是一基于智能合约的跨链存储，集成了预言机技术。 它通过桥接多个区块链网络来加速分散存储的大规模应用。
 
-MCS 使用户能使用稳定币和其他主网代币支付 Filecoin 存储费用，同时保持数据安全。 用户能通过 Filecoin 交易 ID 获取支付信息和 IPFS 信息，以供日后参考。
+Multichain.Storage 使用户能使用稳定币和其他主网代币支付 Filecoin 存储费用，同时保持数据安全。 用户能通过 Filecoin 交易 ID 获取支付信息和 IPFS 信息，以供日后参考。
 
 ### 功能 <a href="#gong-neng" id="gong-neng"></a>
 
@@ -30,6 +30,6 @@ Filecoin 是一种开源的公共加密货币和数字支付系统，旨在成�
 
 但是，这些单独的链或项目各自独立运行，几乎无法相互交流。 全球用户因此面临大量具有不同算法、交易类型、规则的网络，这阻碍了用户充分享受区块链技术的潜力。
 
-**这就是为什么 MCS 致力于保证区块链的无缝互操作性。** 自推出以来，MCS 一直致力于缩小差距，允许用户将其他代币换成 Fil 以支付数据存储费用。 MCS 将把数据存储带到下一个安全、去中心化和民主化水平。
+**这就是为什么** Multichain.Storage **致力于保证区块链的无缝互操作性。** 自推出以来，Multichain.Storage 一直致力于缩小差距，允许用户将其他代币换成 Fil 以支付数据存储费用。 MCS 将把数据存储带到下一个安全、去中心化和民主化水平。
 
 {% embed url="https://github.com/filswan/multi-chain-storage/tree/qa_single_miner" %}
