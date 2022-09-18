@@ -1,8 +1,10 @@
 # Table of contents
 
+* [Language](README.md)
+
 ## Getting Started
 
-* [FilSwan Overview](README.md)
+* [FilSwan Overview](<README (1).md>)
 * [Protocol Stack](getting-started/protocol-stack/README.md)
   * [Cross-chain Consensus Layer](getting-started/protocol-stack/cross-chain-consensus-layer.md)
   * [Peer-to-peer (P2P) Network](getting-started/protocol-stack/peer-to-peer-p2p-network.md)
