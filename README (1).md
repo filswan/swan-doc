@@ -13,7 +13,7 @@ FilSwan offers a complete solution that enables web3 developers to integrate dec
 
 Since 2018, FilSwan has been dedicated to decentralized storage and computing solutions. Those services are enhanced by edge computing, IPFS/Filecoin, and decentralized ledger technologies. We are building the largest fog computing network in the Metaverse. Our products are adopted by world-renowned universities, the VR/AR industry, and many other high-performance computing companies.
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption><p>FIlSwan Protocol</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption><p>FilSwan Protocol</p></figcaption></figure>
 
 {% embed url="https://github.com/filswan" %}
 
