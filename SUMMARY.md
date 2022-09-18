@@ -15,6 +15,9 @@
   * [Computing Layer](getting-started/protocol-stack/computing-layer.md)
   * [CDN Layer](getting-started/protocol-stack/cdn-layer.md)
   * [Governance](getting-started/protocol-stack/governance.md)
+* [Contact Us](getting-started/contact-us/README.md)
+  * [Social Accounts & Communities](getting-started/contact-us/social-accounts-and-communities.md)
+  * [Business Partnerships](getting-started/contact-us/business-partnerships.md)
 
 ## Filswan Platform
 
@@ -151,6 +154,3 @@
 * [FS3 API](development-resource/fs3-api.md)
 * [API keys](development-resource/api-keys.md)
 * [FilSwan FAQ](development-resource/filswan-faq.md)
-* [Contact Us](development-resource/contact-us/README.md)
-  * [Social Accounts & Communities](development-resource/contact-us/social-accounts-and-communities.md)
-  * [Business Partnerships](development-resource/contact-us/business-partnerships.md)
