@@ -1,4 +1,4 @@
-# FilSwan FAQ
+# FAQ
 
 ## Who should use FilSwan?
 
@@ -30,9 +30,9 @@ To learn more about file configuration and how to generate a Car file please con
 
 No, we do not, but feel free to invite friends to explore the platform using our telegram and Twitter accounts!
 
-## What are the requirements that a storage provider needs to meet for AutoBid?
+## What are the requirements that a storage provider needs to meet for autoBid?
 
-There are several requirements need to be fulfilled for participating in AutoBid. Firstly, your SP status should be '**Active**'; then, your SP should be registered as a FilSwan SP and select **accept offline deals** at registration; also, run our SP service and set '**bid\_mode**' to 1 and provide other values such as '**expected\_sealing\_tim**e' and '**start\_epoch**'.&#x20;
+There are several requirements need to be fulfilled for participating in autoBid. Firstly, your SP status should be '**Active**'; then, your SP should be registered as a FilSwan SP and select **accept offline deals** at registration; also, run our SP service and set '**bid\_mode**' to 1 and provide other values such as '**expected\_sealing\_tim**e' and '**start\_epoch**'.&#x20;
 
 For more information about how to register storage provider, please consult \*\*\*\*(link).
 

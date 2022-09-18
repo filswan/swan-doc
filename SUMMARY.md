@@ -1,6 +1,8 @@
 # Table of contents
 
 * [Language](README.md)
+  * [English](language/english.md)
+  * [中文-CN](language/zhong-wen-cn.md)
 
 ## Getting Started
 
@@ -20,6 +22,7 @@
 * [Contact Us](getting-started/contact-us/README.md)
   * [Social Accounts & Communities](getting-started/contact-us/social-accounts-and-communities.md)
   * [Business Partnerships](getting-started/contact-us/business-partnerships.md)
+* [FAQ](getting-started/filswan-faq.md)
 
 ## Filswan Platform
 
@@ -155,4 +158,3 @@
 * [Flink API](development-resource/flink-api.md)
 * [FS3 API](development-resource/fs3-api.md)
 * [API keys](development-resource/api-keys.md)
-* [FilSwan FAQ](development-resource/filswan-faq.md)
