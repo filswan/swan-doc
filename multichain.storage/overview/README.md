@@ -12,7 +12,7 @@ MCS enables users to pay for Filecoin storage with stable coins and other Mainne
 
 ### High-Level Design
 
-<figure><img src="../../.gitbook/assets/Filswan Deal Process-MCS.png" alt=""><figcaption><p>Multi-chain Storage Design</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Filswan Deal Process-MCS.drawio.svg" alt=""><figcaption><p>Multi-chain Storage Design</p></figcaption></figure>
 
 ### **Functions**
 
