@@ -10,6 +10,10 @@ Multi-Chain storage (MCS) is a smart-contract-based cross-chain storage gateway 
 
 MCS enables users to pay for Filecoin storage with stable coins and other Mainnet tokens while maintaining data security. Users will also obtain the payment transaction and IPFS information with Filecoin deal ID for future reference.
 
+### High-Level Design
+
+<figure><img src="../../.gitbook/assets/Filswan Deal Process-MCS.png" alt=""><figcaption><p>Multi-chain Storage Design</p></figcaption></figure>
+
 ### **Functions**
 
 MCS is a cutting-edge blockchain storage solution providing a data cache and presidency layer for decentralized data storage needs. With MCS, users can&#x20;
