@@ -10,7 +10,7 @@ The following code example gets the file details of an uploaded file. This metho
 
 ```
 require('dotenv').config()
-const { mcsSDK } = require('js-mcs-sdk')
+const { mcsSDK } = require('js-mcs-sdk') // or any of the other environments
 const fs = require('fs') // used to read files
 
 // set up js-mcs-sdk

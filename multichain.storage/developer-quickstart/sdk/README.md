@@ -33,3 +33,13 @@ After your file is uploaded to MCS, your assets can simply be minted as viewable
 ### Building
 
 Using this SDK, the developers will have more control using the API than they would have using the MCS website. Scripts can be written to upload many files at once, mint multiple NFTs, etc. Developers can create dApps on top of MCS, the possibilities are endless!&#x20;
+
+## Versions
+
+MCS is currently running on three different environments.
+
+| Version     | Network(s)              | Link                                                                        |
+| ----------- | ----------------------- | --------------------------------------------------------------------------- |
+| Mainnet     | Polygon                 | [https://www.multichain.storage](https://www.multichain.storage/)           |
+| Staging     | Mumbai                  | [https://mcs.filswan.com](https://mcs.filswan.com/)                         |
+| Calibration | Mumbai, Binance testnet | [https://calibration-mcs.filswan.com](https://calibration-mcs.filswan.com/) |

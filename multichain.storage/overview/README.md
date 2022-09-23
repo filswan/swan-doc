@@ -14,6 +14,10 @@ MCS enables users to pay for Filecoin storage with stable coins and other Mainne
 
 <figure><img src="../../.gitbook/assets/Filswan Deal Process-MCS.drawio.svg" alt=""><figcaption><p>Multi-chain Storage Design</p></figcaption></figure>
 
+### Refundable VS Non-Refundable
+
+_Refundable_
+
 ### **Functions**
 
 MCS is a cutting-edge blockchain storage solution providing a data cache and presidency layer for decentralized data storage needs. With MCS, users can&#x20;
@@ -33,5 +37,7 @@ Filecoin is an open-source, public cryptocurrency and digital payment system int
 However, those individual chains or projects each operate in isolation and can hardly communicate with the others. Global users are consequently facing a large number of networks with different algorithms, transaction types, rules, etc. It prevents users from enjoying the full potential of blockchain technology.
 
 **That is why MCS is working to guarantee the seamless interoperability of blockchains.** Since its launch, MCS has been dedicated to closing the gap by allowing users to swap other tokens to Fil to pay for data storage. MCS will bring data storage to the next level of security, decentralization, and democratization.
+
+###
 
 {% embed url="https://github.com/filswan/multi-chain-storage/tree/qa_single_miner" %}

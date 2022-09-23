@@ -10,7 +10,7 @@ After a file is uploaded, the file can be paid for by its payload cid. The metho
 
 ```
 require('dotenv').config()
-const { mcsSDK } = require('js-mcs-sdk')
+const { mcsSDK } = require('js-mcs-sdk') // or any of the other environments
 
 // set up js-mcs-sdk
 const mcs = new mcsSDK({
@@ -20,11 +20,11 @@ const mcs = new mcsSDK({
 
 async function main() {
   // ENTER PARAMETERS
-  const W_CID = ''
+  const SOURCE_FILE_UPLOAD_ID = ''
   const MIN_AMOUNT = '1'
   const FILE_SIZE = ''
    
-  const tx = await mcs.makePayment(W_CID, MIN_AMOUNT, FILE_SIZE)
+  const tx = await mcs.makePayment(SOURCE_FILE_UPLOAD_ID, MIN_AMOUNT, FILE_SIZE)
   console.log(tx.transactionHash)
 }
 

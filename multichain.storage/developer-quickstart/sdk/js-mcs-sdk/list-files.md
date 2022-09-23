@@ -10,7 +10,7 @@ The following code example lists a user's uploaded files. The list can be search
 
 ```
 require('dotenv').config()
-const { mcsSDK } = require('js-mcs-sdk')
+const { mcsSDK } = require('js-mcs-sdk') // or any of the other environments
 const fs = require('fs') // used to read files
 
 // set up js-mcs-sdk
