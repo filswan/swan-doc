@@ -6,9 +6,9 @@ description: A smart contract-based cross-chain storage gateway.
 
 ### **Introduction**
 
-Multi-Chain storage (MCS) is a smart-contract-based cross-chain storage gateway that is integrated with oracle technology. It accelerates the mass adoption of decentralized storage by bridging multiple blockchain networks.
+Multi-Chain storage (MCS) is a smart-contract-based cross-chain storage gateway that is integrated with Oracle technology. It accelerates the mass adoption of decentralized storage by bridging multiple blockchain networks.
 
-MCS enables users to pay for Filecoin storage with stable coins and other Mainnet tokens while maintaining data security. Users will also obtain the payment transaction and IPFS information with Filecoin deal ID for future reference.
+MCS enables users to pay for Filecoin storage with stablecoins and other Mainnet tokens while maintaining data security. Users will also obtain the payment transaction and IPFS information with Filecoin deal ID for future reference.
 
 ### High-Level Design
 
@@ -16,14 +16,26 @@ MCS enables users to pay for Filecoin storage with stable coins and other Mainne
 
 ### Refundable VS Non-Refundable
 
-_Refundable_
+_**Refundable**_ payment is the stand MCS payment model. When a user makes a payment to use storage, the fund is locked in the smart contract. The fund will be unlocked when the storage onchain proof is passed to the funding contract. Only the success storage deal will get paid, the unsuccess deal will be refunded to the user.
+
+_**Non-Refundable**_ does not provide cross-chain validation about the online proof. The payment will be directly send to the service provider without the requirement of on-chain proof.
+
+_**Refundable Chain**_
+
+* Polygon
+* BNB Chain
+
+_**Non-Refundable Chain**_
+
+* Aptos
+* Sui
 
 ### **Functions**
 
 MCS is a cutting-edge blockchain storage solution providing a data cache and presidency layer for decentralized data storage needs. With MCS, users can&#x20;
 
 * Upload any data to the Filecoin network and IPFS.
-* Pay for storage with stable coins like USDC and other mainnet tokens.
+* Pay for storage with stablecoins like USDC and other mainnet tokens.
 * Mint NFTs directly to OpenSea.
 * Access services by connecting a third-party wallet (MetaMask)
 * Sent or get deals automatically through the build-in auto-bid system.
