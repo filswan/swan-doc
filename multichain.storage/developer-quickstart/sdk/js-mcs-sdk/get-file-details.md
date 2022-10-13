@@ -13,16 +13,15 @@ require('dotenv').config()
 const { mcsSDK } = require('js-mcs-sdk') // or any of the other environments
 const fs = require('fs') // used to read files
 
-// set up js-mcs-sdk
-const mcs = new mcsSDK({
-  privateKey: process.env.PRIVATE_KEY,
-  rpcUrl: process.env.RPC_URL,
-})
-
 async function main() {
   // ENTER PARAMETERS
   const SOURCE_FILE_UPLOAD_ID = ''
   const DEAL_ID = ''
+  
+  const mcs = await mcsSDK.initialize({
+    privateKey: process.env.PRIVATE_KEY,
+    rpcUrl: process.env.MUMBAI_RPC_URL,
+  })
    
   console.log(await mcs.getFileDetails(SOURCE_FILE_UPLOAD_ID, DEAL_ID))
 }

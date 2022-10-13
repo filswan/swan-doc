@@ -12,12 +12,6 @@ The following code example mints an uploaded file as a NFT viewable on Opensea. 
 require('dotenv').config()
 const { mcsSDK } = require('js-mcs-sdk') // or any of the other environments
 
-// set up js-mcs-sdk
-const mcs = new mcsSDK({
-  privateKey: process.env.PRIVATE_KEY,
-  rpcUrl: process.env.RPC_URL,
-})
-
 async function main() {
   // ENTER PARAMETERS
   const SOURCE_FILE_UPLOAD_ID = 0
@@ -25,6 +19,11 @@ async function main() {
   const NFT_NAME = ''
 
   const NFT_DESCRIPTION = '' // optional
+  
+  const mcs = await mcsSDK.initialize({
+    privateKey: process.env.PRIVATE_KEY,
+    rpcUrl: process.env.MUMBAI_RPC_URL,
+  })
 
   const nft = {
     name: NFT_NAME, // the name of your NFT
@@ -40,10 +39,6 @@ async function main() {
 
 main()
 ```
-
-The NFT smart contract can be found in the GitHub repository below:
-
-{% embed url="https://github.com/filswan/nft" %}
 
 ### Parameters
 
