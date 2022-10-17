@@ -36,7 +36,7 @@ Wallet address of the user
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="network" %}
-Network for the upload
+Network for the chain environment 
 {% endswagger-parameter %}
 {% endswagger %}
 
