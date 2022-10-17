@@ -6,9 +6,43 @@ description: >-
 
 # MCS 2.0 API
 
+## Authentication
+
+{% swagger method="post" path="/api/v1/user/register" baseUrl="https://api.multichain.storage" summary="Register for Multichain storage" %}
+{% swagger-description %}
+Registration by Metamask wallet 
+{% endswagger-description %}
+
+{% swagger-parameter in="body" name="public_key_address" required="true" %}
+Wallet address of the user
+{% endswagger-parameter %}
+{% endswagger %}
+
+{% swagger method="post" path="/api/v1/user/login_by_metamask_signature" baseUrl="https://api.multichain.storage" summary=" Login for Multichain storage" %}
+{% swagger-description %}
+Login by signature via Metamask
+{% endswagger-description %}
+
+{% swagger-parameter in="body" name="nonce" %}
+
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="signature" %}
+Created by nonce, private key, and public key address.
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="public_key_address" %}
+Wallet address of the user
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="network" %}
+Network for the upload
+{% endswagger-parameter %}
+{% endswagger %}
+
 ## Common
 
-{% swagger method="get" path="/api/v1/common/system/params" baseUrl="https://mcs-api.filswan.com" summary="Get system config" %}
+{% swagger method="get" path="/api/v1/common/system/params" baseUrl="https://api.multichain.storage" summary="Get system config" %}
 {% swagger-description %}
 This endpoint allows you to get system config
 {% endswagger-description %}
@@ -32,7 +66,7 @@ This endpoint allows you to get system config
 {% endswagger-response %}
 {% endswagger %}
 
-{% swagger method="get" path="/api/v1/common/host/info" baseUrl="https://mcs-api.filswan.com" summary="Get host info" %}
+{% swagger method="get" path="/api/v1/common/host/info" baseUrl="https://api.multichain.storage" summary="Get host info" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -55,7 +89,7 @@ This endpoint allows you to get system config
 
 ## Upload file
 
-{% swagger method="get" path="/api/v1/billing/price/filecoin" baseUrl="https://mcs-api.filswan.com" summary="Get USDC/Filecoin exchange rate" %}
+{% swagger method="get" path="/api/v1/billing/price/filecoin" baseUrl="https://api.multichain.storage" summary="Get USDC/Filecoin exchange rate" %}
 {% swagger-description %}
 This endpoint allows you to get the current exchange rate of USDC against Filecoin.
 {% endswagger-description %}
@@ -93,7 +127,7 @@ This endpoint allows you to get average Filecoin storage price.
 {% endswagger-response %}
 {% endswagger %}
 
-{% swagger method="post" path="/api/v1/storage/ipfs/upload" baseUrl="https://mcs-api.filswan.com" summary="Upload to IPFS" %}
+{% swagger method="post" path="/api/v1/storage/ipfs/upload" baseUrl="https://api.multichain.storage" summary="Upload to IPFS" %}
 {% swagger-description %}
 This endpoint allows you to upload your file to IPFS server.
 {% endswagger-description %}
@@ -133,7 +167,7 @@ days for the uploaded file to be kept on miner
 
 ## My files
 
-{% swagger method="get" path="/api/v1/storage/tasks/deals" baseUrl="https://mcs-api.filswan.com" summary="Get uploaded file list" %}
+{% swagger method="get" path="/api/v1/storage/tasks/deals" baseUrl="https://api.multichain.storage" summary="Get uploaded file list" %}
 {% swagger-description %}
 This endpoint allows you to get a list of your uploaded files.
 {% endswagger-description %}
@@ -275,7 +309,7 @@ y:ascend, others: descend(default)
 {% endswagger-response %}
 {% endswagger %}
 
-{% swagger method="get" path="/api/v1/storage/deal/detail/<deal_id>" baseUrl="https://mcs-api.filswan.com" summary="Get deal details" %}
+{% swagger method="get" path="/api/v1/storage/deal/detail/<deal_id>" baseUrl="https://api.multichain.storage" summary="Get deal details" %}
 {% swagger-description %}
 This endpoint allows you to get deal details and DAO details.
 {% endswagger-description %}
@@ -327,7 +361,7 @@ This endpoint allows you to get deal details and DAO details.
 {% endswagger-response %}
 {% endswagger %}
 
-{% swagger method="get" path="/api/v1/storage/deal/log/<offline_deal_id>" baseUrl="https://mcs-api.filswan.com" summary="get deal logs" %}
+{% swagger method="get" path="/api/v1/storage/deal/log/<offline_deal_id>" baseUrl="https://api.multichain.storage" summary="get deal logs" %}
 {% swagger-description %}
 This endpoint allows you to get offline deal logs
 {% endswagger-description %}
@@ -367,7 +401,7 @@ This endpoint allows you to get offline deal logs
 {% endswagger-response %}
 {% endswagger %}
 
-{% swagger method="get" path="/api/v1/billing/deal/lockpayment/info" baseUrl="https://mcs-api.filswan.com" summary="Get payment information" %}
+{% swagger method="get" path="/api/v1/billing/deal/lockpayment/info" baseUrl="https://api.multichain.storage" summary="Get payment information" %}
 {% swagger-description %}
 This endpoint allows you to get the specific payment information by payload CID.
 {% endswagger-description %}
@@ -392,7 +426,7 @@ This endpoint allows you to get the specific payment information by payload CID.
 {% endswagger-response %}
 {% endswagger %}
 
-{% swagger method="post" path="/api/v1/storage/mint/info" baseUrl="https://mcs-api.filswan.com" summary="Record mint info" %}
+{% swagger method="post" path="/api/v1/storage/mint/info" baseUrl="https://api.multichain.storage" summary="Record mint info" %}
 {% swagger-description %}
 This endpoint allows to record mint info to mcs database.
 {% endswagger-description %}
