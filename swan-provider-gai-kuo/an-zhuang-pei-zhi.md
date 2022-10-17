@@ -7,7 +7,7 @@
 ```
 mkdir swan-provider
 cd swan-provider
-wget --no-check-certificate https://github.com/filswan/go-swan-provider/releases/download/v2.0.0-rc1/install.sh
+wget --no-check-certificate https://github.com/filswan/go-swan-provider/releases/download/v2.0.0/install.sh
 chmod +x ./install.sh
 ./install.sh
 ```
@@ -31,7 +31,7 @@ git checkout <release_branch>
 * 2️⃣ 用下面其中一个命令执行 **swan-provider**
 
 ```
-./swan-provider-2.0.0-rc1-linux-amd64 daemon  #从选择1安装完以后
+./swan-provider-2.0.0-linux-amd64 daemon  #从选择1安装完以后
 ./build/swan-provider daemon                  #从选择2安装完以后
 ```
 
@@ -42,7 +42,7 @@ git checkout <release_branch>
 * 例如：
 
 ```
-nohup ./swan-provider-2.0.0-rc1-linux-amd64 daemon >> swan-provider.log 2>&1 &   #从选择1安装完以后
+nohup ./swan-provider-2.0.0-linux-amd64 daemon >> swan-provider.log 2>&1 &   #从选择1安装完以后
 nohup ./build/swan-provider daemon >> swan-provider.log 2>&1 &                   #从选择2安装完以后
 ```
 
@@ -63,6 +63,8 @@ nohup ./build/swan-provider daemon >> swan-provider.log 2>&1 &                  
 * **aria2\_host:** Aria2 服务器地址
 * **aria2\_port:** Aria2 服务器端口
 * **aria2\_secret:** 必须与 `aria2.conf` 的rpc-secret值相同
+* **aria2\_auto\_delete\_car\_file:** 当交易状态变为StorageDealActive（交易有效）或StorageDealError（交易错误）时，对应的CAR文件将会被自动删除，从而节约本地存储空间，该功能默认值：false，需要手动设置为true才可运行。
+* **aria2\_max\_downloading\_tasks:** 可以限制并行下载任务的数量，充分利用本地节点的带宽资源。
 
 #### \[main] <a href="#main" id="main"></a>
 

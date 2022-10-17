@@ -5,7 +5,7 @@
 ```
 mkdir swan-provider
 cd swan-provider
-wget --no-check-certificate https://github.com/filswan/go-swan-provider/releases/download/v2.0.0-rc1/install.sh
+wget --no-check-certificate https://github.com/filswan/go-swan-provider/releases/download/v2.0.0/install.sh
 chmod +x ./install.sh
 ./install.sh
 ```
@@ -32,7 +32,7 @@ After installation, swan-provider maybe quit due to lack of configuration. Under
 
 
 ```
-./swan-provider-2.0.0-rc1-linux-amd64 daemon  #After installation from Option 1
+./swan-provider-2.0.0-linux-amd64 daemon  #After installation from Option 1
 ./build/swan-provider daemon                  #After installation from Option 2
 ```
 
@@ -45,6 +45,6 @@ After installation, swan-provider maybe quit due to lack of configuration. Under
 * Such as:
 
 ```
-nohup ./swan-provider-2.0.0-rc1-linux-amd64 daemon >> swan-provider.log &   #After installation from Option 1
+nohup ./swan-provider-2.0.0-linux-amd64 daemon >> swan-provider.log &   #After installation from Option 1
 nohup ./build/swan-provider daemon >> swan-provider.log &                   #After installation from Option 2
 ```

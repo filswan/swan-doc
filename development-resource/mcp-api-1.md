@@ -23,19 +23,19 @@ Wallet address of the user
 Login by signature via Metamask
 {% endswagger-description %}
 
-{% swagger-parameter in="body" name="nonce" %}
+{% swagger-parameter in="body" name="nonce" required="true" %}
 
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="signature" %}
+{% swagger-parameter in="body" name="signature" required="true" %}
 Created by nonce, private key, and public key address.
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="public_key_address" %}
+{% swagger-parameter in="body" name="public_key_address" required="true" %}
 Wallet address of the user
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="network" %}
+{% swagger-parameter in="body" name="network" required="true" %}
 Network for the chain environment 
 {% endswagger-parameter %}
 {% endswagger %}

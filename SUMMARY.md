@@ -94,7 +94,6 @@
 * [Get started](run-swan-provider/prerequisites/README.md)
   * [Install Swan Provider](run-swan-provider/prerequisites/install-swan-provider.md)
   * [Configuration](swan-provider/prerequisites/configuration.md)
-* [Swan Provider Tutorial Video](swan-provider/video-tutorial.md)
 
 ***
 

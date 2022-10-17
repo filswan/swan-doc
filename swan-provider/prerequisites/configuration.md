@@ -15,6 +15,8 @@
 * **aria2\_host:** Aria2 server address
 * **aria2\_port:** Aria2 server port
 * **aria2\_secret:** Must be the same value as rpc-secret in `aria2.conf`
+* **aria2\_auto\_delete\_car\_file**: After the deal becomes Active or Error, the CAR file will be deleted automatically, default: false
+* **aria2\_max\_downloading\_tasks**: Aria2 max downloading tasks, default: 10
 
 #### \[main]
 
@@ -33,7 +35,7 @@
 * **start\_epoch:** 2880 epoch or 24 hours. Relative value to current epoch
 * **auto\_bid\_deal\_per\_day:** auto-bid deal limit per day for your miner defined above
 
-## Common Issuse and solutions
+## Common Issues and solutions
 
 *   My aria is not downloaded
 
