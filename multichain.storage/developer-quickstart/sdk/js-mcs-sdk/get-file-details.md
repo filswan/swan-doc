@@ -20,7 +20,7 @@ async function main() {
   
   const mcs = await mcsSDK.initialize({
     privateKey: process.env.PRIVATE_KEY,
-    rpcUrl: process.env.MUMBAI_RPC_URL,
+    rpcUrl: process.env.RPC_URL,
   })
    
   console.log(await mcs.getFileDetails(SOURCE_FILE_UPLOAD_ID, DEAL_ID))

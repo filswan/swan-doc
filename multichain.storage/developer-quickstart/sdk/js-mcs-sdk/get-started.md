@@ -27,8 +27,10 @@ npm install js-mcs-sdk
 
 Once you have your Metamask wallet and RPC URL(s), create a file named `.env` in your project directory and store your wallet's private key and the RPC URL.&#x20;
 
-<pre><code>PRIVATE_KEY=&#x3C;PRIVATE_KEY>
-<strong>POLYGON_RPC_URL=https://polygon-rpc.com/</strong></code></pre>
+```
+PRIVATE_KEY=<PRIVATE_KEY>
+RPC_URL=https://polygon-rpc.com/
+```
 
 {% hint style="info" %}
 Be careful not to expose this information! \
@@ -61,7 +63,7 @@ const { mcsSDK } = require('js-mcs-sdk-staging')
 async function main() {
   const mcs = await mcsSDK.initialize({
     privateKey: process.env.PRIVATE_KEY,
-    rpcUrl: process.env.MUMBAI_RPC_URL,
+    rpcUrl: process.env.RPC_URL,
   })
   
   // code snippets found in the documentation go here
@@ -85,7 +87,7 @@ const { mcsSDK } = require('js-mcs-sdk')
 async function main() {
   const mcs = await mcsSDK.initialize({
     privateKey: process.env.PRIVATE_KEY,
-    rpcUrl: process.env.MUMBAI_RPC_URL,
+    rpcUrl: process.env.RPC_URL,
   })
 
   const testFile = JSON.stringify({ address: mcs.publicKey })

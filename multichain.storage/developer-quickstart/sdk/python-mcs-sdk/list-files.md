@@ -8,13 +8,12 @@ description: View your uploaded files
 
 The following code example lists a user's uploaded files. The list can be searched by file name, and also be filtered or sorted.
 
+{% code lineNumbers="true" %}
+```python
+wallet_address = wallet_info['wallet_address']
+print(api.get_user_tasks_deals(wallet_address))
 ```
-def list_files(wallet_info):
-    wallet_address = wallet_info['wallet_address']
-
-    api = McsAPI()
-    return api.get_user_tasks_deals(wallet_address)
-```
+{% endcode %}
 
 ### Parameters
 

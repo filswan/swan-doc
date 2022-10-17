@@ -8,25 +8,15 @@ description: Get Details about a specific file
 
 The following code example gets the file details of an uploaded file. This method takes the upload id of the file, and the deal id of the file.
 
+{% code lineNumbers="true" %}
+```python
+file_data = upload_file["data"]
+payload_cid, source_file_upload_id, nft_uri, file_size, w_cid = file_data['payload_cid'], file_data[
+    'source_file_upload_id'], file_data['ipfs_url'], file_data['file_size'], file_data['w_cid']
+# get deal details
+return deal_detail = api.get_deal_detail(wallet_address, source_file_upload_id)
 ```
-def file_detail(wallet_info):
-    wallet_address = wallet_info['wallet_address']
-    private_key = wallet_info['private_key']
-    web3_api = wallet_info['web3_api']
-    
-    w3_api = ContractAPI(web3_api)
-    api = McsAPI()
-
-    # upload file to mcs
-    file_path = "/i*"
-    filename = "/*"
-    upload_file = api.upload_file(wallet_address, file_path)
-    file_data = upload_file["data"]
-    payload_cid, source_file_upload_id, nft_uri, file_size, w_cid = file_data['payload_cid'], file_data[
-        'source_file_upload_id'], file_data['ipfs_url'], file_data['file_size'], file_data['w_cid']
-    # get deal details
-    return deal_detail = api.get_deal_detail(wallet_address, source_file_upload_id)
-```
+{% endcode %}
 
 ### Parameters
 
