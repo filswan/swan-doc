@@ -2,7 +2,7 @@
 
 Multi-Chain Storage (hereinafter called the 'MCS') is a suite of Ethereum scaling solutions that enables high-throughput, low cost smart contracts while remaining trustworthy secure.&#x20;
 
-The following documentation describes how to use MCS, which is currently live on Polygon Mumbai Testnet. Whether you're a developer that just wants to start building or you're curious into digging deeper into the internals of MCS and how it works, this site is the right place for you.
+The following documentation describes how to use MCS, which is currently live on Polygon Mainnet. Whether you're a developer that just wants to start building or you're curious into digging deeper into the internals of MCS and how it works, this site is the right place for you.
 
 ## System Design
 
