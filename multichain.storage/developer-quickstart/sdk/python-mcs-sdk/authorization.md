@@ -2,7 +2,7 @@
 description: How to complete verification to access pirvate MCS APIs
 ---
 
-# Authorization
+# Authentication
 
 To access most MCS APIs, you will need to complete authorization with jwt toke.\
 The function `MCS.get_jwt_token` allows authorization using signature generate with `wallet_address` and `private_key`.

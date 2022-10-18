@@ -64,7 +64,7 @@
       * [MCS APIs](multichain.storage/developer-quickstart/sdk/python-mcs-sdk/mcs-apis.md)
       * [Get Started](multichain.storage/developer-quickstart/sdk/python-mcs-sdk/get-started.md)
       * [Load Dotenv](multichain.storage/developer-quickstart/sdk/python-mcs-sdk/load-dotenv.md)
-      * [Authentication](multichain.storage/developer-quickstart/sdk/python-mcs-sdk/authentication.md)
+      * [Authentication](multichain.storage/developer-quickstart/sdk/python-mcs-sdk/authorization.md)
       * [Upload Files](multichain.storage/developer-quickstart/sdk/python-mcs-sdk/upload-files.md)
       * [Pay for data storage](multichain.storage/developer-quickstart/sdk/python-mcs-sdk/pay-for-data-storage.md)
       * [Mint Assets as NFTs](multichain.storage/developer-quickstart/sdk/python-mcs-sdk/mint-assets-as-nfts.md)

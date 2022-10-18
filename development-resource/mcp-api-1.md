@@ -111,8 +111,7 @@ This endpoint allows you to get average Filecoin storage price.
 {% endswagger-description %}
 
 {% swagger-response status="200: OK" description="" %}
-```javascript
-{
+<pre class="language-javascript"><code class="lang-javascript">{
     "data":
     {
         "average_cost_push_message":" FIL",
@@ -121,9 +120,10 @@ This endpoint allows you to get average Filecoin storage price.
         "average_min_piece_size":" Byte",
         "average_price_per_GB_per_year":" FIL/GiB/year",
         "average_verified_price_per_GB_per_year":" FIL/GiB/year"},
-        "status":"success"
-}
-```
+        "historical_average_price_regular": " FIL/GiB/Day"
+<strong>        "historical_average_price_verified": " FIL/GiB/Day"
+</strong>        "status":"success"
+}</code></pre>
 {% endswagger-response %}
 {% endswagger %}
 
