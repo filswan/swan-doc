@@ -46,7 +46,7 @@ Returns an array containing some details of the file(s).
     file_size: <FILE_SIZE>,
     upload_at: <TIME>,
     duration: 525,
-    ipfs_url: <'https://calibration-ipfs.filswan.com/ipfs/Qm...'>,
+    ipfs_url: <'https://ipfs.multichain.storage/ipfs/Qm...'>,
     pin_status: 'Pinned',
     payload_cid: <'bafy...'>,
     w_cid: <UNIQUE_CID>,

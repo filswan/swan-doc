@@ -10,7 +10,7 @@ After a file is uploaded, the file can be paid for by its payload cid. The metho
 
 ```
 require('dotenv').config()
-const { mcsSDK } = require('js-mcs-sdk')
+const { mcsSDK } = require('js-mcs-sdk') // or any of the other environments
 
 async function main() {
   // ENTER PARAMETERS

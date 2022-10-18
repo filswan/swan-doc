@@ -49,7 +49,7 @@ This function returns the upload API responses. This includes `source_file_uploa
   data: {
     source_file_upload_id: <ID>,
     payload_cid: <'Qm...'>,
-    ipfs_url: <'https://calibration-ipfs.filswan.com/ipfs/Qm...'>,
+    ipfs_url: <'https://ipfs.multichain.storage/ipfs/Qm...'>,
     file_size: <FILE_SIZE>,
     w_cid: <UNIQUE_CID>,
     status: <Free/Pay>

@@ -10,7 +10,7 @@ The following code example gets the file details of an uploaded file. This metho
 
 ```
 require('dotenv').config()
-const { mcsSDK } = require('js-mcs-sdk') 
+const { mcsSDK } = require('js-mcs-sdk') // or any of the other environments
 const fs = require('fs') // used to read files
 
 async function main() {
@@ -67,7 +67,7 @@ Returns the response from the `/deal/detail/` API
       status: 0,
       network_name: 'filecoin_mainnet',
       storage_price: 0,
-      ipfs_url: <'https://ipfs.multichain.storage/ipfs/Qm...'>,
+      ipfs_url: <'https://calibration-ipfs.filswan.com/ipfs/Qm...'>,
       file_name: <FILE_NAME>,
       w_cid: <UNIQUE_CID>,
       car_file_payload_cid: <'bafy...'>,

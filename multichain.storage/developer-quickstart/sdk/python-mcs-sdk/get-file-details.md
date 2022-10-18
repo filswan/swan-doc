@@ -56,7 +56,7 @@ Returns the response from the `/deal/detail/` API
       status: 0,
       network_name: 'filecoin_mainnet',
       storage_price: 0,
-      ipfs_url: <'https://calibration-ipfs.filswan.com/ipfs/Qm...'>,
+      ipfs_url: <'https://ipfs.multichain.storage/ipfs/Qm...'>,
       file_name: <FILE_NAME>,
       w_cid: <UNIQUE_CID>,
       car_file_payload_cid: <'bafy...'>,
