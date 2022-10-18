@@ -17,9 +17,9 @@ Go to MCS: [multichain.storage](https://multichain.storage/). Click on the Conne
 
 MCS uses both MATIC and USDC for uploading files to the Polygon network. MATIC is needed for gas fees while USDC is needed for storage fees.
 
-<figure><img src="../../.gitbook/assets/connect wallet.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/截圖 2022-10-17 下午11.08.07.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/sign.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/截圖 2022-10-17 下午11.08.37.png" alt=""><figcaption></figcaption></figure>
 
 ### 2. Upload file **to IPFS**
 
