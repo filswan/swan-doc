@@ -46,7 +46,7 @@
 * [Overview](multichain.storage/overview/README.md)
   * [Flink](multichain.storage/overview/flink.md)
 * [Multichain Storage User Guide](multichain.storage/mcp-user-guide/README.md)
-  * [Public Testnet](multichain.storage/mcp-user-guide/public-testnet.md)
+  * [Networks](multichain.storage/mcp-user-guide/public-testnet.md)
   * [Setup MetaMask](multichain.storage/mcp-user-guide/setup-metamask.md)
   * [Configure MetaMask with Alchemy RPC URL](multichain.storage/mcp-user-guide/configure-metamask-with-alchemy-rpc-url.md)
 * [Developer Quickstart](multichain.storage/developer-quickstart/README.md)

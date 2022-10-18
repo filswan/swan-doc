@@ -8,7 +8,6 @@ description: This guide will explain how to install the js-mcs-sdk and its basic
 
 * [Node.js](https://nodejs.org/en/) - This SDK was built using version v16.13.0 (npm v8.1.0)
 * Metamask wallet - [Metamask Tutorial](../../../mcp-user-guide/setup-metamask.md)
-* Web3 RPC URL - [Alchemy Tutorial](../../../mcp-user-guide/configure-metamask-with-alchemy-rpc-url.md#alchemypolygontometamaskinstructions-2.createalchemymumbaipolygonrpc)
 
 USDC and MATIC funds are also necessary
 

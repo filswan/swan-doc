@@ -1,29 +1,21 @@
 # Configure MetaMask with Alchemy RPC URL
 
-### **1. List your test networks in your Metamask Network List** <a href="#alchemypolygontometamaskinstructions-1.listyourtestnetworksinyourmetamasknetworklist" id="alchemypolygontometamaskinstructions-1.listyourtestnetworksinyourmetamasknetworklist"></a>
+### 1**. Create Alchemy Mumbai Polygon RPC** <a href="#alchemypolygontometamaskinstructions-2.createalchemymumbaipolygonrpc" id="alchemypolygontometamaskinstructions-2.createalchemymumbaipolygonrpc"></a>
 
-This setting is off by default. To turn it on, navigate to Settings > Advanced > Show test networks
-
-![](<../../.gitbook/assets/2 (1).png>) ![](<../../.gitbook/assets/1 (1) (1).png>) ![](<../../.gitbook/assets/3 (3).png>)
-
-### **2. Create Alchemy Mumbai Polygon RPC** <a href="#alchemypolygontometamaskinstructions-2.createalchemymumbaipolygonrpc" id="alchemypolygontometamaskinstructions-2.createalchemymumbaipolygonrpc"></a>
-
-First, you will need to create an account on [Alchemy](https://dashboard.alchemyapi.io). On the Dashboard page, click "+ CREATE APP", configure the app to be on "Polygon Mumbai"
+First, you will need to create an account on [Alchemy](https://dashboard.alchemyapi.io). On the Dashboard page, click "+ CREATE APP", configure the app to be on "Polygon Mainnet"
 
 ![](<../../.gitbook/assets/4 (1) (1).png>)
 
 ![](<../../.gitbook/assets/5 (1).png>)
 
-![](<../../.gitbook/assets/6 (1).png>)
+### 2. Add the HTTP URL to Metamask <a href="#alchemypolygontometamaskinstructions-3.addthehttpurltometamask" id="alchemypolygontometamaskinstructions-3.addthehttpurltometamask"></a>
 
-### 3. Add the HTTP URL to Metamask <a href="#alchemypolygontometamaskinstructions-3.addthehttpurltometamask" id="alchemypolygontometamaskinstructions-3.addthehttpurltometamask"></a>
+On your Alchemy dashboard, click the "VIEW KEY" button to view the RPC URL of your Mumbai node and copy the HTTP. Configure a new Polygon network on Metamask
 
-On your Alchemy dashboard, click the "VIEW KEY" button to view the RPC URL of your Mumbai node and copy the HTTP. Configure a new Mumbai network on Metamask
-
-* Network Name: Polygon Mumbai (Alchemy Node)
+* Network Name: Polygon Mainnet (Alchemy Node)
 * New RPC URL: _Paste your HTTP from Alchemy Here_
-* Chain ID: 80001
+* Chain ID: 137
 * Currency Symbol: MATIC
-* Blockchain Explorer URL: [https://mumbai.polygonscan.com/](https://mumbai.polygonscan.com/)
+* Blockchain Explorer URL: [https://polygonscan.com/](https://polygonscan.com/)
 
-![](../../.gitbook/assets/7.png) ![](<../../.gitbook/assets/8 (2).png>) ![](../../.gitbook/assets/9.png)
+![](../../.gitbook/assets/7.png) ![](<../../.gitbook/assets/8 (2).png>)
