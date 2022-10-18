@@ -57,7 +57,7 @@ Now inside the asynchronous `main` function, we can initialize the SDK
 
 ```
 require('dotenv').config()
-const { mcsSDK } = require('js-mcs-sdk-staging')
+const { mcsSDK } = require('js-mcs-sdk')
 
 async function main() {
   const mcs = await mcsSDK.initialize({
