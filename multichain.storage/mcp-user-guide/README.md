@@ -1,21 +1,25 @@
-# MCS User Guide
+# Multichain Storage User Guide
 
 ## Requirements <a href="#requirements" id="requirements"></a>
 
 Before you begin this guide, complete the following tasks to make sure you have all of the tools that you need:
 
-* Complete the [Beginner Walkthrough](public-testnet.md) to set up [MetaMask wallet](setup-metamask.md).
-* You can obtain Testnet USDC and MATIC from several[ faucets.](../../development-resource/swan-token-contract/)
+* Own a valid MetaMask wallet&#x20;
+* Have USDC if you’re over the free 10GB of storage
 
-MCS use both **MATIC** and **USDC** for uploading files to polygon network. We strongly suggest you testing with Testnet first.
+
 
 ## **Instruction**
 
-### **1. Connect to your MetaMask wallet on Mumbai Testnet**
+### **1.** Connect to your MetaMask wallet, with this:
 
-Go to MCS: [https://mcs.filswan.com/](https://mcs.filswan.com/). Click on the **Connect Wallet** button to connect your MetaMask wallet, and make sure to select the corresponding network on the MetaMask wallet. (Currently, we only support the Polygon Mumbai Testnet. In the future, it will be officially launched into the Polygon Mainnet. And we also planned to add other main networks such as Ethereum, BSC, Fantom, etc.)
+Go to MCS: [multichain.storage](https://multichain.storage/). Click on the Connect Wallet button to connect your MetaMask wallet, and make sure to select the corresponding network on the MetaMask wallet. Currently, we support Polygon Network and are soon connecting to BNB Chain, Aptos and SUI.
 
-![](<../../.gitbook/assets/1 (3).png>)
+MCS uses both MATIC and USDC for uploading files to the Polygon network. MATIC is needed for gas fees while USDC is needed for storage fees.
+
+<figure><img src="../../.gitbook/assets/connect wallet.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/sign.png" alt=""><figcaption></figcaption></figure>
 
 ### 2. Upload file **to IPFS**
 
@@ -24,27 +28,31 @@ Go to MCS: [https://mcs.filswan.com/](https://mcs.filswan.com/). Click on the **
 * An estimated storage cost will be calculated according to the file size, the duration , and the average provider price.
 * Based on the real-time DeFi exchange rate which got from Sushi Swap, three lock funds plans are provided to our users. The more funds are locked, the sooner your file will be stored on the Filecoin network. Any overpaid funds will be automatically refunded to users after the deal is on chain and contract collects enough DAO signatures.
 
-![](<../../.gitbook/assets/2 (2).png>)
+<figure><img src="../../.gitbook/assets/1.1.png" alt=""><figcaption></figcaption></figure>
 
-![](<../../.gitbook/assets/3 (2).png>)
+<figure><img src="../../.gitbook/assets/2.2.png" alt=""><figcaption></figcaption></figure>
+
+
 
 After Submitting your request, an uploading window will show up. Uploading time varies depends on the size of your file. Please keep the window open until uploading completes.
 
-![](<../../.gitbook/assets/4 (1).png>)
+<figure><img src="../../.gitbook/assets/3.3.png" alt=""><figcaption></figcaption></figure>
 
 ### **3. Lock fund with MetaMask**
 
-After the file has been successfully uploaded to IPFS, the next step is Lock funds to the smart contract, using the currency we support. For now, it is 'USDC' token.
+Paying for storage and locking funds only applies after using your free 10GB.
+
+After the file has been successfully uploaded to IPFS, the next step is Lock funds to the smart contract using USDC tokens.
 
 Waiting time varies depends on the blockchain congestion.
 
-![](../../.gitbook/assets/5.png)
+<figure><img src="../../.gitbook/assets/lock 1.png" alt=""><figcaption></figcaption></figure>
 
-![](../../.gitbook/assets/6.png)
+<figure><img src="../../.gitbook/assets/lock 2.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/lock 3.png" alt=""><figcaption></figcaption></figure>
 
 While the payment is completed, a pop-up window with the transaction link shows up. You can either click on the link or check your MetaMask activity to see the transaction at the block explorer.
-
-![](<../../.gitbook/assets/7 (1).png>)
 
 {% hint style="info" %}
 **TIPS:** If you changed your mind and wanted to select another plan?
@@ -66,15 +74,13 @@ On this page, you can find all the files you have uploaded. It provides you some
 **GOOD TO KNOW:** In order to improve the efficiency, MCS system is using FilSwan's AutoBid function. A qualified and optimal provider will be automatically assigned to your deal. The storage provider will complete following backup procedure, and synchronize the 'Deal status' to our platform.
 {% endhint %}
 
-![](../../.gitbook/assets/8.png)
-
 {% hint style="info" %}
 **TIPS:** A search bar is provided on the top of file list. You can search your file by partial file name.&#x20;
 {% endhint %}
 
 To view more details, simply click on the **file name**. You can find all the related information on this page, including the IPFS download link, the retrieval from Filecoin Network command, and DAO signature information and status. You won't need to bother to check the deal with a blockchain explorer.:smile:
 
-![](<../../.gitbook/assets/9 (3).gif>)
+{% file src="../../.gitbook/assets/MCS Square View deal log.mp4" %}
 
 #### DAO Signature Process:
 
@@ -95,16 +101,12 @@ To mint a NFT. You just need to click on the **MINT** button of the correspondin
 
 By clicking on the **Mint NFT** button, a MetaMask window will popup for authorization purpose. A little bit gas fee will be consumed to confirm this mint transaction.&#x20;
 
-![](../../.gitbook/assets/12.gif)
-
-![](../../.gitbook/assets/14.png)
+<figure><img src="../../.gitbook/assets/4.4.png" alt=""><figcaption></figcaption></figure>
 
 Once the mint process is completed, a View Your NFT window will popup. The transaction hash and a link to view your NFT on OpenSea are provided. You can click on the transaction has and OpenSea links to view more details.
-
-![](../../.gitbook/assets/12.png)
 
 ### 6. Billing History
 
 Users can view the billing history of all deals in 'Billing history' page. It covers all the information about the order such as the transaction hash, amount, unlock amount, token, data CID, wallet address, etc.
 
-![](../../.gitbook/assets/10.png)
+<figure><img src="../../.gitbook/assets/截圖 2022-10-17 下午8.59.58.png" alt=""><figcaption></figcaption></figure>
