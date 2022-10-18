@@ -10,7 +10,7 @@ The following code example mints an uploaded file as a NFT viewable on Opensea. 
 
 ```
 require('dotenv').config()
-const { mcsSDK } = require('js-mcs-sdk') // or any of the other environments
+const { mcsSDK } = require('js-mcs-sdk')
 
 async function main() {
   // ENTER PARAMETERS
