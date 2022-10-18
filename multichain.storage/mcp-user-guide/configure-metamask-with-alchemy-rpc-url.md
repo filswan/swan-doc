@@ -18,4 +18,14 @@ On your Alchemy dashboard, click the "VIEW KEY" button to view the RPC URL of yo
 * Currency Symbol: MATIC
 * Blockchain Explorer URL: [https://polygonscan.com/](https://polygonscan.com/)
 
-![](../../.gitbook/assets/7.png) ![](<../../.gitbook/assets/8 (2).png>)
+
+
+<div>
+
+<figure><img src="../../.gitbook/assets/MicrosoftTeams-image (30).png" alt=""><figcaption></figcaption></figure>
+
+ 
+
+<figure><img src="../../.gitbook/assets/截圖 2022-10-18 下午3.39.04 (1).png" alt=""><figcaption></figcaption></figure>
+
+</div>
