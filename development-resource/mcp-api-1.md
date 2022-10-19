@@ -149,7 +149,7 @@ This endpoint allows you to get average Filecoin storage price.
         "average_verified_price_per_GB_per_year":" FIL/GiB/year"},
         "historical_average_price_regular": " FIL/GiB/Day"
 <strong>        "historical_average_price_verified": " FIL/GiB/Day"
-</strong>        "status":"success"
+</strong>    "status":"success"
 }</code></pre>
 {% endswagger-response %}
 {% endswagger %}
@@ -176,32 +176,18 @@ days for the uploaded file to be kept on miner
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="" %}
-```javascript
-{
+<pre class="language-javascript"><code class="lang-javascript">{
     "status": "success",
     "code": 200,
     "data": {
-        file_size
-: 
-2
-ipfs_url
-: 
-"https://ipfs.multichain.storage/ipfs/QmV9TXwuCutEUfcyMx4Ldk3MERubetXgCCkkE8QCHYyzL2"
-payload_cid
-: 
-"QmV9TXwuCutEUfcyMx4Ldk3MERubetXgCCkkE8QCHYyzL2"
-source_file_upload_id
-: 
-150877
-status
-: 
-"Free"
-w_cid
-: 
-"1cdbc9a9-382a-4e53-9409-a0facb8fe31bQmV9TXwuCutEUfcyMx4Ldk3MERubetXgCCkkE8QCHYyzL2"
-    }
-}
-```
+        "file_size": 2
+        "ipfs_url": "https://ipfs.multichain.storage/ipfs/QmV9TXwuCutEUfcyMx4Ldk3MERubetXgCCkkE8QCHYyzL2"
+        "payload_cid": "QmV9TXwuCutEUfcyMx4Ldk3MERubetXgCCkkE8QCHYyzL2"
+<strong>        "source_file_upload_id": 150877
+</strong><strong>        "status": "Free"
+</strong><strong>        "w_cid": "1cdbc9a9-382a-4e53-9409-a0facb8fe31bQmV9TXwuCutEUfcyMx4Ldk3MERubetXgCCkkE8QCHYyzL2"
+</strong>    }
+}</code></pre>
 {% endswagger-response %}
 {% endswagger %}
 
@@ -239,110 +225,29 @@ y:ascend, others: descend(default)
 {% swagger-response status="200: OK" description="" %}
 ```javascript
 {
-    "status": "success",
-    "code": 200,
-    "data": {
-        "source_file_upload": [
-            {
-                "source_file_upload_id": 1,
-                "car_file_id": 1,
-                "file_name": "test20",
-                "file_size": 1048671,
-                "upload_at": 1651507047,
-                "duration": 525,
-                "pin_status": "Pinned",
-                "payload_cid": "bafybeicxl5dk3iqejtbbcj2b77icx45unajw4qrakmd5ag46jlnidykk2y",
-                "status": "Processing",
-                "token_id": "",
-                "mint_address": "",
-                "nft_tx_hash": "",
-                "offline_deal": [
-                    {
-                        "id": 1,
-                        "car_file_id": 1,
-                        "deal_cid": "bafyreihwmwh2jgapiube6wrviax2zolpe26w35w4wy2x6b7q6blff7mpwe",
-                        "miner_id": 1,
-                        "verified": false,
-                        "start_epoch": 926524,
-                        "sender_wallet_id": 1,
-                        "deal_id": 167814,
-                        "status": "Created",
-                        "note": null,
-                        "on_chain_status": "StorageDealError",
-                        "tx_hash_unlock": null,
-                        "unlock_at": 0,
-                        "create_at": 1651507495,
-                        "update_at": 1651516351,
-                        "miner_fid": "t03354"
-                    }
-                ]
-            },
-            {
-                "source_file_upload_id": 2,
-                "car_file_id": 2,
-                "file_name": "test20",
-                "file_size": 1048671,
-                "upload_at": 1651509153,
-                "duration": 525,
-                "pin_status": "Pinned",
-                "payload_cid": "bafybeicxl5dk3iqejtbbcj2b77icx45unajw4qrakmd5ag46jlnidykk2y",
-                "status": "Processing",
-                "token_id": "",
-                "mint_address": "",
-                "nft_tx_hash": "",
-                "offline_deal": [
-                    {
-                        "id": 2,
-                        "car_file_id": 2,
-                        "deal_cid": "bafyreic6dd722zindqx6svw4snk5czwn4hi4dprzcps3xkiiklqrz5ay5a",
-                        "miner_id": 1,
-                        "verified": false,
-                        "start_epoch": 926588,
-                        "sender_wallet_id": 1,
-                        "deal_id": 167815,
-                        "status": "Created",
-                        "note": null,
-                        "on_chain_status": "StorageDealError",
-                        "tx_hash_unlock": null,
-                        "unlock_at": 0,
-                        "create_at": 1651509304,
-                        "update_at": 1651516351,
-                        "miner_fid": "t03354"
-                    }
-                ]
-            },
-            {
-                "source_file_upload_id": 3,
-                "car_file_id": 0,
-                "file_name": "test20",
-                "file_size": 1048671,
-                "upload_at": 1651516702,
-                "duration": 525,
-                "pin_status": "Pinned",
-                "payload_cid": "",
-                "status": "Pending",
-                "token_id": "",
-                "mint_address": "",
-                "nft_tx_hash": "",
-                "offline_deal": []
-            },
-            {
-                "source_file_upload_id": 4,
-                "car_file_id": 0,
-                "file_name": "test20",
-                "file_size": 1048671,
-                "upload_at": 1651519341,
-                "duration": 525,
-                "pin_status": "Pinned",
-                "payload_cid": "",
-                "status": "Pending",
-                "token_id": "",
-                "mint_address": "",
-                "nft_tx_hash": "",
-                "offline_deal": []
-            }
-        ],
-        "total_record_count": 4
+    data: 
+        free_quota_per_month: 10737418240
+        free_usage: 2
+        source_file_upload: [,…]
+            0: 
+                duration: 525
+                file_name: "1"
+                file_size: 2
+                ipfs_url: "https://ipfs.multichain.storage/ipfs/QmV9TXwuCutEUfcyMx4Ldk3MERubetXgCCkkE8QCHYyzL2"
+                is_free: true
+                is_minted: false
+                mint_address: null
+                nft_tx_hash: null
+                offline_deal: []
+                pay_amount: ""
+                pin_status: "Pinned"
+                refunded_by_self: false
+                source_file_upload_id: 150878
+                status: "Processing"
+                token_id: null
+                upload_at: 1666138406
+        total_record_count: 1
+    status: "success"
     }
 }
 ```
