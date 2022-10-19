@@ -16,6 +16,17 @@ Registration by Metamask wallet
 {% swagger-parameter in="body" name="public_key_address" required="true" %}
 Wallet address of the user
 {% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="" %}
+```javascript
+{
+    "status": "success",
+    "data": {
+        "nonce": "1086889515610840385225475684592216593766"
+    }
+}
+```
+{% endswagger-response %}
 {% endswagger %}
 
 {% swagger method="post" path="/api/v1/user/login_by_metamask_signature" baseUrl="https://api.multichain.storage" summary=" Login for Multichain storage" %}
@@ -38,6 +49,17 @@ Wallet address of the user
 {% swagger-parameter in="body" name="network" required="true" %}
 Network for the chain environment 
 {% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="" %}
+```javascript
+{
+    "status": "success",
+    "data": {
+        "jwt_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NjYyMjM3MDksImlhdCI6MTY2NjEzNzMwOSwic3ViIjoiNzExLHBvbHlnb24ubXVtYmFpIn0.SGu2DzoFcgNX9he_LHVUfQvfwM8rro_SsDXzH2imrKE"
+    }
+}
+```
+{% endswagger-response %}
 {% endswagger %}
 
 ## Common
@@ -48,21 +70,26 @@ This endpoint allows you to get system config
 {% endswagger-description %}
 
 {% swagger-response status="200: OK" description="" %}
-```javascript
-{
-    "status": "success",
-    "code": 200,
-    "data": {
-        "GAS_LIMIT": 8000000,
-        "LOCK_TIME": 6,
-        "MINT_CONTRACT_ADDRESS": "0x1A1e5AC88C493e0608C84c60b7bb5f04D9cF50B3",
-        "PAYMENT_CONTRACT_ADDRESS": "0x80a186DCD922175019913b274568ab172F6E20b1",
-        "PAYMENT_RECIPIENT_ADDRESS": "0xc4fcaAdCb0b00a9501e56215c37B10fAF9e79c0a",
-        "PAY_MULTIPLY_FACTOR": 1.5,
-        "USDC_ADDRESS": "0xe11A86849d99F524cAC3E7A0Ec1241828e332C62"
-    }
-}
-```
+<pre class="language-javascript"><code class="lang-javascript">{
+    "data":
+        "chain_name": "polygon.mainnet", 
+<strong>        "payment_contract_address": "0xA1f32c758c4324cC3070A3AA107C4dC7DdFe1a6f",…}
+</strong>        "chain_name": "polygon.mainnet"
+        "dao_contract_address": "0x2621BB3140D8914806E977F7e6035B468675304D"
+        "dao_threshold": 2
+        "dex_address": "0x1b02dA8Cb0d097eB8D57A175b88c7D8b47997506"
+        "filecoin_price": 513880000
+        "gas_limit": 8000000
+        "lock_time": 6
+        "mint_contract_address": "0x7a5FB09Adc5f1bCd7bd1E230Dcc8B6d933c4995E"
+        "pay_multiply_factor": 1.5
+        "payment_contract_address": "0xA1f32c758c4324cC3070A3AA107C4dC7DdFe1a6f"
+        "payment_recipient_address": "0x7042d0a8F7ED7d6051Fd7032515338f59Ff872b2"
+        "usdc_address": "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174"
+<strong>        "usdc_wFil_pool_contract": "0x230e57B69E3d45557e20a6238462564EBf4Fe2a9"
+</strong><strong>    "status": "success"
+</strong>    }
+}</code></pre>
 {% endswagger-response %}
 {% endswagger %}
 
@@ -154,11 +181,24 @@ days for the uploaded file to be kept on miner
     "status": "success",
     "code": 200,
     "data": {
-        "source_file_upload_id": 4,
-        "payload_cid": "QmeHeqoByW6dGSba9joVUiPuyVafTm5m1qsEtRcYBmjtdr",
-        "ipfs_url": "http://192.168.88.41:5050/ipfs/QmeHeqoByW6dGSba9joVUiPuyVafTm5m1qsEtRcYBmjtdr",
-        "file_size": 1048671,
-        "w_cid": "97286d72-78ac-4e9b-b0d9-f213df3c1698QmeHeqoByW6dGSba9joVUiPuyVafTm5m1qsEtRcYBmjtdr"
+        file_size
+: 
+2
+ipfs_url
+: 
+"https://ipfs.multichain.storage/ipfs/QmV9TXwuCutEUfcyMx4Ldk3MERubetXgCCkkE8QCHYyzL2"
+payload_cid
+: 
+"QmV9TXwuCutEUfcyMx4Ldk3MERubetXgCCkkE8QCHYyzL2"
+source_file_upload_id
+: 
+150877
+status
+: 
+"Free"
+w_cid
+: 
+"1cdbc9a9-382a-4e53-9409-a0facb8fe31bQmV9TXwuCutEUfcyMx4Ldk3MERubetXgCCkkE8QCHYyzL2"
     }
 }
 ```
