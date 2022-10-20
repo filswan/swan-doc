@@ -1,3 +1,3 @@
 # SDK Installation Tutorial Video
 
-{% embed url="https://www.youtube.com/watch?v=hLBLwkEy__o" %}
+{% embed url="https://www.youtube.com/watch?v=rgEP4_dhzoI" %}
