@@ -10,7 +10,7 @@ The following code example lists a user's uploaded files. The list can be search
 
 ```
 require('dotenv').config()
-const { mcsSDK } = require('js-mcs-sdk') // or any of the other environments
+const { mcsSDK } = require('js-mcs-sdk')
 const fs = require('fs') // used to read files
 
 async function main() {
@@ -71,7 +71,7 @@ Returns an array containing some details of the file(s).
     file_size: <FILE_SIZE>,
     upload_at: <TIME>,
     duration: 525,
-    ipfs_url: <'https://calibration-ipfs.filswan.com/ipfs/Qm...'>,
+    ipfs_url: <'https://ipfs.multichain.storage/ipfs/Qm...'>,
     pin_status: 'Pinned',
     payload_cid: <'bafy...'>,
     w_cid: <UNIQUE_CID>,

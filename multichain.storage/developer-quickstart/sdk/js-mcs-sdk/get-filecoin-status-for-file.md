@@ -10,7 +10,7 @@ The following code example returns the FIlecoin storage status of a paid file. T
 
 ```
 require('dotenv').config()
-const { mcsSDK } = require('js-mcs-sdk') // or any of the other environments
+const { mcsSDK } = require('js-mcs-sdk')
 const fs = require('fs') // used to read files
 
 async function main() {
