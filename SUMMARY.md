@@ -73,20 +73,6 @@
       * [SDK Python Installation Tutorial Video](multichain.storage/developer-quickstart/sdk/python-mcs-sdk/sdk-python-installation-tutorial-video.md)
   * [Additional Resources](multichain.storage/developer-quickstart/additional-resources.md)
 * [Running an MCS Node](multichain.storage/running-a-mcp-node.md)
-* [Multichain Storage 概述](multichain.storage/overview-1/README.md)
-  * [Flink](multichain.storage/overview-1/flink.md)
-* [Multichain.Storage 用户指南](multichain.storage/mcp-user-guide-1.md)
-* [开发人员快速入门](multichain.storage/developer-quickstart-1/README.md)
-  * [SDK](multichain.storage/developer-quickstart-1/sdk/README.md)
-    * [js-mcs-sdk](multichain.storage/developer-quickstart-1/sdk/js-mcs-sdk/README.md)
-      * [开始](multichain.storage/developer-quickstart-1/sdk/js-mcs-sdk/kai-shi.md)
-      * [上传文件](multichain.storage/developer-quickstart-1/sdk/js-mcs-sdk/shang-chuan-wen-jian.md)
-      * [支付数据存储费用](multichain.storage/developer-quickstart-1/sdk/js-mcs-sdk/zhi-fu-shu-ju-cun-chu-fei-yong.md)
-      * [Mint NFTs资产](multichain.storage/developer-quickstart-1/sdk/js-mcs-sdk/mint-nfts-zi-chan.md)
-      * [列出文件](multichain.storage/developer-quickstart-1/sdk/js-mcs-sdk/lie-chu-wen-jian.md)
-      * [获取文件详细信息](multichain.storage/developer-quickstart-1/sdk/js-mcs-sdk/huo-qu-wen-jian-xiang-xi-xin-xi.md)
-      * [获取文件的Filecoin状态](multichain.storage/developer-quickstart-1/sdk/js-mcs-sdk/huo-qu-wen-jian-de-filecoin-zhuang-tai.md)
-  * [其他资源](multichain.storage/developer-quickstart-1/qi-ta-zi-yuan.md)
 
 ## Swan Provider
 
@@ -95,13 +81,6 @@
 * [Get started](run-swan-provider/prerequisites/README.md)
   * [Install Swan Provider](run-swan-provider/prerequisites/install-swan-provider.md)
   * [Configuration](swan-provider/prerequisites/configuration.md)
-
-***
-
-* [Swan Provider概括](swan-provider-gai-kuo/README.md)
-  * [前提条件](swan-provider-gai-kuo/qian-ti-tiao-jian.md)
-  * [安装配置](swan-provider-gai-kuo/an-zhuang-pei-zhi.md)
-  * [Swan Provider支持](run-swan-provider/zhong-wen-ban-an-zhuang-jiao-cheng-swan-provider.md)
 
 ## Swan Client
 
@@ -121,24 +100,6 @@
   * [Auto-bid Deal](swan-client/send-deals/auto-bid-deal.md)
 * [Swan Client Tutorial Video](swan-client/swan-client-installation-tutorial.md)
 
-***
-
-* [Swan客户端工具概括](swan-ke-hu-duan-gong-ju-gai-kuo.md)
-* [基本概念须知](ji-ben-gai-nian-xu-zhi.md)
-* [创建任务流程](chuang-jian-ren-wu-liu-cheng/README.md)
-  * [1.命令行安装](chuang-jian-ren-wu-liu-cheng/1.-ming-ling-hang-an-zhuang.md)
-  * [2.配置文件](chuang-jian-ren-wu-liu-cheng/2.-pei-zhi-wen-jian.md)
-  * [3.向Filecoin 网络发送交易](chuang-jian-ren-wu-liu-cheng/3.-xiang-filecoin-wang-luo-fa-song-jiao-yi/README.md)
-    * [3.1准备发送交易的数据](chuang-jian-ren-wu-liu-cheng/3.-xiang-filecoin-wang-luo-fa-song-jiao-yi/3.1-zhun-bei-fa-song-jiao-yi-de-shu-ju.md)
-    * [3.2上传Car文件到 IPFS/Web 服务器](chuang-jian-ren-wu-liu-cheng/3.-xiang-filecoin-wang-luo-fa-song-jiao-yi/3.2-shang-chuan-car-wen-jian-dao-ipfsweb-fu-wu-qi.md)
-    * [3.3创建任务](chuang-jian-ren-wu-liu-cheng/3.-xiang-filecoin-wang-luo-fa-song-jiao-yi/3.3-chuang-jian-ren-wu/README.md)
-      * [3.3.1非竞价模式](chuang-jian-ren-wu-liu-cheng/3.-xiang-filecoin-wang-luo-fa-song-jiao-yi/3.3-chuang-jian-ren-wu/3.3.1-si-ren-ren-wu.md)
-      * [3.3.2手动或自动竞价模式](chuang-jian-ren-wu-liu-cheng/3.-xiang-filecoin-wang-luo-fa-song-jiao-yi/3.3-chuang-jian-ren-wu/3.3.2-gong-kai-ren-wu.md)
-* [发送交易](fa-song-jiao-yi/README.md)
-  * [手动交易](fa-song-jiao-yi/shou-dong-jiao-yi.md)
-  * [自动竞价交易](fa-song-jiao-yi/zi-dong-jing-jia-jiao-yi.md)
-* [Swan客户端工具使用教程](swan-ke-hu-duan-gong-ju-an-zhuang-jiao-cheng.md)
-
 ## FS3
 
 * [Overview](fs3/overview.md)
@@ -148,7 +109,6 @@
   * [FS3 Set up Video](fs3/setup-your-fs3/fs3-tutorials.md)
 * [FS3 User Guide](fs3/fs3-user-guide.md)
 * [FS3 User Guide （Cloud Version）](fs3/fs3-user-guide-1.md)
-* [FS3手册中文版](fs3/fs3-shou-ce-zhong-wen-ban.md)
 
 ## Development Resource
 
