@@ -73,6 +73,7 @@
       * [SDK Python Installation Tutorial Video](multichain.storage/developer-quickstart/sdk/python-mcs-sdk/sdk-python-installation-tutorial-video.md)
   * [Additional Resources](multichain.storage/developer-quickstart/additional-resources.md)
 * [Running an MCS Node](multichain.storage/running-a-mcp-node.md)
+* [FAQ](multichain.storage/faq.md)
 
 ## Swan Provider
 
