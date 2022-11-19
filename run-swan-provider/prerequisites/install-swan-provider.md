@@ -1,50 +1,47 @@
-# Install Swan Provider
+# Installation
 
 #### Option1️⃣ **Prebuilt package**: See [release assets](https://github.com/filswan/go-swan-provider/releases)
+
+**Build Instructions**
 
 ```
 mkdir swan-provider
 cd swan-provider
-wget --no-check-certificate https://github.com/filswan/go-swan-provider/releases/download/v2.0.0/install.sh
+wget --no-check-certificate https://raw.githubusercontent.com/filswan/go-swan-provider/release-2.0.0/install.sh
 chmod +x ./install.sh
 ./install.sh
 ```
 
-#### Option2️⃣ Source Code：&#x20;
+**Config and Run**
 
-{% hint style="info" %}
-#### 🔔**go 1.16+** is required
-{% endhint %}
+* Edit config file **\~/.swan/provider/config.toml**, configuration instruction is [here](https://github.com/filswan/go-swan-provider/tree/release-2.0.0#Config)
+* Run `swan-provider` in background
+
+```
+nohup ./swan-provider-2.0.0-linux-amd64 daemon >> swan-provider.log 2>&1 & 
+```
+
+#### Option2️⃣ Source Code
+
+**Build Instructions**
 
 ```
 git clone https://github.com/filswan/go-swan-provider.git
 cd go-swan-provider
-git checkout <release_branch>
+git checkout release-2.0.0
 ./build_from_source.sh
 ```
 
-#### ‼️ Important
+**Config and Run**
 
-After installation, swan-provider maybe quit due to lack of configuration. Under this situation, you need
-
-* 1️⃣ Edit config file **\~/.swan/provider/config.toml** to solve this.
-* 2️⃣ Execute **swan-provider** using one of the following commands\
-
+* Edit config file **\~/.swan/provider/config.toml**, configuration instruction is [here](https://github.com/filswan/go-swan-provider/tree/release-2.0.0#Config)
+* Run `swan-provider` in background
 
 ```
-./swan-provider-2.0.0-linux-amd64 daemon  #After installation from Option 1
-./build/swan-provider daemon                  #After installation from Option 2
+nohup ./swan-provider daemon >> swan-provider.log 2>&1 & 
 ```
 
-#### Note
+**Note:**
 
 * Logs are in directory ./logs
-* You can add `nohup` before `./swan-provider` to ignore the HUP (hangup) signal and therefore avoid stop when you log out.
-* You can add `>> swan-provider.log` in the command to let all the logs output to `swan-provider.log`.
-* You can add `&` at the end of the command to let the program run in background.
-* Such as:
-
-```
-nohup ./swan-provider-2.0.0-linux-amd64 daemon >> swan-provider.log &   #After installation from Option 1
-nohup ./build/swan-provider daemon >> swan-provider.log &                   #After installation from Option 2
-```
+* **go 1.16+** is required&#x20;

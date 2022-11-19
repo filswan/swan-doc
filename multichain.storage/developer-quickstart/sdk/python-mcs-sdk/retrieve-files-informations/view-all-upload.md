@@ -2,18 +2,29 @@
 description: View your uploaded files
 ---
 
-# List Files
+# View All Upload
 
-`McsAPI.get_user_tasks_deals(self, wallet_address)`
+```python
+McsAPI.get_user_tasks_deals(page_number=None, page_size=None, \ 
+     file_name=None, status=None)
+```
 
-The following code example lists a user's uploaded files. The list can be searched by file name, and also be filtered or sorted.
+The following code example lists a user's uploaded files. The list can be searched all uploaded files, and also be filtered or sorted using page name, page size, ascend/descend order, file name, order by, status, minted/not minted.
+
+To print every single upload to [multichain.storage](https://multichain.storage)
 
 {% code lineNumbers="true" %}
 ```python
-wallet_address = wallet_info['wallet_address']
-print(api.get_user_tasks_deals(wallet_address))
+print(api.get_user_tasks_deals())
 ```
 {% endcode %}
+
+Or you can use one or multiple filters
+
+* page\_number: `Integer`, use to to declare which page is displacing, need to be use with page size.
+* page\_size: `Integer`, change how many number of item will be returned in 1 request, can change page with page number.
+* file\_name: `String`, search for a specific file name.
+* status: `String`, current status of the upload (pending/processing/created/success)&#x20;
 
 ### Parameters
 
@@ -37,7 +48,7 @@ Only the wallet\_address parameter is required, the rest are optional.
 
 Returns an array containing some details of the file(s).
 
-```
+```json
 [
   {
     source_file_upload_id: <ID>,

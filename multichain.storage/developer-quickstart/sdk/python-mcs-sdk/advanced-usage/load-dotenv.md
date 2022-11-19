@@ -16,3 +16,13 @@ private_key = os.getenv('private_key')
 rpc_endpoint = os.getenv('rpc_endpoint')
 ```
 {% endcode %}
+
+You can also access your wallet address use private key.
+
+```python
+from web3 import Web3
+
+w3 = Web3(Web3.HTTPProvider(rpc_endpoint))
+walletAddress = w3.eth.account.privateKeyToAccount(private_key).address
+```
+

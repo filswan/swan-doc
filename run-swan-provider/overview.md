@@ -6,7 +6,7 @@ description: A specialized tool for Swan Service providers.
 
 ## Introduction
 
-&#x20;Web3 service providers provide service for different blockchains included but not limit to Filecoin, AR, Polygon RPC service. With FilSwan service provide, we connected to web3 service market to make the web3 service offering ultimated easier.
+Web3 service providers provide service for different blockchains including but not limited to Filecoin, AR, Polygon RPC service. With FilSwan service provide, we connected to web3 service market to make the web3 service offering ultimated easier.
 
 Typical Web3 markets are:
 
