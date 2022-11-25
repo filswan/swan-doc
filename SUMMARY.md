@@ -128,7 +128,9 @@
 ## Lagrange DAO
 
 * [Overview](lagrange-dao/overview.md)
-* [Dataset](lagrange-dao/dataset.md)
+* [Dataset](lagrange-dao/dataset/README.md)
+  * [Upload Dataset](lagrange-dao/dataset/upload-dataset.md)
+  * [Dataset Mint](lagrange-dao/dataset/dataset-mint.md)
 
 ## Development Resource
 
