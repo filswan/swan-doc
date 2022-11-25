@@ -89,8 +89,8 @@ async function main() {
     rpcUrl: process.env.RPC_URL,
   })
 
-  const testFile = JSON.stringify({ address: mcs.publicKey })
-  const fileArray = [{ fileName: `${mcs.publicKey}.txt`, file: testFile }]
+  const testFile = JSON.stringify({ address: mcs.walletAddress })
+  const fileArray = [{ fileName: `${mcs.walletAddress}.txt`, file: testFile }]
 
   const uploadResponse = await mcs.upload(fileArray)
   console.log(uploadResponse)

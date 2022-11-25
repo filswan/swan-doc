@@ -28,16 +28,16 @@ async function main() {
     rpcUrl: process.env.RPC_URL,
   })
   
-  const uploads = await mcs.getUploads(
-    mcs.publicKey,
-    FILE_NAME,
-    ORDER_BY,
-    IS_ASCEND,
-    STATUS,
-    IS_MINTED,
-    PAGE_NUMBER,
-    PAGE_SIZE,
-  )
+  const uploads = await mcs.getUploads({
+    address: mcs.publicKey,
+    name: FILE_NAME,
+    orderBy: ORDER_BY,
+    isAscend: IS_ASCEND,
+    status: STATUS,
+    isMinted: IS_MINTED,
+    pageNumber: PAGE_NUMBER,
+    pageSize: PAGE_SIZE,
+  })
   
   console.log(uploads.data.source_file_upload)
 }
