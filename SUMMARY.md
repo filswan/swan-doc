@@ -54,12 +54,12 @@
     * [js mcs SDK](multichain.storage/developer-quickstart/sdk/js-mcs-sdk/README.md)
       * [Get Started](multichain.storage/developer-quickstart/sdk/js-mcs-sdk/get-started.md)
       * [MCS Functions](multichain.storage/developer-quickstart/sdk/js-mcs-sdk/mcs-functions/README.md)
-        * [Upload Files](multichain.storage/developer-quickstart/sdk/js-mcs-sdk/mcs-functions/upload-files.md)
-        * [Pay for data storage](multichain.storage/developer-quickstart/sdk/js-mcs-sdk/mcs-functions/pay-for-data-storage.md)
-        * [Mint Assets as NFTs](multichain.storage/developer-quickstart/sdk/js-mcs-sdk/mcs-functions/mint-assets-as-nfts.md)
-        * [List Files](multichain.storage/developer-quickstart/sdk/js-mcs-sdk/mcs-functions/list-files.md)
-        * [Get File Details](multichain.storage/developer-quickstart/sdk/js-mcs-sdk/mcs-functions/get-file-details.md)
-        * [Get Filecoin Status for File](multichain.storage/developer-quickstart/sdk/js-mcs-sdk/mcs-functions/get-filecoin-status-for-file.md)
+        * [Upload Files](multichain.storage/developer-quickstart/sdk/js-mcs-sdk/upload-files.md)
+        * [Pay for data storage](multichain.storage/developer-quickstart/sdk/js-mcs-sdk/pay-for-data-storage.md)
+        * [Mint Assets as NFTs](multichain.storage/developer-quickstart/sdk/js-mcs-sdk/mint-assets-as-nfts.md)
+        * [List Files](multichain.storage/developer-quickstart/sdk/js-mcs-sdk/list-files.md)
+        * [Get File Details](multichain.storage/developer-quickstart/sdk/js-mcs-sdk/get-file-details.md)
+        * [Get Filecoin Status for File](multichain.storage/developer-quickstart/sdk/js-mcs-sdk/get-filecoin-status-for-file.md)
       * [Metaspace Functions](multichain.storage/developer-quickstart/sdk/js-mcs-sdk/metaspace-functions/README.md)
         * [Get Bucket(s)](multichain.storage/developer-quickstart/sdk/js-mcs-sdk/metaspace-functions/get-bucket-s.md)
         * [Create Bucket](multichain.storage/developer-quickstart/sdk/js-mcs-sdk/metaspace-functions/create-bucket.md)
@@ -124,6 +124,10 @@
   * [FS3 Set up Video](fs3/setup-your-fs3/fs3-tutorials.md)
 * [FS3 User Guide](fs3/fs3-user-guide.md)
 * [FS3 User Guide （Cloud Version）](fs3/fs3-user-guide-1.md)
+
+***
+
+* [Lagrange DAO](lagrange-dao.md)
 
 ## Development Resource
 
