@@ -125,9 +125,10 @@
 * [FS3 User Guide](fs3/fs3-user-guide.md)
 * [FS3 User Guide （Cloud Version）](fs3/fs3-user-guide-1.md)
 
-***
+## Lagrange DAO
 
-* [Lagrange DAO](lagrange-dao.md)
+* [Overview](lagrange-dao/overview.md)
+* [Dataset](lagrange-dao/dataset.md)
 
 ## Development Resource
 
