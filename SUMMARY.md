@@ -130,7 +130,7 @@
 * [Overview](lagrange-dao/overview.md)
 * [Dataset](lagrange-dao/dataset/README.md)
   * [Upload Dataset](lagrange-dao/dataset/upload-dataset.md)
-  * [Dataset Mint](lagrange-dao/dataset/dataset-mint.md)
+  * [Dataset Management](lagrange-dao/dataset/dataset-management.md)
 
 ## Development Resource
 
