@@ -102,6 +102,10 @@
   * [Configuration](swan-provider/prerequisites/configuration.md)
   * [FAQ](swan-provider/prerequisites/faq.md)
 * [Swan Provider Tutorial Video](swan-provider/swan-provider-tutorial-video.md)
+* [FAQ](swan-provider/faq/README.md)
+  * [Why Storage Provider status shows offline?](swan-provider/faq/why-storage-provider-status-shows-offline.md)
+  * [How to check the Task Status?](swan-provider/faq/how-to-check-the-task-status.md)
+  * [How to config the Storage Provider Market?](swan-provider/faq/how-to-config-the-storage-provider-market.md)
 
 ## Swan Client
 
@@ -120,6 +124,8 @@
   * [Manual Deal](swan-client/send-deals/manual-deal.md)
   * [Auto-bid Deal](swan-client/send-deals/auto-bid-deal.md)
 * [Swan Client Tutorial Video](swan-client/swan-client-installation-tutorial.md)
+* [FAQ](swan-client/faq/README.md)
+  * [How to prepare data?](swan-client/faq/how-to-prepare-data.md)
 
 ## FS3
 
