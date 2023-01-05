@@ -54,7 +54,7 @@ https://console.filswan.com/#/tools/checkDataCap
 
 Enter your storage provider ID to check its status.
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 ## 6. Config the Lotus-miner's ask
 

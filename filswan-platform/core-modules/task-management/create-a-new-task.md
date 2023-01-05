@@ -4,7 +4,7 @@
 
 ![](<../../../.gitbook/assets/image (2) (1) (1).png>)
 
-![](<../../../.gitbook/assets/image (4) (1).png>)
+![](<../../../.gitbook/assets/image (4) (1) (1).png>)
 
 2\. When creating a task:
 
