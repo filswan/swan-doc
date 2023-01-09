@@ -63,6 +63,8 @@ async function main() {
 main()
 ```
 
+Optionally, you can pass `privateKey` to use the onChain Storage upload and payment functions and pass `rpcUrl` if you wish to use your own RPC URL (this SDK uses [https://polygon-rpc.com/](https://polygon-rpc.com/) by default).
+
 {% hint style="info" %}
 This is the boilerplate code for all snippets found in the SDK documentation
 {% endhint %}
