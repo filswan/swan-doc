@@ -1,5 +1,5 @@
 ---
-description: Create a Metaspace Bucket
+description: Create a Bucket
 ---
 
 # Create Bucket
@@ -15,8 +15,8 @@ async function main() {
   const BUCKET_NAME = ''
 
   const mcs = await mcsSDK.initialize({
-    privateKey: process.env.PRIVATE_KEY,
-    rpcUrl: process.env.RPC_URL,
+    apiKey: process.env.API_KEY,
+    accessToken: process.env.ACCESS_TOKEN,
   })
   
   let createBucketResponse = await mcs.createBucket(BUCKET_NAME)
@@ -32,5 +32,5 @@ main()
 ### Return
 
 ```
-{ status: 'success' }
+{ status: 'success', data: <bucket_uid> }
 ```

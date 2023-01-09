@@ -2,8 +2,8 @@
 description: Swan Provider FAQ
 ---
 
-# FAQ
+# FAQs
 
-{% content-ref url="how-to-prepare-data.md" %}
-[how-to-prepare-data.md](how-to-prepare-data.md)
+{% content-ref url="../faq/how-to-prepare-data.md" %}
+[how-to-prepare-data.md](../faq/how-to-prepare-data.md)
 {% endcontent-ref %}

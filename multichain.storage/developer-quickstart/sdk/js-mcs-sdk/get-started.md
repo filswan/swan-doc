@@ -8,14 +8,11 @@ description: This guide will explain how to install the js-mcs-sdk and its basic
 
 * [Node.js](https://nodejs.org/en/) - This SDK was built using version v16.13.0 (npm v8.1.0)
 * Metamask wallet - [Metamask Tutorial](../../../mcp-user-guide/setup-metamask.md)
-
-USDC and MATIC funds are also necessary
+* API Key and Access Token - Obtained via [https://multichain.storage](https://multichain.storage/)
 
 ## Installation
 
 Install the package using npm. It is recommended to create a new directory for a new project. Run the init command to setup a package.json file
-
-This version of MCS interacts with the Polygon mainnet. The corresponding UI is [here](https://www.multichain.storage/)
 
 ```
 npm init -y
@@ -24,11 +21,15 @@ npm install js-mcs-sdk
 
 ## Environment Variables
 
-Once you have your Metamask wallet and RPC URL(s), create a file named `.env` in your project directory and store your wallet's private key and the RPC URL.&#x20;
+Set your API Key and Access Token as environment variables in a `.env` file. Optionally include your wallet's private key and RPC-URL.
 
 ```
+API_KEY=<API_KEY>
+ACCESS_TOKEN=<ACCESS_TOKEN>
+
+# optional
 PRIVATE_KEY=<PRIVATE_KEY>
-RPC_URL=https://polygon-rpc.com/
+RPC_URL=<RPC_URL>
 ```
 
 {% hint style="info" %}
@@ -42,17 +43,6 @@ To begin writing a script utilizing the SDK, create a new `.js` file.&#x20;
 
 At the top of this file, require the necessary packages. Since these functions are [asynchronous](https://javascript.info/async-await), we will need to create an `async` function to run the SDK methods.
 
-```
-require('dotenv').config()
-const { mcsSDK } = require('js-mcs-sdk')
-
-async function main() {
-  // code snippets found in the documentation go here
-}
-
-main()
-```
-
 Now inside the asynchronous `main` function, we can initialize the SDK
 
 ```
@@ -60,12 +50,14 @@ require('dotenv').config()
 const { mcsSDK } = require('js-mcs-sdk')
 
 async function main() {
+  // initialize js-mcs-sdk
   const mcs = await mcsSDK.initialize({
-    privateKey: process.env.PRIVATE_KEY,
-    rpcUrl: process.env.RPC_URL,
+    apiKey: process.env.API_KEY,
+    accessToken: process.env.ACCESS_TOKEN,
   })
   
   // code snippets found in the documentation go here
+  // ...
 }
 
 main()
@@ -84,9 +76,11 @@ require('dotenv').config()
 const { mcsSDK } = require('js-mcs-sdk')
 
 async function main() {
+  // initialize js-mcs-sdk
   const mcs = await mcsSDK.initialize({
+    accessToken: process.env.ACCESS_TOKEN,
+    apiKey: process.env.API_KEY,
     privateKey: process.env.PRIVATE_KEY,
-    rpcUrl: process.env.RPC_URL,
   })
 
   const testFile = JSON.stringify({ address: mcs.walletAddress })

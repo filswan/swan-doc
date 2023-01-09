@@ -18,8 +18,8 @@ async function main() {
   const DEAL_ID = 0
   
   const mcs = await mcsSDK.initialize({
-    privateKey: process.env.PRIVATE_KEY,
-    rpcUrl: process.env.RPC_URL,
+    accessToken: process.env.ACCESS_TOKEN,
+    apiKey: process.env.API_KEY,
   })
   
   const mintResponse = await mcs.getFileStatus(DEAL_ID)

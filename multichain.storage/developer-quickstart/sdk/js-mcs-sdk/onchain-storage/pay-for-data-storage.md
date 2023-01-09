@@ -20,7 +20,8 @@ async function main() {
   
   const mcs = await mcsSDK.initialize({
     privateKey: process.env.PRIVATE_KEY,
-    rpcUrl: process.env.RPC_URL,
+    accessToken: process.env.ACCESS_TOKEN,
+    apiKey: process.env.API_KEY,
   })
    
   const tx = await mcs.makePayment(SOURCE_FILE_UPLOAD_ID, MIN_AMOUNT, FILE_SIZE)

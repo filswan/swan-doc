@@ -14,7 +14,7 @@ As a PiB-level data onboarding tool for Filecoin Network, Swan-client can help u
 
 swan-client can help users send their data to storage providers by creating three different kinds of tasks. The complete process from the source file to the storage provider is as follows:
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 {% content-ref url="installation.md" %}
 [installation.md](installation.md)

@@ -19,8 +19,11 @@ The SDK has the following Metaspace functionalities:
 
 * GET        list bucket(s)
 * PUT        create bucket
-* POST      upload file to bucket
-* DELETE   bucket(s) and file(s)
+* POST      upload file/folder to bucket
+* POST      rename bucket
+* GET         download file from bucket
+* DELETE   delete bucket
+* DELETE   delete file/folder from bucket
 
 
 

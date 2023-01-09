@@ -4,7 +4,7 @@ description: Download a File from a bucket
 
 # Download File
 
-`downloadFile(bucketName, fileName, outputDirectory)`
+`downloadFile(fileId, outputDirectory)`
 
 Downloads an uploaded file in a bucket, to the desired `outputDirectory`
 
@@ -14,16 +14,15 @@ const { mcsSDK } = require('js-mcs-sdk')
 
 async function main() {
   // ENTER PARAMETERS
-  const BUCKET_NAME = ''
-  const FILE_NAME = ''
+  const FILE_ID = ''
   const OUTPUT_DIRECTORY = '.'
 
   const mcs = await mcsSDK.initialize({
-    privateKey: process.env.PRIVATE_KEY,
-    rpcUrl: process.env.RPC_URL,
+    accessToken: process.env.ACCESS_TOKEN,
+    apiKey: process.env.API_KEY,
   })
   
-  await mcs.downloadFile(BUCKET_NAME, FILE_NAME, OUTPUT_DIRECTORY)
+  await mcs.downloadFile(FILE_ID, OUTPUT_DIRECTORY)
 }
 
 main()

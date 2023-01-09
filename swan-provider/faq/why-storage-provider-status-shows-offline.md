@@ -11,7 +11,7 @@
 
 ## If the result says "Storage provider is unreachable":&#x20;
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 **Please refer to the doc below for configuration and check the connectivity again.**
 
@@ -21,6 +21,6 @@
 
 If the storage provider ID status is active, the connectivity result shows like this. 👇
 
-<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9) (2).png" alt=""><figcaption></figcaption></figure>
 
 ### _**Feel free to contact us on**_ [_**Discord**_](https://filswan.com/discord) _**if you have any questions.**_
