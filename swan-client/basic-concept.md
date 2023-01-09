@@ -1,54 +1,84 @@
-# Basic Concept
+# BASIC CONCEPTS
 
-### Task
+## 1. Task
 
-* A task can contain one or multiple car files
-* Each car file can be sent to one or multiple miners
-* Methods to set miners for each car file in a task
-  * **Auto-bid**: `task.bid_mode=1`, Market Matcher will automatically allocate miners for each car file based on the reputation system and the max copy number the task needs.
-  * **Manual-bid**: `task.bid_mode=0`, After bidders win the bid, the task holder needs to propose the task to the winners.
-  * **None-bid**: `task.bid_mode=2`, It is required to propose each car file of a task to a list of specified miners.
-*   Task Status:
+A task can contain one or multiple CAR files. Each CAR file can be sent to one or multiple miners.&#x20;
 
-    * **Created**: After a task is created, its initial status is `Created` regardless of its type.
-    *   **ActionRequired**: An autobid task, that is, `task.bid_mode=1`, has some information missing or invalid:
+## 2. Methods to set miners for each CAR file in a task
 
-        * MaxPrice: missing, or is not a valid number
-        * FastRetrieval: missing
-        * Type: missing, or not having valid value
+#### **2.1 Auto-bid**
 
-        🔔You need to solve the above problems and change the task status to `Created` to participate next run of Market Matcher.
+`task.bid_mode=1`, Market Matcher will automatically allocate miners for each CAR file based on the [Reputation System](../filswan-platform/overview/reputation-system.md) and the max copy number the task needs.
 
-    ####
+**2.2 Manual-bid**
 
-    ### Car file
+`task.bid_mode=0`, After bidders win the bid, the task holder needs to propose the task to the winners.
 
-    * A car file is an independent unit to be sent to miners
-    * Each car file can be sent to one or multiple miners
-    * A car file is generated from source file(s) by Lotus, Graph-split, or Ipfs
-    * The size of a car file can be up to 64GB.
-    *   Car File Status:
+**2.3 None-bid**
 
-        * **Created**: After a task is created, all its car files are in this status
-        * **ActionRequired**: An autobid task, that is, `task.bid_mode=1`, its car file has something missing or invalid:
-          * FileSize: missing, or is not a valid number
-          * FileUrl: missing
-          * StartEpoch: missing, or not have valid value, less than 0, or current epoch
-          * PayloadCid: missing
-          * PieceCid: missing
-        * **Assigned**: When its task is in auto-bid mode, that is, `task.bid_mode=1`, a car file has been assigned to a list of miners automatically by Market Matcher.
+`task.bid_mode=2`, It is required to propose each car file of a task to a list of specified miners.
 
-        ### Offline Deal
+## 3. Task status
 
-        An offline Deal means the transaction that a car file is sent to a miner
+#### **3.1 Created**
 
-        * Offline Deal Status:
-          * **Assigned**: Only in auto-bid mode, that is `task.bid_mode=1`, when a miner is assigned to a car file, an offline deal record is created, and its status is `Assigned`.
-          * **Created**: For all the bid modes, after a car file is sent to a miner, the related deal status is `Created`.
-          * **...**: There are several other statuses, which are generated and used by Swan Provider and Swan Platform and they have the same meaning for tasks of all bid modes.
-        * Every step of this tool will generate a JSON file that contains file(s) description like the one of below:
+After a task is created, its initial status is `Created` regardless of its type.
+
+#### **3.2 ActionRequired**
+
+An auto-bid task, that is, `task.bid_mode=1`, has some information missing or invalid:
+
+* MaxPrice: missing, or is not a valid number
+* FastRetrieval: missing
+* Type: missing, or not having a valid value
+
+🔔You need to solve the above problems and change the task status to `Created` to participate next run of Market Matcher.
+
+## 4. CAR file
+
+A CAR file is an independent unit to be sent to miners. Each CAR file can be sent to one or multiple miners. A CAR file is generated from source file(s) by Lotus, Graph-split, or IPFS. The size of a car file can be up to 64GB.
+
+## 5. CAR file status
+
+#### **1) Created**
+
+After a task is created, all its car files are in this status
+
+#### **2) ActionRequired**
+
+An auto-bid task, that is, `task.bid_mode=1`, its car file has something missing or invalid:
+
+* FileSize: missing, or is not a valid number
+* FileUrl: missing
+* StartEpoch: missing, or not have a valid value, less than 0, or current epoch
+* PayloadCid: missing
+* PieceCid: missing
+
+#### **3) Assigned**
+
+When its task is in auto-bid mode, that is, `task.bid_mode=1`, a CAR file has been assigned to a list of miners automatically by Market Matcher.
+
+## 6. Offline deal
+
+An offline Deal means the transaction that a car file is sent to a miner.
+
+## 7. Offline deal status
+
+#### **1) Assigned**
+
+Only in auto-bid mode, that is, `task.bid_mode=1`, when a miner is assigned to a car file, an offline deal record is created, and its status is `Assigned`.
+
+#### **2) Created**
+
+For all the bid modes, after a car file is sent to a miner, the related deal status is `Created`.
+
+#### **3) ...**
+
+There are several other statuses, which are generated and used by Swan Provider and Swan Platform and they have the same meaning for tasks of all bid modes.
 
 
+
+Every step of this tool will generate a JSON file that contains file(s) description like the one below:
 
 ```
 [
@@ -100,5 +130,6 @@
 ]
 ```
 
-* This JSON file generated in each step will be used in its next step and can be used to rebuild the graph in the future.
-* Uuid is generated for future index purposes.
+This JSON file generated in each step will be used in its next step and can be used to rebuild the graph in the future.
+
+Uuid is generated for future index purposes.
