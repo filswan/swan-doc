@@ -1,5 +1,5 @@
 ---
-description: "FilSwan is a layer-3 cross-chain solution that helps Web3 projects to integrate data, computing, bandwidth,\_and payment into one suite."
+description: "FilSwan is a layer-2 cross-chain solution that helps Web3 projects to integrate data, computing, bandwidth,\_and payment into one suite."
 ---
 
 # FilSwan Overview
