@@ -6,18 +6,19 @@ description: https://github.com/filswan/python-mcs-sdk
 
 ### Introduction
 
-A python software development kit for the Multi-Chain Storage (MCS) [https://www.multichain.storage/](https://www.multichain.storage/) service. It provides a convenient interface for working with the MCS API. This SDK has the following functionalities:
-
-* **POST**    upload file to Filswan IPFS gate way
-* **POST**    make payment to swan filecoin storage gate way
-* **POST**    mint asset as NFT
-* **GET**       list of files uploaded
-* **GET**       files by cid
-* **GET**       status from filecoin
-
-The python MCS SDK will be referred as SDK in the following of this guide.
+A python software development kit for the Multi-Chain Storage (MCS) [https://www.multichain.storage/](https://www.multichain.storage/) service. It provides a convenient interface for working with the MCS API.
 
 {% embed url="https://github.com/filswan/python-mcs-sdk" %}
+
+### MCS APIs
+
+For detailed information on multichain.storage APIs, read the following documentation.
+
+{% content-ref url="../../../../development-resource/mcp-api-1.md" %}
+[mcp-api-1.md](../../../../development-resource/mcp-api-1.md)
+{% endcontent-ref %}
+
+###
 
 ### Sponsors
 

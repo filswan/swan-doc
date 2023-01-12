@@ -5,26 +5,26 @@ description: View your uploaded files
 # View All Upload
 
 ```python
-McsAPI.get_user_tasks_deals(page_number=None, page_size=None, \ 
+OnchainAPI.get_user_tasks_deals(page_number=None, page_size=None, \ 
      file_name=None, status=None)
 ```
 
-The following code example lists a user's uploaded files. The list can be searched all uploaded files, and also be filtered or sorted using page name, page size, ascend/descend order, file name, order by, status, minted/not minted.
+The following code example lists a user's uploaded files. The list can be searched all uploaded files, and also be filtered or sorted using page name, page size, ascend/descend order, file name, order by, status, and minted/not minted.
 
 To print every single upload to [multichain.storage](https://multichain.storage)
 
 {% code lineNumbers="true" %}
 ```python
-print(api.get_user_tasks_deals())
+print(onchain_api.get_user_tasks_deals())
 ```
 {% endcode %}
 
 Or you can use one or multiple filters
 
-* page\_number: `Integer`, use to to declare which page is displacing, need to be use with page size.
-* page\_size: `Integer`, change how many number of item will be returned in 1 request, can change page with page number.
+* page\_number: `Integer`, use to declare which page is displacing, need to be used with page size.
+* page\_size: `Integer`, change how many numbers of items will be returned in 1 request, can change the page with a page number.
 * file\_name: `String`, search for a specific file name.
-* status: `String`, current status of the upload (pending/processing/created/success)&#x20;
+* status: `String`, the current status of the upload (pending/processing/created/success)&#x20;
 
 ### Parameters
 

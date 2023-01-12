@@ -5,10 +5,10 @@ description: Get payment information of a previous upload
 # Get Payment Info
 
 ```python
-McsAPI.get_payment_info(payload_cid, source_file_upload_id)
+OnchainAPI.get_payment_info(payload_cid, source_file_upload_id)
 ```
 
-odeThis API retrieve the payment information use the source file upload id of an upload. This id can be retrieved use the view all uploads API.
+This API retrieves the payment information using the source file upload id of an upload. This id can be retrieved using the view all uploads API.
 
 {% code lineNumbers="true" %}
 ```python
@@ -16,7 +16,7 @@ file_data = upload_file["data"]
 payload_cid, source_file_upload_id, nft_uri, file_size, w_cid = file_data['payload_cid'], file_data[
     'source_file_upload_id'], file_data['ipfs_url'], file_data['file_size'], file_data['w_cid']
 # get deal details
-return deal_detail = api.get_deal_detail(wallet_address, source_file_upload_id)
+return deal_detail = onchain_api.get_deal_detail(wallet_address, source_file_upload_id)
 ```
 {% endcode %}
 

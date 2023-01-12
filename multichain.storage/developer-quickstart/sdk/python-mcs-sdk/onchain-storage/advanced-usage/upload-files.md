@@ -6,31 +6,15 @@ description: Upload file(s) to MCS using the MCS SDK
 
 You can use the upload function to upload a single file to FilSwan IPFS gateway. The function takes your MetaMask wallet address and the absolute path(or relative) of the file for upload.
 
-```python
-McsAPI.upload_file(self, wallet_address, file_path)
-```
+<pre class="language-python"><code class="lang-python"><strong>OnchainAPI.upload_file(self, wallet_address, file_path)
+</strong></code></pre>
 
-Let's use the same instance of McsAPI we created for authorization.
-
-{% code lineNumbers="true" %}
-```python
-file_path = "/<file_name>"
-upload_file = api.upload_file(wallet_address, file_path)
-```
-{% endcode %}
-
-The normal upload function will work fine for smaller files. However, stream upload is the recommended method to upload files. To use stream upload:
-
-```python
-McsAPI.stream_upload_file(self, wallet_address, file_path)
-```
-
-An example using stream upload
+Let's use the same instance of OnchainAPI we created for authorization.
 
 {% code lineNumbers="true" %}
 ```python
 file_path = "/<file_name>"
-upload_file = api.stream_upload_file(wallet_address, file_path)
+upload_file = onchain_api.stream_upload_file(wallet_address, file_path)
 ```
 {% endcode %}
 

@@ -12,12 +12,12 @@ The following code example mints an uploaded file as a NFT viewable on Opensea. 
 
 {% code lineNumbers="true" %}
 ```python
-meta_url = api.upload_nft_metadata(wallet_address, filename, 
+meta_url = onchain_api.upload_nft_metadata(wallet_address, filename, 
     nft_uri, tx_hash, file_size)['data']['ipfs_url']
 # mint nft contract
 tx_hash, token_id = w3_api.mint_nft(wallet_address, private_key, meta_url)
 # update mint info
-api.get_mint_info(source_file_upload_id, None, tx_hash, token_id, wallet_address)
+onchain_api.get_mint_info(source_file_upload_id, None, tx_hash, token_id, wallet_address)
 ```
 {% endcode %}
 

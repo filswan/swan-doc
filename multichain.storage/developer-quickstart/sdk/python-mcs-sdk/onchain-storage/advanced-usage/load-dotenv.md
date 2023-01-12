@@ -17,7 +17,7 @@ rpc_endpoint = os.getenv('rpc_endpoint')
 ```
 {% endcode %}
 
-You can also access your wallet address use private key.
+You can also access your wallet address using private key.
 
 ```python
 from web3 import Web3
