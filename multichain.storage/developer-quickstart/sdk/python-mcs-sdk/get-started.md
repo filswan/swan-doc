@@ -48,9 +48,9 @@ In order to use any function of python MCS SDK. We need to connect to multichain
 from mcs import OnchainAPI, APIClient
 
 if __name__ == "__main__":
-    chain_name = 'polygon.mainnet'
-    api_key = &#x3C;'api_key'>
-    access_token = &#x3C;'access_token'>
+    chain_name = "polygon.mainnet"
+    api_key = "&#x3C;api_key>"
+    access_token = "&#x3C;access_token>"
     
     # connect to multichain.storage
 <strong>    mcs_api = APIClient(api_key, access_token, chain_name)
