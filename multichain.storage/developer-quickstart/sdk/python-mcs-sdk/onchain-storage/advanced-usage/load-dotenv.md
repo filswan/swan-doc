@@ -10,7 +10,7 @@ Before start working with SDK, we need to load the wallet informations as enviro
 ```python
 import dotenv import load_dotenv
 
-load_dotenv(".env_main")
+load_dotenv(".env")
 wallet_address = os.getenv('wallet_address')
 private_key = os.getenv('private_key')
 rpc_endpoint = os.getenv('rpc_endpoint')
