@@ -1,14 +1,12 @@
 # Filecoin Deal Sender
 
-## 1. Filecoin Deal Sender
-
 As a PiB-level data onboarding tool for Filecoin Network, Swan-client can help users prepare data and send the data to storage providers in the Filecoin network. The main features and steps are as follows:
 
-* Generate CAR files from your source files by graphsplit, lotus, IPFS, or ipfs-car.
-* Upload the CAR files to the IPFS server and generate metadata files (JSON and CSV) for sending offline deals.
-* Propose offline deals based on the metadata file.
-* Generate a final metadata file for storage providers to import deals.
-*   Create tasks and offline deals on [Swan Platform](https://console.filswan.com/#/dashboard).
+* Generate CAR files from your source files by [graphsplit](https://github.com/filswan/go-swan-client/blob/main/README.md#Graphsplit), [lotus](https://github.com/filswan/go-swan-client/blob/main/README.md#Lotus-API), [IPFS](https://github.com/filswan/go-swan-client/blob/main/README.md#IPFS-API), or [ipfs-car](https://github.com/filswan/go-swan-client/blob/main/README.md#ipfs-car)
+* Upload the CAR files to the IPFS server and generate metadata files (JSON and CSV) for sending offline deals
+* Propose offline deals based on the metadata file
+* Generate a final metadata file for storage providers to import deals
+*   Create tasks and offline deals on [Swan Platform](https://console.filswan.com/#/dashboard)
 
     **(Storage Providers can automatically import the deals by** [**Swan-Provider**](https://github.com/filswan/go-swan-provider/tree/release-2.1.0-rc1)**)**
 

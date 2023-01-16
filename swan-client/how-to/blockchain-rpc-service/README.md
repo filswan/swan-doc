@@ -1,10 +1,8 @@
 # Blockchain RPC Service
 
-The second feature of swan-client is the blockchain RPC service. It is supported by [POKT RPCList](https://rpclist.info). As the first version, swan-client provides users deploy a RPC service and uses RPC Command Service. It is worth noting that the blockchain RPC services provided by swan-client are free at present.
+The second feature of swan-client is the blockchain RPC service. It is supported by [POKT RPCList](https://rpclist.info/). As the first version, swan-client helps users [deploy a RPC service](https://github.com/filswan/go-swan-client/blob/main/README.md#21-Deploy-RPC-Service) and use [RPC Command Service](https://github.com/filswan/go-swan-client/blob/main/README.md#22-RPC-Command-Service). It is worth noting that the blockchain RPC services provided by swan-client are free at present.
 
-*   The following table shows the full list of the supported chain until now.
-
-
+*   The following table shows the full list of the chains supported by swan-client until now.
 
     | ChainID |           ChainName          |
     | :-----: | :--------------------------: |
