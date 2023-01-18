@@ -14,9 +14,9 @@ A task can contain one or multiple CAR files. Each CAR file can be sent to one o
 
 `task.bid_mode=0`, After bidders win the bid, the task holder needs to propose the task to the winners.
 
-**2.3 None-bid**
+#### 2.3 None-bid&#x20;
 
-`task.bid_mode=2`, It is required to propose each car file of a task to a list of specified miners.
+It is required to propose each car file of a task to a list of specified miners.
 
 ## 3. Task status
 
@@ -40,11 +40,11 @@ A CAR file is an independent unit to be sent to miners. Each CAR file can be sen
 
 ## 5. CAR file status
 
-#### **1) Created**
+#### **5.1 Created**
 
 After a task is created, all its car files are in this status
 
-#### **2) ActionRequired**
+#### **5.2 ActionRequired**
 
 An auto-bid task, that is, `task.bid_mode=1`, its car file has something missing or invalid:
 
@@ -54,7 +54,7 @@ An auto-bid task, that is, `task.bid_mode=1`, its car file has something missing
 * PayloadCid: missing
 * PieceCid: missing
 
-#### **3) Assigned**
+#### **5.3 Assigned**
 
 When its task is in auto-bid mode, that is, `task.bid_mode=1`, a CAR file has been assigned to a list of miners automatically by Market Matcher.
 
@@ -64,15 +64,15 @@ An offline Deal means the transaction that a car file is sent to a miner.
 
 ## 7. Offline deal status
 
-#### **1) Assigned**
+#### **7.1 Assigned**
 
 Only in auto-bid mode, that is, `task.bid_mode=1`, when a miner is assigned to a car file, an offline deal record is created, and its status is `Assigned`.
 
-#### **2) Created**
+#### **7.2 Created**
 
 For all the bid modes, after a car file is sent to a miner, the related deal status is `Created`.
 
-#### **3) ...**
+#### **7.3 ...**
 
 There are several other statuses, which are generated and used by Swan Provider and Swan Platform and they have the same meaning for tasks of all bid modes.
 
