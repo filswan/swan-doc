@@ -55,9 +55,6 @@ async function main() {
     apiKey: process.env.API_KEY,
     accessToken: process.env.ACCESS_TOKEN,
   })
-  
-  // code snippets found in the documentation go here
-  // ...
 }
 
 main()
@@ -65,8 +62,10 @@ main()
 
 Optionally, you can pass `privateKey` to use the onChain Storage upload and payment functions and pass `rpcUrl` if you wish to use your own RPC URL (this SDK uses [https://polygon-rpc.com/](https://polygon-rpc.com/) by default).
 
+This SDK is also compatible with our calibration environment on the Mumbai testnet. Use `chainName: 'polygon.mumbai'` and generate a new API KEY from [calibration-mcs.filswan.com](https://calibration-mcs.filswan.com/)
+
 {% hint style="info" %}
-This is the boilerplate code for all snippets found in the SDK documentation
+Make sure the API Key and Access Token come from the same evironment as `chainName`
 {% endhint %}
 
 ## Upload File Example
