@@ -96,15 +96,16 @@
 
 ## Swan Provider
 
-* [Overview](run-swan-provider/overview.md)
-* [Features](swan-provider/features.md)
-* [Get Started](run-swan-provider/prerequisites/README.md)
+* [OVERVIEW](run-swan-provider/overview.md)
+* [FEATURES](swan-provider/features.md)
+* [HOW TO](run-swan-provider/prerequisites/README.md)
   * [Prerequisites](swan-provider/prerequisites/prerequisites.md)
   * [Installation](run-swan-provider/prerequisites/install-swan-provider.md)
-  * [Configuration](swan-provider/prerequisites/configuration.md)
-  * [FAQ](swan-provider/prerequisites/faq.md)
-* [Swan Provider Tutorial Video](swan-provider/swan-provider-tutorial-video.md)
+  * [Configuration and Run](swan-provider/prerequisites/configuration-and-run.md)
+  * [Swan Provider Tutorial Video](swan-provider/prerequisites/swan-provider-tutorial-video.md)
 * [FAQs](swan-provider/faqs/README.md)
+  * [How to check if aria2 is running?](swan-provider/faqs/how-to-check-if-aria2-is-running.md)
+  * [No response from Swan Platform?](swan-provider/faqs/no-response-from-swan-platform.md)
   * [Why Storage Provider status shows offline?](swan-provider/faq/why-storage-provider-status-shows-offline.md)
   * [How to check the Task Status?](swan-provider/faq/how-to-check-the-task-status.md)
   * [How to config the Storage Provider Market?](swan-provider/faq/how-to-config-the-storage-provider-market.md)

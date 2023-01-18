@@ -1,34 +1,20 @@
 # Prerequisites
 
-### Prerequisites <a href="#prerequisites" id="prerequisites"></a>
+* Lotus-miner
+* Aria2 Service
 
-**Server Requirements**
+**Start Lotus-miner**
 
-Please see the hardware requirement below:
-
-| Hardware | Provider Specifications     |
-| -------- | --------------------------- |
-| CPU      | 4-Core CPU with AVX support |
-| RAM      | 8GB DDR4                    |
-| Storage  | 500GB SSD                   |
-
-* lotus-miner
-* aria2
-
-#### Install Aria2 Service
-
-```
-sudo apt install aria2
-```
-
-#### Create Lotus Miner Token
-
-Lotus miner token is used for importing deal for swan provider
+Before launching the `swan-provider`, you must ensure that `Lotus-miner` is running normally. and `Lotus-miner` token is necessary for importing deals.
 
 ```
 lotus-miner auth create-token --perm write
 ```
 
-Note that the Lotus Miner need to be running in the background! The created token located at `$LOTUS_MINER_PATH/token`
+Note that the `Lotus-miner` needs to be running in the background! The created token is located at `$LOTUS_MINER_PATH/token` Reference: [Lotus: API tokens](https://lotus.filecoin.io/reference/basics/api-access/)
 
-Reference: [Lotus: API tokens](https://lotus.filecoin.io/reference/basics/api-access/)
+**Aria2 Service**
+
+```
+sudo apt install aria2
+```
