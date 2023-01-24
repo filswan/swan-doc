@@ -18,13 +18,13 @@ FIlSwan authenticates your API requests using your account’s API keys. If you 
  3\. Click “Developer Settings”
 ```
 
-![](https://miro.medium.com/max/472/1\*Fs0bXllT2z0e6SxVWtJO8g.png)
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 ```
  4\. click “New API Key”
 ```
 
-![](https://miro.medium.com/max/908/1\*3sZqhBjClQ-tkGVAOAGkyw.png)
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ![](https://miro.medium.com/max/952/1\*YKI27roaXznrwN0mIotGQg.png)
 
