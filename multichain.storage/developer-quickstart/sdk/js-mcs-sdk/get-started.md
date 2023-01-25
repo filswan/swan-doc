@@ -1,14 +1,8 @@
 ---
-description: This guide will explain how to install the js-mcs-sdk and its basic usage
+description: guide on how to install the js-mcs-sdk package and its basic usage
 ---
 
 # Get Started
-
-## Prerequisites
-
-* [Node.js](https://nodejs.org/en/) - This SDK was built using version v16.13.0 (npm v8.1.0)
-* Metamask wallet - [Metamask Tutorial](../../../mcp-user-guide/setup-metamask.md)
-* API Key and Access Token - Obtained via [https://multichain.storage](https://multichain.storage/)
 
 ## Installation
 
@@ -65,33 +59,5 @@ Optionally, you can pass `privateKey` to use the onChain Storage upload and paym
 This SDK is also compatible with our calibration environment on the Mumbai testnet. Use `chainName: 'polygon.mumbai'` and generate a new API KEY from [calibration-mcs.filswan.com](https://calibration-mcs.filswan.com/)
 
 {% hint style="info" %}
-Make sure the API Key and Access Token come from the same evironment as `chainName`
+Make sure the API Key and Access Token come from the same environment as `chainName`
 {% endhint %}
-
-## Upload File Example
-
-Here is a simple example to upload a single file to MCS. Made a new file named `upload.js`
-
-```
-require('dotenv').config()
-const { mcsSDK } = require('js-mcs-sdk')
-
-async function main() {
-  // initialize js-mcs-sdk
-  const mcs = await mcsSDK.initialize({
-    accessToken: process.env.ACCESS_TOKEN,
-    apiKey: process.env.API_KEY,
-    privateKey: process.env.PRIVATE_KEY,
-  })
-
-  const testFile = JSON.stringify({ address: mcs.walletAddress })
-  const fileArray = [{ fileName: `${mcs.walletAddress}.txt`, file: testFile }]
-
-  const uploadResponse = await mcs.upload(fileArray)
-  console.log(uploadResponse)
-}
-
-main()
-```
-
-Use the command `node upload.js` to run the code. This snippet creates the MCS SDK instance, creates a JSON file with your wallet address, and uploads the file to MCS.

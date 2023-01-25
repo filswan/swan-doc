@@ -4,7 +4,7 @@ description: Pay for storage on MCS
 
 # Pay for data storage
 
-`makePayment(wCid, minAmount, fileSize)`
+`makePayment(wCid, fileSize, minAmount='')`
 
 After a file is uploaded, the file can be paid for by its payload cid. The method takes the source file upload id as the first parameter and the minimum amount as the second.
 
@@ -16,7 +16,6 @@ async function main() {
   // ENTER PARAMETERS
   const SOURCE_FILE_UPLOAD_ID = ''
   const MIN_AMOUNT = ''
-  const FILE_SIZE = ''
   
   const mcs = await mcsSDK.initialize({
     privateKey: process.env.PRIVATE_KEY,
@@ -24,7 +23,7 @@ async function main() {
     apiKey: process.env.API_KEY,
   })
    
-  const tx = await mcs.makePayment(SOURCE_FILE_UPLOAD_ID, MIN_AMOUNT, FILE_SIZE)
+  const tx = await mcs.makePayment(SOURCE_FILE_UPLOAD_ID, MIN_AMOUNT)
   console.log(tx.transactionHash)
 }
 
