@@ -10,13 +10,13 @@ After a file is uploaded, the payment can be made through your wallet and the de
 
 To send tokens, you need to first approve an amount for use (this amount has to be larger than the price for upload) or the smart contract will fail to process the payment.
 
-`ContractAPI.approve_usdc(wallet_address, private_key, amount)`
+`ContractClient.approve_usdc(wallet_address, private_key, amount)`
 
 First, we need to create an instance of ContractAPI class to access contract functions. Then we can approve a relatively large amount that will guarantee the payment success.
 
 {% code lineNumbers="true" %}
 ```python
-w3_api = ContractAPI(web3_api)
+w3_api = ContractClient(web3_api)
 w3_api.approve_usdc(wallet_address, private_key, 1)
 ```
 {% endcode %}

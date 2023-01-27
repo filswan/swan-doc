@@ -1,12 +1,12 @@
 ---
-description: https://github.com/filswan/python-mcs-sdk
+description: https://github .com/filswan/python-mcs-sdk
 ---
 
-# python mcs SDK
+# python MCS SDK
 
 ### Introduction
 
-A python software development kit for the Multi-Chain Storage (MCS) [https://www.multichain.storage/](https://www.multichain.storage/) service. It provides a convenient interface for working with the MCS API.
+A python software development kit for the [Multi-Chain Storage (MCS)](https://www.multichain.storage/) service. It provides a convenient interface for working with the MCS API. It has two services: Bucket Storage and Onchain Storage.
 
 {% embed url="https://github.com/filswan/python-mcs-sdk" %}
 
@@ -18,11 +18,11 @@ For detailed information on multichain.storage APIs, read the following document
 [mcp-api-1.md](../../../../development-resource/mcp-api-1.md)
 {% endcontent-ref %}
 
-###
+
 
 ### Sponsors
 
-This project is sponsored by Filecoin Foundation
+Filecoin Foundation sponsors this project
 
 [Flink SDK - A data provider offers Chainlink Oracle service for Filecoin Network](https://github.com/filecoin-project/devgrants/issues/463)
 

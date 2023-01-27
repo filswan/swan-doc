@@ -33,16 +33,22 @@ Add your wallet info and&#x20;
 You can use other methods to securely store your wallet information!
 {% endhint %}
 
+#### Guide for load wallet information with .env
+
+{% content-ref url="advanced-usage/load-dotenv.md" %}
+[load-dotenv.md](advanced-usage/load-dotenv.md)
+{% endcontent-ref %}
+
 ### Initialize Upload
 
 To start an upload, we need to create an instance of the `MCSUpload` class. Which requires `chain_name`, `wallet_address`, `private_key` and `file_path` as parameters. The upload process requires the user login into the MCS API using a wallet address. Python MCS SDK can handle this process automatically when initializing an MCSUpload.
 
 ```python
     # Use absolute path or relative path to the current directory.
-    filepath = "<file_path>"
+    file_path = "<file_path>"
     
     upload_handle = OnchainUpload('polygon.mainnet', private_key, \
-            rpc_endpoint, api_key, access_token, filepath)
+            rpc_endpoint, api_key, access_token, file_path)
 ```
 
 ### Simple Upload File
@@ -54,15 +60,7 @@ To use the fastest way to upload the file to [multichain.storage](https://multic
     hash = upload_handle.simple_upload(<amount_token_to_approve>)
 ```
 
-The upload function uploads the file to the IPFS server. MCS currently has 10GB of free upload per month for each wallet. The `need_pay` will indicates if a file is under the coverage of free upload. When `need_pay == 1` then the file needs to be paid and it is free when `need_pay == 0`.
-
-### Estimate Payment
-
-The estimated payment can be accessed using the `estimate_amount()` function.
-
-```python
-    print(upload_handle.estimate_amount())
-```
+The amount of tokens to approve is the amount of USDC to be approved through the Swan payment contract. You need to approve a sufficient amount to upload successfully.
 
 ### Mint NFT
 
@@ -86,5 +84,5 @@ if __name__ == "__main__":
     filepath = "<file_path>"
     upload_handle = OnchainUpload('polygon.mainnet', private_key, \
             rpc_endpoint, api_key, access_token, filepath)
-    hash = up.simple_upload(<APPROVE_AMOUNT>)
+    hash = upload_handle.simple_upload(<APPROVE_AMOUNT>)
 ```
