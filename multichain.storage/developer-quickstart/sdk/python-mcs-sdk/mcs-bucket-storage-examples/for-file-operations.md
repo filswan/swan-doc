@@ -30,9 +30,6 @@ The `download_file` method accepts the names of the bucket and object to downloa
 from mcs import APIClient, BucketAPI
 mcs_api = APIClient("<API_KEY>", "<ACCESS_TOKEN>", "<CHAIN_NAME>")
 bucket_client = BucketAPI(mcs_api)
-# Object name is the destination path you want to upload to the bucket
-# For example, if you want to upload the testfile.json file to path 111/222 in the TEST bucket, you would write: 
-# bucket_client.upload_file("TEST", "111/222/testfile.json", "<FILE_PATH>")
 bucket_client.download_file("<BUCKET_NAME>", "<OBJECT_NAME>","<LOCAL_FILENAME>")
 ```
 
