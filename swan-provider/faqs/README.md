@@ -12,6 +12,6 @@ description: Swan Client FAQ
 [how-to-check-the-task-status.md](../faq/how-to-check-the-task-status.md)
 {% endcontent-ref %}
 
-{% content-ref url="../faq/how-to-config-the-storage-provider-market.md" %}
-[how-to-config-the-storage-provider-market.md](../faq/how-to-config-the-storage-provider-market.md)
+{% content-ref url="how-to-configure-the-storage-provider-market.md" %}
+[how-to-configure-the-storage-provider-market.md](how-to-configure-the-storage-provider-market.md)
 {% endcontent-ref %}

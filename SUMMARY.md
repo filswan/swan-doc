@@ -108,7 +108,8 @@
   * [No response from Swan Platform?](swan-provider/faqs/no-response-from-swan-platform.md)
   * [Why Storage Provider status shows offline?](swan-provider/faq/why-storage-provider-status-shows-offline.md)
   * [How to check the Task Status?](swan-provider/faq/how-to-check-the-task-status.md)
-  * [How to config the Storage Provider Market?](swan-provider/faq/how-to-config-the-storage-provider-market.md)
+  * [How to configure the Storage Provider Market?](swan-provider/faqs/how-to-configure-the-storage-provider-market.md)
+  * [How to configure "accept verified deals"?](swan-provider/faqs/how-to-configure-accept-verified-deals.md)
 
 ## Swan Client
 

@@ -1,4 +1,4 @@
-# How to config the Storage Provider Market?
+# How to configure the Storage Provider Market?
 
 Suppose the public IP address of `Lotus-miner` is `123.123.73.123`。
 
@@ -56,7 +56,7 @@ Enter your storage provider ID to check its status.
 
 <figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
-## 6. Config the Lotus-miner's ask
+## 6. Configure the Lotus-miner's ask
 
 ```
 lotus-miner storage-deals set-ask --price 0 --verified-price 0 --min-piece-size 56KiB --max-piece-size 32GiB
