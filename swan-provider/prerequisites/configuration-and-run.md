@@ -46,6 +46,17 @@ publish_wallet = ""                             # wallet to be used for PublishS
 
 **(2) when `market_version = "1.2"`**, the storage provider will import deals using the Market like `Boost`, so you must ensure the storage provider is reachable. The following steps are:
 
+* Disable the markets subsystem in the miner config:
+
+```
+vi $LOTUS_MINER_PATH/config.toml
+```
+
+```
+[Subsystems] 
+ EnableMarkets = false
+```
+
 * Config the `[market]` section in the `$SWAN_PATH/provider/config.toml`
 * Initialize the Market repo to the `$SWAN_PATH/provider/boost`:
 
@@ -100,7 +111,11 @@ swan-provider set-ask --price=0 --verified-price=0 --min-piece-size=256 --max-pi
 * Set the `[market].publish_wallet` as a control address:
 
 ```
-lotus-miner actor control set --really-do-it <publish_wallet>
+export OLD_CONTROL_ADDRESS=`lotus-miner actor control list  --verbose | awk '{print $3}' | grep -v key | tr -s '\n'  ' '`
+```
+
+```
+lotus-miner actor control set --really-do-it $[market].publish_wallet $OLD_CONTROL_ADDRESS
 ```
 
 * Add funds to the `collateral_wallet` Market Actor
