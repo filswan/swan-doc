@@ -1,6 +1,6 @@
 # Installation
 
-ou can set the `$SWAN_PATH` by the environment variable, default `~/.swan`:
+You can set the `$SWAN_PATH` by the environment variable, default `~/.swan`:
 
 ```
 export SWAN_PATH="/data/.swan"
