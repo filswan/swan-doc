@@ -32,7 +32,7 @@ pip install python-mcs-sdk
 
 MCS is a bucket based object storage, insider bucket, folder, sub-folders and file name is defined as object key,file content is defined as object value.
 
-e.g if we have a user wallet is **0x165CD37b4C644C2921454429E7F9358d18A45e14**, and we want use this wallet as folder name and upload a file called **apple.jpeg**
+e.g if we have a user wallet is **0x165CD37b4C644C2921454429E7F9358d18A45e14**,  we want use this wallet as folder name and upload a file called **apple.jpeg**
 
 ```python
 def upload_replace_file(file_path, bucket_name, dest_file_path):
