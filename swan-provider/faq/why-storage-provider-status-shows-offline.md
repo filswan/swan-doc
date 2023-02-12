@@ -21,6 +21,6 @@
 
 If the storage provider ID status is active, the connectivity result shows like this. 👇
 
-<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### _**Feel free to contact us on**_ [_**Discord**_](https://filswan.com/discord) _**if you have any questions.**_
