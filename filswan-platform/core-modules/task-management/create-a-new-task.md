@@ -2,9 +2,9 @@
 
 1. To create a task, go to either **Browse Tasks** or **My Task** and click on the yellow button that says “**Create Task**.”
 
-![](<../../../.gitbook/assets/image (2) (1) (1).png>)
+![](<../../../.gitbook/assets/image (2) (1) (1) (1).png>)
 
-![](<../../../.gitbook/assets/image (4) (1) (1).png>)
+![](<../../../.gitbook/assets/image (4) (1) (1) (1).png>)
 
 2\. When creating a task:
 
