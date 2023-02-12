@@ -2,7 +2,7 @@
 
 ## **If your storage provider ID status shows "Offline" as in the picture:**
 
-<figure><img src="../../.gitbook/assets/image (4) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Please check your storage provider connectivity:
 

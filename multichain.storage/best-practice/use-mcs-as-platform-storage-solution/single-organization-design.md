@@ -4,7 +4,7 @@ description: A simplified solution for applications only have platform storage s
 
 # Single Organization Design
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 ## Step-by-Step Tutorial
 

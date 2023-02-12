@@ -22,6 +22,6 @@ Single Organization is a simplified solution for applications only have platform
 
 #### Multiple Organization
 
-Multiple Organization is designed for multiple organizations or a orgnization has more function unit. Each organization has there own space, and user owns their data folders and sub-folder
+Multiple Organization is designed for multiple organizations or a organization has more function unit. Each organization has there own space, and user owns their data folders and sub-folder
 
-<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption><p>Multiple Organization</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (2).png" alt=""><figcaption><p>Multiple Organization</p></figcaption></figure>
