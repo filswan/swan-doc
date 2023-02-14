@@ -8,8 +8,6 @@ description: A simplified solution for applications only have platform storage s
 
 ## Step-by-Step Tutorial
 
-###
-
 ### Login to Multichain Storage
 
 <figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
