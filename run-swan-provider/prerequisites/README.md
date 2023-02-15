@@ -8,8 +8,8 @@
 [install-swan-provider.md](install-swan-provider.md)
 {% endcontent-ref %}
 
-{% content-ref url="../../swan-provider/prerequisites/configuration-and-run.md" %}
-[configuration-and-run.md](../../swan-provider/prerequisites/configuration-and-run.md)
+{% content-ref url="../../swan-provider/prerequisites/configure-and-run.md" %}
+[configure-and-run.md](../../swan-provider/prerequisites/configure-and-run.md)
 {% endcontent-ref %}
 
 {% content-ref url="../../swan-provider/prerequisites/swan-provider-tutorial-video.md" %}

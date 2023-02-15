@@ -105,7 +105,7 @@
 * [HOW TO](run-swan-provider/prerequisites/README.md)
   * [Prerequisites](swan-provider/prerequisites/prerequisites.md)
   * [Installation](run-swan-provider/prerequisites/install-swan-provider.md)
-  * [Configuration and Run](swan-provider/prerequisites/configuration-and-run.md)
+  * [Configure and Run](swan-provider/prerequisites/configure-and-run.md)
   * [Swan Provider Tutorial Video](swan-provider/prerequisites/swan-provider-tutorial-video.md)
 * [FAQs](swan-provider/faqs/README.md)
   * [How to check if aria2 is running?](swan-provider/faqs/how-to-check-if-aria2-is-running.md)

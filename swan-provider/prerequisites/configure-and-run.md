@@ -1,4 +1,4 @@
-# Configuration and Run
+# Configure and Run
 
 The configuration needs to be set according to the different `market_version`.
 
@@ -105,7 +105,7 @@ swan-provider daemon
 
 ```
 export SWAN_PATH="/data/.swan"
-swan-provider set-ask --price=0 --verified-price=0 --min-piece-size=256 --max-piece-size=34359738368
+swan-provider set-ask --price=0 --verified-price=0 --min-piece-size=1048576 --max-piece-size=34359738368
 ```
 
 * Set the `[market].publish_wallet` as a control address:

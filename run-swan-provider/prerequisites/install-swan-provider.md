@@ -11,20 +11,20 @@ export SWAN_PATH="/data/.swan"
 **Build Instructions**
 
 ```
-wget --no-check-certificate https://raw.githubusercontent.com/filswan/go-swan-provider/release-2.1.0-rc1/install.sh
+wget --no-check-certificate https://raw.githubusercontent.com/filswan/go-swan-provider/release-2.1.0/install.sh
 chmod +x ./install.sh
 ./install.sh
 ```
 
-**Config and Run**
+**Configure and Run**
 
-* Edit config file **\~/.swan/provider/config.toml**, configuration instruction is [here](../../swan-provider/prerequisites/configuration-and-run.md)
+* Edit config file **\~/.swan/provider/config.toml**, configuration instruction is [here](../../swan-provider/prerequisites/configure-and-run.md)
 * Run `swan-provider` in the background
 
 ```
 ulimit -SHn 1048576
 export SWAN_PATH="/data/.swan"
-nohup swan-provider-2.1.0-rc1-linux-amd64 daemon >> swan-provider.log 2>&1 & 
+nohup swan-provider-2.1.0-linux-amd64 daemon >> swan-provider.log 2>&1 & 
 ```
 
 #### Option2️⃣ Source Code
@@ -64,6 +64,6 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 git clone https://github.com/filswan/go-swan-provider.git
 cd go-swan-provider
-git checkout release-2.1.0-rc1
+git checkout release-2.1.0
 ./build_from_source.sh
 ```
