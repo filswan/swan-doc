@@ -16,9 +16,9 @@ $ lotus-miner net reachability
 
 #### Reputation Score = Base Score+ Bidding Score
 
-#### Base Score = Time-based Reachability + Regional Weighted Adjusted Power + Deals
+**Base Score** = Time-based Reachability + Regional Weighted Adjusted Power + Deals
 
-**Bidding Store**
+**Bidding Score**
 
 
 
@@ -136,9 +136,11 @@ There are the rejection responses lead to score deduction:
 
 After a miner's score is below 30, the miner will be automatically put on the blacklist.
 
-#### Score recovery
+#### Removal from Blacklist
 
 For miners on the blacklist, their score can be recovered by being active. For each day the miner's heartbeat status is **Online**, the miner will gain 1 score until the score reaches 30, and the miner will be removed from the blacklist.
+
+* Online per day: +1
 
 #### Scanning
 
