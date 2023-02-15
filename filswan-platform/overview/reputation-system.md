@@ -1,7 +1,5 @@
 # Reputation System
 
-##
-
 ## Concept
 
 **Status**: Active/Inactive.if a  lotus SP is running and reachable, it should report it with:
@@ -16,11 +14,7 @@ $ lotus-miner net reachability
 
 ### Methodology
 
-####
-
-####
-
-#### Reputtation Score = Base Score+ Bidding Score
+#### Reputation Score = Base Score+ Bidding Score
 
 #### Base Score = Time-based Reachability + Regional Weighted Adjusted Power + Deals
 
