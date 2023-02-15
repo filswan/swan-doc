@@ -30,6 +30,10 @@ swan-client can help users send their data to storage providers by creating thre
 [generate-car-files.md](generate-car-files.md)
 {% endcontent-ref %}
 
+{% content-ref url="meta-car.md" %}
+[meta-car.md](meta-car.md)
+{% endcontent-ref %}
+
 {% content-ref url="upload-car-files-to-ipfs.md" %}
 [upload-car-files-to-ipfs.md](upload-car-files-to-ipfs.md)
 {% endcontent-ref %}

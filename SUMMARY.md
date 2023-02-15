@@ -125,6 +125,7 @@
     * [Configuration](swan-client/how-to/filecoin-deal-sender/configuration.md)
     * [Prerequisites](swan-client/how-to/filecoin-deal-sender/prerequisites.md)
     * [Generate CAR Files](swan-client/how-to/filecoin-deal-sender/generate-car-files.md)
+    * [Meta-CAR](swan-client/how-to/filecoin-deal-sender/meta-car.md)
     * [Upload CAR Files to IPFS](swan-client/how-to/filecoin-deal-sender/upload-car-files-to-ipfs.md)
     * [Create a Task](swan-client/how-to/filecoin-deal-sender/create-a-task.md)
   * [Blockchain RPC Service](swan-client/how-to/blockchain-rpc-service/README.md)
