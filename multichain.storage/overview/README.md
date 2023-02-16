@@ -6,7 +6,7 @@ description: A smart contract-based storage gateway.
 
 ### **Introduction**
 
-Multi-Chain storage (MCS) is a web3 vesrion of S3 storage gateway that is integrated with smart-contract technology. It accelerates the mass adoption of decentralized storage by bridging multiple blockchain networks.
+Multi-Chain storage (MCS) is a web3 vesrion of S3 storage gateway that is integrated with smart-contract technology. It accelerates the mass adoption of decentralized storage by multiple blockchain networks.
 
 MCS enables users to pay for Filecoin storage with stablecoins and other Mainnet tokens while maintaining data security. Users will also obtain the payment transaction and IPFS information with Filecoin deal ID for future reference.
 
