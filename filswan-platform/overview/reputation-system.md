@@ -2,13 +2,13 @@
 
 ## Concept
 
-**Status**: Active/Inactive.if a  lotus SP is running and reachable, it should report it with:
+**Status**: Active/Inactive. if a  lotus SP is running and reachable, it should report it with:
 
 ```shell
 $ lotus-miner net reachability
 ```
 
-**Heartbeat**: If the Lotus SP running Swan Provider,the swan provider will send out heartbeat to swan Platform every 5 minutes. It connected to Swan platform, the value is **Online**, otherwise it will be **offline**
+**Heartbeat**: If the Lotus SP runs Swan Provider, the swan provider will send out a heartbeat to swan Platform every 5 minutes. It is connected to the Swan platform, the value is '**Online'**, otherwise, it will be '**Offline'.**
 
 ## Reputation Score
 
@@ -18,7 +18,7 @@ $ lotus-miner net reachability
 
 **Base Score** = Time-based Reachability + Regional Weighted Adjusted Power + Deals
 
-**Bidding Score**
+**Bidding Score** = Recent Reachability + Recent Deal Success Rate
 
 
 
