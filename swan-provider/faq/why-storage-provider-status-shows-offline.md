@@ -15,8 +15,8 @@
 
 **Please refer to the doc below for configuration and check the connectivity again.**
 
-{% content-ref url="11.-how-to-configure-the-storage-provider-market.md" %}
-[11.-how-to-configure-the-storage-provider-market.md](11.-how-to-configure-the-storage-provider-market.md)
+{% content-ref url="../faqs/how-to-configure-the-storage-provider-market.md" %}
+[how-to-configure-the-storage-provider-market.md](../faqs/how-to-configure-the-storage-provider-market.md)
 {% endcontent-ref %}
 
 If the storage provider ID status is active, the connectivity result shows like this. 👇

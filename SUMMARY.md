@@ -114,12 +114,12 @@
   * [4. \`aria2\_download\_dir\` vs. \`aria2\_candidate\_dirs\`](swan-provider/faq/4.-aria2\_download\_dir-vs.-aria2\_candidate\_dirs.md)
   * [5. How to configure "import deals from Swan Provider" when Boostd is running normally](swan-provider/faq/5.-how-to-configure-import-deals-from-swan-provider-when-boostd-is-running-normally.md)
   * [6. A rejection msg always appears during the deal-importing process](swan-provider/faq/6.-a-rejection-msg-always-appears-during-the-deal-importing-process.md)
-  * [7. How to check if aria2 is running?](swan-provider/faq/7.-how-to-check-if-aria2-is-running.md)
-  * [8. No response from Swan Platform?](swan-provider/faq/8.-no-response-from-swan-platform.md)
-  * [9. Why Storage Provider status shows offline?](swan-provider/faq/9.-why-storage-provider-status-shows-offline.md)
-  * [10. How to check the Task Status?](swan-provider/faq/10.-how-to-check-the-task-status.md)
-  * [11. How to configure the Storage Provider Market?](swan-provider/faq/11.-how-to-configure-the-storage-provider-market.md)
-  * [12. How to set the "ask price"?](swan-provider/faq/12.-how-to-set-the-ask-price.md)
+  * [7. How to check if aria2 is running?](swan-provider/faqs/how-to-check-if-aria2-is-running.md)
+  * [8. No response from Swan Platform?](swan-provider/faqs/no-response-from-swan-platform.md)
+  * [9. Why Storage Provider status shows offline?](swan-provider/faq/why-storage-provider-status-shows-offline.md)
+  * [10. How to check the Task Status?](swan-provider/faq/how-to-check-the-task-status.md)
+  * [11. How to configure the Storage Provider Market?](swan-provider/faqs/how-to-configure-the-storage-provider-market.md)
+  * [12. How to set the "ask price"?](swan-provider/faqs/how-to-configure-accept-verified-deals.md)
   * [aria2\_download\_dir VS. aria2\_candidate\_dirs](swan-provider/faq/aria2\_download\_dir-vs.-aria2\_candidate\_dirs.md)
 
 ## Swan Client

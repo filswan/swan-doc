@@ -1,4 +1,4 @@
-# How to configure "accept verified deals"?
+# 12. How to set the "ask price"?
 
 The minimum verified deal is 1MiB, therefore the following configuration is required:
 

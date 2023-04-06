@@ -1,4 +1,4 @@
-# How to configure the Storage Provider Market?
+# 11. How to configure the Storage Provider Market?
 
 Suppose the public IP address of `Lotus-miner` is `123.123.73.123`。
 

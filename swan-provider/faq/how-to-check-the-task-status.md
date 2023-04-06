@@ -2,7 +2,7 @@
 description: 'If you want to check the status of your tasks and deals, please:'
 ---
 
-# How to check the Task Status?
+# 10. How to check the Task Status?
 
 1. Open the FilSwan "[LAUNCH CONSOLE](https://console.filswan.com/#/dashboard)"
 2. Click "My Task > As Storage Provider", and check the "TASK STATUS".
@@ -13,6 +13,6 @@ description: 'If you want to check the status of your tasks and deals, please:'
 
 To look into **the status of the deal(s)** in the task, please click the task name, and view the detailed information.
 
-<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (2).png" alt=""><figcaption></figcaption></figure>
 
 ### &#x20;              _**Feel free to contact us on**_ [_**Discord**_](https://filswan.com/discord) _**if you have any questions.**_
