@@ -118,13 +118,15 @@ General Deals and verified-Storage Provider Deals Score = 60 \* \[0.3 \* 1 + 0.7
 
 The bidding score will affect the probability of Swan provider receiving deals. Swan providers with higher bidding scores will receive more deals in the long term.
 
-_Biding Score_ = _Heartbeat Score_ \* 60% + _Deal Score \* 40%_
+_**Biding Score**_ = _**Heartbeat Score**_ \* 60% + _**Deal Score** \* 40%_
 
 #### Heartbeat Score
 
 The heartbeat score algorithm considers a swan provider's recent (weekly & daily) heartbeat activity. The heartbeat score gradually increases as the heartbeat rate increases.
 
-Heartbeat Score = Heartbeat Rate ^ e
+_**Total Heartbeat Score** = **Weekly Heartbeat Score** \* 30% + **Daily Heartbeat Score** \* 70%_
+
+_\[Daily/Weekly] **Heartbeat Score** = \[Daily/Weekly] Heartbeat Rate ^ e_
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-02-15 at 1.20.25 PM.png" alt=""><figcaption><p>Heartbeat Score to Hearbeat Rate</p></figcaption></figure>
 
@@ -132,7 +134,9 @@ Heartbeat Score = Heartbeat Rate ^ e
 
 The deal score evaluates a swan provider's recent (monthly & weekly) deal success rate.&#x20;
 
-_Deal Score_ = -2 (_Deal Success Rate_ + 1)^-1 + 1
+_**Total Deal Score** = **Monthly Deal Score** \* 40% + **Weekly Deal Score** \* 60%_
+
+_\[Montly/Weekly] **Deal Score** = -2 (\[Monthly/Weekly] Deal Success Rate + 1)^-1 + 1_
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-02-15 at 1.35.08 PM.png" alt=""><figcaption><p>Deal Success Rate to Deal Score</p></figcaption></figure>
 
