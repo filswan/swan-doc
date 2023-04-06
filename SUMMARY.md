@@ -1,8 +1,8 @@
 # Table of contents
 
 * [Language](README.md)
+  * [中文-CN](https://filswan.gitbook.io/filswan-kai-fa-wen-dang)
   * [English](language/english.md)
-  * [中文-CN](language/zhong-wen-cn.md)
 
 ## Getting Started
 
@@ -127,18 +127,18 @@
 * [Overview](swan-client/overview.md)
 * [Basic Concepts](swan-client/basic-concept.md)
 * [Tutorial](swan-client/tutorial/README.md)
-  * [Filecoin Deal Sender](swan-client/tutorial/filecoin-deal-sender/README.md)
-    * [Installation](swan-client/tutorial/filecoin-deal-sender/installation.md)
-    * [Configuration](swan-client/tutorial/filecoin-deal-sender/configuration.md)
-    * [Prerequisites](swan-client/tutorial/filecoin-deal-sender/prerequisites.md)
-    * [Generate CAR Files](swan-client/tutorial/filecoin-deal-sender/generate-car-files.md)
-    * [Meta-CAR](swan-client/tutorial/filecoin-deal-sender/meta-car.md)
-    * [Upload CAR Files to IPFS](swan-client/tutorial/filecoin-deal-sender/upload-car-files-to-ipfs.md)
-    * [Create a Task](swan-client/tutorial/filecoin-deal-sender/create-a-task.md)
-  * [Blockchain RPC Service](swan-client/tutorial/blockchain-rpc-service/README.md)
-    * [Deploy RPC Service](swan-client/tutorial/blockchain-rpc-service/deploy-rpc-service.md)
-    * [RPC Command Service](swan-client/tutorial/blockchain-rpc-service/rpc-command-service.md)
-  * [Swan Client Tutorial Video](swan-client/tutorial/swan-client-installation-tutorial.md)
+  * [Filecoin Deal Sender](swan-client/how-to/filecoin-deal-sender/README.md)
+    * [Installation](swan-client/how-to/filecoin-deal-sender/installation.md)
+    * [Configuration](swan-client/how-to/filecoin-deal-sender/configuration.md)
+    * [Prerequisites](swan-client/how-to/filecoin-deal-sender/prerequisites.md)
+    * [Generate CAR Files](swan-client/how-to/filecoin-deal-sender/generate-car-files.md)
+    * [Meta-CAR](swan-client/how-to/filecoin-deal-sender/meta-car.md)
+    * [Upload CAR Files to IPFS](swan-client/how-to/filecoin-deal-sender/upload-car-files-to-ipfs.md)
+    * [Create a Task](swan-client/how-to/filecoin-deal-sender/create-a-task.md)
+  * [Blockchain RPC Service](swan-client/how-to/blockchain-rpc-service/README.md)
+    * [Deploy RPC Service](swan-client/how-to/blockchain-rpc-service/deploy-rpc-service.md)
+    * [RPC Command Service](swan-client/how-to/blockchain-rpc-service/rpc-command-service.md)
+  * [Swan Client Tutorial Video](swan-client/how-to/swan-client-installation-tutorial.md)
 * [FAQ](swan-client/faq/README.md)
   * [How to prepare data?](swan-client/faq/how-to-prepare-data.md)
 
