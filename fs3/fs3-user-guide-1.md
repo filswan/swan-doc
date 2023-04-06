@@ -45,11 +45,11 @@ Users can backup the entire volume with customized schedulers by choosing **Back
 {% endhint %}
 
 * You can view your created backup plans on "<mark style="color:blue;">**My Backup Plans**</mark>" page.
-* As soon as the creation is complete, FS3 is sending volume backup task to the assigned storage provider automatically using FilSwan [**Autobid**](https://docs.filswan.com/filswan-platform/overview/filswan-auction-system) **** module (click Autobid to know how it works).&#x20;
+* As soon as the creation is complete, FS3 is sending volume backup task to the assigned storage provider automatically using FilSwan [**Autobid**](https://docs.filswan.com/filswan-platform/overview/filswan-auction-system) module (click Autobid to know how it works).&#x20;
 * If you choose to backup daily,  FS3 will compress the entire data volume into a car. file and upload it to the Filecoin Network every 24 hours. You can check all your backup jobs by choosing "<mark style="color:blue;">**My Backup Jobs**</mark>" page, and here shows you all the information about your jobs.
 * Once the backup process has completed, the status under backup jobs on the "<mark style="color:blue;">**My Backup Jobs**</mark>" page will change to "<mark style="color:green;">**Completed**</mark>".
 
-****
+
 
 **Snapshot backup**
 
@@ -60,7 +60,7 @@ Users can backup the entire volume with customized schedulers by choosing **Back
 <figure><img src="../.gitbook/assets/截圖 2022-08-30 下午4.42.51.png" alt=""><figcaption></figcaption></figure>
 
 * You can view your created backup plans on "<mark style="color:blue;">**My Snapshot Jobs**</mark>" page.
-* As soon as the creation is complete, FS3 is sending volume backup task to the assigned storage provider automatically using FilSwan [**Autobid**](https://docs.filswan.com/filswan-platform/overview/filswan-auction-system) **** module (click Autobid to know how it works).&#x20;
+* As soon as the creation is complete, FS3 is sending volume backup task to the assigned storage provider automatically using FilSwan [**Autobid**](https://docs.filswan.com/filswan-platform/overview/filswan-auction-system) module (click Autobid to know how it works).&#x20;
 * If you choose to backup daily,  FS3 will compress the entire data volume into a car. file and upload it to the Filecoin Network every 24 hours. You can check all your backup jobs by choosing "<mark style="color:blue;">**Backup Jobs**</mark>" page, and here shows you all the information about your jobs.
 * Once the backup process has completed, the status under backup jobs on the "<mark style="color:blue;">**Backup Jobs**</mark>" page will change to "<mark style="color:green;">**Completed**</mark>".
 
@@ -72,7 +72,7 @@ Rebuild image is accessible **only** when backup job status is **completed**. Us
 
 To store your entire FS3 instance from one of your backups, you can use the FS3 rebuild service. FS3 will fetch an entire backup from Filecoin Network and overwrite your existing system.  You can rebuild from **Backup plan** or **Snapshot backup**
 
-****
+
 
 #### **Rebuild from Backup plan**
 
@@ -84,7 +84,7 @@ To store your entire FS3 instance from one of your backups, you can use the FS3 
 * Next, after clicking "<mark style="color:blue;">**Rebuild Image**</mark>", a pop up window will show as above. Please check your information and make sure you are rebuilding from the correct backup. Your backup name will show in bold font.&#x20;
 * Finally, choose "<mark style="color:green;">**OK**</mark>" to confirm your rebuild process and choose "**Cancel**" to quit from rebuilding backup.&#x20;
 
-****
+
 
 **Rebuild from Snapshot backup**
 

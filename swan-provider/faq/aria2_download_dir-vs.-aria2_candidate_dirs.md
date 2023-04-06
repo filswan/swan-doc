@@ -1,0 +1,23 @@
+---
+description: >-
+  What is the difference between `aria2_download_dir` and `aria2_candidate_dirs`
+  parameters and how to set them correctly?
+---
+
+# aria2\_download\_dir VS. aria2\_candidate\_dirs
+
+In the latest **v2.2.0-rc1**,&#x20;
+
+* `aria2_download_dir` is the only path where CAR files can be downloaded&#x20;
+* `aria2_candidate_dirs` is the path where CAR files can pre-exist, and files downloaded through Swan Provider will not be saved under this path
+
+If the CAR files of the storage provider's deals are **all downloaded through Swan Provider**, `aria2_download_dir`and `aria2_candidate_dirs` can be set to the same.&#x20;
+
+If the CAR files of storage providers' deals are **stored in local paths before the deals are sent**, these paths can be configured in `aria2_candidate_dirs`, and multiple directories are supported.&#x20;
+
+After the deals are sent, Swan Provider will give priority to matching the CAR files corresponding to the deals from the `aria2_candidate_dirs` directory.
+
+Note: To make full use of the data reading performance of a single path, Swan Provider only supports one file to be imported in one single path.
+
+
+

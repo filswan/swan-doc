@@ -41,7 +41,7 @@ If you have a specific storage provider you want to work with, and you have the 
 
 If this is your first time to backup or you do not have anyone on your mind at the moment, you can choose your storage provider based on the list we provide for you.&#x20;
 
-After choosing your provider, filling out offered price and setting up duration for the storage, you can click "<mark style="color:green;">**Send**</mark>" **** button" in green to send the request. You should get a list number of "<mark style="color:blue;">**Deal CID**</mark>" if your deal is sent successfully.&#x20;
+After choosing your provider, filling out offered price and setting up duration for the storage, you can click "<mark style="color:green;">**Send**</mark>" button" in green to send the request. You should get a list number of "<mark style="color:blue;">**Deal CID**</mark>" if your deal is sent successfully.&#x20;
 
 ### 4. Bucket operations
 
@@ -49,7 +49,7 @@ The bucket-level operations on FS3 including "<mark style="color:blue;">**Delete
 
 #### Backup to Filecoin(Online bucket-deals)
 
-To backup a whole bucket to Filecoin, the procedure is same as single file backup. You can choose your storage provider either by filling a specific provider ID or selecting from our provided list. You also need to fill the price input field and the duration input field. After clicking the "<mark style="color:green;">**Send**</mark>" **** button" in green to send the request, you should get a list number of "<mark style="color:blue;">**Deal CID**</mark>" when your deal is sent successfully.&#x20;
+To backup a whole bucket to Filecoin, the procedure is same as single file backup. You can choose your storage provider either by filling a specific provider ID or selecting from our provided list. You also need to fill the price input field and the duration input field. After clicking the "<mark style="color:green;">**Send**</mark>" button" in green to send the request, you should get a list number of "<mark style="color:blue;">**Deal CID**</mark>" when your deal is sent successfully.&#x20;
 
 ![](<../.gitbook/assets/chrome-capture (2).gif>)
 
@@ -66,7 +66,7 @@ Users can backup the entire volume with customized schedulers (<mark style="colo
 {% endhint %}
 
 * You can view your created backup plans on "<mark style="color:blue;">**Backup Plans**</mark>" page.
-* As soon as the creation is complete, FS3 is sending volume backup task to the assigned storage provider automatically using FilSwan [**Autobid**](https://docs.filswan.com/filswan-platform/overview/filswan-auction-system) **** module (click Autobid to know how it works).&#x20;
+* As soon as the creation is complete, FS3 is sending volume backup task to the assigned storage provider automatically using FilSwan [**Autobid**](https://docs.filswan.com/filswan-platform/overview/filswan-auction-system) module (click Autobid to know how it works).&#x20;
 * If you choose to backup daily,  FS3 will compress the entire data volume into a car. file and upload it to the Filecoin Network every 24 hours. You can check all your backup jobs by choosing "<mark style="color:blue;">**Jobs**</mark>" page, and here shows you all the information about your jobs.
 * Once the backup process has completed, the status under backup jobs on the "<mark style="color:blue;">**Jobs**</mark>" page will change from "<mark style="color:yellow;">**Running**</mark>" to "<mark style="color:green;">**Completed**</mark>".
 

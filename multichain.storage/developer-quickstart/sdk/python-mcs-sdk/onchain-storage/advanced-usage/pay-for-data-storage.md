@@ -63,9 +63,9 @@ w3_api.upload_file_pay(wallet_address, private_key, file_size, w_cid, rate, para
 
 * **wallet\_address**: the MetaMask wallet address.
 * **private\_key**: wallet private key
-* **file\_size:** the **** size of the uploaded file.
+* **file\_size:** the size of the uploaded file.
 * **w\_cid**: unique payload CID of the file
-* **params**: **** variables that can be obtained using API.
+* **params**: variables that can be obtained using API.
 * **rate**: Filcoin price that can be obtained using API.
 
 ### Return
