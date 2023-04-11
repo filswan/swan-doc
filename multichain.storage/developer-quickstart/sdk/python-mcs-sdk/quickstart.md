@@ -37,16 +37,16 @@ Also, to use python-mcs-sdk's Onchain upload feature, you need to provide an RPC
 To use python-MCS-SDK, you must first import it and state your identity.
 
 ```python
-from mcs import APIClient
+from swan_mcs import APIClient
 # Let's initialize the Python-MCS-SDK
 mcs_api = APIClient("<API_KEY>", "<ACCESS_TOKEN>", "<CHAIN_NAME>")
 # polygon.mainnet for mainnet, polygon.mumbai for testnet
 ```
 
-If you see "Login Successful" in the console, you have logged in successfully. Now you can choose which service you want to initialize, either Onchain or Buckets. The following code will take you through the initialization of both services.
+If you see "Login Successful" in the console, you have logged in successfully. Now you can choose which service you want to initialize: Onchain or Buckets. The following code will take you through the initialization of both services.
 
 ```python
-from mcs import BucketAPI, OnchainAPI
+from swan_mcs import BucketAPI, OnchainAPI
 # Init bucket client
 bucket_client = BucketAPI(mcs_api)
 # Init onchain client

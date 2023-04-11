@@ -73,7 +73,7 @@ You can mint your upload to OpenSea as NFT through SwanMint smart contract.
 ## Full Demo Code
 
 ```python
-from mcs.upload.onchain_upload import OnchainUpload
+from swan_mcs.upload.onchain_upload import OnchainUpload
 
 if __name__ == "__main__":  
     private_key="<PRIVATE_KEY>"

@@ -13,7 +13,7 @@ This guide allows users to customize their usage of python MCS SDK.
 First, connect to onchain storage with MCS API key login.
 
 ```python
-from mcs import APIClient, BucketAPI
+from swan_mcs import APIClient, BucketAPI
 mcs_api = APIClient(<'api_key'>, <'access_token'>, 'polygon.mainnet')
 onchain_api = Onchain(mcs_api)
 ```

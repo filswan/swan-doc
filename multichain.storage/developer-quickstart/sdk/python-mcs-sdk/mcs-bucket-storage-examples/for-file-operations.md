@@ -27,7 +27,7 @@ The methods provided by the python-MCS-SDK to download files are similar to thos
 The `download_file` method accepts the names of the bucket and object to download and the filename to save the file to.
 
 ```python
-from mcs import APIClient, BucketAPI
+from swan_mcs import APIClient, BucketAPI
 mcs_api = APIClient("<API_KEY>", "<ACCESS_TOKEN>", "<CHAIN_NAME>")
 bucket_client = BucketAPI(mcs_api)
 bucket_client.download_file("<BUCKET_NAME>", "<OBJECT_NAME>","<LOCAL_FILENAME>")
@@ -38,7 +38,7 @@ bucket_client.download_file("<BUCKET_NAME>", "<OBJECT_NAME>","<LOCAL_FILENAME>")
 The `delete_file` method accepts the names of the bucket and object to delete.
 
 ```python
-from mcs import APIClient, BucketAPI
+from swan_mcs import APIClient, BucketAPI
 mcs_api = APIClient("<API_KEY>", "<ACCESS_TOKEN>", "<CHAIN_NAME>")
 bucket_client = BucketAPI(mcs_api)
 bucket_client.delete_file("<BUCKET_NAME>", "<OBJECT_NAME>")
@@ -51,7 +51,7 @@ The methods provided by the python-MCS-SDK to delete files are similar to those 
 The `get_file` method accepts the names of the bucket and object to get information.
 
 ```python
-from mcs import APIClient, BucketAPI
+from swan_mcs import APIClient, BucketAPI
 mcs_api = APIClient("<API_KEY>", "<ACCESS_TOKEN>", "<CHAIN_NAME>")
 bucket_client = BucketAPI(mcs_api)
 print(bucket_client.get_file("<BUCKET_NAME>", "<OBJECT_NAME>").to_json())
@@ -62,7 +62,7 @@ print(bucket_client.get_file("<BUCKET_NAME>", "<OBJECT_NAME>").to_json())
 The `get_file_list` method accepts four parameters: name of the bucket, prefix, and limit and offset for paging queries
 
 ```python
-from mcs import APIClient, BucketAPI
+from swan_mcs import APIClient, BucketAPI
 mcs_api = APIClient("<API_KEY>", "<ACCESS_TOKEN>", "<CHAIN_NAME>")
 bucket_client = BucketAPI(mcs_api)
 for i in api.list_files("<BUCKET_NAME>", '<PREFIX>', "<LIMIT>", '<OFFSET>'):
@@ -74,7 +74,7 @@ for i in api.list_files("<BUCKET_NAME>", '<PREFIX>', "<LIMIT>", '<OFFSET>'):
 The `create_folder` method allows you to create a folder in the specified bucket. It accepts buckets name, folder name, and prefix.
 
 ```python
-from mcs import APIClient, BucketAPI
+from swan_mcs import APIClient, BucketAPI
 mcs_api = APIClient("<API_KEY>", "<ACCESS_TOKEN>", "<CHAIN_NAME>")
 bucket_client = BucketAPI(mcs_api)
 # If you want to place the folder directly in the root directory, you can leave the prefix field empty

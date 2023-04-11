@@ -25,7 +25,7 @@ bucket_client.create_bucket(bucket_name)
 List all the existing buckets for the MCS account
 
 ```python
-from mcs import APIClient, BucketAPI
+from swan_mcs import APIClient, BucketAPI
 mcs_api = APIClient("<API_KEY>", "<ACCESS_TOKEN>", "<CHAIN_NAME>")
 for i in bucket_client.list_buckets():
     print(i.to_json())
@@ -34,7 +34,7 @@ for i in bucket_client.list_buckets():
 ### Delete existing buckets
 
 ```python
-from mcs import APIClient, BucketAPI
+from swan_mcs import APIClient, BucketAPI
 mcs_api = APIClient("<API_KEY>", "<ACCESS_TOKEN>", "<CHAIN_NAME>")
 bucket_client = BucketAPI(mcs_api)
 # Return true if bucket created, else False
@@ -44,7 +44,7 @@ bucket_client.delete_bucket(bucket_name)
 ### Get specific bucket information by bucket name and bucket uid
 
 ```python
-from mcs import APIClient, BucketAPI
+from swan_mcs import APIClient, BucketAPI
 mcs_api = APIClient("<API_KEY>", "<ACCESS_TOKEN>", "<CHAIN_NAME>")
 bucket_client = BucketAPI(mcs_api)
 # Return None if MCS cannot find this bucket
