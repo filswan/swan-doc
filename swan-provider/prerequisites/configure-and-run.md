@@ -73,7 +73,7 @@ swan-provider daemon
      kill -9 $(ps -ef | grep -E 'swan-provider|boostd' | grep -v grep | awk '{print$2}' )
     ```
 
-    (2) Edit the boost configuration in the `$SWAN_PATH/boost/config.toml`:
+    (2) Edit the boost configuration in the `$SWAN_PATH/boost/provider/config.toml`:
 
     ```
      [Libp2p]
