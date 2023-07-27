@@ -20,7 +20,7 @@ On your Alchemy dashboard, click the "VIEW KEY" button to view the RPC URL of yo
 
 
 
-<div>
+<div align="left">
 
 <figure><img src="../../.gitbook/assets/MicrosoftTeams-image (30).png" alt=""><figcaption></figcaption></figure>
 

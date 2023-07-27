@@ -40,6 +40,7 @@
     * [Register as a storage provider](filswan-platform/core-modules/my-profile/registering-your-storage-provider.md)
   * [Find Storage Providers](filswan-platform/core-modules/find-storage-providers/README.md)
     * [Storage Provider Details](filswan-platform/core-modules/find-storage-providers/storage-provider-details.md)
+  * [Extend DataCap Terms Service](filswan-platform/core-modules/extend-datacap-terms-service.md)
 
 ## Multichain.Storage
 
