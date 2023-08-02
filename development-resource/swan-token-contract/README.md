@@ -18,13 +18,7 @@ If you have not set up your MetaMask wallet, please refer to [Beginner Walkthrou
 Testnet **USDC** and **MATIC** tokens are available from the [Swan USDC faucet](https://calibration-faucet.filswan.com).
 {% endhint %}
 
-| Parameter              | Value                                      |
-| ---------------------- | ------------------------------------------ |
-| `ETH_CHAIN_ID`         | `80001`                                    |
-| Token Contract Address | 0xe11a86849d99f524cac3e7a0ec1241828e332c62 |
-| Name                   | USDC Token                                 |
-| Token Symbol           | USDC                                       |
-| Token Decimals         | 18                                         |
+<table><thead><tr><th width="241.23721958235222">Parameter</th><th>Value</th></tr></thead><tbody><tr><td><code>ETH_CHAIN_ID</code></td><td><code>80001</code></td></tr><tr><td>Token Contract Address</td><td>0xe11a86849d99f524cac3e7a0ec1241828e332c62</td></tr><tr><td>Name </td><td>USDC Token</td></tr><tr><td>Token Symbol</td><td>USDC</td></tr><tr><td>Token Decimals</td><td>18</td></tr></tbody></table>
 
 
 

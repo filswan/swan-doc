@@ -13,6 +13,10 @@ description: 'If you want to check the status of your tasks and deals, please:'
 
 To look into **the status of the deal(s)** in the task, please click the task name, and view the detailed information.
 
+<div align="center">
+
 <figure><img src="../../.gitbook/assets/image (7) (2).png" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 ### &#x20;              _**Feel free to contact us on**_ [_**Discord**_](https://filswan.com/discord) _**if you have any questions.**_

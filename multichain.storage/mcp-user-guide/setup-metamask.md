@@ -16,13 +16,7 @@ Click the link [https://metamask.io/download.html](https://metamask.io/download.
 
 Add a custom RPC network to connect your wallet account to the Polygon mainnet, configure Polygon mainnet parameters as follow:
 
-| Parameters         | Value                                                |
-| ------------------ | ---------------------------------------------------- |
-| Network Name       | Polygon Mainnet                                      |
-| RPC URL            | [https://polygon-rpc.com/](https://polygon-rpc.com/) |
-| ChainID            | 137                                                  |
-| Symbol             | MATIC                                                |
-| Block Explorer URL | [https://polygonscan.com/](https://polygonscan.com/) |
+<table><thead><tr><th width="150">Parameters</th><th>Value</th></tr></thead><tbody><tr><td>Network Name</td><td>Polygon Mainnet</td></tr><tr><td>RPC URL</td><td><a href="https://polygon-rpc.com/">https://polygon-rpc.com/</a></td></tr><tr><td>ChainID</td><td>137</td></tr><tr><td>Symbol</td><td>MATIC</td></tr><tr><td>Block Explorer URL</td><td><a href="https://polygonscan.com/">https://polygonscan.com/</a></td></tr></tbody></table>
 
 &#x20;                                              <img src="../../.gitbook/assets/connect polygon to metamask" alt="" data-size="original">
 

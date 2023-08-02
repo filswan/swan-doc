@@ -39,15 +39,7 @@ By using the [Swan faucet](https://calibration-faucet.filswan.com/), you can get
 * In order to see your USDC token balance in MetaMask, you will need to import this token.
 * In MetaMask click on the `Import tokens` link under the 'Assets' tab. Copy the following address:
 
-| Network             | Parameter              | Value                                      |
-| ------------------- | ---------------------- | ------------------------------------------ |
-| **Polygon Mumbai**  | Token Contract Address | 0xe11a86849d99f524cac3e7a0ec1241828e332c62 |
-|                     | Token Symbol           | USDC                                       |
-|                     | Token Decimals         | 18                                         |
-|                     |                        |                                            |
-| **BSC Testnet**     | Token Contract Address | 0x28fC65CF1F2bDe09ab2876fddaA7788340bAf1D7 |
-|                     | Token Symbol           | USDC                                       |
-|                     | Token Decimals         | 18                                         |
+<table><thead><tr><th width="187.28353879622915">Network</th><th width="226">Parameter</th><th width="382.71646120377085">Value</th></tr></thead><tbody><tr><td><strong>Polygon Mumbai</strong> </td><td>Token Contract Address</td><td>0xe11a86849d99f524cac3e7a0ec1241828e332c62</td></tr><tr><td></td><td>Token Symbol</td><td>USDC</td></tr><tr><td></td><td>Token Decimals</td><td>18</td></tr><tr><td></td><td></td><td></td></tr><tr><td><strong>BSC Testnet</strong></td><td>Token Contract Address</td><td>0x28fC65CF1F2bDe09ab2876fddaA7788340bAf1D7</td></tr><tr><td></td><td>Token Symbol</td><td>USDC</td></tr><tr><td></td><td>Token Decimals</td><td>18</td></tr></tbody></table>
 
 * Paste the token contract address into MetaMask in the `Token Contract Address` input. The token symbol and decimals of precision will auto-populate. Click on the `Add Custom Token` button.
 
