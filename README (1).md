@@ -1,8 +1,8 @@
----
-description: "FilSwan is a layer-3 cross-chain solution that helps Web3 projects to integrate data, computing, bandwidth,\_and payment into one suite."
----
-
 # FilSwan Overview
+
+FilSwan is a leading provider of cross-chain cloud computing solutions. Its suite of tools revolutionizes how developers access resources across multiple chains.
+
+The FilSwan Platform streamlines storage provider selection and data management. Meanwhile, multichain.storage enables seamless integration from IPFS to the Filecoin network. Additionally, Lagrange Dao provides a web3-oriented source code management platform powered by cross-chain computing. FilSwan offers a comprehensive ecosystem that serves as a powerful tool for seamless storage, payment gateway integration, and decentralized computing.
 
 ## Edge Storage and Computing on Web 3.0
 
