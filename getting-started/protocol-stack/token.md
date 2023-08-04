@@ -1,11 +1,13 @@
+---
+description: Swan Chain is built as an Ethereum L2 for decentralized computing networks.
+---
+
 # Token
 
-The Lagrange token has 2 stages:
+The Swan token has 2 stages:
 
 1. [Swan Testnet](token.md#swan-testnet-token)
 2. [Swan Mainnet](token.md#swan-mainet-token)
-
-
 
 #### Swan Testnet&#x20;
 
