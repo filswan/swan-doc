@@ -10,7 +10,7 @@ description: A simplified solution for applications only have platform storage s
 
 ### Login to Multichain Storage
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Create Platform bucket
 
@@ -57,7 +57,7 @@ mcs_file = upload_replace_file(file_path, "mcs_1",os.path.join("0x165CD37b4C644C
 
 You should see the following file stored in your multichain bucket.
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (5).png" alt=""><figcaption></figcaption></figure>
 
 Put everything together:
 

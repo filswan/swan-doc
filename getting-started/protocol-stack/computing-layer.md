@@ -36,6 +36,8 @@ The FilSwan Computing Layer operates in a decentralized manner, leveraging block
 
 The Computing Layer is part of a broader ecosystem that includes storage provider selection, data management, and seamless integration from IPFS to the Filecoin network.
 
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Payment in Computing Network</p></figcaption></figure>
+
 #### Conclusion
 
 FilSwan's Computing Layer represents a significant advancement in decentralized cloud computing. By leveraging blockchain technology and a sophisticated system of task allocation, collateral, and rewards, it offers a scalable and reliable solution for executing computing tasks across a decentralized network. Its integration with other FilSwan services and its cross-chain capabilities further enhance its appeal as a comprehensive solution for decentralized storage, payment gateway integration, and computing.

@@ -6,7 +6,7 @@ On the Dashboard, type in a W3SS ID into the search bar to search for a specific
 
 To search for the storage provider’s status (active or offline), you can use the drop-down box to the left of the W3SS ID search bar.
 
-![](<../../../.gitbook/assets/image (13).png>)
+![](<../../../.gitbook/assets/image (13) (1).png>)
 
 There is another dropdown box to filter storage providers by their location. The available location options are Asia, Africa, North America, South America, Europe, Oceania, and Global. Storage providers who have listed their location as Global have no fixed location for storing your data.
 
