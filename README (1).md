@@ -1,6 +1,10 @@
+---
+description: An Ethereum L2 for decentralized computing networks.
+---
+
 # FilSwan Overview
 
-FilSwan is a leading provider of cross-chain cloud computing solutions. Its suite of tools revolutionizes how developers access resources across multiple chains.
+Swan Chain, built as an Ethereum Layer 2 solution, is designed to enhance decentralized computing networks. It integrates a suite of tools that streamline developers' access to resources across multiple blockchains.
 
 The FilSwan Platform streamlines storage provider selection and data management. Meanwhile, multichain.storage enables seamless integration from IPFS to the Filecoin network. Additionally, Lagrange Dao provides a web3-oriented source code management platform powered by cross-chain computing. FilSwan offers a comprehensive ecosystem that serves as a powerful tool for seamless storage, payment gateway integration, and decentralized computing.
 
