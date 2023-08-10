@@ -1,12 +1,8 @@
 # Table of contents
 
-* [Language](README.md)
-  * [中文-CN](https://filswan.gitbook.io/filswan-kai-fa-wen-dang)
-  * [English](language/english.md)
-
 ## Getting Started
 
-* [FilSwan Overview](<README (1).md>)
+* [FilSwan Overview](README.md)
 * [Protocol Stack](getting-started/protocol-stack/README.md)
   * [Cross-chain Consensus Layer](getting-started/protocol-stack/cross-chain-consensus-layer.md)
   * [Peer-to-peer (P2P) Network](getting-started/protocol-stack/peer-to-peer-p2p-network.md)
