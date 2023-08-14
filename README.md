@@ -1,10 +1,10 @@
 ---
-description: An Ethereum L2 for decentralized computing networks.
+description: An Ethereum L3 for decentralized computing networks.
 ---
 
 # FilSwan Overview
 
-Swan Chain, built as an Ethereum Layer 2 solution, is designed to enhance decentralized computing networks. It integrates a suite of tools that streamline developers' access to resources across multiple blockchains.
+Swan Chain, built as an Ethereum Layer 3 solution, is designed to enhance decentralized computing networks. It integrates a suite of tools that streamline developers' access to resources across multiple blockchains.
 
 The FilSwan Platform streamlines storage provider selection and data management. Meanwhile, multichain.storage enables seamless integration from IPFS to the Filecoin network. Additionally, Lagrange Dao provides a web3-oriented source code management platform powered by cross-chain computing. FilSwan offers a comprehensive ecosystem that serves as a powerful tool for seamless storage, payment gateway integration, and decentralized computing.
 
