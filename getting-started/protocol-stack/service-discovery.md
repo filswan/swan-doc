@@ -1,3 +1,7 @@
+---
+description: Discovery resource from multi chain Network
+---
+
 # Service Discovery
 
 Decentralized service discovery is a key challenge in blockchain networks, where there is no central authority to manage or maintain a registry of services. In a decentralized system, service discovery needs to be performed by the nodes in the network themselves, without relying on any centralized infrastructure.
