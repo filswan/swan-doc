@@ -1,4 +1,4 @@
-# Cross-chain Consensus Layer
+# Cross-chain Contracts
 
 A cross-chain consensus layer is a mechanism that allows different blockchain networks to communicate and transact with each other securely and reliably.
 
@@ -11,3 +11,9 @@ A cross-chain consensus layer, therefore, acts as an intermediary or bridge betw
 There are several approaches to implementing cross-chain consensus layers, including sidechains, atomic swaps, and hash time-locked contracts (HTLCs).
 
 The goal of these mechanisms is to enable interoperability between different blockchains, expand the use cases of blockchain technology, and enhance the overall security and scalability of decentralized systems.
+
+
+
+FilSwan use Chainlink data oracle as the cross chain essential design
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
