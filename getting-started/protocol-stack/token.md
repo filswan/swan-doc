@@ -14,15 +14,12 @@ Total Supply: 1,000,000,000 Tokens.
 
 <figure><img src="../../.gitbook/assets/image (58).png" alt=""><figcaption></figcaption></figure>
 
-Token Distribution :
+### Token Distribution&#x20;
 
-•Investors 250,000,000 (25% of total, Private Sales /Public sales)
-
-•Team: 150,000,000 (15% of total)&#x20;
-
-•Marketing: 200,000,000 (20% of total)
-
-•DAO Treasure: 400,000,000 (40% of total)
+* Investors 250,000,000 (25%)
+* Team: 150,000,000 (15% of total)&#x20;
+* Marketing: 200,000,000 (20% of total)
+* DAO Treasure: 400,000,000 (40% of total)
 
 ## FilSwan Token Value Flow
 
