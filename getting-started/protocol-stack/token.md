@@ -4,6 +4,28 @@ description: Swan Chain is built as an Ethereum L2 for decentralized computing n
 
 # Token
 
+## FilSwan Token
+
+FilSwan Token is used for paying web3 services and ecosystem governance (DAO) on the network. It includes storage-based services, computing services and other chain services, e.g., Matic, BNB, and ARK.
+
+Token Holders can also get revenue sharing from sub-DAOs’ staking, e.g. storage DAO and computing DAO.
+
+Total Supply: 1,000,000,000 Tokens.
+
+<figure><img src="../../.gitbook/assets/image (58).png" alt=""><figcaption></figcaption></figure>
+
+Token Distribution :
+
+•Investors 250,000,000 (25% of total, Private Sales /Public sales)
+
+•Team: 150,000,000 (15% of total)&#x20;
+
+•Marketing: 200,000,000 (20% of total)
+
+•DAO Treasure: 400,000,000 (40% of total)
+
+## FilSwan Token Value Flow
+
 <figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption><p>FilSwan Token Value Flow</p></figcaption></figure>
 
 The Swan token has 2 stages:
