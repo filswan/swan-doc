@@ -23,13 +23,9 @@ The Swan token has 2 stages:
 
 #### Swan Testnet&#x20;
 
-Testnet: tETH
-
 Swan Testnet Token (Swan) is used on Swan Testnet. The Swan Testnet  is designed to Launch in Q4 2023.
 
 #### Swan Mainnet
-
-Bsse Chain: ETH
 
 Swan is a L2 blockchain on Ethereum with Rollup technology.
 
