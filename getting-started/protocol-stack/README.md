@@ -35,10 +35,10 @@ In order to enable a new class of web3 native dApps, a Decentralized Query Proto
 
 7\.     [Web3 Task Auction](web3-task-auction.md) – public and private task, market matcher, auto bidding
 
-8\.     [Storage Layer](storage-layer.md) — data stored on public blockchains or content addressable networks.
+8\.   [Storage Layer](storage-layer.md) — data stored on public blockchains or content addressable networks.
 
-9\.     Computing Layer — how a query is routed to a specific node for computing.
+9\.   [Computing Layer ](computing-layer.md)— how a query is routed to a specific node for computing.
 
-10\.  CDN Layer – how data is distributed and hosted on the global network
+10\.  [CDN Layer ](cdn-layer.md)– how data is distributed and hosted on the global network
 
-11\.  Governance—manages schemas, treasure, and disputes.
+11\.  [Governance](governance.md) —manages schemas, treasure, and disputes.
