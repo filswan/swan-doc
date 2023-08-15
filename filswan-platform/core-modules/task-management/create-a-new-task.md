@@ -22,4 +22,4 @@
 
 3\. Click the submit button to send out the task to the FilSwan market or a specific storage provider.
 
-![Example of Creating a Task](<../../../.gitbook/assets/image (5).png>)
+![Example of Creating a Task](<../../../.gitbook/assets/image (5) (1).png>)

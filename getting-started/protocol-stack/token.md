@@ -4,6 +4,8 @@ description: Swan Chain is built as an Ethereum L2 for decentralized computing n
 
 # Token
 
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption><p>FilSwan Token Value Flow</p></figcaption></figure>
+
 The Swan token has 2 stages:
 
 1. [Swan Testnet](token.md#swan-testnet-token)

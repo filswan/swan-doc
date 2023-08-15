@@ -11,7 +11,7 @@ Swan Chain, built as an Ethereum Layer 3 solution, is designed to enhance decent
 
 The FilSwan Platform streamlines storage provider selection and data management. Meanwhile, multichain.storage enables seamless integration from IPFS to the Filecoin network. Additionally, Lagrange Dao provides a web3-oriented source code management platform powered by cross-chain computing. FilSwan offers a comprehensive ecosystem that serves as a powerful tool for seamless storage, payment gateway integration, and decentralized computing.
 
-###
+<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption><p>Layer1, Layer2,Layer3</p></figcaption></figure>
 
 
 

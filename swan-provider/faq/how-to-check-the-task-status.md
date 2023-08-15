@@ -7,7 +7,7 @@ description: 'If you want to check the status of your tasks and deals, please:'
 1. Open the FilSwan "[LAUNCH CONSOLE](https://console.filswan.com/#/dashboard)"
 2. Click "My Task > As Storage Provider", and check the "TASK STATUS".
 
-<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 <mark style="background-color:blue;">**Note: "TASK STATUS" will change to "Completed" when ALL the deals are active.**</mark>
 

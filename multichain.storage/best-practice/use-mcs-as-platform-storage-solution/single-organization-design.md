@@ -10,7 +10,7 @@ description: A simplified solution for applications only have platform storage s
 
 ### Login to Multichain Storage
 
-<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Create Platform bucket
 
@@ -18,7 +18,7 @@ Click "**Bucket Storage**" -> "**Create Bucket**", enter your bucket name.eg, **
 
 If the creation success, the bucket will be shown as below:
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Create folder for each user
 
