@@ -1,4 +1,8 @@
-# Cross-chain Contracts
+---
+description: Smart contract execution and payment settlement
+---
+
+# Cross-chain Consensus Layer
 
 A cross-chain consensus layer is a mechanism that allows different blockchain networks to communicate and transact with each other securely and reliably.
 
