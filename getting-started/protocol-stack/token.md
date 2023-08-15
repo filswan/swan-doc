@@ -12,15 +12,6 @@ Token Holders can also get revenue sharing from sub-DAOs’ staking, e.g. storag
 
 Total Supply: 1,000,000,000 Tokens.
 
-<figure><img src="../../.gitbook/assets/image (58).png" alt=""><figcaption></figcaption></figure>
-
-### Token Distribution&#x20;
-
-* Investors 250,000,000 (25%)
-* Team: 150,000,000 (15% of total)&#x20;
-* Marketing: 200,000,000 (20% of total)
-* DAO Treasure: 400,000,000 (40% of total)
-
 ## FilSwan Token Value Flow
 
 <figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption><p>FilSwan Token Value Flow</p></figcaption></figure>
