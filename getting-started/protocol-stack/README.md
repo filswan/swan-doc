@@ -19,7 +19,7 @@ In order to enable a new class of web3 native dApps, a Decentralized Query Proto
 
 ## Protocol Layers
 
-<figure><img src="../../.gitbook/assets/image (60).png" alt=""><figcaption><p>Protocol Layers</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (61).png" alt=""><figcaption><p>Protocol Stack</p></figcaption></figure>
 
 1\.     [Cross-chain Consensus Layer](cross-chain-contracts.md)—responsible for smart contract execution and payment settlement.
 
@@ -33,9 +33,9 @@ In order to enable a new class of web3 native dApps, a Decentralized Query Proto
 
 6\.     [Indexing and Caching Marketplace](indexing-and-caching-marketplace.md) — the mechanism by which users pay nodes for indexing and caching data sources.
 
-7\.     Web3 Task Auction – public and private task, market matcher, auto bidding
+7\.     [Web3 Task Auction](web3-task-auction.md) – public and private task, market matcher, auto bidding
 
-8\.     Storage Layer — data stored on public blockchains or content addressable networks.
+8\.     [Storage Layer](storage-layer.md) — data stored on public blockchains or content addressable networks.
 
 9\.     Computing Layer — how a query is routed to a specific node for computing.
 
