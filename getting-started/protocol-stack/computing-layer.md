@@ -4,6 +4,8 @@ description: Decentralized Computing Power Renting Network
 
 # Computing Layer
 
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Computing Workflow</p></figcaption></figure>
+
 FilSwan's Computing Layer is a crucial component of its decentralized cloud computing ecosystem. It's designed to facilitate the execution of computing tasks across a network of providers, ensuring efficiency, reliability, and security. Here's an introduction to the key aspects of the FilSwan Computing Layer:
 
 <figure><img src="../../.gitbook/assets/image (49).png" alt=""><figcaption></figcaption></figure>
