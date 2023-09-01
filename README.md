@@ -1,5 +1,5 @@
 ---
-description: An Ethereum L3 for decentralized computing networks
+description: An Ethereum L2 for decentralized computing networks
 ---
 
 # Overview
