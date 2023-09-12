@@ -1,5 +1,5 @@
 ---
-description: An Ethereum L2 for decentralized computing networks
+description: An Ethereum L2 for decentralized cloud computing
 ---
 
 # Overview
@@ -7,13 +7,13 @@ description: An Ethereum L2 for decentralized computing networks
 ![
 ](<.gitbook/assets/image (28) (1) (1) (1) (1) (1).png>)
 
-Swan Chain, built as an Ethereum Layer 3 solution, is designed to enhance decentralized computing networks. It integrates a suite of tools that streamline developers' access to resources across multiple blockchains.
+Swan Chain, built as an Ethereum Layer 2 solution, is designed to enhance decentralized computing networks. It integrates a tool suite that streamers developers' access to resources across multiple blockchains.
 
-The FilSwan Platform streamlines storage provider selection and data management. Meanwhile, multichain.storage enables seamless integration from IPFS to the Filecoin network. Additionally, Lagrange Dao provides a web3-oriented source code management platform powered by cross-chain computing. FilSwan offers a comprehensive ecosystem that serves as a powerful tool for seamless storage, payment gateway integration, and decentralized computing.
+The Swan protocol streamlines storage provider selection and data management. Meanwhile, multichain.storage enables seamless integration from IPFS to the Filecoin network. Additionally, Lagrange Dao provides a web3-oriented source code management platform powered by cross-chain computing. Swan network offers a comprehensive ecosystem that serves as a powerful tool for seamless storage, payment gateway integration, and decentralized computing.
 
 ## 1.1. Motivation
 
-On May 22, 2010, the first Bitcoin transaction is made by exchanging 10,000 mined BTC for two pizzas delivered from a local pizza restaurant in Florida. Ethereum was initially described in late 2013 in a white paper by Vitalik Buterin. Since then, the blockchain’s goal is not just a peer-to-peer coin but also a global computer as Ethereum described.
+On May 22, 2010, the first Bitcoin transaction was made by exchanging 10,000 mined BTC for two pizzas delivered from a local pizza restaurant in Florida. Ethereum was initially described in late 2013 in a white paper by Vitalik Buterin. Since then, the blockchain’s goal is not just a peer-to-peer coin but also a global computer as Ethereum described.
 
 As of day, we already have over 9000 tokens on coinmarketcap.com, with more than 500 SDKs. It became a huge challenge to the developer when they start the _Decentralized Applications (dApps)_ development. A typical web3 website development requires the developer to have the following prerequisite:
 
