@@ -15,6 +15,7 @@
   * [Computing Layer](getting-started/protocol-stack/computing-layer.md)
   * [CDN Layer](getting-started/protocol-stack/cdn-layer.md)
   * [Token](getting-started/protocol-stack/token.md)
+  * [Economic System](getting-started/protocol-stack/economic-system.md)
   * [Governance](getting-started/protocol-stack/governance.md)
 * [Contact Us](getting-started/contact-us/README.md)
   * [Social Accounts & Communities](getting-started/contact-us/social-accounts-and-communities.md)
