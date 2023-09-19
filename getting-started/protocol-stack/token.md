@@ -1,10 +1,6 @@
----
-description: Swan Chain is built as an Ethereum L2 for decentralized computing networks.
----
-
 # Token
 
-## FilSwan Token
+## Overview
 
 FilSwan Token is used for paying web3 services and ecosystem governance (DAO) on the network. It includes storage-based services, computing services and other chain services, e.g., Matic, BNB, and ARK.
 

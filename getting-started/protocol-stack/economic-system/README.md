@@ -4,8 +4,6 @@ description: UBI based Cloud computing model
 
 # Economic System
 
-### SWAN Economics Overview
-
 **1. SWAN Treasure DAO:**
 
 * **Staking Rewards**: SWAN token holders who stake their tokens are rewarded, promoting long-term commitment and network security.
