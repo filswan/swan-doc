@@ -4,8 +4,6 @@ description: Staking, Investing, and Community Building
 
 # Treasure DAO
 
-#### SWAN Treasure DAO
-
 The SWAN Treasure DAO is a specialized decentralized autonomous organization dedicated to the strategic management and allocation of the SWAN network's treasury funds, with a particular focus on staking rewards, community building, and investment opportunities.
 
 **Key Responsibilities:**

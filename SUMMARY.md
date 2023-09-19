@@ -16,7 +16,7 @@
   * [CDN Layer](getting-started/protocol-stack/cdn-layer.md)
   * [Economic System](getting-started/protocol-stack/economic-system.md)
   * [Token](getting-started/protocol-stack/token.md)
-  * [Governance](getting-started/protocol-stack/governance/README.md)
+  * [Governance](getting-started/protocol-stack/governance.md)
     * [Treasure DAO](getting-started/protocol-stack/governance/treasure-dao.md)
 * [Contact Us](getting-started/contact-us/README.md)
   * [Social Accounts & Communities](getting-started/contact-us/social-accounts-and-communities.md)

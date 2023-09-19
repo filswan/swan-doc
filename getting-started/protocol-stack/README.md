@@ -41,4 +41,4 @@ In order to enable a new class of web3 native dApps, a Decentralized Query Proto
 
 10.[CDN Layer ](cdn-layer.md)– how data is distributed and hosted on the global network
 
-11\. [Governance](governance/) —manages schemas, treasure, and disputes.
+11\. [Governance](governance.md) —manages schemas, treasure, and disputes.
