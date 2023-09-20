@@ -10,7 +10,7 @@
 
 **Compensation Mechanism:**
 
-1. If a provider's job income (J) is less than or equal to the UBI (U), they receive the UBI amount. Essentially, if $$J<UJ<U$$, the total income is $$UU$$.
+1. If a provider's job income (J) is less than or equal to the UBI (U), they receive the UBI amount. Essentially, if $$J<U$$, the total income is $$U$$.
 2. If a provider's job income surpasses the UBI, they only receive their job income and no UBI.
 
 **Dynamic Adjustments:** The UBI rate is dynamically adjusted based on the network's overall job rate. If the current UBI rate exceeds a target rate (e.g., 7%), the system triggers the creation of system jobs (Network Tasks) to incentivize providers to take on more jobs. This mechanism ensures that the UBI doesn't become a crutch but rather a safety net, pushing providers to actively seek jobs.
