@@ -24,3 +24,74 @@
 3. **Network Health:** By ensuring providers are compensated, the network maintains a healthy number of active nodes, ensuring redundancy and robustness.
 
 In summary, the SWAN UBI is a strategic tool to maintain an active and healthy network of providers, ensuring that they are compensated fairly and incentivized to actively seek and complete jobs.
+
+Certainly! For a GitBook or any documentation platform, it's essential to present mathematical equations in a clear and structured manner. Here's a more formal representation of the SWAN UBI system:
+
+***
+
+#### SWAN UBI System: Mathematical Representation
+
+**1. Provider's Income:**
+
+Let's denote:
+
+* ( J ): Provider's job income
+* ( U ): Universal Basic Income (UBI) rate
+
+The total income for a provider is given by:
+
+\[ \text{Total Income} = \begin{cases} U & \text{if } J \leq U \ J & \text{if } J > U \end{cases} ]
+
+**2. UBI Rate Adjustment:**
+
+Let's denote:
+
+* ( R ): Current UBI rate
+* ( k ): Target UBI rate
+* ( n ): Constant multiplier
+
+The number of system jobs (Network Tasks) triggered is:
+
+\[ S = n \times (R - k) ]
+
+**3. Budget Allocation:**
+
+Let's denote:
+
+* ( B ): Total budget from the SWAN Treasure DAO
+* ( \alpha, \beta, \gamma ): Allocation percentages for UBI, Network Tasks, and Creator Rewards respectively
+
+The allocations are:
+
+\[ A\_U = \alpha \times B ] \[ A\_N = \beta \times B ] \[ A\_C = \gamma \times B ]
+
+With the constraint:
+
+```tex
+ \alpha + \beta + \gamma = 1 
+```
+
+
+
+**4. Eligibility for UBI:**
+
+Let's denote:
+
+* ( r ): Provider's reputation score
+* ( T ): Threshold score (e.g., 60)
+
+A provider is eligible for UBI if:
+
+\[ r \geq T ]
+
+If a provider doesn't secure a job within ( b ) blocks (e.g., 6000 blocks), they are blacklisted but remain eligible for UBI during this period.
+
+**5. Compensation Mechanism:**
+
+The compensation for a provider is:
+
+\[ \text{Compensation} = \begin{cases} U - J & \text{if } J \leq U \ 0 & \text{otherwise} \end{cases} ]
+
+***
+
+This representation is structured for clarity and ease of understanding, suitable for a GitBook or similar documentation platform.
