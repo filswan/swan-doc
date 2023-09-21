@@ -27,7 +27,7 @@ Developers are currently bogged down with the intricacies of managing tokens and
 
 FilSwan offers a comprehensive solution to this challenge by providing an infrastructure layer for Web3, the next-generation web application stack. It introduces a cross-chain consensus layer for dApps, enabling developers to utilize cross-chain tools and seamlessly access web3 resources across multiple blockchain networks. These tools encompass payment channels and web3 infura, streamlining the development process. By integrating economic incentives, FilSwan ensures a thriving ecosystem, paving the way for more efficient dApp creation and unlocking vast economic opportunities.
 
-<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Layer1, Layer2,Layer3</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Layer1, Layer2,Layer3</p></figcaption></figure>
 
 {% embed url="https://github.com/filswan" %}
 
