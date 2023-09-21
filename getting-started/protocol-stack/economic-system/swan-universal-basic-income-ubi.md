@@ -68,7 +68,7 @@ The allocations are:
 With the constraint:
 
 ```tex
- \alpha + \beta + \gamma = 1 
+ [\alpha + \beta + \gamma = 1 ]
 ```
 
 
