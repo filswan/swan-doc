@@ -1,5 +1,24 @@
 # SWAN Universal Basic Income (UBI)
 
+```mermaid
+sequenceDiagram
+    participant P as Provider
+    participant N as Network
+    participant U as UBI System
+    participant T as Network Tasks
+
+    P->>N: Join Network
+    N->>P: Acknowledge Participation
+    P->>U: Check Eligibility for UBI
+    U->>P: Confirm Eligibility
+    P->>T: Check for Available Network Tasks
+    T->>P: Assign Tasks
+    P->>N: Complete Tasks
+    N->>P: Provide Compensation for Tasks
+    U->>P: Provide UBI
+
+```
+
 1. **Purpose**: The UBI system in SWAN is designed to ensure that providers in the network are compensated for their participation, even if they aren't actively engaged in jobs. This ensures a stable and active network of providers, ready to take on tasks as they come.
 2. **Provider's Income**:
    * Every provider has the potential to earn from two sources: the jobs they complete and the UBI.
