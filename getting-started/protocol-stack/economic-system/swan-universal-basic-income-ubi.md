@@ -1,29 +1,30 @@
 # SWAN Universal Basic Income (UBI)
 
-**Objective:** The primary goal of SWAN's UBI is to provide a safety net for providers, ensuring they receive a minimum income regardless of the jobs they secure. This mechanism ensures stability in the network, incentivizing providers to remain active and maintain their infrastructure, even during periods of low job availability.
+1. **Purpose**: The UBI system in SWAN is designed to ensure that providers in the network are compensated for their participation, even if they aren't actively engaged in jobs. This ensures a stable and active network of providers, ready to take on tasks as they come.
+2. **Provider's Income**:
+   * Every provider has the potential to earn from two sources: the jobs they complete and the UBI.
+   * If a provider's income from jobs (denoted as ( J )) is less than or equal to the UBI amount (denoted as ( U )), they receive the UBI as their total income.
+   * If a provider's job income exceeds the UBI, they rely solely on their job income.
+3. **UBI Rate Adjustment**:
+   * The UBI rate is dynamically adjusted based on the network's activity. If the current UBI rate (denoted as ( R )) exceeds a target rate (denoted as ( k )), system jobs (Network Tasks) are introduced to balance the rate.
+   * The number of system jobs introduced is proportional to the difference between the current and target UBI rates.
+4. **Budget Allocation**:
+   * The total budget for the UBI system comes from the SWAN Treasure DAO. This budget is allocated among UBI, Network Tasks, and Creator Rewards.
+   * Specific percentages of the total budget are allocated to each of these categories.
+5. **Eligibility for UBI**:
+   * Not all providers automatically qualify for UBI. They must achieve a certain reputation score to be eligible.
+   * Providers with a reputation score below a threshold are not eligible for UBI.
+6. **Compensation Mechanism**:
+   * If a provider's job income is less than the UBI, they receive compensation to bridge the gap. This ensures that providers are incentivized to take on more jobs rather than relying solely on UBI.
+7. **Proof of Eligibility**:
+   * To prevent misuse, providers must periodically submit proofs (e.g., zk proofs) to demonstrate that they own the hardware they claim. This ensures that only genuine providers benefit from the UBI.
+8. **System Jobs and Creator Rewards**:
+   * When the UBI rate exceeds the target, the system introduces Network Tasks to provide more job opportunities.
+   * Additionally, to encourage more job creation, creators are rewarded for placing jobs in the system.
+9. **Governance**:
+   * The SWAN Treasure DAO manages the UBI system's budget. Decisions regarding budget allocation, UBI rate adjustments, and other critical parameters are made by a committee. This committee comprises token holders, core developers, and other contributors.
 
-**Eligibility Criteria:**
-
-1. **Proof of Eligibility:** Providers must prove they own the hardware they claim. This is done through regular submissions, such as zk-proofs, to validate their claims.
-2. **Reputation Score:** A provider must achieve a minimum reputation score (e.g., 60) to be eligible for UBI. This score ensures that only genuine and active providers benefit from the UBI.
-3. **Job Threshold:** If a provider doesn't secure a job within a specified block time (e.g., 6000 blocks), they risk being blacklisted. However, during this period, they are eligible for UBI.
-
-**Compensation Mechanism:**
-
-1. If a provider's job income (J) is less than or equal to the UBI (U), they receive the UBI amount. Essentially, if $$J<U$$, the total income is $$U$$.
-2. If a provider's job income surpasses the UBI, they only receive their job income and no UBI.
-
-**Dynamic Adjustments:** The UBI rate is dynamically adjusted based on the network's overall job rate. If the current UBI rate exceeds a target rate (e.g., 7%), the system triggers the creation of system jobs (Network Tasks) to incentivize providers to take on more jobs. This mechanism ensures that the UBI doesn't become a crutch but rather a safety net, pushing providers to actively seek jobs.
-
-**Budget Allocation:** The UBI is funded from the SWAN Treasure DAO, which manages the budget for UBI, Network Tasks, and Creator Rewards. The allocation for UBI is determined based on the total budget and the current needs of the network.
-
-**Benefits:**
-
-1. **Stability:** Ensures a stable and active provider base, even during low job demand periods.
-2. **Inclusivity:** Allows smaller providers to compete and remain active in the network.
-3. **Network Health:** By ensuring providers are compensated, the network maintains a healthy number of active nodes, ensuring redundancy and robustness.
-
-In summary, the SWAN UBI is a strategic tool to maintain an active and healthy network of providers, ensuring that they are compensated fairly and incentivized to actively seek and complete jobs.
+In essence, the SWAN UBI system is a dynamic and adaptive mechanism designed to maintain a healthy, active, and incentivized network of providers. It balances the needs of providers with the overall health and activity of the network.
 
 ### Structured Representation
 
