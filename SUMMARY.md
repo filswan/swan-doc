@@ -19,6 +19,7 @@
   * [Token](getting-started/protocol-stack/token.md)
   * [Governance](getting-started/protocol-stack/governance.md)
     * [Treasure DAO](getting-started/protocol-stack/governance/treasure-dao.md)
+  * [Glossary](getting-started/protocol-stack/glossary.md)
 * [Contact Us](getting-started/contact-us/README.md)
   * [Social Accounts & Communities](getting-started/contact-us/social-accounts-and-communities.md)
   * [Business Partnerships](getting-started/contact-us/business-partnerships.md)
