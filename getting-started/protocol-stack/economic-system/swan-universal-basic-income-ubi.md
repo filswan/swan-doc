@@ -1,6 +1,6 @@
 # Universal Basic Income (UBI)
 
-The Universal Basic Income (UBI) system in SWAN aims to ensure that providers within the network are fairly compensated for their participation. This is regardless of whether they are actively engaged in tasks or jobs. By doing so, the system ensures a consistent and active network of providers, always ready to undertake tasks as they arise.
+**Purpose:** The Universal Basic Income (UBI) system in SWAN is designed to ensure that computing providers within the network are fairly compensated for their participation, even if they aren't actively engaged in tasks or jobs. This promotes a stable and active network of providers, always ready to undertake tasks as they arise.
 
 **Provider's Income:** Every provider in the SWAN network has two potential sources of income:
 
@@ -9,13 +9,13 @@ The Universal Basic Income (UBI) system in SWAN aims to ensure that providers wi
 
 If a provider's income from jobs is less than the set UBI amount, they will receive the UBI as their total income. However, if their job income exceeds the UBI, they will rely solely on their job income.
 
-**UBI Rate Adjustment:** The UBI rate isn't static. It's adjusted dynamically based on the overall activity within the network. If the current UBI rate exceeds a predetermined target rate, Public Service Jobs are introduced to balance the rate. The number of these system jobs introduced is proportional to the difference between the current and target UBI rates.
+**Public Service Jobs:** These are tasks created by the SWAN Treasure for public service purposes. The jobs can stem from various sources, including scientific research, demonstrations of use cases, or storage/computing needs within the SWAN ecosystem. Not only do these jobs provide valuable services to the public and the SWAN ecosystem, but they also serve as a mechanism to ensure providers have consistent work. When there's a shortage of external jobs in the system, Public Service Jobs help fill the gap and ensure providers remain active and compensated.
+
+**UBI Rate Adjustment:** The UBI rate is dynamically adjusted based on the overall activity within the network. If the current UBI rate exceeds a predetermined target rate, more Public Service Jobs are introduced to provide additional work opportunities and balance the rate. This approach ensures that providers remain engaged and the UBI rate is kept in check.
 
 **Budget Allocation:** The entire budget for the UBI system is sourced from the SWAN Treasure DAO. This budget is then distributed among different categories, namely UBI, Network Tasks, and Creator Rewards. Specific percentages of the total budget are allocated to each of these categories.
 
 **Eligibility for UBI:** Not every provider in the network is automatically entitled to UBI. To qualify, providers must achieve a certain reputation score. Those with a reputation score below a set threshold are deemed ineligible for UBI.
-
-**Compensation Mechanism:** If a provider's income from jobs is less than the UBI, they receive additional compensation to bridge this gap. This ensures that providers are motivated to take on more jobs rather than solely relying on the UBI.
 
 **Proof of Eligibility:** To prevent any misuse or fraudulent activities, providers are required to periodically submit proofs, such as zk proofs, to validate that they genuinely own the hardware they claim to. This ensures that only legitimate providers benefit from the UBI.
 
