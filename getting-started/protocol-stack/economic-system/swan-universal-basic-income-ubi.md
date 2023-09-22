@@ -20,8 +20,8 @@
    * If a provider's job income is less than the UBI, they receive compensation to bridge the gap. This ensures that providers are incentivized to take on more jobs rather than relying solely on UBI.
 7. **Proof of Eligibility**:
    * To prevent misuse, providers must periodically submit proofs (e.g., zk proofs) to demonstrate that they own the hardware they claim. This ensures that only genuine providers benefit from the UBI.
-8. **System Jobs and Creator Rewards**:
-   * When the UBI rate exceeds the target, the system introduces Network Tasks to provide more job opportunities.
+8. **Public Service Jobs and Creator Grants**:
+   * When the UBI rate exceeds the target, the system introduces Public Service Jobs to provide more job opportunities.
    * Additionally, to encourage more job creation, creators are rewarded for placing jobs in the system.
 9. **Governance**:
    * The SWAN Treasure DAO manages the UBI system's budget. Decisions regarding budget allocation, UBI rate adjustments, and other critical parameters are made by a committee. This committee comprises token holders, core developers, and other contributors.
@@ -62,7 +62,7 @@ $$
 A_U = \alpha \times B, \quad A_N = \beta \times B, \quad A_C = \gamma \times B
 $$
 
-&#x20;Where  $$\alpha, \beta, \gamma \$$$$\alpha, \beta, \gamma$$ are the respective allocation percentages for UBI, Network Tasks, and Creator Rewards, and $$\alpha + \beta + \gamma = 1$$.
+&#x20;Where  $$\alpha, \beta, \gamma \$$$$\alpha, \beta, \gamma$$ are the respective allocation percentages for UBI,Public Service Jobs, and Creator Grants, and $$\alpha + \beta + \gamma = 1$$.
 
 **Eligibility for UBI**:
 
