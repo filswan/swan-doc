@@ -16,7 +16,7 @@
   * [CDN Layer](getting-started/protocol-stack/cdn-layer.md)
   * [Economic System](getting-started/protocol-stack/economic-system.md)
     * [Grants](getting-started/protocol-stack/economic-system/grants.md)
-    * [SWAN Universal Basic Income (UBI)](getting-started/protocol-stack/economic-system/swan-universal-basic-income-ubi.md)
+    * [Universal Basic Income (UBI)](getting-started/protocol-stack/economic-system/universal-basic-income-ubi.md)
   * [Token](getting-started/protocol-stack/token.md)
   * [Governance](getting-started/protocol-stack/governance.md)
     * [Treasure DAO](getting-started/protocol-stack/governance/treasure-dao.md)
