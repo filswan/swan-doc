@@ -41,7 +41,7 @@ S =
      \end{cases}
 $$
 
-&#x20; Where  S  is the number of system jobs (Network Tasks) and ( n ) is a constant multiplier.
+&#x20; Where  S  is the number of Public Service Jobs and ( n ) is a constant multiplier.
 
 **Budget Allocation**:
 

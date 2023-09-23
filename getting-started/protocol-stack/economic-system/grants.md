@@ -1,26 +1,40 @@
 # Grants
 
-#### **Swan Grants Matching Mechanism for Job Creators:**
+### **SWAN Job Incentive Grant: Matching Mechanism**
+
+#### **Objective**:
+
+To encourage job creators to place more jobs on the SWAN platform by providing a matching incentive, thereby enhancing the overall vibrancy and sustainability of the SWAN ecosystem.
+
+#### **Mechanism**:
 
 **1. Matching Percentage:**
 
-* For every job placed by a creator, SWAN will match a certain percentage (x%) of the cost. This acts as an incentive for creators to place jobs as they get additional value for their investment.
+* For every job placed by a creator, SWAN will match a predetermined percentage of the job's cost.
+* This percentage acts as a direct incentive, providing additional value to the job creator's investment.
 
 **2. Cap on Matching:**
 
-* To ensure that the system is not overly burdened and to maintain fairness, there's a cap on the matching amount. No matter how large the job's cost, the maximum amount SWAN will match is capped at 100 Tokens per job.
+* While the matching percentage provides added value, there's a ceiling to ensure fairness and sustainability.
+* Regardless of the job's cost, the maximum matching amount by SWAN is limited to 100 Tokens.
 
 **3. Example:**
 
-* If a creator places a job that costs 500 Tokens:
-  * At a 10% match, SWAN would contribute an additional 50 Tokens.
-  * At a 50% match, SWAN would contribute an additional 250 Tokens.
-  * However, if the matching percentage leads to an amount greater than 100 Tokens, only 100 Tokens will be matched due to the cap.
+* For a job costing 500 Tokens:
+  * At a 10% match: SWAN contributes 50 Tokens.
+  * At a 50% match: SWAN contributes 250 Tokens.
+  * If the match exceeds 100 Tokens, only 100 Tokens are contributed due to the cap.
 
 **4. Periodic Review:**
 
-* The matching percentage and cap can be reviewed periodically based on the funds available, the number of jobs being placed, and the overall health of the SWAN ecosystem. Adjustments can be made to ensure sustainability.
+* The system isn't static. Both the matching percentage and the cap are subject to periodic reviews.
+* Factors influencing reviews include available funds, job placement rate, and the overall health of the SWAN ecosystem.
+* Adjustments ensure the program remains beneficial and sustainable.
 
 **5. Eligibility Criteria:**
 
-* To avoid misuse, certain eligibility criteria can be set for job creators to qualify for the matching. This could include factors like the quality of jobs, past track record, and alignment with SWAN's objectives.
+* To maintain the quality and integrity of the system, not all jobs or creators automatically qualify for matching.
+* Criteria can encompass:
+  * Quality and relevance of jobs.
+  * The creator's history and reputation.
+  * Alignment with SWAN's overarching objectives.
