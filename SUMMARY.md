@@ -18,6 +18,7 @@
     * [Grants](getting-started/protocol-stack/economic-system/grants.md)
     * [Computing Jobs](getting-started/protocol-stack/economic-system/computing-jobs.md)
     * [Universal Basic Income (UBI)](getting-started/protocol-stack/economic-system/swan-universal-basic-income-ubi.md)
+  * [Swan Provider Income](getting-started/protocol-stack/swan-provider-income.md)
   * [Token](getting-started/protocol-stack/token.md)
   * [Governance](getting-started/protocol-stack/governance.md)
     * [Treasure DAO](getting-started/protocol-stack/governance/treasure-dao.md)
