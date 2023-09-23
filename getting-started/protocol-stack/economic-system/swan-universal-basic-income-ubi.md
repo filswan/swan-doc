@@ -1,67 +1,81 @@
 # Universal Basic Income (UBI)
 
-**Purpose:** The Universal Basic Income (UBI) system in SWAN is designed to ensure that computing providers within the network are fairly compensated for their participation, even if they aren't actively engaged in tasks or jobs. This promotes a stable and active network of providers, always ready to undertake tasks as they arise.
+#### **1. Introduction**
 
-**Provider's Income:** Every provider in the SWAN network has two potential sources of income:
+In the Swan decentralized computing ecosystem, the Universal Basic Income (UBI) model aims to provide a basic level of compensation to qualified providers. This document outlines the specific requirements and mechanisms for the implementation of UBI within Swan.
 
-1. **Jobs:** Payments received for the tasks or jobs they complete.
-2. **UBI:** A fixed income provided to eligible providers, irrespective of the jobs they undertake.
+#### **2. UBI Eligibility**
 
-If a provider's income from jobs is less than the set UBI amount, they will receive the UBI as their total income. However, if their job income exceeds the UBI, they will rely solely on their job income.
+**2.1 Hardware Performance**
 
-**Public Service Jobs:** These are tasks created by the SWAN Treasure for public service purposes. The jobs can stem from various sources, including scientific research, demonstrations of use cases, or storage/computing needs within the SWAN ecosystem. Not only do these jobs provide valuable services to the public and the SWAN ecosystem, but they also serve as a mechanism to ensure providers have consistent work. When there's a shortage of external jobs in the system, Public Service Jobs help fill the gap and ensure providers remain active and compensated.
+* Providers must meet a minimum hardware performance threshold to qualify for UBI.
+* The performance can be benchmarked using algorithms like zk-proof, ensuring that the provider's hardware is capable of supporting the ecosystem's computational needs.
 
-**UBI Rate Adjustment:** The UBI rate is dynamically adjusted based on the overall activity within the network. If the current UBI rate exceeds a predetermined target rate, more Public Service Jobs are introduced to provide additional work opportunities and balance the rate. This approach ensures that providers remain engaged and the UBI rate is kept in check.
+**2.2 Proof of Ownership**
 
-**Budget Allocation:** The entire budget for the UBI system is sourced from the SWAN Treasure DAO. This budget is then distributed among different categories, namely UBI, Network Tasks, and Creator Rewards. Specific percentages of the total budget are allocated to each of these categories.
+* Providers must demonstrate proof of ownership of their hardware resources.
+* This proof should be posted on-chain, ensuring transparency and verifiability.
 
-**Eligibility for UBI:** Not every provider in the network is automatically entitled to UBI. To qualify, providers must achieve a certain reputation score. Those with a reputation score below a set threshold are deemed ineligible for UBI.
+#### **3. UBI Calculation**
 
-**Proof of Eligibility:** To prevent any misuse or fraudulent activities, providers are required to periodically submit proofs, such as zk proofs, to validate that they genuinely own the hardware they claim to. This ensures that only legitimate providers benefit from the UBI.
+**3.1 Base UBI**
 
-**Governance:** The governance of the UBI system is overseen by the SWAN Treasure DAO. This body is responsible for making critical decisions related to budget allocation, UBI rate adjustments, and other essential parameters. The decision-making committee comprises token holders, core developers, and other significant contributors.
+Every qualified provider in the Swan ecosystem is eligible to receive a base UBI amount.
 
-### Structured Representation
-
-**Provider's Income**:
-
-For a provider's job income ( **J** ) and UBI ( **U** ):&#x20;
-
-$$\text{Total Income} =       \begin{cases}       U & \text{if } J \leq U \\      J & \text{if } J > U       \end{cases}$$
-
-**UBI Rate Adjustment**:
-
-Let   **R**  be the current UBI rate and   k  be the target UBI rate.
+**Equation**:&#x20;
 
 $$
-S = 
-     \begin{cases} 
-     n \times (R - k) & \text{if } R > k \\
-     0 & \text{otherwise}
-     \end{cases}
+UBI_{base} = V_{ubi}
 $$
 
-&#x20; Where  S  is the number of Public Service Jobs and ( n ) is a constant multiplier.
 
-**Budget Allocation**:
 
-Let ( B ) be the total budget from the SWAN Treasure DAO.&#x20;
+Where:
+
+* ( UBI\_{base} ) is the base UBI for the provider.
+* ( V\_{ubi} ) is the value of the UBI in Swan Tokens.
+
+**3.2 Job Income Deduction**
+
+If a provider earns income from jobs, this income will be deducted from their UBI. If their job income exceeds the average UBI, they will not receive any UBI.
+
+**Equation**:
+
+
 
 $$
-A_U = \alpha \times B, \quad A_N = \beta \times B, \quad A_C = \gamma \times B
+UBI_{net} = UBI_{base} - I_{job}
 $$
 
-&#x20;Where  $$\alpha, \beta, \gamma \$$$$\alpha, \beta, \gamma$$ are the respective allocation percentages for UBI,Public Service Jobs, and Creator Grants, and $$\alpha + \beta + \gamma = 1$$.
+Where:
 
-**Eligibility for UBI**:
+* ( UBI\_{net} ) is the net UBI after deducting job income.
+* ( I\_{job} ) is the income earned from jobs.
 
-* Let ( r ) be the reputation score of a provider and ( T ) be the threshold score (e.g., 60).&#x20;
+**Condition**:&#x20;
 
-$$\text{Eligibility} =       \begin{cases}       \text{True} & \text{if } r \geq T \\      \text{False} & \text{otherwise}      \end{cases}$$
 
-**Compensation Mechanism**:
 
-For a provider's job income ( J ) and UBI ( U ):&#x20;
+$$
+if ( I_{job} ) >= ( UBI_{avg} ), then ( UBI_{net} ) = 0
+$$
 
-$$\text{Compensation} =       \begin{cases}       U - J & \text{if } J \leq U \\      0 & \text{if } J > U       \end{cases}$$
+Where:
 
+* ( UBI\_{avg} ) is the average UBI income.
+
+#### **4. Funding UBI**
+
+The funds for UBI can be sourced from:
+
+* A portion of the fees collected from job creators.
+* A reserve fund set up by Swan during its initial token offering or fundraising.
+* Voluntary contributions from larger providers or stakeholders.
+
+#### **5. Periodic Review**
+
+The UBI model, eligibility criteria, and funding sources should be reviewed periodically. This ensures that the system remains fair, sustainable, and aligned with the evolving needs of the Swan ecosystem.
+
+#### **6. Conclusion**
+
+The UBI model in the Swan ecosystem ensures that qualified providers receive a basic income, promoting inclusivity and fairness. By setting clear eligibility criteria and adjusting UBI based on job income, Swan ensures a balanced distribution of resources and rewards within its decentralized computing platform.
