@@ -10,7 +10,7 @@ Total Supply: 1,000,000,000 Tokens.
 
 ## Swan Token Value Flow
 
-<figure><img src="../../.gitbook/assets/image (65).png" alt=""><figcaption><p>Token Value Flow</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (66).png" alt=""><figcaption></figcaption></figure>
 
 The Swan token has 2 stages:
 
