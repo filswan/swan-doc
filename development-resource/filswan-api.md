@@ -12,12 +12,8 @@ These endpoints return details about Authorization.
 
 {% swagger baseUrl="https://api.filswan.com" path="/auth/login" method="post" summary="Get Auth Token" %}
 {% swagger-description %}
-This endpoint allows you to get an JWT Bearer Token (auth_token) from email and password. 
-
-\
-
-
-The auth_token can be used for generate other API Keys.
+This endpoint allows you to get an JWT Bearer Token (auth\_token) from email and password. \
+The auth\_token can be used for generate other API Keys.
 {% endswagger-description %}
 
 {% swagger-parameter in="body" name="email" type="string" %}
@@ -41,16 +37,8 @@ The auth_token can be used for generate other API Keys.
 
 {% swagger baseUrl="https://api.filswan.com" path="/user/api_keys/jwt" method="post" summary="Generate API Key" %}
 {% swagger-description %}
-This endpoint allows you to issue new API keys for their account programmatically. The only key-type that can be used to issue new keys is the login user's JWT Bearer Token.
-
-\
-
-
-The purpose of this endpoint is to allow for programmatic creation of API keys that may be used for multiple projects, individual users, or a variety of other use cases where a single API key pair across an account is not sufficient.
-
-\
-
-
+This endpoint allows you to issue new API keys for their account programmatically. The only key-type that can be used to issue new keys is the login user's JWT Bearer Token.\
+The purpose of this endpoint is to allow for programmatic creation of API keys that may be used for multiple projects, individual users, or a variety of other use cases where a single API key pair across an account is not sufficient.\
 This endpoint will return three values: The API Key, the API Secrect, and a JWT Bearer Token. Make sure to record the API Secret and the JWT as they will not be accessible again.
 {% endswagger-description %}
 
@@ -78,12 +66,8 @@ This endpoint will return three values: The API Key, the API Secrect, and a JWT 
 
 {% swagger baseUrl="https://api.filswan.com" path="/user/api_keys/jwt" method="post" summary="Generate JWT token" %}
 {% swagger-description %}
-To use the bearer authentication model, you will need the JWT that is generated using this API.
-
-\
-
-
-This token can be used as an Authorization header for all your API requests in the following format: "Authorization": "Bearer YOUR_JWT"
+To use the bearer authentication model, you will need the JWT that is generated using this API.\
+This token can be used as an Authorization header for all your API requests in the following format: "Authorization": "Bearer YOUR\_JWT"
 {% endswagger-description %}
 
 {% swagger-parameter in="body" name="access_token" type="string" %}
@@ -137,7 +121,7 @@ The status of miners. If empty, it shows all miners in any status. Possible valu
 {% endswagger-parameter %}
 
 {% swagger-parameter in="path" name="sort_by" type="string" %}
-Possible values: update_time_str, price, verified_price, score, status, location
+Possible values: update\_time\_str, price, verified\_price, score, status, location
 {% endswagger-parameter %}
 
 {% swagger-parameter in="path" name="order" type="string" %}
@@ -205,7 +189,7 @@ Possible values: 1,0
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="offline_deal_available" type="string" %}
-Possible values: true/false 
+Possible values: true/false&#x20;
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="expected_sealing_time" type="number" %}
@@ -677,7 +661,7 @@ The CSV file containing all deal information in the task to create. It is requir
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="miner_id" type="string" %}
-The provider you want to assign the task to. Required if is_public is set to 0.
+The provider you want to assign the task to. Required if is\_public is set to 0.
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="description" type="string" %}

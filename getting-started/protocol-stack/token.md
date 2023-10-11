@@ -8,9 +8,9 @@ Token Holders can also get revenue sharing from sub-DAOs’ staking, e.g. storag
 
 Total Supply: 1,000,000,000 Tokens.
 
-## FilSwan Token Value Flow
+## Swan Token Value Flow
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption><p>FilSwan Token Value Flow</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (65).png" alt=""><figcaption><p>Token Value Flow</p></figcaption></figure>
 
 The Swan token has 2 stages:
 
@@ -23,6 +23,6 @@ Swan Testnet Token (Swan) is used on Swan Testnet. The Swan Testnet  is designed
 
 #### Swan Mainnet
 
-Swan is a L2 blockchain on Ethereum with Rollup technology.
+Swan is a L3 blockchain on Ethereum with Rollup technology.
 
-Swan Mainet Token is used by swan mainnet, when swan mainnet launches, user can perform a one-time swap at 1:1 with Lagrange mainnet Token. The total supply is 1,000,000,000.
+Swan Mainet Token is used by swan mainnet, when swan mainnet launches, user can perform a one-time swap at 1:1 with LAG Token. The total supply is 1,000,000,000.
