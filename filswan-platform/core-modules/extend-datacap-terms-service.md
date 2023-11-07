@@ -4,10 +4,10 @@ The Extend DataCap Terms Service is designed to support Storage Providers in ext
 
 ### Requirements:
 
-Before you get started with the [Extend Datacap Terms Service.](https://datacap.filswan.com), please ensure that you meet the following requirements:
+Before you get started with the [Extend Datacap Terms Service](https://datacap.swanchain.io/)., please ensure that you meet the following requirements:
 
 1. The sectors must be active.
-2. The deals must be received from the [FilSwan](https://console.filswan.com/) platform.
+2. The deals must be received from the Swan platform.
 3. The sector's proof time must be after V17 (2383680, 2022-11-30 140000 UTC).
 4. Ensure that you have `lotus-miner` version 1.23.0 or higher installed.
 
@@ -36,11 +36,11 @@ The **Storage Provider** needs to extend the sector expiration:
 lotus-miner sectors extend --extension=1555200  --really-do-it=true --drop-claims=true  --sector-file=[sector_file]
 ```
 
-[FilSwan's Extend Datacap Terms Service](https://datacap.filswan.com) can help you with [**Step One**](extend-datacap-terms-service.md#step-one), and the provider needs to perform [**Step Two**](extend-datacap-terms-service.md#step-two).
+[Swan's Extend Datacap Terms Service](https://datacap.swanchain.io/) can help you with [**Step One**](extend-datacap-terms-service.md#step-one), and the provider needs to perform [**Step Two**](extend-datacap-terms-service.md#step-two).
 
 ### A Step-by-Step Guide
 
-1. Head over to [Extend Datacap Terms Service.](https://datacap.filswan.com)
+1. Head over to [Extend Datacap Terms Service.](https://datacap.swanchain.io/)
 2. Fill in your **Storage Provider ID** and upload the list of your **Sector IDs** (follow the template file).
 3. Select the **Extension** (extending time) and choose the claims you want to extend.
 4. Provide your **Email** and **Transaction CID** to claim your request.
