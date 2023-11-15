@@ -4,7 +4,7 @@ description: Cross Chain Computing Protocol
 
 # Protocol Stack
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 Multichain computing protocol(MCP) is an open-sourced standard for developers to easily build secure multi-chain services and applications. With a universal bridging interface, developers can utilize resources across multiple blockchain networks including computing, storage, and bandwidth, eliminating the need for developers to write agile code for fast cross-chain integrations. MCP opens a new category of web3 applications that can be built by developers for multi-chain ecosystems.
 

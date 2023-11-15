@@ -10,7 +10,7 @@ description: For multiple organizations or a organization has more function unit
 
 ### Login to Multichain Storage
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Create Buckets for Organizations
 

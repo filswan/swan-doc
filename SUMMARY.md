@@ -143,3 +143,12 @@
 * [Flink API](development-resource/flink-api.md)
 * [FS3 API](development-resource/fs3-api.md)
 * [API keys](development-resource/api-keys.md)
+
+## Swan Testnet
+
+* [Swan Jupiter Testnet](swan-testnet/swan-jupiter-testnet/README.md)
+  * [How to Participate](swan-testnet/swan-jupiter-testnet/how-to-participate.md)
+  * [Before You Get Started](swan-testnet/swan-jupiter-testnet/before-you-get-started.md)
+  * [Computing Provider Setup](swan-testnet/swan-jupiter-testnet/computing-provider-setup/README.md)
+    * [FAQ](swan-testnet/swan-jupiter-testnet/computing-provider-setup/faq.md)
+  * [FAQ](swan-testnet/swan-jupiter-testnet/faq.md)
