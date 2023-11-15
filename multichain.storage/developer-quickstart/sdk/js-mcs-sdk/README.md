@@ -8,7 +8,7 @@ js-mcs-sdk is a javascript software development kit for the MCS service. It prov
 
 The SDK has the following MCS functionalities:
 
-* POST    upload file to FilSwan IPFS gateway
+* POST    upload file to Swan IPFS gateway
 * POST    make payment to Swan Filecoin storage gateway
 * POST    mint asset as NFT
 * GET       list of files uploaded

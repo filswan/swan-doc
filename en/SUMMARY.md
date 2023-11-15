@@ -1,6 +1,6 @@
 # Table of contents
 
-* [FilSwan Overview](README.md)
+* [Swan Overview](README.md)
 * [Contact Us](contact-us/README.md)
   * [Social Accounts & Communities](contact-us/social-accounts-and-communities.md)
   * [Business Partnerships](contact-us/business-partnerships.md)
@@ -8,7 +8,7 @@
 ## Filswan Platform
 
 * [Overview](filswan-platform/overview/README.md)
-  * [FilSwan Auction System](filswan-platform/overview/filswan-auction-system.md)
+  * [Swan Auction System](filswan-platform/overview/filswan-auction-system.md)
   * [Reputation System](filswan-platform/overview/reputation-system.md)
 * [Core modules](filswan-platform/core-modules/README.md)
   * [Task Management](filswan-platform/core-modules/task-management/README.md)
@@ -73,6 +73,6 @@
 
 ## Development Resource
 
-* [FilSwan API](development-resource/filswan-api.md)
+* [Swan API](development-resource/filswan-api.md)
 * [FS3 API](development-resource/fs3-api.md)
-* [FilSwan FAQ](development-resource/filswan-faq.md)
+* [Swan FAQ](development-resource/filswan-faq.md)

@@ -14,4 +14,4 @@ Click on the bright green “Assign” button next to the miner you have selecte
 
 ![Example of Pop-up asking to select miner ID and re-upload CSV](https://firebasestorage.googleapis.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MauK7Ig3eWeXC35bZV7%2Fuploads%2FzFY2JDpCDnmKGRVcvqbQ%2Ffile.png?alt=media)
 
-The reason for re-uploading the CSV file is because when creating a task, anyone can view that task’s CSV file. To prevent anyone and everyone on FilSwan from accessing your data file, you can upload a dummy CSV file when creating the task. Then you upload the real CSV file after you have selected a miner and the pop-up above appears.  
+The reason for re-uploading the CSV file is because when creating a task, anyone can view that task’s CSV file. To prevent anyone and everyone on Swan from accessing your data file, you can upload a dummy CSV file when creating the task. Then you upload the real CSV file after you have selected a miner and the pop-up above appears.  

@@ -2,7 +2,7 @@
 
 ## Overview
 
-FilSwan Token is used for paying web3 services and ecosystem governance (DAO) on the network. It includes storage-based services, computing services and other chain services, e.g., Matic, BNB, and ARK.
+Swan Token is used for paying web3 services and ecosystem governance (DAO) on the network. It includes storage-based services, computing services and other chain services, e.g., Matic, BNB, and ARK.
 
 Token Holders can also get revenue sharing from sub-DAOs’ staking, e.g. storage DAO and computing DAO.
 

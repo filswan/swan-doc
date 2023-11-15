@@ -6,7 +6,7 @@ description: Upload file(s) to MCS using the MCS SDK
 
 `upload(fileArray, options)`
 
-You can use the upload function to upload an array of file(s) to FilSwan IPFS gateway. The array holds a list of objects, and returns an array of response objects. Using `fs` is a simple way to read the file data. The options object is also optional to customize the upload.
+You can use the upload function to upload an array of file(s) to Swan IPFS gateway. The array holds a list of objects, and returns an array of response objects. Using `fs` is a simple way to read the file data. The options object is also optional to customize the upload.
 
 ```
 require('dotenv').config()

@@ -1,10 +1,10 @@
 ---
 description: >-
-  This is a Postman Collection for the FilSwan API v2 endpoints. The page below
+  This is a Postman Collection for the Swan API v2 endpoints. The page below
   describes different components of our API offering.
 ---
 
-# FilSwan API
+# Swan API
 
 ## Authorization
 
@@ -629,7 +629,7 @@ Page number, starts from 0. Default: 0
 
 {% swagger baseUrl="https://api.filswan.com" path="/tasks" method="post" summary="Create Task" %}
 {% swagger-description %}
-This endpoint allows you to create a new task on FilSwan Platform.
+This endpoint allows you to create a new task on Swan Platform.
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="authorization" type="string" %}
@@ -875,7 +875,7 @@ The additional information you would like to provide regarding the deal
 
 ## List of Supported API Methods
 
-The list below documents the API methods that the FilSwan platform currently supports. When a response payload is present, all responses are returned in JSON format.
+The list below documents the API methods that the Swan platform currently supports. When a response payload is present, all responses are returned in JSON format.
 
 * Get Auth Token
 * Generate API Key

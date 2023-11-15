@@ -38,7 +38,7 @@ Upload file(s) to MCS using the MCS SDK
 
 `upload(filePath, options={duration:525, fileType:0})`
 
-You can use the upload function to upload a file to the FilSwan IPFS gateway.
+You can use the upload function to upload a file to the Swan IPFS gateway.
 
 ```javascript
 require('dotenv').config()
@@ -216,7 +216,7 @@ main()
       wallet_id: null,
       name: 'Swan NFT Collection',
       description: null,
-      image_url: 'https://calibration-ipfs.filswan.com/ipfs/QmXK2TecdDiAEWEm9aERwQ4f6vfaQWrRReQj1k6km3dK77?filename=FilSwanLogo.jpeg',
+      image_url: 'https://calibration-ipfs.filswan.com/ipfs/QmXK2TecdDiAEWEm9aERwQ4f6vfaQWrRReQj1k6km3dK77?filename=SwanLogo.jpeg',
       external_link: null,
       seller_fee: null,
       wallet_id_recipient: null,

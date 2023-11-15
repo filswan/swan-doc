@@ -30,9 +30,9 @@ A: Multi-Chain storage (MCS) enables users to pay for Filecoin storage with stab
 
 &#x20;
 
-Q： How does FilSwan ensure security and stability?
+Q： How does Swan ensure security and stability?
 
-A： Security is guaranteed by the protocol layer of each L1 chain. We have also invited many well-known security companies to do audits. In terms of storage security, FilSwan currently has access to 190 storage service providers worldwide, covering five continents, is very decentralized, and each data has more than five backups. I think the infrastructure support we have now will help with the service stability.
+A： Security is guaranteed by the protocol layer of each L1 chain. We have also invited many well-known security companies to do audits. In terms of storage security, Swan currently has access to 190 storage service providers worldwide, covering five continents, is very decentralized, and each data has more than five backups. I think the infrastructure support we have now will help with the service stability.
 
 &#x20;
 

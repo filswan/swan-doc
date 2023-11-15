@@ -2,7 +2,7 @@
 
 ## Partnership 
 
-If you want your logo shown as FilSwan's ecosystem partner and client, please submit the form below:
+If you want your logo shown as Swan's ecosystem partner and client, please submit the form below:
 
 [Apply to be a partner or client](https://docs.google.com/forms/d/1ysOaN0LH0go32fETBEKDvX2b8VaG_Wxv2sehdwGcYro/viewform)
 

@@ -1,6 +1,6 @@
 # Navigate Tasks
 
-**Browse Tasks** shows all available tasks that are open for bids on FilSwan.
+**Browse Tasks** shows all available tasks that are open for bids on Swan.
 
 * If you are a miner looking for tasks to bid on, this would be the place to look.
 * As a client, after you create a task that is open for bids, it will be displayed on Browse Tasks.

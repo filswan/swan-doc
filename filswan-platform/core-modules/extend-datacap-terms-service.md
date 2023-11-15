@@ -45,7 +45,7 @@ lotus-miner sectors extend --extension=1555200  --really-do-it=true --drop-claim
 3. Select the **Extension** (extending time) and choose the claims you want to extend.
 4. Provide your **Email** and **Transaction CID** to claim your request.
 5. Click "**Claim**," and you will receive a confirmation email.
-6. After confirming your payment, the FilSwan team will complete [**Step One**](extend-datacap-terms-service.md#step-one) and reply with the corresponding sector information via email.
+6. After confirming your payment, the Swan team will complete [**Step One**](extend-datacap-terms-service.md#step-one) and reply with the corresponding sector information via email.
 7. Download the sectors file and run the command to complete [**Step Two**](extend-datacap-terms-service.md#step-two):
 
 ```

@@ -2,7 +2,7 @@
 
 FIlSwan authenticates your API requests using your account’s API keys. If you don’t include your key when making an API request, or use an incorrect or outdated one, FIlSwan returns an error.
 
-### **To create a FilSwan account**
+### **To create a Swan account**
 
 1. Open [https://console.filswan.com/#/register](https://console.filswan.com/#/register)
 2. Follow the online instructions.

@@ -12,7 +12,7 @@ The latest version of Swan Provider integrated the following resource leasing op
 * RPC lending via Pocket network
 * more to come
 
-The service FilSwan provides helps storage providers connect to the Web3 service market, making the Web3 service offering ultimately easier.
+The service Swan provides helps storage providers connect to the Web3 service market, making the Web3 service offering ultimately easier.
 
 Typical Web3 markets are:
 
@@ -28,7 +28,7 @@ Typical Web3 markets are:
 
 Swan Provider runs on the same node as lotus miner nodes running and assists lotus miner processing deals. It makes it easy for miners to manage tasks, import deals, and synchronize deals with the Swan platform.
 
-To better share the information with the FlilSwan client, authentication from the FilSwan platform is required.
+To better share the information with the FlilSwan client, authentication from the Swan platform is required.
 
 ![Swan Provider Business Flow](<../.gitbook/assets/image (22).png>)
 

@@ -71,7 +71,7 @@ On this page, you can find all the files you have uploaded. It provides you some
 {% endhint %}
 
 {% hint style="success" %}
-**GOOD TO KNOW:** In order to improve the efficiency, MCS system is using FilSwan's AutoBid function. A qualified and optimal provider will be automatically assigned to your deal. The storage provider will complete following backup procedure, and synchronize the 'Deal status' to our platform.
+**GOOD TO KNOW:** In order to improve the efficiency, MCS system is using Swan's AutoBid function. A qualified and optimal provider will be automatically assigned to your deal. The storage provider will complete following backup procedure, and synchronize the 'Deal status' to our platform.
 {% endhint %}
 
 {% hint style="info" %}

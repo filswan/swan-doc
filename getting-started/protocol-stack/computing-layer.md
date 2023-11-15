@@ -6,13 +6,13 @@ description: Decentralized Computing Power Renting Network
 
 <figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption><p>Computing Workflow</p></figcaption></figure>
 
-FilSwan's Computing Layer is a crucial component of its decentralized cloud computing ecosystem. It's designed to facilitate the execution of computing tasks across a network of providers, ensuring efficiency, reliability, and security. Here's an introduction to the key aspects of the FilSwan Computing Layer:
+Swan's Computing Layer is a crucial component of its decentralized cloud computing ecosystem. It's designed to facilitate the execution of computing tasks across a network of providers, ensuring efficiency, reliability, and security. Here's an introduction to the key aspects of the Swan Computing Layer:
 
 <figure><img src="../../.gitbook/assets/image (49).png" alt=""><figcaption></figcaption></figure>
 
 #### 1. **Computing Providers (CPs)**
 
-Computing Providers are entities within the FilSwan network that offer computational resources. They must provide collateral in Swan tokens to join the network, ensuring accountability.
+Computing Providers are entities within the Swan network that offer computational resources. They must provide collateral in Swan tokens to join the network, ensuring accountability.
 
 #### 2. **Task Submission and Bidding**
 
@@ -28,13 +28,13 @@ CPs must collateralize a certain amount of Swan tokens to participate in the net
 
 #### 5. **Cross-Chain Capability and Payment**
 
-FilSwan's computing layer has cross-chain capabilities, allowing payments from multiple blockchain tokens. A swap engine converts user-paid tokens to Swan tokens before paying the CPs.
+Swan's computing layer has cross-chain capabilities, allowing payments from multiple blockchain tokens. A swap engine converts user-paid tokens to Swan tokens before paying the CPs.
 
 #### 6. **Decentralized and Secure**
 
-The FilSwan Computing Layer operates in a decentralized manner, leveraging blockchain technology to ensure transparency, security, and trust.
+The Swan Computing Layer operates in a decentralized manner, leveraging blockchain technology to ensure transparency, security, and trust.
 
-#### 7. **Integration with Other FilSwan Services**
+#### 7. **Integration with Other Swan Services**
 
 The Computing Layer is part of a broader ecosystem that includes storage provider selection, data management, and seamless integration from IPFS to the Filecoin network.
 
@@ -42,4 +42,4 @@ The Computing Layer is part of a broader ecosystem that includes storage provide
 
 #### Conclusion
 
-FilSwan's Computing Layer represents a significant advancement in decentralized cloud computing. By leveraging blockchain technology and a sophisticated system of task allocation, collateral, and rewards, it offers a scalable and reliable solution for executing computing tasks across a decentralized network. Its integration with other FilSwan services and its cross-chain capabilities further enhance its appeal as a comprehensive solution for decentralized storage, payment gateway integration, and computing.
+Swan's Computing Layer represents a significant advancement in decentralized cloud computing. By leveraging blockchain technology and a sophisticated system of task allocation, collateral, and rewards, it offers a scalable and reliable solution for executing computing tasks across a decentralized network. Its integration with other Swan services and its cross-chain capabilities further enhance its appeal as a comprehensive solution for decentralized storage, payment gateway integration, and computing.

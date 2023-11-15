@@ -18,6 +18,6 @@ The goal of these mechanisms is to enable interoperability between different blo
 
 
 
-FilSwan use Chainlink data oracle as the cross chain essential design
+Swan use Chainlink data oracle as the cross chain essential design
 
 <figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>

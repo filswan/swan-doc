@@ -31,7 +31,7 @@
 ## Filswan Platform
 
 * [Overview](filswan-platform/overview/README.md)
-  * [FilSwan Auction System](filswan-platform/overview/filswan-auction-system.md)
+  * [Swan Auction System](filswan-platform/overview/filswan-auction-system.md)
   * [Web3 Automated Deal Matching](filswan-platform/overview/web3-automated-deal-matching.md)
   * [Reputation System](filswan-platform/overview/reputation-system.md)
 * [Key functionalities](filswan-platform/core-modules/README.md)
@@ -137,7 +137,7 @@
 
 * [Swan Token Contract](development-resource/swan-token-contract/README.md)
   * [Acquire Testnet USDC and MATIC tokens](development-resource/swan-token-contract/acquire-testnet-usdc-and-matic-tokens.md)
-* [FilSwan API](development-resource/filswan-api.md)
+* [Swan API](development-resource/filswan-api.md)
 * [MCS API](development-resource/mcp-api.md)
 * [MCS 2.0 API](development-resource/mcp-api-1.md)
 * [Flink API](development-resource/flink-api.md)

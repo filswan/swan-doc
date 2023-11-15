@@ -10,7 +10,7 @@ Similar to S3 object storage tool which is widely used in the industry, FS3 can 
 
 The main function of FS3 is to act as an alternative to the current mainstream cloud storage, S3. It is fully compatible with current mainstream cloud storage solutions, supports TB to PB level data storage, and can be linked to the FIL network with one click. It also includes functions such as storage service payment and automatic data backup and recovery.
 
-FilSwan provides a layer 2 cross -chain solution for Web3 projects by integrating data, computing and payment into one-suite for users. Storage solution, as one of the services provided by FilSwan which provides a storage marketplace on the FIL network with a complete paid storage solution for users. Users can create automatic or manual bidding tasks, upload data simultaneously, and finally, complete the data storage application.
+Swan provides a layer 2 cross -chain solution for Web3 projects by integrating data, computing and payment into one-suite for users. Storage solution, as one of the services provided by Swan which provides a storage marketplace on the FIL network with a complete paid storage solution for users. Users can create automatic or manual bidding tasks, upload data simultaneously, and finally, complete the data storage application.
 
 ![](<../.gitbook/assets/image (42).png>)
 
@@ -32,7 +32,7 @@ By providing Filecoin network storage services, FS3 can achieve extremely low pr
 
 #### **4. Fully compatible with existing cloud storage services** <a href="#8bf8" id="8bf8"></a>
 
-FS3 is currently fully compatible with Amazon S3 storage service functions. FilSwan officially provides a complete API interface for developers to carry out secondary development, allowing it to achieve more application functions.
+FS3 is currently fully compatible with Amazon S3 storage service functions. Swan officially provides a complete API interface for developers to carry out secondary development, allowing it to achieve more application functions.
 
 #### **5. Storage space can be used on demand** <a href="#ca93" id="ca93"></a>
 
