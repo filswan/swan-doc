@@ -24,13 +24,13 @@ Before embarking on your Swan Testnet journey, ensure a smooth participation pro
 
 2.Fill in details for Swan Testnet:
 
-* Network Name: SWAN Testnet
-* New RPC URL: [http://34.130.248.50:8545](https://rpc.swanchain.dev)
+* Network Name: Swan Testnet
+* RPC URL: [https://rpc.swanchain.dev/](https://rpc.swanchain.dev/)
 * Chain ID: 8598668088
 * Symbol: SWAN-ETH
-* Explorer: http://35.246.87.45/
+* Explorer: [http://34.130.248.50](http://34.130.248.50)
 
-<figure><img src="https://lh7-us.googleusercontent.com/wUeavSCs2T61ITcfYoSregtAZbPfSeuJfZiB-VmpYYe3cOpeBWG-V4YbvJE1FZtYGCsY2WKZRaANBwAqz1jsWvqYNl1N_DKfGG6Eou1zQr7-_kISUHWoP5XSqaAQIyCRgceKcs8G1b_um1RYnCGRDNo" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (67).png" alt="" width="375"><figcaption></figcaption></figure>
 
 3.Click "Save" or "Add" to save the network.
 
@@ -40,10 +40,15 @@ Before embarking on your Swan Testnet journey, ensure a smooth participation pro
 
 <figure><img src="https://lh7-us.googleusercontent.com/ETK17Apa2pAOfPKvN-zr1Yy_aAFfKCJrmQKA5LGFdUCl0eL5O77IGgRHU3237HYKHCKOyHTSuwLL1Jny6yqQ5IfWoIT6i0jNExf4s-a9ZBcTlvoBUXAWbhrmC96Nalopl8vIZLEps7I9bsxgdUjQGA0" alt="" width="375"><figcaption></figcaption></figure>
 
-2.Enter token addresses:
+2.Enter token contract addresses:
 
-* `SWAN Contract: 0x407a5856050053CF1DB54113bd9Ea9D2Eeee7C35`
-* `USDC Contract: 0x0c1a5A0Cd0Bb4A9F564f09Cc66f4c921B560371a`
+```
+SWAN Contract: 0x407a5856050053CF1DB54113bd9Ea9D2Eeee7C35
+```
+
+```
+USDC Contract: 0x0c1a5A0Cd0Bb4A9F564f09Cc66f4c921B560371a
+```
 
 3.Token symbol and decimals should autofill; if not, check the block explorer.
 
@@ -77,22 +82,24 @@ Alchemy allows registered users to claim up to 0.02 Goerli ETH daily at the time
 
 1.Send Goerli ETH to the below Address:
 
-0x95C1682C46E5a0Db841287e61ea596DeC493D786.
+```
+0x95C1682C46E5a0Db841287e61ea596DeC493D786
+```
 
 <figure><img src="https://lh7-us.googleusercontent.com/vmBUtjckxIXaFCJdVKnwy3-e4OMPDaFwirHA8g70ZqhGC6_zl9ardluD1g8mAwmjhfJyNv1hryjvpachkxLAta99XHVZDiBqIGUztB-2NkNAAY676CUkyZoWIJ6VJdeHHMg4b8TJYuWGh20W334PqXg" alt="" width="188"><figcaption></figcaption></figure>
 
-2.Switch MetaMask to the Swan Testnet, Once the transaction is confirmed on the Goerli testnet, you should see the corresponding amount of Swan tokens in your wallet on the Swan Testnet.
+2.Switch to the Swan Testnet, Once the transaction is confirmed on the Goerli testnet, you should see the corresponding amount of SWAN-ETH tokens in your wallet on the Swan Testnet.
 
-<figure><img src="https://lh7-us.googleusercontent.com/Et5qwvLJ-eK9B7XKzoiyoQQIRs83mQ7EeyVpWK79gxozgz4sVLUDlQuQQ8Z3tKTgVK6nvUcj2WuIxqwr073m5o3ss4TGFKy1RoqL5GbiQXkEpkwxQ4bvYFBI2XsBNGagaHPCcW2t4Zo4IhMBsmjdQNg" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (68).png" alt=""><figcaption></figcaption></figure>
 
 ### Step 4: Claim Test USDC Tokens from Discord Faucet:
 
 In addition to Goerli ETH for gas fees, you'll need test-USDC tokens for the Swan Testnet campaign. Follow these steps to claim test USDC tokens:
 
-#### 1.Join the Swan [official Discord](https://discord.gg/FEv2hMby9A).
+#### 1.Join the [Swan official Discord](https://discord.com/invite/FEv2hMby9A).
 
-Go to the `testnet-faucet` channel under the **Swan - Testnet** section. And then type the command `$faucet {your-wallet-address}` to claim your test USDC tokens for free.
+Go to the **testnet-faucet** channel under the **Swan - Testnet** section to claim (Coming Soon)
 
-#### 2.Switch to the Goerli Testnet:
+#### 2.Switch to the Swan Testnet:
 
 Following the [guide ](before-you-get-started.md#import-swan-and-test-usdc-tokens)to import test-USDC tokens into your wallet, and check your balance.

@@ -16,8 +16,8 @@ description: Swan Provider FAQ
 [why-storage-provider-status-shows-offline.md](why-storage-provider-status-shows-offline.md)
 {% endcontent-ref %}
 
-{% content-ref url="how-to-check-the-task-status.md" %}
-[how-to-check-the-task-status.md](how-to-check-the-task-status.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 {% content-ref url="../faqs/how-to-configure-the-storage-provider-market.md" %}

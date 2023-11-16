@@ -21,7 +21,7 @@ In order to enable a new class of web3 native dApps, a Decentralized Query Proto
 
 <figure><img src="../../.gitbook/assets/image (61).png" alt=""><figcaption><p>Protocol Stack</p></figcaption></figure>
 
-1\. [Cross-chain Consensus Layer](cross-chain-contracts.md)—responsible for smart contract execution and payment settlement.
+1\. [Cross-chain Consensus Layer](broken-reference)—responsible for smart contract execution and payment settlement.
 
 2\. [Peer-to-peer (P2P) Network](peer-to-peer-p2p-network.md)—defines how nodes locate and connect.
 
