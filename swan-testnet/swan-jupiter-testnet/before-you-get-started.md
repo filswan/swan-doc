@@ -25,10 +25,10 @@ Before embarking on your Swan Testnet journey, ensure a smooth participation pro
 2.Fill in details for Swan Testnet:
 
 * Network Name: Swan Testnet
-* RPC URL: [https://rpc.swanchain.dev/](https://rpc.swanchain.dev/)
+* RPC URL: https://rpc.swanchain.dev/
 * Chain ID: 8598668088
 * Symbol: SWAN-ETH
-* Explorer: [http://34.130.248.50](http://34.130.248.50)
+* Explorer: http://34.130.248.50
 
 <figure><img src="../../.gitbook/assets/image (67).png" alt="" width="375"><figcaption></figcaption></figure>
 
