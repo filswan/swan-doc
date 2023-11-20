@@ -4,8 +4,7 @@ description: An L2 for decentralized cloud computing
 
 # Overview
 
-![
-](<.gitbook/assets/image (28) (1) (1) (1) (1) (1).png>)
+![](<.gitbook/assets/image (28) (1) (1) (1) (1) (1).png>)
 
 Swan Chain(formerly FilSwan), built as an Ethereum Layer 2 solution, is designed to enhance decentralized computing networks. It integrates a tool suite that streamers developers' access to resources across multiple blockchains.
 
@@ -29,26 +28,4 @@ Swan offers a comprehensive solution to this challenge by providing an infrastru
 
 <figure><img src=".gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p>Layer1, Layer2,Layer3</p></figcaption></figure>
 
-
-
-
-
 {% embed url="https://github.com/filswan" %}
-
-## Core Product
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}

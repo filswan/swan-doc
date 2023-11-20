@@ -1,4 +1,4 @@
-# BASIC CONCEPTS
+# Basic Concepts
 
 ## 1. Task
 
@@ -8,7 +8,7 @@ A task can contain one or multiple CAR files. Each CAR file can be sent to one o
 
 #### **2.1 Auto-bid**
 
-`task.bid_mode=1`, Market Matcher will automatically allocate miners for each CAR file based on the [Reputation System](../filswan-platform/overview/reputation-system.md) and the max copy number the task needs.
+`task.bid_mode=1`, Market Matcher will automatically allocate miners for each CAR file based on the [Reputation System](../swan-platform/overview/reputation-system.md) and the max copy number the task needs.
 
 **2.2 Manual-bid**
 

@@ -28,23 +28,28 @@
   * [Business Partnerships](getting-started/contact-us/business-partnerships.md)
 * [FAQ](getting-started/filswan-faq.md)
 
-## Filswan Platform
+## QuickStarts
 
-* [Overview](filswan-platform/overview/README.md)
-  * [Swan Auction System](filswan-platform/overview/filswan-auction-system.md)
-  * [Web3 Automated Deal Matching](filswan-platform/overview/web3-automated-deal-matching.md)
-  * [Reputation System](filswan-platform/overview/reputation-system.md)
-* [Key functionalities](filswan-platform/core-modules/README.md)
-  * [Task Management](filswan-platform/core-modules/task-management/README.md)
-    * [Create a New Task](filswan-platform/core-modules/task-management/create-a-new-task.md)
-    * [Navigate Tasks](filswan-platform/core-modules/task-management/navigate-tasks.md)
-    * [Update Tasks](filswan-platform/core-modules/task-management/update-tasks.md)
-    * [Assign Tasks](filswan-platform/core-modules/task-management/assign-a-task.md)
-  * [My Profile](filswan-platform/core-modules/my-profile/README.md)
-    * [Register as a storage provider](filswan-platform/core-modules/my-profile/registering-your-storage-provider.md)
-  * [Find Storage Providers](filswan-platform/core-modules/find-storage-providers/README.md)
-    * [Storage Provider Details](filswan-platform/core-modules/find-storage-providers/storage-provider-details.md)
-  * [Extend DataCap Terms Service](filswan-platform/core-modules/extend-datacap-terms-service.md)
+* [Dive into QuickStarts](quickstarts/dive-into-quickstarts/README.md)
+  * [Swan Chain: Developing Smart Contracts with Go](quickstarts/dive-into-quickstarts/swan-chain-developing-smart-contracts-with-go.md)
+
+## Swan Platform
+
+* [Overview](swan-platform/overview/README.md)
+  * [Swan Auction System](swan-platform/overview/filswan-auction-system.md)
+  * [Web3 Automated Deal Matching](swan-platform/overview/web3-automated-deal-matching.md)
+  * [Reputation System](swan-platform/overview/reputation-system.md)
+* [Key functionalities](swan-platform/core-modules/README.md)
+  * [Task Management](swan-platform/core-modules/task-management/README.md)
+    * [Create a New Task](swan-platform/core-modules/task-management/create-a-new-task.md)
+    * [Navigate Tasks](swan-platform/core-modules/task-management/navigate-tasks.md)
+    * [Update Tasks](swan-platform/core-modules/task-management/update-tasks.md)
+    * [Assign Tasks](swan-platform/core-modules/task-management/assign-a-task.md)
+  * [My Profile](swan-platform/core-modules/my-profile/README.md)
+    * [Register as a storage provider](swan-platform/core-modules/my-profile/registering-your-storage-provider.md)
+  * [Find Storage Providers](swan-platform/core-modules/find-storage-providers/README.md)
+    * [Storage Provider Details](swan-platform/core-modules/find-storage-providers/storage-provider-details.md)
+  * [Extend DataCap Terms Service](swan-platform/core-modules/extend-datacap-terms-service.md)
 
 ## Multichain.Storage
 

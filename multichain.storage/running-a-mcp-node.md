@@ -21,7 +21,7 @@ metadata:
 
 In this section, we'll explain the requirements and basics for running your own MCS node.
 
-It's important to note that nodes can fulfill requests for open APIs out-of-the-box using our [Tasks](../filswan-platform/overview/filswan-auction-system.md) without needing any additional configuration.
+It's important to note that nodes can fulfill requests for open APIs out-of-the-box using our [Tasks](../swan-platform/overview/filswan-auction-system.md) without needing any additional configuration.
 
 If you would like to provide data from an authenticated API, you can add an external adapter to enable connectivity through the MCS node.
 
