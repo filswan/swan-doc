@@ -1,8 +1,45 @@
 # Before You Get Started
 
-Before embarking on your Swan Testnet journey, ensure a smooth participation process with the following steps:
+Swan Testnet provides support for both the **Polygon Mumbai Testnet** and **Swan Testnet** (Built on OP Stack), offering the flexibility to pay for building Spaces, regardless of your MetaMask connection to both chains.
 
-### Step 1: Set Up MetaMask&#x20;
+Here's what you'll need:
+
+**Gas Fees:** Gas Fee is a type of transaction fee that you have to pay to execute a transaction. The fees vary based on the blockchain. For instance, transactions on **Polygon Mumbai** require **MATIC**, while **Swan Testnet** transactions require **Swan-ETH**.
+
+**Payment to Computing Providers:** In addition to gas fees, you'll need to pay Computing Providers in **USDC** to exchange their computing resources for powering your Space (Application).
+
+Before immersing yourself in the Swan Jupiter Testnet Campaign, ensure you make the necessary preparations:
+
+**For Polygon Mumbai Connection:**
+
+1. [Add Mumbai Testnet to MetaMask](before-you-get-started.md#add-mumbai-testnet-to-metamask).
+2. [Fund your wallet with MATIC and USDC](before-you-get-started.md#option-1-connecting-to-polygon-mumbai-testnet).
+
+**For Swan Testnet Connection:**
+
+1. [Add Swan Testnet/ETH Goerli to MetaMask](before-you-get-started.md#option-2-add-swan-testnet-to-metamask).
+2. [Fund your wallet with SWAN-ETH and USDC](before-you-get-started.md#option-2-connecting-to-swan-testnet).
+
+## How To Set Up MetaMask&#x20;
+
+### Step 1: Add Testnet to Metamask
+
+#### Option 1:Add Mumbai Testnet to MetaMask:
+
+Following this [guides](https://filswan.medium.com/how-to-add-polygon-mumbai-testnet-to-metamask-16a11db91214) to add Mumbai Testnet to your Metamask online.
+
+```
+Network Name: Mumbai Testnet
+New RPC URL: https://rpc-mumbai.maticvigil.com/
+Chain ID: 80001
+Currency Symbol: MATIC
+Block Explorer URL: https://mumbai.polygonscan.com
+
+```
+
+#### Option 2: Add Swan Testnet to MetaMask:
+
+Swan, built at OP Stack, is currently available on the Goerli Swan Testnet. To engage with Swan, you'll need Goerli Testnet ETH. Therefore, before adding Swan Testnet into MetaMask, it's essential to add the Goerli Testnet to your wallet as well.
 
 #### Add Goerli Testnet to MetaMask:
 
@@ -16,7 +53,7 @@ Before embarking on your Swan Testnet journey, ensure a smooth participation pro
 
 <figure><img src="https://lh7-us.googleusercontent.com/WGv0hke6txaStO71iLLO3YUZA7ol1HD-hIuh__aZnHtCQQuWUZUTLgK9hHxks1TEaG3L8xy9QqKjq7kY9cxHfWLcpgCxy5sjWu7LFssv_nW1YLlP6iGDcf_m28oir0_-gmQbtXGXNf2o15FZTyP8CGU" alt="" width="375"><figcaption></figcaption></figure>
 
-#### Add Swan Jupiter Testnet:
+#### Add Swan Testnet:
 
 1.From the homepage of your wallet, click on the network selector in the top left, and then on ‘Add network' > ‘Add a network manually’.
 
@@ -25,16 +62,16 @@ Before embarking on your Swan Testnet journey, ensure a smooth participation pro
 2.Fill in details for Swan Testnet:
 
 * Network Name: Swan Testnet
-* RPC URL: https://rpc.swanchain.dev/
+* RPC URL: https://rpc-testnet.swanchain.io
 * Chain ID: 8598668088
 * Symbol: SWAN-ETH
-* Explorer: http://34.130.248.50
+* Explorer: https://explorer-testnet.swanchain.io
 
 <figure><img src="../../.gitbook/assets/image (67).png" alt="" width="375"><figcaption></figcaption></figure>
 
 3.Click "Save" or "Add" to save the network.
 
-#### Import SWAN and test-USDC Tokens:
+### Step 2: Import Tokens:
 
 1.Click on 'Import tokens' at the bottom of the 'Tokens' tab.
 
@@ -42,21 +79,39 @@ Before embarking on your Swan Testnet journey, ensure a smooth participation pro
 
 2.Enter token contract addresses:
 
-```
-SWAN Contract: 0x407a5856050053CF1DB54113bd9Ea9D2Eeee7C35
-```
-
-```
-USDC Contract: 0x0c1a5A0Cd0Bb4A9F564f09Cc66f4c921B560371a
-```
+<table><thead><tr><th width="191">Blockchain</th><th width="108">Token</th><th>Contract</th></tr></thead><tbody><tr><td>Mumbai Testnet</td><td>MATIC</td><td>0x0000000000000000000000000000000000001010</td></tr><tr><td>Mumbai Testnet</td><td>USDC</td><td>0x1da5E8c36dc967bE47C55C600b79220F191B1202</td></tr><tr><td>Swan Testnet</td><td>Swan</td><td>0x407a5856050053CF1DB54113bd9Ea9D2Eeee7C35</td></tr><tr><td>Swan Testnet</td><td>USDC</td><td>0x0c1a5A0Cd0Bb4A9F564f09Cc66f4c921B560371a</td></tr></tbody></table>
 
 3.Token symbol and decimals should autofill; if not, check the block explorer.
 
 4.Click 'Import' to confirm.
 
-### Step 2: Fund Your Wallet with Test Tokens:
+## How To Fund Your Wallet with Test Tokens:
 
-Goerli ETH tokens are essential for testing Swan Chain on the Goerli Testnet . You can obtain Goerli Testnet ETH tokens from Alchemy and Quicknode faucets:
+### Option 1: Connecting to Polygon Mumbai Testnet
+
+#### Step 1: Fund Your Wallet with test MATIC Tokens
+
+Visit the [Polygon Testnet Faucet](https://faucet.polygon.technology/). Paste your address to the faucet website and get some test MATIC tokens sent to your wallet for exploring functions on Lagrange.
+
+Please note that the function is on the Polygon Testnet environment and speed times may differ compared to mainnet usage.
+
+#### Step 2: Claim Test USDC Tokens from Discord Faucet:
+
+In addition to MATIC for gas fees, you'll need test-USDC tokens for the Swan Testnet campaign. Follow these steps to claim test USDC tokens:
+
+#### 1.Join the [Swan official Discord](https://discord.com/invite/FEv2hMby9A).
+
+Go to the [**usdc-faucet**](https://discord.gg/RuHBdBqcWR) channel under the **Swan - Testnet** section, and type the command `$swan_polygon_faucet {your-wallet-address}` to claim.
+
+#### 2.Switch to the Mumbai Testnet:
+
+Following the [guide ](before-you-get-started.md#import-swan-and-test-usdc-tokens)to import test-USDC tokens into your wallet, and check your balance.
+
+### Option 2: Connecting to Swan Testnet
+
+#### Step 1: Fund Your Wallet with Goerli ETH Tokens
+
+You can obtain Goerli Testnet ETH tokens from Alchemy and Quicknode faucets:
 
 #### Claim Goerli ETH on the Alchemy Goerli Faucet:
 
@@ -78,7 +133,7 @@ Alchemy allows registered users to claim up to 0.02 Goerli ETH daily at the time
 
 <figure><img src="https://lh7-us.googleusercontent.com/bQUfbOnRVH0PzEYMSsZNTrLcwP4bfZrnz_wUVnZrpf1pnHFZD9AWGKGWTUqD18HqpYPQ1Kq3WOei-HBx45g4aAnkjsBM5wMFTL-BG3sXl5O-ZKzeOuN0I_wDNy3g6hxh_ufIk1hgmg6BWht3rXUTv_k" alt=""><figcaption></figcaption></figure>
 
-### Step 3: Send Some ETH From Goerli To Swan Testnet
+#### Step 2: Send Some ETH From Goerli To Swan Testnet
 
 1.Send Goerli ETH to the below Address:
 
@@ -92,13 +147,13 @@ Alchemy allows registered users to claim up to 0.02 Goerli ETH daily at the time
 
 <figure><img src="../../.gitbook/assets/image (68).png" alt=""><figcaption></figcaption></figure>
 
-### Step 4: Claim Test USDC Tokens from Discord Faucet:
+#### Step 3: Claim Test USDC Tokens from Discord Faucet:
 
 In addition to Goerli ETH for gas fees, you'll need test-USDC tokens for the Swan Testnet campaign. Follow these steps to claim test USDC tokens:
 
 #### 1.Join the [Swan official Discord](https://discord.com/invite/FEv2hMby9A).
 
-Go to the **testnet-faucet** channel under the **Swan - Testnet** section to claim (Coming Soon)
+Go to the [**usdc-faucet**](https://discord.gg/RuHBdBqcWR) channel under the **Swan - Testnet** section, and type the command `$swan_usdc_faucet {your-wallet-address}` to claim.
 
 #### 2.Switch to the Swan Testnet:
 
