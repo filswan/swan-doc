@@ -113,6 +113,8 @@ contract MessageContract {
 
 <figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
+{% embed url="https://youtu.be/7AagMh-WdoA?si=avxXdud0HmFPJGt0" %}
+
 #### Writing and Reading from a Smart Contract
 
 * Setting up Go for Smart Contract Interaction
