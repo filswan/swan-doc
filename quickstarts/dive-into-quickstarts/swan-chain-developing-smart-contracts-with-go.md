@@ -7,14 +7,12 @@
 * Connecting to a Swan Chain RPC Using Go
 * Fetching Basic Blockchain Data from Swan Chain
 
-config.go
+Setup your RPC URL
 
-```
-package main
-
+<pre><code>package main
 // Shared RPC URL
-const rpcURL = "https://rpc-testnet.swanchain.io" // Replace with your testnet's RPC URL
-```
+<strong>const rpcURL = "https://rpc-testnet.swanchain.io" // Replace with your testnet's RPC URL
+</strong></code></pre>
 
 ```
 func TestConnectToTestnet(t *testing.T) {
@@ -44,6 +42,12 @@ func TestConnectToTestnet(t *testing.T) {
 	t.Logf("Latest block number: %d", blockNumber)
 }
 ```
+
+Output
+
+> \=== RUN TestGetAccountBalance ethclient\_test.go:64: Balance of account \[0xA41c36BCd65bDbFB62FE93E3b7a28d290E63C1F7]: 0.045930 Ether
+>
+> &#x20;\--- PASS: TestGetAccountBalance (0.21s)&#x20;
 
 #### &#x20;Managing Wallets and Checking Balances
 
@@ -81,12 +85,42 @@ func TestGetAccountBalance(t *testing.T) {
 
 #### Deploying a Smart Contract
 
-* Fundamentals of Smart Contracts on Swan Chain
-* Writing a Simple Smart Contract for Swan Chain in Solidity
-* Deploying Smart Contracts on Swan Chain using Go
+* Install and fund your MetaMask wallet
+* Write, compile, and deploy your first smart contract
+
+```
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract MessageContract {
+    string private message;
+
+    function writeMessage(string calldata newMessage) public {
+        message = newMessage;
+    }
+
+    function readMessage() public view returns (string memory) {
+        return message;
+    }
+}
+```
+
+* Click "Advanced Configurations" , and choose "London"
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+* Click ![](<../../.gitbook/assets/image (2).png>) and choose "WalletConnect" to deploy&#x20;
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Writing and Reading from a Smart Contract
 
 * Setting up Go for Smart Contract Interaction
 * Writing Data to a Smart Contract on Swan Chain
 * Reading and Interpreting Data from a Smart Contra
+
+
+
+Source code can be found here:
+
+{% embed url="https://github.com/filswan/ether-test" %}

@@ -16,8 +16,6 @@ There are several approaches to implementing cross-chain consensus layers, inclu
 
 The goal of these mechanisms is to enable interoperability between different blockchains, expand the use cases of blockchain technology, and enhance the overall security and scalability of decentralized systems.
 
-
-
 Swan use Chainlink data oracle as the cross chain essential design
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

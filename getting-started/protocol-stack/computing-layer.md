@@ -38,7 +38,7 @@ The Swan Computing Layer operates in a decentralized manner, leveraging blockcha
 
 The Computing Layer is part of a broader ecosystem that includes storage provider selection, data management, and seamless integration from IPFS to the Filecoin network.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p>Payment in Computing Network</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption><p>Payment in Computing Network</p></figcaption></figure>
 
 #### Conclusion
 
