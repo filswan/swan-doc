@@ -49,6 +49,8 @@ Output
 >
 > &#x20;\--- PASS: TestGetAccountBalance (0.21s)&#x20;
 
+{% embed url="https://youtu.be/o0X_7oDG9T4" %}
+
 #### &#x20;Managing Wallets and Checking Balances
 
 * Creating and Managing Swan Chain Wallets with Go
@@ -82,6 +84,8 @@ func TestGetAccountBalance(t *testing.T) {
 
 }
 ```
+
+####
 
 #### Deploying a Smart Contract
 
