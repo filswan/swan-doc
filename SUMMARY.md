@@ -154,6 +154,7 @@
 * [Swan Jupiter Testnet](swan-testnet/swan-jupiter-testnet/README.md)
   * [How to Participate](swan-testnet/swan-jupiter-testnet/how-to-participate.md)
   * [Before You Get Started](swan-testnet/swan-jupiter-testnet/before-you-get-started.md)
+  * [Network Early Adopter](swan-testnet/swan-jupiter-testnet/network-early-adopter.md)
   * [Computing Provider Setup](swan-testnet/swan-jupiter-testnet/computing-provider-setup/README.md)
     * [Prerequisites](swan-testnet/swan-jupiter-testnet/computing-provider-setup/prerequisites.md)
     * [Install the Kubernetes](swan-testnet/swan-jupiter-testnet/computing-provider-setup/install-the-kubernetes.md)
