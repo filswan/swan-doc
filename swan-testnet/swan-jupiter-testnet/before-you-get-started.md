@@ -61,7 +61,7 @@ In addition to MATIC for gas fees, you'll need test-USDC tokens for the Swan Tes
 
 #### 1.Join the [Swan official Discord](https://discord.com/invite/FEv2hMby9A).
 
-Go to the [**usdc-faucet**](https://discord.gg/RuHBdBqcWR) channel under the **Swan - Testnet** section, and type the command `$swan_polygon_faucet {your-wallet-address}` to claim.
+Go to the [**usdc-faucet**](https://discord.gg/RuHBdBqcWR) channel under the **Swan - Testnet** section, and type the command `$pusdc_faucet {your-wallet-address}` to claim.
 
 #### 2.Switch to the Mumbai Testnet:
 
