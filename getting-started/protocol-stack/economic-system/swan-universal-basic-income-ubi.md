@@ -1,3 +1,7 @@
+---
+description: Swan UBI is designed for Computing Provider's base benefit
+---
+
 # Universal Basic Income (UBI)
 
 #### **1. Introduction**
