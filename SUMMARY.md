@@ -73,7 +73,6 @@
       * [Onchain Storage](multichain.storage/developer-quickstart/sdk/python-mcs-sdk/onchain-storage.md)
       * [SDK Python Installation Tutorial Video](multichain.storage/developer-quickstart/sdk/python-mcs-sdk/sdk-python-installation-tutorial-video.md)
   * [Additional Resources](multichain.storage/developer-quickstart/additional-resources.md)
-* [Running an MCS Node](multichain.storage/running-a-mcp-node.md)
 * [Best Practice](multichain.storage/best-practice/README.md)
   * [Use MCS as Platform Storage Solution](multichain.storage/best-practice/use-mcs-as-platform-storage-solution/README.md)
     * [Single Organization Design](multichain.storage/best-practice/use-mcs-as-platform-storage-solution/single-organization-design.md)
