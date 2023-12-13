@@ -101,7 +101,8 @@
   * [10. How to check the Task Status?](swan-provider/faq/how-to-check-the-task-status.md)
   * [11. How to configure the Storage Provider Market?](swan-provider/faqs/how-to-configure-the-storage-provider-market.md)
   * [12. How to set the "ask price"?](swan-provider/faqs/how-to-configure-accept-verified-deals.md)
-  * [aria2\_download\_dir VS. aria2\_candidate\_dirs](swan-provider/faq/aria2\_download\_dir-vs.-aria2\_candidate\_dirs.md)
+  * [13.aria2\_download\_dir VS. aria2\_candidate\_dirs](swan-provider/faq/aria2\_download\_dir-vs.-aria2\_candidate\_dirs.md)
+  * [14. How to control the number of deals imported?](swan-provider/faq/14.-how-to-control-the-number-of-deals-imported.md)
 
 ## Swan Client
 
