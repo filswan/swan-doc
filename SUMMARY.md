@@ -1,169 +1,51 @@
-# Table of contents
+# Summary
+
+* [Swan Cloud Documentation](README.md)
 
 ## Getting Started
+* [Introduction](getting-started/introduction.md)
+* [Quickstart](getting-started/quickstart.md)
+* [FAQ](getting-started/faq.md)
 
-* [Overview](README.md)
-* [Protocol Stack](getting-started/protocol-stack/README.md)
-  * [Cross-chain Consensus Layer](getting-started/protocol-stack/cross-chain-contracts.md)
-  * [Peer-to-peer (P2P) Network](getting-started/protocol-stack/peer-to-peer-p2p-network.md)
-  * [Payment Channels](getting-started/protocol-stack/payment-channels.md)
-  * [Service Discovery](getting-started/protocol-stack/service-discovery.md)
-  * [Data Marketplace](getting-started/protocol-stack/data-marketplace.md)
-  * [Indexing and Caching Marketplace](getting-started/protocol-stack/indexing-and-caching-marketplace.md)
-  * [Web3 Task Auction](getting-started/protocol-stack/web3-task-auction.md)
-  * [Storage Layer](getting-started/protocol-stack/storage-layer.md)
-  * [Computing Layer](getting-started/protocol-stack/computing-layer.md)
-  * [CDN Layer](getting-started/protocol-stack/cdn-layer.md)
-  * [Economic System](getting-started/protocol-stack/economic-system.md)
-    * [Grants](getting-started/protocol-stack/economic-system/grants.md)
-    * [Computing Jobs](getting-started/protocol-stack/economic-system/computing-jobs.md)
-    * [Universal Basic Income (UBI)](getting-started/protocol-stack/economic-system/swan-universal-basic-income-ubi.md)
-    * [Swan Provider Income](getting-started/protocol-stack/economic-system/swan-provider-income.md)
-  * [Token](getting-started/protocol-stack/token.md)
-  * [Governance](getting-started/protocol-stack/governance.md)
-    * [Treasure DAO](getting-started/protocol-stack/governance/treasure-dao.md)
-  * [Glossary](getting-started/protocol-stack/glossary.md)
-* [Contact Us](getting-started/contact-us/README.md)
-  * [Social Accounts & Communities](getting-started/contact-us/social-accounts-and-communities.md)
-  * [Business Partnerships](getting-started/contact-us/business-partnerships.md)
-* [FAQ](getting-started/filswan-faq.md)
+## Platform Overview
+* [Architecture](platform-overview/architecture.md)
+* [Computing Providers](platform-overview/providers.md)
+* [Security & Privacy](platform-overview/security.md)
+* [Pricing](platform-overview/pricing.md)
 
-## QuickStarts
+## Products
 
-* [Dive into QuickStarts](quickstarts/dive-into-quickstarts/README.md)
-  * [Swan Chain: Developing Smart Contracts with Go](quickstarts/dive-into-quickstarts/swan-chain-developing-smart-contracts-with-go.md)
+### Future Citizen
+* [Overview](products/future-citizen/overview.md)
+* [Agent Setup](products/future-citizen/agent-setup.md)
+* [Use Cases](products/future-citizen/use-cases.md)
+* [API Reference](products/future-citizen/api.md)
 
-## Swan Platform
+### Xpress
+* [Overview](products/xpress/overview.md)
+* [Getting Started](products/xpress/getting-started.md)
+* [Pricing](products/xpress/pricing.md)
+* [FAQ](products/xpress/faq.md)
 
-* [Overview](swan-platform/overview/README.md)
-  * [Swan Auction System](swan-platform/overview/filswan-auction-system.md)
-  * [Web3 Automated Deal Matching](swan-platform/overview/web3-automated-deal-matching.md)
-  * [Reputation System](swan-platform/overview/reputation-system.md)
-* [Key functionalities](swan-platform/core-modules/README.md)
-  * [Task Management](swan-platform/core-modules/task-management/README.md)
-    * [Create a New Task](swan-platform/core-modules/task-management/create-a-new-task.md)
-    * [Navigate Tasks](swan-platform/core-modules/task-management/navigate-tasks.md)
-    * [Update Tasks](swan-platform/core-modules/task-management/update-tasks.md)
-    * [Assign Tasks](swan-platform/core-modules/task-management/assign-a-task.md)
-  * [My Profile](swan-platform/core-modules/my-profile/README.md)
-    * [Register as a storage provider](swan-platform/core-modules/my-profile/registering-your-storage-provider.md)
-  * [Find Storage Providers](swan-platform/core-modules/find-storage-providers/README.md)
-    * [Storage Provider Details](swan-platform/core-modules/find-storage-providers/storage-provider-details.md)
-  * [Extend DataCap Terms Service](swan-platform/core-modules/extend-datacap-terms-service.md)
+### Swan Provider
+* [Overview](products/swan-provider/overview.md)
+* [Setup](products/swan-provider/setup.md)
+* [Provider API](products/swan-provider/provider-api.md)
+* [FAQ](products/swan-provider/faq.md)
 
-## Multichain.Storage
+### Swan IPFS Storage
+* [Overview](products/swan-ipfs-storage/overview.md)
+* [User Guide](products/swan-ipfs-storage/user-guide.md)
+* [API Reference](products/swan-ipfs-storage/api.md)
+* [FAQ](products/swan-ipfs-storage/faq.md)
 
-* [Overview](multichain.storage/overview/README.md)
-  * [Flink](multichain.storage/overview/flink.md)
-* [Multichain Storage User Guide](multichain.storage/mcp-user-guide/README.md)
-  * [Networks](multichain.storage/mcp-user-guide/public-testnet.md)
-  * [Setup MetaMask](multichain.storage/mcp-user-guide/setup-metamask.md)
-  * [Configure MetaMask with Alchemy RPC URL](multichain.storage/mcp-user-guide/configure-metamask-with-alchemy-rpc-url.md)
-* [Developer Quickstart](multichain.storage/developer-quickstart/README.md)
-  * [SDK](multichain.storage/developer-quickstart/sdk/README.md)
-    * [js mcs SDK](multichain.storage/developer-quickstart/sdk/js-mcs-sdk/README.md)
-      * [Prerequisites](multichain.storage/developer-quickstart/sdk/js-mcs-sdk/prerequisites.md)
-      * [Get Started](multichain.storage/developer-quickstart/sdk/js-mcs-sdk/get-started.md)
-      * [Bucket Storage](multichain.storage/developer-quickstart/sdk/js-mcs-sdk/bucket-storage.md)
-      * [Onchain Storage](multichain.storage/developer-quickstart/sdk/js-mcs-sdk/onchain-storage.md)
-      * [SDK JS Installation Tutorial Video](multichain.storage/developer-quickstart/sdk/js-mcs-sdk/sdk-js-installation-tutorial-video.md)
-    * [python MCS SDK](multichain.storage/developer-quickstart/sdk/python-mcs-sdk/README.md)
-      * [Quickstart](multichain.storage/developer-quickstart/sdk/python-mcs-sdk/quickstart.md)
-      * [Bucket Storage](multichain.storage/developer-quickstart/sdk/python-mcs-sdk/bucket-storage.md)
-      * [Onchain Storage](multichain.storage/developer-quickstart/sdk/python-mcs-sdk/onchain-storage.md)
-      * [SDK Python Installation Tutorial Video](multichain.storage/developer-quickstart/sdk/python-mcs-sdk/sdk-python-installation-tutorial-video.md)
-  * [Additional Resources](multichain.storage/developer-quickstart/additional-resources.md)
-* [Best Practice](multichain.storage/best-practice/README.md)
-  * [Use MCS as Platform Storage Solution](multichain.storage/best-practice/use-mcs-as-platform-storage-solution/README.md)
-    * [Single Organization Design](multichain.storage/best-practice/use-mcs-as-platform-storage-solution/single-organization-design.md)
-    * [Multiple Organization Design](multichain.storage/best-practice/use-mcs-as-platform-storage-solution/multiple-organization-design.md)
-* [FAQ](multichain.storage/faq.md)
+## Developer Guide
+* [API Reference](developer/api-reference.md)
+* [Authentication](developer/authentication.md)
+* [Integration](developer/integration.md)
+* [Examples](developer/examples.md)
 
-## Swan Provider
-
-* [Overview](run-swan-provider/overview.md)
-* [Features](swan-provider/features.md)
-* [Tutorial](run-swan-provider/prerequisites/README.md)
-  * [Prerequisites](swan-provider/prerequisites/prerequisites.md)
-  * [Installation](run-swan-provider/prerequisites/install-swan-provider.md)
-  * [Configure and Run](swan-provider/prerequisites/configure-and-run.md)
-  * [Swan Provider Tutorial Video](swan-provider/prerequisites/swan-provider-tutorial-video.md)
-* [FAQ](swan-provider/faq/README.md)
-  * [1. Change the linked Email](swan-provider/faq/1.-change-the-linked-email.md)
-  * [2. Check Storage Provider connectivity/stability](swan-provider/faq/2.-check-storage-provider-connectivity-stability.md)
-  * [3. How to stop accepting "auto-bid" deals?](swan-provider/faq/3.-how-to-stop-accepting-auto-bid-deals.md)
-  * [4. \`aria2\_download\_dir\` vs. \`aria2\_candidate\_dirs\`](swan-provider/faq/4.-aria2\_download\_dir-vs.-aria2\_candidate\_dirs.md)
-  * [5. How to configure "import deals from Swan Provider" when Boostd is running normally](swan-provider/faq/5.-how-to-configure-import-deals-from-swan-provider-when-boostd-is-running-normally.md)
-  * [6. A rejection msg always appears during the deal-importing process](swan-provider/faq/6.-a-rejection-msg-always-appears-during-the-deal-importing-process.md)
-  * [7. How to check if aria2 is running?](swan-provider/faqs/how-to-check-if-aria2-is-running.md)
-  * [8. No response from Swan Platform?](swan-provider/faqs/no-response-from-swan-platform.md)
-  * [9. Why Storage Provider status shows offline?](swan-provider/faq/why-storage-provider-status-shows-offline.md)
-  * [10. How to check the Task Status?](swan-provider/faq/how-to-check-the-task-status.md)
-  * [11. How to configure the Storage Provider Market?](swan-provider/faqs/how-to-configure-the-storage-provider-market.md)
-  * [12. How to set the "ask price"?](swan-provider/faqs/how-to-configure-accept-verified-deals.md)
-  * [13.aria2\_download\_dir VS. aria2\_candidate\_dirs](swan-provider/faq/aria2\_download\_dir-vs.-aria2\_candidate\_dirs.md)
-  * [14. How to control the number of deals imported?](swan-provider/faq/14.-how-to-control-the-number-of-deals-imported.md)
-
-## Swan Client
-
-* [Overview](swan-client/overview.md)
-* [Basic Concepts](swan-client/basic-concept.md)
-* [Tutorial](swan-client/tutorial/README.md)
-  * [Filecoin Deal Sender](swan-client/how-to/filecoin-deal-sender/README.md)
-    * [Installation](swan-client/how-to/filecoin-deal-sender/installation.md)
-    * [Configuration](swan-client/how-to/filecoin-deal-sender/configuration.md)
-    * [Prerequisites](swan-client/how-to/filecoin-deal-sender/prerequisites.md)
-    * [Generate CAR Files](swan-client/how-to/filecoin-deal-sender/generate-car-files.md)
-    * [Meta-CAR](swan-client/how-to/filecoin-deal-sender/meta-car.md)
-    * [Upload CAR Files to IPFS](swan-client/how-to/filecoin-deal-sender/upload-car-files-to-ipfs.md)
-    * [Create a Task](swan-client/how-to/filecoin-deal-sender/create-a-task.md)
-  * [Blockchain RPC Service](swan-client/how-to/blockchain-rpc-service/README.md)
-    * [Deploy RPC Service](swan-client/how-to/blockchain-rpc-service/deploy-rpc-service.md)
-    * [RPC Command Service](swan-client/how-to/blockchain-rpc-service/rpc-command-service.md)
-  * [Swan Client Tutorial Video](swan-client/how-to/swan-client-installation-tutorial.md)
-* [FAQ](swan-client/faq/README.md)
-  * [How to prepare data?](swan-client/faq/how-to-prepare-data.md)
-
-## FS3
-
-* [Overview](fs3/overview.md)
-* [Setup your FS3](fs3/setup-your-fs3/README.md)
-  * [Prerequisites](fs3/setup-your-fs3/prerequisites.md)
-  * [Install FS3](fs3/setup-your-fs3/install-fs3.md)
-  * [FS3 Set up Video](fs3/setup-your-fs3/fs3-tutorials.md)
-* [FS3 User Guide](fs3/fs3-user-guide.md)
-* [FS3 User Guide （Cloud Version）](fs3/fs3-user-guide-1.md)
-
-## Lagrange DAO
-
-* [Overview](lagrange-dao/overview.md)
-
-## Development Resource
-
-* [Swan Token Contract](development-resource/swan-token-contract/README.md)
-  * [Acquire Testnet USDC and MATIC tokens](development-resource/swan-token-contract/acquire-testnet-usdc-and-matic-tokens.md)
-* [Swan API](development-resource/filswan-api.md)
-* [MCS API](development-resource/mcp-api.md)
-* [MCS 2.0 API](development-resource/mcp-api-1.md)
-* [Flink API](development-resource/flink-api.md)
-* [FS3 API](development-resource/fs3-api.md)
-* [API keys](development-resource/api-keys.md)
-
-## Swan Testnet
-
-* [Swan Jupiter Testnet](swan-testnet/swan-jupiter-testnet/README.md)
-  * [How to Participate](swan-testnet/swan-jupiter-testnet/how-to-participate.md)
-  * [Before You Get Started](swan-testnet/swan-jupiter-testnet/before-you-get-started.md)
-  * [Network Early Adopter](swan-testnet/swan-jupiter-testnet/network-early-adopter.md)
-  * [Computing Provider Setup](swan-testnet/swan-jupiter-testnet/computing-provider-setup/README.md)
-    * [Prerequisites](swan-testnet/swan-jupiter-testnet/computing-provider-setup/prerequisites.md)
-    * [Install the Kubernetes](swan-testnet/swan-jupiter-testnet/computing-provider-setup/install-the-kubernetes.md)
-    * [Install and config the Nginx](swan-testnet/swan-jupiter-testnet/computing-provider-setup/install-and-config-the-nginx.md)
-    * [Install the Hardware resource-exporter](swan-testnet/swan-jupiter-testnet/computing-provider-setup/install-the-hardware-resource-exporter.md)
-    * [Install the Redis service](swan-testnet/swan-jupiter-testnet/computing-provider-setup/install-the-redis-service.md)
-    * [Build and config the Computing Provider](swan-testnet/swan-jupiter-testnet/computing-provider-setup/build-and-config-the-computing-provider.md)
-    * [Install AI Inference Dependency(Optional)](swan-testnet/swan-jupiter-testnet/computing-provider-setup/install-ai-inference-dependency-optional.md)
-    * [Start the Computing Provider](swan-testnet/swan-jupiter-testnet/computing-provider-setup/start-the-computing-provider.md)
-    * [CLI of Computing Provider](swan-testnet/swan-jupiter-testnet/computing-provider-setup/cli-of-computing-provider.md)
-    * [FAQ](swan-testnet/swan-jupiter-testnet/computing-provider-setup/faq.md)
-  * [FAQ](swan-testnet/swan-jupiter-testnet/faq.md)
+## Community
+* [Support](community/support.md)
+* [Contribute](community/contribute.md)
+* [Changelog](community/changelog.md)
