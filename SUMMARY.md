@@ -20,8 +20,6 @@
   * [Xpress](products/xpress/overview.md)
   * [Swan Provider](products/swan-provider/overview.md)
   * [Swan IPFS Storage](products/swan-ipfs-storage/overview.md)
-  * [FS3](products/fs3/overview.md)
-  * [Multichain.Storage](products/multichain.storage/overview.md)
   * [Lagrange DAO](products/lagrange-dao/overview.md)
 
 ## Developer Guide
