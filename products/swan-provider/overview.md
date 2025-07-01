@@ -21,6 +21,5 @@ A Swan Provider is an independent node operator who supplies computing power, st
 
 ## Next Steps
 
-* [Provider Setup Guide](broken-reference)
-* [Provider API Reference](broken-reference)
-* [Provider FAQ](broken-reference)
+* [Provider Setup Guide](https://docs.swanchain.io/bulders/computing-provider)
+* [Provider FAQ](https://docs.swanchain.io/bulders/computing-provider/faq)
