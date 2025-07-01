@@ -23,7 +23,7 @@
   * [Xpress](products/overview/xpress.md)
   * [Swan Provider](products/swan-provider/overview.md)
   * [Swan IPFS Storage](products/swan-ipfs-storage/overview.md)
-  * [Lagrange DAO](products/overview/lagrange-dao.md)
+  * [Lagrange](products/overview/lagrange.md)
 
 ## Developer Guide
 

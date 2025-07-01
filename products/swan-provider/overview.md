@@ -8,19 +8,19 @@ A Swan Provider is an independent node operator who supplies computing power, st
 
 ## Key Benefits
 
-- **Earn Rewards:** Receive compensation for contributing resources to the network.
-- **Support Decentralized AI:** Enable AI-powered agents and applications to run in a distributed, censorship-resistant environment.
-- **Flexible Participation:** Operate as a compute provider, storage provider, or both.
-- **Seamless Integration:** Easily connect with Swan Cloud APIs and management tools.
+* **Earn Rewards:** Receive compensation for contributing resources to the network.
+* **Support Decentralized AI:** Enable AI-powered agents and applications to run in a distributed, censorship-resistant environment.
+* **Flexible Participation:** Operate as a compute provider, storage provider, or both.
+* **Seamless Integration:** Easily connect with Swan Cloud APIs and management tools.
 
 ## Use Cases
 
-- Powering Future Citizen AI agents for social media campaigns
-- Providing storage for Swan IPFS Storage users
-- Supporting decentralized applications and data marketplaces
+* Powering Future Citizen AI agents for social media campaigns
+* Providing storage for Swan IPFS Storage users
+* Supporting decentralized applications and data marketplaces
 
 ## Next Steps
 
-- [Provider Setup Guide](setup.md)
-- [Provider API Reference](provider-api.md)
-- [Provider FAQ](faq.md) 
+* [Provider Setup Guide](broken-reference)
+* [Provider API Reference](broken-reference)
+* [Provider FAQ](broken-reference)

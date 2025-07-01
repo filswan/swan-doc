@@ -4,15 +4,15 @@ Swan IPFS Storage provides decentralized, reliable, and scalable file storage us
 
 ## Key Features
 
-- **Decentralized Storage:** Files are distributed across multiple nodes for redundancy and availability.
-- **IPFS Integration:** Leverages the IPFS protocol for content addressing and data integrity.
-- **Seamless API Access:** Simple RESTful APIs for uploading, retrieving, and managing files.
-- **Integration with Swan Cloud:** Use with AI agents, marketing campaigns, and decentralized applications.
+* **Decentralized Storage:** Files are distributed across multiple nodes for redundancy and availability.
+* **IPFS Integration:** Leverages the IPFS protocol for content addressing and data integrity.
+* **Seamless API Access:** Simple RESTful APIs for uploading, retrieving, and managing files.
+* **Integration with Swan Cloud:** Use with AI agents, marketing campaigns, and decentralized applications.
 
 ## Use Cases
 
-- Storing campaign assets for Future Citizen AI agents
-- Decentralized backup and archival
-- Data sharing for distributed applications
+* Storing campaign assets for Future Citizen AI agents
+* Decentralized backup and archival
+* Data sharing for distributed applications
 
-See the [User Guide](user-guide.md) to get started. 
+See the [User Guide](broken-reference) to get started.
