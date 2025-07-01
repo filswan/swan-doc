@@ -8,17 +8,17 @@
 
 ## Product Highlights
 
-### [Xpress](overview.md#xpress)
-
-**X/Twitter AI Reply Assistant**\
-Automatically generate replies that match your tone, brand voice, and tweet style—perfect for community engagement and social growth.\
-[Launch Xpress Now](https://xpress.futurecitizen.ai/)
-
-### [Future Citizen](overview.md#future-citizen)
+### [Future Citizen](overview/future-citizen.md)
 
 **AI agent for online promotions**\
 Hire or build AI-powered agents to promote your products across social platforms, forums, and digital communities.\
 [Try Future Citizen Now](https://app.futurecitizen.ai/)
+
+### [Xpress](overview/xpress.md)
+
+**X/Twitter AI Reply Assistant**\
+Automatically generate replies that match your tone, brand voice, and tweet style—perfect for community engagement and social growth.\
+[Launch Xpress Now](https://xpress.futurecitizen.ai/)
 
 ***
 
