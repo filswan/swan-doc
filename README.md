@@ -2,19 +2,33 @@
 description: An L2 for decentralized cloud computing
 ---
 
-# Swan Cloud: Decentralized AI Marketing Cloud Platform
+# Swan Cloud: AI Marketing Cloud Platform for Business Growth
 
-Swan Cloud is a next-generation decentralized platform for AI-powered marketing, storage, and computing. It empowers businesses and developers to deploy AI agents, automate social engagement, and leverage distributed storage and compute resources—all on a secure, scalable, and censorship-resistant network.
+Swan Cloud is an AI marketing cloud platform designed to accelerate your business growth. We help companies develop and deploy AI marketing solutions in secure, on-premise cloud environments—giving you full control over your data, performance, and compliance.
 
 ## Platform Vision
 
-Enable businesses to build, deploy, and scale AI marketing solutions and decentralized applications using a global network of computing and storage providers.
+Empower businesses to build, customize, and scale AI-driven marketing solutions with maximum flexibility, privacy, and integration options.
+
+## What We Offer
+
+### AI Solutions
+**Custom AI Models & Pipelines**  
+We offer LLM fine-tuning, Managed Compute Pipelines (MCP), Retrieval-Augmented Generation (RAG) pipelines, and dataset preparation—tailored for your business use case.
+
+### Cloud Deployment
+**Edge & On-Premise AI Infrastructure**  
+Deploy containerized GPU inference on your own infrastructure, at the edge, or in your private cloud for maximum performance and data control.
+
+### Web3 Ready
+**Blockchain Integration & Community Tools**  
+Swan Cloud includes built-in community management tools, blockchain-based payments, RPC services, and DeFi solutions—bridging Web2 and Web3 engagement.
 
 ## Core Products
 
 - **Future Citizen**: AI agents for online promotions, automating product marketing across social platforms, forums, and digital communities. [Try Future Citizen](https://app.futurecitizen.ai/)
 - **Xpress**: AI-powered X/Twitter reply assistant for brand-consistent, engaging social interactions. [Try Xpress](https://xpress.futurecitizen.ai/)
-- **Swan Provider**: Become a compute or storage provider, earn rewards, and support the decentralized network.
+- **Swan Provider**: Become a compute or storage provider, earn rewards, and support the network.
 - **Swan IPFS Storage**: Decentralized, reliable file storage using IPFS, integrated with Swan Cloud and its AI agents.
 
 ## Key Technologies
