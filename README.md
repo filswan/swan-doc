@@ -1,5 +1,5 @@
 ---
-description: An L2 for decentralized cloud computing
+description:  AI Marketing Cloud Platform for Your Business Growth
 ---
 
 # Swan Cloud: AI Marketing Cloud Platform
